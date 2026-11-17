@@ -8,6 +8,6 @@
 | ub_ausfall_dunkel.mp3 | dito | „Was passiert, wenn es ausfällt“: tiefe Drones, Metallklänge, einzelne Klaviertöne, Brummen – düster, zurückhaltend |
 | ub_aufloesung_weit.mp3 | dito | Schluss/Auflösung: warme Streicher, Klavier, Flächen, ruhiger Aufschwung |
 
-Alle auf −15,7 LUFS normalisiert. Hörprobe bei Laurin offen (17.11.2026) – nach seinem Urteil hier eintragen.
+Alle auf −15,7 LUFS normalisiert. Hörprobe 17.11.2026: Laurin hat alle 4 Tracks abgenommen („Sind alle gut!“).
 
 Ziel: 5–7 Tracks als feste Bibliothek (Laurin wählt per Hörprobe), danach keine Musikkosten pro Video.
