@@ -29,7 +29,7 @@ Jeder Lauf liest diese Datei vor der Produktion und befolgt sie. Neue Erkenntnis
 ## Offen / nächste Schritte
 - Musik-Bibliothek: 17.11.2026 auf Laurins Wunsch 4 Tracks erzeugt (87 Credits einmalig, siehe assets/music/MUSIK.md), alle 4 von Laurin abgenommen. NICHT mehr pro Video Stücke erzeugen; je Kapitel passenden Track aus der Bibliothek wählen, Musikpausen bewusst einsetzen.
 - Shorts-Pipeline als Skript ins Repo (bisher pro Video mit ffmpeg gebaut).
-- Profilbild B_Querschnitt.png und Banner ins Repo legen (assets/brand/), Laurin schickt die Dateien.
+- Profilbild (vom YouTube-Kanal zurückgeholt) und Banner liegen seit 17.11.2026 in assets/brand/ (Banner neu, 0 Credits: `python3 engine/banner.py assets/brand/profilbild.png assets/brand/banner.png`).
 
 ## Video-Log
 | Nr. | Titel | Status | Erkenntnisse |

@@ -54,7 +54,7 @@ Verbindlich ist die Skript-Bibel: `SKRIPT_BIBEL.md` (Kopie des Claude-Docs https
 - Musik: eigene Unterbau-Musik (nie Musik anderer Kanäle), filmisch und passend zum Spannungsbogen, taucht automatisch unter Julian ab. Ziel: einmalige Unterbau-Bibliothek in `assets/music` (5–7 Tracks, Laurin wählt per Hörprobe), danach keine Musikkosten mehr pro Video.
 
 ## Marke
-- Profilbild: Querschnitt-Symbol – konzentrische Ringe in Weiß/Türkis auf Dunkelblau, oranger Kern, ein Segment herausgeschnitten (B_Querschnitt.png).
+- Profilbild: Querschnitt-Symbol – konzentrische Ringe in Weiß/Türkis auf Dunkelblau, oranger Kern, ein Segment herausgeschnitten (`assets/brand/profilbild.png`). Banner: `assets/brand/banner.png` (Logo + UNTERBAU + Claim, Erzeugung mit `engine/banner.py`).
 - Thumbnail: Bild in Higgsfield ohne Text, Text danach als feste Vorlage (`engine/thumbnail.py`): dunkler halbdurchsichtiger Kasten rechts mit abgerundeten Ecken und orangem Balken links, Inter Display Black, erste Zeile weiß, Schlüsselwort orange, 2–3 Wörter in Groß-/Kleinschreibung. Nicht ins Bild gearbeitet, aber nicht leer oder aufgeklebt wirkend. 2–3 Varianten für „Test & Compare“.
 - Verpackung: Titel und Thumbnail vor dem Skript. Vom Vertrauten ausgehen, Wissenslücke öffnen, „du/dein“, Verlust zeigen und am Ende auflösen, nur mit echter Recherche etwas enthüllen.
 
