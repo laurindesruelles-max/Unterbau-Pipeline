@@ -1,0 +1,429 @@
+{
+ "titel": "Das Kabel am Meeresgrund, an dem dein Internet hängt (Pilot-Intro, Look-Test ohne Kling)",
+ "lead": 0.4,
+ "tail": 1.6,
+ "parts": [
+  {
+   "id": 1,
+   "audio": "audio/1.mp3",
+   "words": "words/w1.json",
+   "gap_after": 2.2
+  },
+  {
+   "id": 2,
+   "audio": "audio/2.mp3",
+   "words": "words/w2.json",
+   "gap_after": 0.4
+  },
+  {
+   "chapter": {
+    "n": 1,
+    "title": "Licht am Meeresgrund",
+    "pause": 4.5
+   }
+  },
+  {
+   "id": 3,
+   "audio": "audio/3.mp3",
+   "words": "words/w3.json",
+   "gap_after": 0.3
+  }
+ ],
+ "shots": [
+  {
+   "img": "01",
+   "at": [
+    1,
+    "Das",
+    -0.4
+   ],
+   "move": "push",
+   "fx": [
+    "wet"
+   ]
+  },
+  {
+   "img": "02",
+   "at": [
+    1,
+    "Und während"
+   ],
+   "move": "push",
+   "fx": []
+  },
+  {
+   "img": "03",
+   "at": [
+    1,
+    "deine Daten fliegen"
+   ],
+   "move": "orbit",
+   "fx": []
+  },
+  {
+   "xsection": [
+    "04",
+    "13"
+   ],
+   "at": [
+    1,
+    "Tun sie aber nicht"
+   ],
+   "reveal": [
+    1,
+    "hier unten",
+    -0.2
+   ],
+   "reveal_dur": 1.4,
+   "waterline": 0.4,
+   "move": "push",
+   "fx": [
+    "wet"
+   ],
+   "fx_in": [
+    "fog"
+   ]
+  },
+  {
+   "img": "05",
+   "at": [
+    1,
+    "etwa so dick"
+   ],
+   "move": "right",
+   "fx": [
+    "fog"
+   ],
+   "atmo": "dust"
+  },
+  {
+   "img": "06",
+   "at": [
+    1,
+    "Fast der gesamte"
+   ],
+   "move": "push",
+   "fx": [
+    "fog"
+   ],
+   "atmo": "dust"
+  },
+  {
+   "img": "07",
+   "at": [
+    1,
+    "Über sechshundert"
+   ],
+   "move": "orbit",
+   "fx": []
+  },
+  {
+   "img": "08",
+   "at": [
+    1,
+    "Das Problem"
+   ],
+   "move": "rise",
+   "fx": [
+    "wet"
+   ]
+  },
+  {
+   "img": "09",
+   "at": [
+    1,
+    "Und manchmal"
+   ],
+   "move": {
+    "dx": 0.0,
+    "dy": 0.04,
+    "z0": 1.1,
+    "z1": 1.2,
+    "par": 0.05
+   },
+   "fx": [
+    "fog"
+   ],
+   "atmo": "dust"
+  },
+  {
+   "black": true,
+   "at": [
+    1,
+    "END",
+    0.2
+   ]
+  },
+  {
+   "img": "15",
+   "at": [
+    1,
+    "END",
+    1.0
+   ],
+   "move": "push",
+   "fx": [
+    "fog"
+   ],
+   "atmo": "dust"
+  },
+  {
+   "img": "14",
+   "at": [
+    2,
+    "Heute"
+   ],
+   "move": "push",
+   "fx": [
+    "fog"
+   ],
+   "atmo": "dust"
+  },
+  {
+   "img": "11",
+   "at": [
+    3,
+    "Die Idee",
+    -0.3
+   ],
+   "move": "right",
+   "fx": [
+    "fog"
+   ]
+  },
+  {
+   "img": "16",
+   "at": [
+    3,
+    "Damals"
+   ],
+   "move": "push",
+   "fx": []
+  },
+  {
+   "img": "17",
+   "at": [
+    3,
+    "Heute läuft"
+   ],
+   "move": "left",
+   "fx": []
+  },
+  {
+   "img": "12",
+   "at": [
+    3,
+    "Und zwar als Licht"
+   ],
+   "move": "push",
+   "fx": []
+  }
+ ],
+ "title": {
+  "at": [
+   1,
+   "END",
+   1.0
+  ],
+  "dur": 4.6,
+  "claim": "Verstehen, wie die Welt funktioniert"
+ },
+ "overlays": [
+  {
+   "type": "bauchbinde",
+   "lines": [
+    "Ostsee",
+    "ein ganz normaler Abend"
+   ],
+   "at": [
+    1,
+    "Das",
+    0.4
+   ],
+   "dur": 3.6
+  },
+  {
+   "type": "zahl",
+   "big": "17–20 mm",
+   "sub": "so dick wie ein Gartenschlauch",
+   "at": [
+    1,
+    "etwa so dick"
+   ],
+   "dur": 3.4
+  },
+  {
+   "type": "zahl",
+   "big": "über 600",
+   "sub": "Seekabel auf dem Meeresgrund",
+   "at": [
+    1,
+    "Über sechshundert"
+   ],
+   "dur": 3.6
+  },
+  {
+   "type": "videotitel",
+   "lines": [
+    "Das Kabel am Meeresgrund,",
+    "an dem dein Internet hängt"
+   ],
+   "at": [
+    2,
+    "Heute"
+   ],
+   "dur": 4.2
+  },
+  {
+   "type": "bauchbinde",
+   "lines": [
+    "Atlantik, 16. August 1858",
+    "erstes Telegrafenkabel in Betrieb"
+   ],
+   "at": [
+    3,
+    "Schon am"
+   ],
+   "dur": 4.5
+  },
+  {
+   "type": "bauchbinde",
+   "lines": [
+    "Glasfaser",
+    "deine Daten reisen als Lichtimpulse"
+   ],
+   "at": [
+    3,
+    "Und zwar als Licht"
+   ],
+   "dur": 3.0
+  }
+ ],
+ "sfx": [
+  [
+   [
+    1,
+    "hier unten",
+    -4.4
+   ],
+   "zoom_riser",
+   0.7
+  ],
+  [
+   [
+    1,
+    "hier unten",
+    0.1
+   ],
+   "diagram_whoosh",
+   0.5
+  ],
+  [
+   [
+    1,
+    "Das Problem",
+    0.1
+   ],
+   "anchor_chain",
+   0.55
+  ],
+  [
+   [
+    1,
+    "END",
+    0.15
+   ],
+   "ub_drop",
+   0.8
+  ],
+  [
+   [
+    1,
+    "END",
+    1.0
+   ],
+   "ub_hit",
+   0.6
+  ],
+  [
+   [
+    3,
+    "Und zwar als Licht",
+    0.05
+   ],
+   "diagram_whoosh",
+   0.35
+  ]
+ ],
+ "amb": [
+  [
+   [
+    1,
+    "Das",
+    -0.4
+   ],
+   [
+    1,
+    "Und während"
+   ],
+   "harbor_ships",
+   0.35
+  ],
+  [
+   [
+    1,
+    "hier unten"
+   ],
+   [
+    1,
+    "Über sechshundert"
+   ],
+   "underwater",
+   0.45
+  ],
+  [
+   [
+    1,
+    "Und manchmal"
+   ],
+   [
+    1,
+    "END",
+    1.2
+   ],
+   "underwater",
+   0.45
+  ],
+  [
+   [
+    1,
+    "END",
+    1.0
+   ],
+   [
+    2,
+    "Heute"
+   ],
+   "underwater",
+   0.3
+  ]
+ ],
+ "music": {
+  "file": "music/ub_kaltstart_meer.mp3",
+  "gain": 0.55,
+  "rests": [
+   [
+    [
+     1,
+     "END",
+     0.05
+    ],
+    [
+     1,
+     "END",
+     1.0
+    ]
+   ]
+  ]
+ }
+}
