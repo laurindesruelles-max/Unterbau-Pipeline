@@ -27,7 +27,7 @@ Jeder Lauf liest diese Datei vor der Produktion und befolgt sie. Neue Erkenntnis
 - Rendern: Pilot (75 s, 1.880 Frames) brauchte ~11 Min. mit 3 Prozessen auf 2 Kernen → ein 10-Min.-Video ≈ 1,5 h. In 3 Abschnitten parallel rendern (`--from/--to`, nohup), Fortschritt pollen, dann zusammenfügen.
 
 ## Offen / nächste Schritte
-- Musik-Bibliothek: 17.11.2026 auf Laurins Wunsch 4 Tracks erzeugt (87 Credits einmalig, siehe assets/music/MUSIK.md), Hörprobe offen. NICHT mehr pro Video Stücke erzeugen; bis dahin ub_kaltstart_meer.mp3 und Passagen daraus nutzen, Musikpausen bewusst einsetzen.
+- Musik-Bibliothek: 17.11.2026 auf Laurins Wunsch 4 Tracks erzeugt (87 Credits einmalig, siehe assets/music/MUSIK.md), Hörprobe offen. NICHT mehr pro Video Stücke erzeugen; je Kapitel passenden Track aus der Bibliothek wählen, Musikpausen bewusst einsetzen.
 - Shorts-Pipeline als Skript ins Repo (bisher pro Video mit ffmpeg gebaut).
 - Profilbild B_Querschnitt.png und Banner ins Repo legen (assets/brand/), Laurin schickt die Dateien.
 
