@@ -304,9 +304,9 @@
    [
     1,
     "hier unten",
-    -4.4
+    -1.9
    ],
-   "zoom_riser",
+   "ub_riser",
    0.7
   ],
   [
@@ -315,7 +315,7 @@
     "hier unten",
     0.1
    ],
-   "diagram_whoosh",
+   "ub_whoosh",
    0.5
   ],
   [
@@ -351,7 +351,7 @@
     "Und zwar als Licht",
     0.05
    ],
-   "diagram_whoosh",
+   "ub_whoosh",
    0.35
   ]
  ],

@@ -225,8 +225,8 @@ def audio(vid, out):
     def put(buf, x, t, g):
         i = int(t*SR); x = x[:max(0, N-i)]; buf[i:i+len(x)] += x*g
     for p in T.parts.values(): put(voice, load(f"{vid}/{p['audio']}"), p["t0"], 1.0)
-    for o in ovs:   # Einblendungen bekommen den Text-Klick aus der gemeinsamen Sound-Bibliothek
-        if o["type"] in ("bauchbinde", "zahl"): put(fx, load(sfx_path(vid, "text_click")), o["t0"], 0.42)
+    for o in ovs:   # Einblendungen bekommen den Unterbau-eigenen Klick (assets/sfx/ub_klick)
+        if o["type"] in ("bauchbinde", "zahl"): put(fx, load(sfx_path(vid, "ub_klick")), o["t0"], 0.42)
     for c in T.chapters: put(fx, load(sfx_path(vid, spec.get("chapter_hit", "ub_hit"))), c["t0"]+0.15, 0.55)
     for e in spec.get("sfx", []):
         put(fx, load(sfx_path(vid, e[1])), T.at(e[0]), e[2] if len(e) > 2 else 0.6)

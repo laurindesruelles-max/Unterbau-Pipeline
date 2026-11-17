@@ -1,6 +1,7 @@
 # Unterbau-Geräusche (assets/sfx)
 
-Reihenfolge bei der Suche: (1) Laurins gemeinsame Sound-Bibliothek (goldsmith-pipeline/sound-library, lädt setup.sh: text_click, diagram_whoosh, zoom_riser, pin_pop, data_loading, phone_notify, paper_slide, marker_stroke, news_spin) → (2) diese Liste → (3) neu mit Higgsfield `mirelo_text_to_audio` (~0,5 Credits), Ergebnis hier ablegen + Zeile ergänzen. Nie per Code erzeugen. Musik gehört NICHT hierher (assets/music, nur eigene Unterbau-Musik).
+**Regel (Laurin 17.11.2026): Jeder Kanal hat seine eigenen Effekte.** Unterbau nutzt nur die Sounds in diesem Ordner, NICHT die Goldsmith-Bibliothek.
+Reihenfolge bei der Suche: (1) diese Liste → (2) CC0 von SFXMint (Hugging Face flreey/sfxmint-cc0-sound-effects) → (3) neu mit Higgsfield `mirelo_text_to_audio` (~0,5 Credits), Ergebnis hier ablegen + Zeile ergänzen. Nie per Code erzeugen. Musik gehört NICHT hierher (assets/music, nur eigene Unterbau-Musik).
 
 | Name | Herkunft | Wofür |
 |---|---|---|
@@ -8,4 +9,8 @@ Reihenfolge bei der Suche: (1) Laurins gemeinsame Sound-Bibliothek (goldsmith-pi
 | ub_drop | Higgsfield mirelo, 17.11.2026 („deep cinematic sub bass drop …“) | Abbruch vor der Auflösung, Schwarzbild |
 | underwater | Higgsfield mirelo, 17.11.2026 („deep underwater ambience, muffled low rumble …“) | Raumklang unter Wasser (amb) |
 | anchor_chain | Higgsfield mirelo, 17.11.2026 („heavy ship anchor chain rattling … splash“) | Anker fällt |
+| ub_klick | SFXMint CC0 carabiner-gate-click-01 (über Hugging Face) | Text-Einblendungen: Bauchbinde, Zahl (engine, ersetzt text_click) |
+| ub_whoosh | Higgsfield mirelo, 17.11.2026 („single deep dark cinematic whoosh transition …“) | Übergänge, Diagramm/Grafik kommt rein (ersetzt diagram_whoosh) |
+| ub_riser | SFXMint CC0 transition-riser-01 (über Hugging Face) | Spannungsaufbau vor Zoom/Enthüllung (ersetzt zoom_riser) |
+| ub_daten | SFXMint CC0 data-processing-01 (über Hugging Face) | Daten-Grafik baut sich auf, Netz-/System-Visualisierung |
 | harbor_ships | SFXMint CC0 (über goldsmith-pipeline assets/sfx) | Meer mit Schiffshorn (amb) |

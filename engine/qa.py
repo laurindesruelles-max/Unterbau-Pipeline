@@ -77,7 +77,7 @@ def main():
           "| KI-Bilder / Thumbnail | Higgsfield gpt_image | Higgsfield-Abo |",
           "| Musik | assets/music (ElevenLabs über Higgsfield) | Higgsfield-Abo |",
           "| Geräusche | assets/sfx (SOUNDS.md) – SFXMint | CC0 |",
-          "| Geräusche | sound-library (README.md) – Laurins Effekt-Sammlung / No-Copyright-Effekte | von Laurin freigegeben |",
+          "| Geräusche | assets/sfx (SOUNDS.md) – Unterbau-eigene Effekte (CC0 / Higgsfield mirelo) | Herkunft je Sound in SOUNDS.md |",
           "| 3D-Texturen/Modelle | Poly Haven | CC0 |",
           "| Schriften | Anton, Special Elite, Playfair Display, Inter | SIL OFL / Apache |",
           "- [ ] Kein fremdes Material (Filmausschnitte, Fotos, Musik) außer den oben gelisteten Quellen",
