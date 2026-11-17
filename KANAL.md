@@ -44,11 +44,11 @@ Verbindlich ist die Skript-Bibel: `SKRIPT_BIBEL.md` (Kopie des Claude-Docs https
 - Ein freigegebenes Bild dient als Stilreferenz für die weiteren Bilder.
 - Markenzeichen in jedem Video: der **Querschnitt-Moment** – die Oberfläche wird durchsichtig oder reißt auf, man sieht das Innere des Systems. Im Einstieg und am Schluss. Umsetzung kostenlos mit `xsection` (zwei passende Bilder: Oberfläche + Innenansicht mit Bildreferenz).
 - Ein oranger Akzent markiert das System – als echtes Licht oder Material, nie als Leuchteffekt.
-- **Bewegung (neu 17.11.2026):** Es soll wirklich etwas passieren, aber ohne teure Kling-Clips: jede Einstellung bekommt 2.5D-Tiefenfahrt + Leben im Bild (Wasser schimmert, Licht atmet, Nebel, Schwebeteilchen, Regen). Echte Bewegung zusätzlich über kostenloses Stock-/Archivmaterial (`engine/stock.py`, Pixabay; `engine/sources.py`, Public Domain). KI-Videoclips höchstens 2–3 pro Video für den Höhepunkt und nur nach Laurins Freigabe (Kling 3.0 std 5 s = 7,5 Credits).
+- **Bewegung (neu 17.11.2026):** Es soll wirklich etwas passieren, aber ohne teure Kling-Clips: jede Einstellung bekommt 2.5D-Tiefenfahrt + Leben im Bild (Wasser schimmert, Licht atmet, Nebel, Schwebeteilchen, Regen). Echte Bewegung zusätzlich über kostenloses Stock-/Archivmaterial (`engine/stock.py`, Pixabay; `engine/sources.py`, Public Domain). KEINE KI-Videoclips (Kling, Seedance) – wie bei Goldsmith und Meisterwerk (Laurin 17.11.2026).
 - Bilder bewusst abwechslungsreich (Nahaufnahme, Totale, Froschperspektive, Innenraum, Blick aus dem All); jede Einstellung ein eigenes Bild.
 
 ## Ton
-- Geräusche zuerst aus Laurins gemeinsamer Sound-Bibliothek (`setup.sh` lädt sie: Text-Klick, Whoosh, Riser, Pop, …), dann `assets/sfx` (eigene, mit SOUNDS.md), nur Fehlendes neu mit Higgsfield `mirelo_text_to_audio` (~0,5 Credits). Nie per Code erzeugt. Piep- und Signaltöne 10–12 dB unter der Stimme.
+- Geräusche zuerst aus Laurins gemeinsamer Sound-Bibliothek (`setup.sh` lädt sie: Text-Klick, Whoosh, Riser, Pop, …), dann `assets/sfx` (eigene, mit SOUNDS.md), dann kostenlos von Hugging Face (flreey/sfxmint-cc0-sound-effects); Higgsfield `mirelo_text_to_audio` nur als letzte Wahl (max. 2 pro Video). Nie per Code erzeugt. Piep- und Signaltöne 10–12 dB unter der Stimme.
 - Musik: eigene Unterbau-Musik (nie Musik anderer Kanäle), filmisch und passend zum Spannungsbogen, taucht automatisch unter Julian ab. Ziel: einmalige Unterbau-Bibliothek in `assets/music` (5–7 Tracks, Laurin wählt per Hörprobe), danach keine Musikkosten mehr pro Video.
 
 ## Marke
@@ -83,10 +83,10 @@ Jede Zahl und Tatsachenbehauptung im Skript mit Link belegt. In der Beschreibung
 
 ## Budget
 So wenig wie möglich, höchstens 50 € pro Video (130 € ≈ 2.000 Credits, 1 Credit ≈ 0,065 €).
-Neue Produktion (Schätzung): Stimme ~25–30, Bilder 90–110 × 0,25 ≈ 25, Geräusche ~2, Shorts-Sätze ~2, Musik 0 (Bibliothek) → **ca. 55–65 Credits ≈ 4 €** pro Video. Mit 2–3 Kling-Clips für den Höhepunkt +15–22 Credits.
+**Ziel wie Goldsmith/Meisterwerk (Laurin 17.11.2026): ca. 35–45 Credits pro Video, harte Obergrenze 45.** Stimme ~25 (nur einmal einsprechen, keine ganzen Neuaufnahmen), höchstens 60 KI-Bilder × 0,25 = 15 (die übrigen Einstellungen kostenlos: Pixabay-Clips, Public-Domain-Archiv), Thumbnails ~1, Shorts-Sätze ~2, Geräusche 0, Musik 0 (feste Bibliothek, nie pro Video neu), KI-Videoclips 0. Verbrauch während des Laufs mitzählen; droht die Grenze, Bilder durch kostenloses Material ersetzen statt mehr auszugeben.
 
 ## Zusammenarbeit
 - Claude gibt eine klare Empfehlung mit Begründung, die Entscheidung trifft Laurin. Deutsch.
 - Claude sagt ehrlich, wenn etwas unrealistisch ist, und kennzeichnet Schätzungen.
-- Rückfragen nur an den Checkpoints (Thema/Titel/Thumbnail, Drehbuch, Hörprobe der ersten 2 Minuten, Shorts-Skripte, fertiges Video).
+- Rückfragen nur an den Checkpoints (Thema/Titel/Thumbnail, Drehbuch, Hörprobe der ersten 2 Minuten, Shorts-Skripte, fertiges Video). In den automatischen Läufen alle 2 Tage (wie Goldsmith/Meisterwerk) wird nur bei Thema (2 h Fallback: Thema 1) und vor der Veröffentlichung („ja“) gewartet; Drehbuch, Hörprobe und Shorts-Skripte gehen dort nur zur Info an Laurin.
 - Businessplan (aktuelle Fassung): https://claude.ai/artifact/GSNjdvARppGm6PHraEhd8N

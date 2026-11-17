@@ -19,7 +19,7 @@ Ein neues Video geht aus **jedem** Claude-Chat mit dem Skill `unterbau-video` (R
 4. **Hörprobe** der ersten 2 Minuten (Checkpoint 3), dann Rest einsprechen (Julian, pro Kapitel eine Datei).
 5. `sh setup.sh videos/NNN-slug /home/claude/unterbau-work`, Stimme nach `audio/`, dann Wortzeiten:
    `python3 engine/wordtimes.py audio/1.mp3 text1.txt words/w1.json` (Text = exakt der eingesprochene Text).
-6. **Look-Bibel + Bilder**: gpt_image_2_6 (0,25 Credits), 16:9, je Einstellung ein eigenes Bild `img/NN.png` (90–110 pro Video), in Wellen zu 4, Stilreferenz per `image_references`. Querschnitt-Paar: Oberflächenbild + Innenbild mit Bildreferenz. Kontaktbogen ansehen, Schwaches neu.
+6. **Look-Bibel + Bilder**: gpt_image_2_6 (0,25 Credits), 16:9, je Einstellung ein eigenes Bild `img/NN.png` (höchstens 60 KI-Bilder pro Video, Rest kostenlos über Pixabay/Public Domain), in Wellen zu 4, Stilreferenz per `image_references`. Querschnitt-Paar: Oberflächenbild + Innenbild mit Bildreferenz. Kontaktbogen ansehen, Schwaches neu.
 7. **spec.json** schreiben (Vorlage `videos/001-seekabel-pilot/spec.json`):
    - `parts`: Tonspuren mit Wortzeiten, dazwischen `{"chapter": {"n", "title", "pause": 4.5}}`
    - `shots`: `{"img", "at": [teil, "Wort(e)", versatz], "move": push|pull|left|right|rise|orbit|{dx,dy,z0,z1,par}, "fx": [wet, fog, cars, flash, screens, money, cold, rays], "atmo": dust|rain|snow}`; Querschnitt: `{"xsection": [oben, innen], "reveal": anker, "waterline": 0.4}`; Schwarzbild `{"black": true}`. Anker `[teil, "END", versatz]` = Ende der Tonspur.
@@ -40,4 +40,4 @@ Ein neues Video geht aus **jedem** Claude-Chat mit dem Skill `unterbau-video` (R
 | `engine/thumbnail.py` | Thumbnail-Vorlage | 0 |
 | `engine/qa.py` | Technik-Prüfung (Länge, Lautheit, Kontaktbogen) | 0 |
 
-Credits pro Video (Schätzung): Stimme ~25–30, Bilder ~25, Geräusche ~2, Shorts-Sätze ~2 → ca. 55–65 (≈ 4 €). Musik einmalig für die Bibliothek.
+Credits pro Video: **Ziel 35–45, Obergrenze 45** wie Goldsmith/Meisterwerk (Stimme ~25, max. 60 Bilder = 15, Thumbnails ~1, Shorts-Sätze ~2). Keine KI-Videoclips, keine Musik pro Video (feste Bibliothek in assets/music), Geräusche kostenlos. Automatischer Lauf alle 2 Tage (Scheduled Task „Unterbau-Video alle 2 Tage“).
