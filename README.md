@@ -1,6 +1,6 @@
 # Unterbau-Pipeline
 
-YouTube-Kanal **Unterbau** – „Verstehen, wie die Welt funktioniert“. Deutsch, 8–12 Minuten, realistisch-filmischer Look.
+YouTube-Kanal **Unterbau** (@unterbau26, UCVdWJ7R8vtn-ugpCh6wEJXw) – „Verstehen, wie die Welt funktioniert“. Deutsch, 8–12 Minuten, realistisch-filmischer Look.
 Ein neues Video geht aus **jedem** Claude-Chat mit dem Skill `unterbau-video` (Repo klonen, dieser README + LESSONS.md folgen).
 
 | Datei | Inhalt |

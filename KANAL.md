@@ -1,5 +1,7 @@
 # Kanal „Unterbau“ – Grundsätze (aus Laurins Projektanweisung, Stand 17.11.2026)
 
+**YouTube:** @unterbau26, Channel-ID UCVdWJ7R8vtn-ugpCh6wEJXw (seit 17.11.2026 mit vidIQ verbunden → Upload als geplanter Entwurf wie bei Goldsmith, 19:00 Uhr, erst nach Laurins „ja“ veröffentlichen).
+
 **Claim:** Verstehen, wie die Welt funktioniert
 **Versprechen:** Wie die Systeme funktionieren, von denen dein Leben abhängt – und was passiert, wenn sie ausfallen.
 **Ziel:** 1 Mio. Abonnenten und 200.000 € Umsatz pro Monat in 3–4 Jahren.
