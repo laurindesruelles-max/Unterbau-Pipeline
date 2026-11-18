@@ -37,3 +37,11 @@ Jeder Lauf liest diese Datei vor der Produktion und befolgt sie. Neue Erkenntnis
 | 001 | Das Kabel am Meeresgrund, an dem dein Internet hängt | fertig + abgenommen (09.11.2026), 9:07 Min., 7 Shorts, ~215 Credits | mehr echte Bewegung statt Standbilder; Timing per Spracherkennung messen; Shorts mit eigenem Einstieg. Recherche: https://claude.ai/artifact/2YiRjq3QSPVMRZYjD9HfQV · Skript: https://claude.ai/artifact/D1k4smGrysZTUVJmhkKNDH |
 | 002 | Was passiert, wenn deine Karte plötzlich nicht mehr geht | produziert (v2, 6 Shorts), Laurin: zu langweilig | daraus Kino-Stil + Skript-Bibel. Recherche: https://claude.ai/artifact/6sdhBxRn5mGdb1KuTEnWn3 · Skript: https://claude.ai/artifact/RtwMUcB9KcvoginUC1C2oP · Kino-Test-Drehbuch: https://claude.ai/artifact/1uAWKoP8jVQ7PySScZo2j2 |
 | Pilot | Seekabel-Kaltstart im neuen Look (ohne Kling) | 17.11.2026 Look-Test | siehe oben |
+
+## Ton & Musik mit audiokit (Laurin 18.11.2026)
+Problem: Soundeffekte oft unpassend/billig, Musik zu gleichförmig – Laurin schaut die eigenen Videos nicht zu Ende. vidIQ-Auswertung 18.11.: größter Absprung in den ersten ~30 s; Musik läuft 1,5–3 Min. gleich durch, kein Spannungsaufbau vor Enthüllungen; Passagen von 25–60 s ohne neuen Reiz.
+- `setup.sh` lädt audiokit (Repo sound-mediathek) nach /home/claude/audiokit. Die Engine nutzt es automatisch und schreibt `ton_bericht.txt` – Bericht in qa.md übernehmen.
+- Sounds werden vor dem Mischen aufgeräumt: gleiche Lautheit, Einblendungs-Sounds nicht im Dauerfeuer, max. 2 Sounds gleichzeitig, keine Endlos-Schleifen, defekte Dateien fliegen raus. Geräusche zu sichtbarer Bewegung bleiben.
+- Musik nach Spannungskurve: Wechsel der Stelle/des Tracks spätestens alle ~60–80 s, Anschwellen vor Enthüllungen/Zahlen, Bogen pro Kapitel, Pegel automatisch unter der Stimme. Weiterhin nur die eigene Musik-Bibliothek, keine neuen Tracks.
+- Im Skript Enthüllungen klar formulieren (Zahl, „aber“, „doch“, Frage → Antwort): daraus baut die Spannungskurve.
+- Bericht meldet Lücken > 22 s ohne neuen Reiz → dort Bild/Effekt/Schnitt ergänzen, bevor gerendert wird.

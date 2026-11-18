@@ -15,4 +15,10 @@ fi
 cp "$REPO"/assets/sfx/*.* "$WORK/sfx/" 2>/dev/null || true
 cp "$REPO"/assets/music/*.mp3 "$WORK/music/" 2>/dev/null || true
 [ -f "$VID/spec.json" ] && cp "$VID/spec.json" "$WORK/"
+# Ton-Werkzeug audiokit (18.11.2026): Sounds aufräumen, Musik nach Spannungskurve, Endkontrolle.
+# Gemeinsam sind nur die Regeln – Sounds und Musik bleiben kanal-eigen. Repo: laurindesruelles-max/sound-mediathek
+AK="${AUDIOKIT:-/home/claude/audiokit}"
+if [ ! -f "$AK/adapter.py" ] || [ -n "$AK_UPDATE" ]; then
+  AKT=$(mktemp -d); git clone -q --depth 1 https://github.com/laurindesruelles-max/sound-mediathek "$AKT/r" && mkdir -p "$AK" && cp "$AKT"/r/audiokit/*.py "$AKT"/r/audiokit/*.json "$AK"/ && echo "audiokit bereit: $AK"; rm -rf "$AKT"
+fi
 echo "Arbeitsordner bereit: $WORK  (Stimme -> audio/, Bilder -> img/NN.png, dann words/ mit engine/wordtimes.py)"

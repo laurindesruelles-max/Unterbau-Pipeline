@@ -209,6 +209,12 @@ def video(vid, out, a=0.0, b=None):
     p.stdin.close(); p.wait()
 
 # ------------------------------------------------------------------ Ton
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+def _audiokit():
+    """Gemeinsames Ton-Werkzeug (Repo sound-mediathek/audiokit, setup.sh lädt es). Fehlt es, läuft der alte Weg weiter."""
+    d = os.environ.get("AUDIOKIT", "/home/claude/audiokit")
+    if not os.path.exists(f"{d}/adapter.py"): print("WARNUNG: audiokit fehlt – sh setup.sh ausführen"); return None
+    sys.path.insert(0, d); import adapter; return adapter
 def load(path):
     raw = subprocess.check_output(["ffmpeg", "-v", "error", "-i", path, "-ac", "2", "-ar", str(SR), "-f", "f32le", "-"])
     return np.frombuffer(raw, np.float32).reshape(-1, 2).copy()
@@ -225,17 +231,43 @@ def audio(vid, out):
     def put(buf, x, t, g):
         i = int(t*SR); x = x[:max(0, N-i)]; buf[i:i+len(x)] += x*g
     for p in T.parts.values(): put(voice, load(f"{vid}/{p['audio']}"), p["t0"], 1.0)
+    ev = []   # (t, name, gain) – erst sammeln, dann von audiokit aufräumen lassen, dann mischen
     for o in ovs:   # Einblendungen bekommen den Unterbau-eigenen Klick (assets/sfx/ub_klick)
-        if o["type"] in ("bauchbinde", "zahl"): put(fx, load(sfx_path(vid, "ub_klick")), o["t0"], 0.42)
-    for c in T.chapters: put(fx, load(sfx_path(vid, spec.get("chapter_hit", "ub_hit"))), c["t0"]+0.15, 0.55)
-    for e in spec.get("sfx", []):
-        put(fx, load(sfx_path(vid, e[1])), T.at(e[0]), e[2] if len(e) > 2 else 0.6)
+        if o["type"] in ("bauchbinde", "zahl"): ev.append((o["t0"], "ub_klick", 0.42))
+    for c in T.chapters: ev.append((c["t0"]+0.15, spec.get("chapter_hit", "ub_hit"), 0.55))
+    for e in spec.get("sfx", []): ev.append((T.at(e[0]), e[1], e[2] if len(e) > 2 else 0.6))
+    AK0 = _audiokit()
+    if AK0: ev = AK0.clean_events(ev, "unterbau", os.path.join(REPO, "assets", "sfx"), extra_dirs=(f"{vid}/sfx", os.environ.get("SFX", "/home/claude/unterbau-work/sfx")))
+    for t, name, g in ev: put(fx, load(sfx_path(vid, name)), t, g)
     for e in spec.get("amb", []):   # Raumklang: [von, bis, name, gain]
         t0, t1 = T.at(e[0]), T.at(e[1]); x = load(sfx_path(vid, e[2])); n = int((t1-t0)*SR)
         x = np.concatenate([x]*(1+n//len(x)))[:n]; f = min(int(0.8*SR), n//3)
         x[:f] *= np.linspace(0, 1, f)[:, None]; x[-f:] *= np.linspace(1, 0, f)[:, None]; put(fx, x, t0, e[3])
     # Musik: läuft durch, taucht unter Julian ab (sidechain-ähnlich), Pausen laut spec "music_rests"
     mus = np.zeros((N, 2), np.float32); m = spec.get("music", {})
+    AK = _audiokit()
+    if AK and m.get("mode", "dramaturgie") == "dramaturgie":
+        # Spannungskurve (audiokit, 18.11.2026): Track je Kapitel aus assets/music, Wechsel spätestens alle ~70 s,
+        # Anschwellen vor Enthüllungen/Zahlen, kurze Stille bei großen Enthüllungen, Bogen pro Kapitel.
+        lib = os.path.join(REPO, "assets", "music")
+        plan = m.get("chapters") or []   # optional: ["ub_kaltstart_meer", "ub_system_puls", ...] – je Abschnitt (Einstieg + Kapitel)
+        rot = ["ub_system_puls", "ub_ausfall_dunkel", "ub_spannung_aufbau", "ub_system_puls", "ub_ausfall_dunkel"]
+        first = os.path.splitext(os.path.basename(m["file"]))[0] if m.get("file") else "ub_kaltstart_meer"
+        names = [first] + [plan[i + 1] if i + 1 < len(plan) else rot[i % len(rot)] for i in range(len(T.chapters))]
+        if len(T.chapters) >= 2 and not plan: names[-1] = "ub_aufloesung_weit"
+        alt = {"ub_system_puls": "ub_ausfall_dunkel", "ub_ausfall_dunkel": "ub_system_puls", "ub_spannung_aufbau": "ub_ausfall_dunkel",
+               "ub_kaltstart_meer": "ub_spannung_aufbau", "ub_aufloesung_weit": "ub_system_puls"}
+        def mp(n):
+            for d in (lib, f"{vid}/music"):
+                if os.path.exists(f"{d}/{n}.mp3"): return f"{d}/{n}.mp3"
+            return f"{lib}/{n}.mp3"
+        pools = [[mp(n), mp(alt.get(n, "ub_system_puls"))] for n in names]
+        chapters = [(0.0, None)] + [(c["t0"], c["title"], c["t1"] - 0.3) for c in T.chapters]
+        words = [(p["t0"] + w["s"], w["w"]) for p in T.parts.values() for w in p["words"]]
+        beats = [(o["t0"], "zahl", 3 if any(ch.isdigit() for ch in str(o.get("big", ""))) else 2) for o in ovs if o["type"] == "zahl"]
+        stim = [o["t0"] for o in ovs] + [s["t0"] for s in shots]
+        mus = AK.music_bed("unterbau", N, SR, voice.mean(1), T.total, chapters, words, pools, beats, stimuli=stim)
+        m = {}   # alter Ein-Track-Weg wird übersprungen
     if m:
         x = load(f"{vid}/{m['file']}"); x = np.concatenate([x]*(1+N//len(x)))[:N]; mus = x*m.get("gain", 0.5)
         env = np.abs(voice).mean(1); k = int(0.3*SR); env = np.convolve(env, np.ones(k)/k, "same")
@@ -251,6 +283,10 @@ def audio(vid, out):
     import scipy.io.wavfile as wf
     wf.write(tmp, SR, (np.clip(mix/max(1, np.abs(mix).max()/0.97), -1, 1)*32767).astype(np.int16))
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", tmp, "-af", "loudnorm=I=-14:TP=-1.5:LRA=11", "-ar", str(SR), out], check=True); os.remove(tmp)
+    if AK0:
+        wf.write(out + ".voice.wav", SR, voice[:int(T.total*SR)].astype(np.float32)); wf.write(out + ".music.wav", SR, mus[:int(T.total*SR)].astype(np.float32))
+        AK0.final_check(out, out + ".voice.wav", out + ".music.wav"); AK0.write_report(f"{vid}/ton_bericht.txt")
+        os.remove(out + ".voice.wav"); os.remove(out + ".music.wav")
 
 if __name__ == "__main__":
     vid = sys.argv[1]; args = sys.argv[2:]
