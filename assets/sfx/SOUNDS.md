@@ -1,6 +1,7 @@
 # Unterbau-Geräusche (assets/sfx)
 
-**Regel (Laurin 17.11.2026): Jeder Kanal hat seine eigenen Effekte.** Unterbau nutzt nur die Sounds in diesem Ordner, NICHT die Goldsmith-Bibliothek.
+**Update (Laurin 19.11.2026): Gemeinsame Sound-Bibliothek für alle Kanäle** – zusätzlich zu diesem Ordner dürfen alle Effekte aus `laurindesruelles-max/sound-bibliothek` genutzt werden, gefiltert nach dem Stilprofil des Kanals (README dort, `sk.py find … --channel <kanal>`). Musik bleibt kanal-eigen. Die Regel vom 17.11. („nur eigene Effekte“) gilt damit nicht mehr.
+~~**Regel (Laurin 17.11.2026): Jeder Kanal hat seine eigenen Effekte.** Unterbau nutzt nur die Sounds in diesem Ordner, NICHT die Goldsmith-Bibliothek.~~
 **Regel (Laurin 17.11.2026): Unterbau-Sounds NICHT mit Higgsfield erstellen.**
 Reihenfolge bei der Suche: (1) diese Liste → (2) SFX Kit auf GitHub (github.com/wyzowl/sfx-kit, 320 Sounds, CC0, git clone --depth 1) → (3) CC0 von SFXMint (Hugging Face flreey/sfxmint-cc0-sound-effects, sonst sfxmint.com) → (4) Laurin nach einem Sound aus seiner Sammlung mit ~1000 Effekten fragen. Ergebnis hier ablegen + Zeile ergänzen. Nie per Code erzeugen, nie mit Higgsfield. Musik gehört NICHT hierher (assets/music, nur eigene Unterbau-Musik).
 
