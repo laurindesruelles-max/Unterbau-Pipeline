@@ -248,6 +248,56 @@ def sfx_path(vid, name):
             if os.path.exists(f"{d}/{name}.{ext}"): return f"{d}/{name}.{ext}"
     raise FileNotFoundError(name)
 
+def music_kapitel(vid, spec, T, ovs, voice, N):
+    """Musik wie in Profi-Dokus (Laurin 19.11.2026, Messung gegen fern/Simplicissimus/Netflix): EIN durchgehendes Stück
+    pro Abschnitt (Einstieg + je Kapitel), weiche Überblendungen, läuft unter Kapitelkarten weiter (keine Löcher),
+    Ducking unter Julian, kleine Anschwellungen vor Enthüllungen, Stopps nur dort, wo die spec sie bewusst setzt.
+    spec["music"] = {"mode": "kapitel", "plan": [[track, startsek], …] (Einstieg, Kapitel 1 …), "gain": 0.5,
+                     "duck_db": 9, "rests": [[von, bis], …], "swell": [anker, …]}"""
+    m = spec["music"]; lib = os.path.join(REPO, "assets", "music"); g0 = m.get("gain", 0.5)
+    bounds = [0.0]+[c["t0"]+0.2 for c in T.chapters]+[T.total]
+    out = np.zeros((N, 2), np.float32); xf = int(2.0*SR)
+    for i in range(len(bounds)-1):
+        name, st = m["plan"][min(i, len(m["plan"])-1)]
+        x = load(f"{lib}/{name}.mp3" if os.path.exists(f"{lib}/{name}.mp3") else f"{vid}/music/{name}.mp3")[int(st*SR):]
+        a, b = int(bounds[i]*SR), int(bounds[i+1]*SR)+xf; n = min(b, N)-a
+        while len(x) < n:   # Schleife mit weicher Naht
+            y = load(f"{lib}/{name}.mp3"); f = min(xf, len(x)//4)
+            x = np.concatenate([x[:-f], x[-f:]*np.linspace(1, 0, f)[:, None]+y[:f]*np.linspace(0, 1, f)[:, None], y[f:]])
+        x = x[:n].copy(); fi = min(xf, n//3)
+        if i > 0: x[:fi] *= np.linspace(0, 1, fi)[:, None]
+        x[-fi:] *= np.linspace(1, 0, fi)[:, None]
+        out[a:a+n] += x
+    # Ducking unter der Stimme (weich), Musik in Sprechpausen etwas lauter
+    env = np.abs(voice).mean(1); k = int(0.25*SR); env = np.convolve(env, np.ones(k)/k, "same")
+    talk = np.clip(env/0.015, 0, 1); k2 = int(0.5*SR); talk = np.convolve(talk, np.ones(k2)/k2, "same")
+    gain = g0*10**(-m.get("duck_db", 9)*talk/20)
+    for s in m.get("swell", []):   # +4 dB in den 2,5 s vor einer Enthüllung
+        t = T.at(s); a = int((t-2.5)*SR); b = int(t*SR)
+        if a > 0: gain[a:b] *= np.linspace(1, 10**(m.get("swell_db", 6)/20), b-a)
+    for c in T.chapters:   # Kapitelkarte: keine Stimme → Musik trägt, deutlich lauter (Profi-Dokus: hier liegen die lautesten Momente)
+        a, b = int(c["t0"]*SR), int(c["t1"]*SR); f = int(0.6*SR)
+        boost = np.ones(b-a, np.float32)*10**(m.get("card_db", 7)/20); boost[:f] = np.linspace(1, boost[0], f); boost[-f:] = np.linspace(boost[0], 1, f)
+        gain[a:b] *= boost
+    for r in m.get("rests", []):
+        a, b = int(T.at(r[0])*SR), int(T.at(r[1])*SR); f = int(0.4*SR)
+        gain[a:b] *= 0.0; gain[max(0, a-f):a] *= np.linspace(1, 0, a-max(0, a-f)); gain[b:b+int(1.2*SR)] *= np.linspace(0, 1, len(gain[b:b+int(1.2*SR)]))
+    out *= gain[:, None]
+    fo = int(2.5*SR); end = int(T.total*SR); out[end-fo:end] *= np.linspace(1, 0, fo)[:, None]
+    return out
+
+def master(src, out, I=-14.0, TP=-2.0):
+    """Mastering ohne Dynamik-Quetschen (19.11.2026: loudnorm im dynamischen Modus machte LRA 2,9 LU – kein Moment
+    stach heraus). Stimme präsenter (+2 dB bei 2,5 kHz), dann lineare Verstärkung auf -14 LUFS und nur ein
+    Spitzenbegrenzer für die Peaks (Makro-Dynamik bleibt)."""
+    pre = "deesser=i=0.25:m=0.5:f=0.5,bass=g=3:f=70:w=0.7,equalizer=f=2500:t=q:w=1.2:g=3.5,treble=g=1.0:f=6000:w=0.7"   # Messung gegen Profi-Dokus: mehr Sub, Mitten, Präsenz
+    r = subprocess.run(["ffmpeg", "-hide_banner", "-i", src, "-af", f"{pre},loudnorm=print_format=json", "-f", "null", "-"],
+                       capture_output=True, text=True).stderr
+    js = json.loads(r[r.rindex("{"):r.rindex("}")+1]); g = I-float(js["input_i"])
+    lim = 10**((TP-1.0)/20)   # AAC-Kodierung erzeugt sonst Überschwinger über 0 dBTP
+    af = f"{pre},volume={g:.2f}dB,alimiter=limit={lim:.4f}:attack=3:release=60:level=disabled,aresample=192000,alimiter=limit={lim:.4f}:attack=1:release=30:level=disabled"
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", src, "-af", af, "-ar", str(SR), out], check=True)
+
 def audio(vid, out):
     spec, T, shots, ovs = build(vid); N = int(T.total*SR)+SR
     voice = np.zeros((N, 2), np.float32); fx = np.zeros((N, 2), np.float32)
@@ -261,12 +311,16 @@ def audio(vid, out):
     for e in spec.get("sfx", []): ev.append((T.at(e[0]), e[1], e[2] if len(e) > 2 else 0.6))
     if spec.get("cut"):   # Schnitt-Sounds: Szenenwechsel leiser Whoosh, Grafiken Daten-Sound
         for s in shots[1:]:
-            if not s.get("sub") and not s.get("black"): ev.append((s["t0"]-0.05, spec.get("cut_sound", "whoosh_slow_soft"), spec.get("cut_gain", 0.15)))
+            if s.get("black"): continue
+            g = spec.get("subcut_gain", 0.0) if s.get("sub") else spec.get("cut_gain", 0.15)
+            if g > 0: ev.append((s["t0"]-0.05, spec.get("cut_sound", "whoosh_slow_soft"), g))
         for o in ovs:   # Grafik kommt rein: tiefer Whoosh; Zahl/Balken landet: tiefer Impact (Laurin 19.11.: kein Piep-/Quietsch-Sound)
             if o["type"] in M.FULL+("tage", "ablauf"): ev.append((o["t0"]-0.08, spec.get("graphic_sound", "diagram_whoosh"), 0.35))
             if o["type"] in ("zaehler", "balken"): ev.append((o["t0"]+(1.55 if o["type"] == "zaehler" else 1.25), spec.get("number_sound", "reveal_impact_01"), 0.3))
     AK0 = _audiokit()
     if AK0: ev = AK0.clean_events(ev, "unterbau", os.path.join(REPO, "assets", "sfx"), extra_dirs=(f"{vid}/sfx", os.environ.get("SFX", "/home/claude/unterbau-work/sfx")))
+    for e in spec.get("hits", []):   # bewusste Höhepunkte: nach dem Aufräumen, Lautstärke bleibt (Messung: kein Moment stach heraus)
+        ev.append((T.at(e[0]), e[1], e[2] if len(e) > 2 else 0.8))
     # Zähler wie bei Goldsmith (Laurin 19.11.2026): beim Hochzählen ticken (ease-out, wird langsamer), danach tiefer Impact.
     # Nach dem Aufräumen eingefügt, weil die Ticks bewusst dicht sind.
     for o in ovs:
@@ -278,6 +332,7 @@ def audio(vid, out):
             for i, b in enumerate(o["bars"]):
                 for k in range(8):
                     f = k/8; tt = 1-(1-f)**(1/3); ev.append((o["t0"]+0.3+0.07*i+0.9*tt, spec.get("tick_sound", "tick"), 0.22*(1-0.4*f)))
+    json.dump(sorted([[round(t, 2), n, round(g, 2)] for t, n, g in ev]), open(f"{vid}/ton_events.json", "w"))   # zum Nachhören/Prüfen
     for t, name, g in ev: put(fx, load(sfx_path(vid, name)), t, g)
     for e in spec.get("amb", []):   # Raumklang: [von, bis, name, gain]
         t0, t1 = T.at(e[0]), T.at(e[1]); x = load(sfx_path(vid, e[2])); n = int((t1-t0)*SR)
@@ -285,8 +340,10 @@ def audio(vid, out):
         x[:f] *= np.linspace(0, 1, f)[:, None]; x[-f:] *= np.linspace(1, 0, f)[:, None]; put(fx, x, t0, e[3])
     # Musik: läuft durch, taucht unter Julian ab (sidechain-ähnlich), Pausen laut spec "music_rests"
     mus = np.zeros((N, 2), np.float32); m = spec.get("music", {})
+    if m.get("mode") == "kapitel":
+        mus = music_kapitel(vid, spec, T, ovs, voice, N); m = {}
     AK = _audiokit()
-    if AK and m.get("mode", "dramaturgie") == "dramaturgie":
+    if AK and m and m.get("mode", "dramaturgie") == "dramaturgie":
         # Spannungskurve (audiokit, 18.11.2026): Track je Kapitel aus assets/music, Wechsel spätestens alle ~70 s,
         # Anschwellen vor Enthüllungen/Zahlen, kurze Stille bei großen Enthüllungen, Bogen pro Kapitel.
         lib = os.path.join(REPO, "assets", "music")
@@ -322,7 +379,7 @@ def audio(vid, out):
     tmp = out+".raw.wav"
     import scipy.io.wavfile as wf
     wf.write(tmp, SR, (np.clip(mix/max(1, np.abs(mix).max()/0.97), -1, 1)*32767).astype(np.int16))
-    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", tmp, "-af", "loudnorm=I=-14:TP=-1.5:LRA=11", "-ar", str(SR), out], check=True); os.remove(tmp)
+    master(tmp, out); os.remove(tmp)
     if AK0:
         wf.write(out + ".voice.wav", SR, voice[:int(T.total*SR)].astype(np.float32)); wf.write(out + ".music.wav", SR, mus[:int(T.total*SR)].astype(np.float32))
         AK0.final_check(out, out + ".voice.wav", out + ".music.wav"); AK0.write_report(f"{vid}/ton_bericht.txt")

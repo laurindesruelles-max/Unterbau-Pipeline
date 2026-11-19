@@ -4,7 +4,11 @@
  "tail": 2.0,
  "cut": 3.4,
  "text_sound": "whoosh_slow_soft",
- "text_gain": 0.28,
+ "text_gain": 0.22,
+ "graphic_sound": "ub_whoosh",
+ "number_sound": "sub_drop",
+ "cut_gain": 0.16,
+ "subcut_gain": 0.08,
  "parts": [
   {
    "id": 1,
@@ -1706,6 +1710,33 @@
   [
    [
     1,
+    "Im Lager dahinter",
+    0.1
+   ],
+   "sub_drop",
+   0.35
+  ],
+  [
+   [
+    6,
+    "Reis",
+    0.1
+   ],
+   "sub_drop",
+   0.35
+  ],
+  [
+   [
+    7,
+    "Am Steuer",
+    0.1
+   ],
+   "sub_drop",
+   0.3
+  ],
+  [
+   [
+    1,
     "END",
     0.1
    ],
@@ -1792,6 +1823,53 @@
    ],
    "ub_whoosh",
    0.45
+  ]
+ ],
+ "hits": [
+  [
+   [
+    1,
+    "Im Lager dahinter",
+    0.05
+   ],
+   "sub_drop",
+   0.9
+  ],
+  [
+   [
+    3,
+    "neun Millionen",
+    0.1
+   ],
+   "ub_hit",
+   0.7
+  ],
+  [
+   [
+    6,
+    "Reis",
+    0.05
+   ],
+   "sub_drop",
+   0.9
+  ],
+  [
+   [
+    6,
+    "Verteilt wird",
+    0.0
+   ],
+   "ub_hit",
+   0.8
+  ],
+  [
+   [
+    7,
+    "Am Steuer",
+    0.05
+   ],
+   "sub_drop",
+   0.8
   ]
  ],
  "amb": [
@@ -1931,15 +2009,70 @@
   ]
  ],
  "music": {
-  "file": "music/ub_kaltstart_meer.mp3",
-  "mode": "dramaturgie",
-  "chapters": [
-   "ub_kaltstart_meer",
-   "ub_system_puls",
-   "ub_ausfall_dunkel",
-   "ub_system_puls",
-   "ub_spannung_aufbau",
-   "ub_aufloesung_weit"
+  "mode": "kapitel",
+  "gain": 0.5,
+  "duck_db": 9,
+  "plan": [
+   [
+    "ub_kaltstart_meer",
+    0
+   ],
+   [
+    "ub_kaltstart_meer",
+    46
+   ],
+   [
+    "ub_ausfall_dunkel",
+    0
+   ],
+   [
+    "ub_kaltstart_meer",
+    0
+   ],
+   [
+    "ub_spannung_aufbau",
+    20
+   ],
+   [
+    "ub_aufloesung_weit",
+    0
+   ]
+  ],
+  "rests": [
+   [
+    [
+     1,
+     "END",
+     0.05
+    ],
+    [
+     1,
+     "END",
+     0.6
+    ]
+   ]
+  ],
+  "swell": [
+   [
+    1,
+    "Im Lager dahinter"
+   ],
+   [
+    3,
+    "neun Millionen"
+   ],
+   [
+    6,
+    "Reis"
+   ],
+   [
+    6,
+    "Verteilt wird"
+   ],
+   [
+    7,
+    "Am Steuer"
+   ]
   ]
  }
 }

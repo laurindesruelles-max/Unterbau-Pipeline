@@ -131,7 +131,7 @@ ov.append({"type":"tage","at":[6,"Tag drei"],"dur":5.0,"n":3,"items":["Regale le
 ov.append({"type":"ablauf","at":[6,"Bleibt eine"],"dur":13.0,"steps":[["Notreserve",[6,"Bleibt"]],["über 150 Lager",[6,"Wie"]],["Lkw",[6,"Verteilt"]],["Menschen",[6,"Verteilt",0.6]]],"break":[2,[6,"Zum zweiten"]]})
 for o in ov:
     if o["type"]=="bauchbinde" and o["lines"][1]=="": o["lines"]=o["lines"][:1]
-spec={"titel":"Warum dein Supermarkt nach 3 Tagen leer wäre","lead":0.4,"tail":2.0,"cut":3.4,"text_sound":"whoosh_slow_soft","text_gain":0.28,
+spec={"titel":"Warum dein Supermarkt nach 3 Tagen leer wäre","lead":0.4,"tail":2.0,"cut":3.4,"text_sound":"whoosh_slow_soft","text_gain":0.22,"graphic_sound":"ub_whoosh","number_sound":"sub_drop","cut_gain":0.16,"subcut_gain":0.08,
  "parts":[{"id":1,"audio":"audio/1.mp3","words":"words/w1.json","gap_after":5.4},
           {"id":2,"audio":"audio/2.mp3","words":"words/w2.json","gap_after":0.6},
           {"chapter":{"n":1,"title":"Die Kette in der Nacht","pause":4.5}},
@@ -147,11 +147,12 @@ spec={"titel":"Warum dein Supermarkt nach 3 Tagen leer wäre","lead":0.4,"tail":
  "shots":shots,
  "title":{"at":[1,"END",0.6],"dur":4.6,"claim":"Verstehen, wie die Welt funktioniert"},
  "overlays":ov,
- "sfx":[[[1,"Im Lager dahinter",-2.0],"ub_riser",0.6],[[1,"Im Lager dahinter",0.0],"ub_whoosh",0.5],
+ "sfx":[[[1,"Im Lager dahinter",-2.0],"ub_riser",0.6],[[1,"Im Lager dahinter",0.0],"ub_whoosh",0.5],[[1,"Im Lager dahinter",0.1],"sub_drop",0.35],[[6,"Reis",0.1],"sub_drop",0.35],[[7,"Am Steuer",0.1],"sub_drop",0.3],
         [[1,"END",0.1],"ub_drop",0.8],[[1,"END",0.6],"ub_hit",0.6],
         [[6,"Reis",-2.0],"ub_riser",0.6],[[6,"Reis",0.0],"ub_whoosh",0.5],
         [[6,"Verteilt wird",-0.1],"ub_drop",0.6],[[3,"In Deutschland werden",0.2],"car_pass",0.35],[[5,"Schon jetzt fährt",0.1],"car_pass_2",0.35],[[7,"Kein Grund",0.1],"car_pass",0.3],
         [[7,"Am Steuer",-1.8],"ub_riser",0.5],[[7,"Am Steuer",0.0],"ub_whoosh",0.45]],
+ "hits":[[[1,"Im Lager dahinter",0.05],"sub_drop",0.9],[[3,"neun Millionen",0.1],"ub_hit",0.7],[[6,"Reis",0.05],"sub_drop",0.9],[[6,"Verteilt wird",0.0],"ub_hit",0.8],[[7,"Am Steuer",0.05],"sub_drop",0.8]],
  "amb":[
   [[1,"Dein",-0.4],[1,"Drinnen räumt"],"amb_night",0.35],
   [[1,"Drinnen räumt"],[1,"Das ist ein"],"amb_factory",0.25],
@@ -166,7 +167,9 @@ spec={"titel":"Warum dein Supermarkt nach 3 Tagen leer wäre","lead":0.4,"tail":
   [[6,"Tag drei"],[6,"Aber dafür hat"],"amb_factory",0.2],
   [[7,"Heute Nacht"],[7,"END",1.5],"amb_night",0.3]
  ],
- "music":{"file":"music/ub_kaltstart_meer.mp3","mode":"dramaturgie",
-          "chapters":["ub_kaltstart_meer","ub_system_puls","ub_ausfall_dunkel","ub_system_puls","ub_spannung_aufbau","ub_aufloesung_weit"]}}
+ "music":{"mode":"kapitel","gain":0.5,"duck_db":9,
+          "plan":[["ub_kaltstart_meer",0],["ub_kaltstart_meer",46],["ub_ausfall_dunkel",0],["ub_kaltstart_meer",0],["ub_spannung_aufbau",20],["ub_aufloesung_weit",0]],
+          "rests":[[[1,"END",0.05],[1,"END",0.6]]],
+          "swell":[[1,"Im Lager dahinter"],[3,"neun Millionen"],[6,"Reis"],[6,"Verteilt wird"],[7,"Am Steuer"]]}}
 json.dump(spec,open("spec.json","w"),ensure_ascii=False,indent=1)
 print(len(shots),"shots",len(ov),"overlays")
