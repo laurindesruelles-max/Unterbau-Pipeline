@@ -264,9 +264,20 @@ def audio(vid, out):
             if not s.get("sub") and not s.get("black"): ev.append((s["t0"]-0.05, spec.get("cut_sound", "whoosh_slow_soft"), spec.get("cut_gain", 0.15)))
         for o in ovs:   # Grafik kommt rein: tiefer Whoosh; Zahl/Balken landet: tiefer Impact (Laurin 19.11.: kein Piep-/Quietsch-Sound)
             if o["type"] in M.FULL+("tage", "ablauf"): ev.append((o["t0"]-0.08, spec.get("graphic_sound", "diagram_whoosh"), 0.35))
-            if o["type"] in ("zaehler", "balken"): ev.append((o["t0"]+(1.4 if o["type"] == "zaehler" else 1.1), spec.get("number_sound", "reveal_impact_01"), 0.3))
+            if o["type"] in ("zaehler", "balken"): ev.append((o["t0"]+(1.55 if o["type"] == "zaehler" else 1.25), spec.get("number_sound", "reveal_impact_01"), 0.3))
     AK0 = _audiokit()
     if AK0: ev = AK0.clean_events(ev, "unterbau", os.path.join(REPO, "assets", "sfx"), extra_dirs=(f"{vid}/sfx", os.environ.get("SFX", "/home/claude/unterbau-work/sfx")))
+    # Zähler wie bei Goldsmith (Laurin 19.11.2026): beim Hochzählen ticken (ease-out, wird langsamer), danach tiefer Impact.
+    # Nach dem Aufräumen eingefügt, weil die Ticks bewusst dicht sind.
+    for o in ovs:
+        if o["type"] == "zaehler":
+            for k in range(16):
+                f = k/16; tt = 1-(1-f)**(1/3)   # Umkehrung von ease-out: gleichmäßige Zahlenschritte → Ticks werden langsamer
+                ev.append((o["t0"]+0.15+1.4*tt, spec.get("tick_sound", "tick"), 0.32*(1-0.4*f)))
+        if o["type"] == "balken":
+            for i, b in enumerate(o["bars"]):
+                for k in range(8):
+                    f = k/8; tt = 1-(1-f)**(1/3); ev.append((o["t0"]+0.3+0.07*i+0.9*tt, spec.get("tick_sound", "tick"), 0.22*(1-0.4*f)))
     for t, name, g in ev: put(fx, load(sfx_path(vid, name)), t, g)
     for e in spec.get("amb", []):   # Raumklang: [von, bis, name, gain]
         t0, t1 = T.at(e[0]), T.at(e[1]); x = load(sfx_path(vid, e[2])); n = int((t1-t0)*SR)
