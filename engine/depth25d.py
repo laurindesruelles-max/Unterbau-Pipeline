@@ -47,6 +47,7 @@ def frame(img, d, u, move="push", W=1920, H=1080):
     gx, gy = np.meshgrid(np.arange(W, dtype=np.float32), np.arange(H, dtype=np.float32))
     # Grundabbildung (ohne Parallaxe), Bildmitte fest
     X = w/2 + (gx-W/2)*w/(W*z); Y = h/2 + (gy-H/2)*h/(H*z)
+    X = X + m.get("ox", 0.0)*w; Y = Y + m.get("oy", 0.0)*h      # Ausschnitt um das Motiv (motion.split_shots)
     dd = cv2.remap(d, X, Y, cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)-0.35   # Hintergrund ~fest
     s = (e-0.5)
     # seitliche Kamerafahrt: nahe Dinge wandern stärker gegen die Fahrtrichtung
@@ -54,7 +55,8 @@ def frame(img, d, u, move="push", W=1920, H=1080):
     Y = Y - dd*m["dy"]*w*s*2 - m["dy"]*w*s*0.3
     # Dolly: nahe Dinge wachsen beim push schneller als der Hintergrund
     dz = (m["z1"]-m["z0"])*m["par"]*14*e*dd
-    X = w/2 + (X-w/2)/(1+dz); Y = h/2 + (Y-h/2)/(1+dz)
+    cxo, cyo = w/2 + m.get("ox", 0.0)*w, h/2 + m.get("oy", 0.0)*h
+    X = cxo + (X-cxo)/(1+dz); Y = cyo + (Y-cyo)/(1+dz)
     return cv2.remap(img, X, Y, cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)
 
 if __name__ == "__main__":

@@ -15,6 +15,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import depth25d as D
 import cinemagraph as CG
+import motion as M
 
 W, H, FPS, SR = 1920, 1080, 25, 48000
 ORANGE = (255, 122, 26); WHITE = (245, 245, 242); PANEL = (5, 14, 30)
@@ -92,6 +93,24 @@ def xsection(vid, s, u, lt, prog):
     out = a*(1-m)+b*m
     return np.clip(out+edge*np.array([210, 235, 245], np.float32)*0.55*math.sin(prog*math.pi), 0, 255)
 
+_CLIP = {}
+def clip_frame(vid, s, lt, u):
+    """echter Videoclip (Pixabay/Archiv) als Einstellung, mit leichtem Zoom und Unterbau-Grade"""
+    p = f"{vid}/{s['clip']}"
+    if p not in _CLIP:
+        if len(_CLIP) > 3: [c.release() for c in _CLIP.values()]; _CLIP.clear()
+        _CLIP[p] = cv2.VideoCapture(p)
+    cap = _CLIP[p]; fps = cap.get(cv2.CAP_PROP_FPS) or 24; n = int(cap.get(cv2.CAP_PROP_FRAME_COUNT)) or 1
+    idx = int((s.get("ss", 0)+lt*s.get("speed", 1.0))*fps) % n
+    if int(cap.get(cv2.CAP_PROP_POS_FRAMES)) != idx: cap.set(cv2.CAP_PROP_POS_FRAMES, idx)
+    ok, fr = cap.read()
+    if not ok: return np.zeros((H, W, 3), np.float32)
+    fr = cv2.resize(fr, (W, H))[..., ::-1].astype(np.float32)
+    z = 1.04+0.06*u; M2 = cv2.getRotationMatrix2D((W/2, H/2), 0, z); fr = cv2.warpAffine(fr, M2, (W, H), borderMode=cv2.BORDER_REFLECT)
+    g = fr.mean(axis=2, keepdims=True)   # Unterbau-Grade: entsättigt, kühl, Orange bleibt
+    fr = g+(fr-g)*0.72; fr = fr*np.array([0.92, 0.98, 1.06], np.float32)
+    return np.clip(fr*0.92, 0, 255)
+
 # ------------------------------------------------------------------ Overlays (Unterbau-Look)
 def panel(layer, box, a, radius=20):
     x0, y0, x1, y1 = box; p = Image.new("RGBA", layer.size, (0, 0, 0, 0)); d = ImageDraw.Draw(p)
@@ -158,9 +177,11 @@ def build(vid):
         s = dict(s); s["t0"] = T.at(s["at"]); shots.append(s)
     shots.sort(key=lambda s: s["t0"])
     for i, s in enumerate(shots): s["t1"] = shots[i+1]["t0"] if i+1 < len(shots) else T.total
+    if spec.get("cut"):   # Schnitt-Tempo (Laurin 19.11.2026): lange Einstellungen in Ausschnitte teilen
+        shots = M.split_shots(T, shots, spec["cut"], lambda k: image(vid, k)[1])
     ovs = []
     for o in spec.get("overlays", []):
-        o = dict(o); o["t0"] = T.at(o["at"]); o["t1"] = o["t0"]+max(2.5, o.get("dur", 3.0)); ovs.append(o)
+        o = dict(o); o["t0"] = T.at(o["at"]); o["t1"] = o["t0"]+max(2.5, o.get("dur", 3.0)); ovs.append(M.prepare(o, T))
     for c in T.chapters: ovs.append(dict(type="kapitel", t0=c["t0"], t1=c["t1"], n=c["n"], title=c["title"]))
     if spec.get("title"):
         ti = spec["title"]; t0 = T.at(ti["at"]); ovs.append(dict(type="titel", t0=t0, t1=t0+max(4.0, ti.get("dur", 4.2)), claim=ti.get("claim", "Verstehen, wie die Welt funktioniert")))
@@ -174,6 +195,7 @@ def check(T, shots, ovs):
 def render_frame(vid, T, shots, ovs, t, atmo):
     s = next((x for x in shots if x["t0"] <= t < x["t1"]), shots[-1]); lt = t-s["t0"]; u = lt/max(0.1, s["t1"]-s["t0"])
     if s.get("black"): fr = np.zeros((H, W, 3), np.float32)
+    elif s.get("clip"): fr = clip_frame(vid, s, lt, u)
     elif s.get("xsection"):
         r0 = T.at(s["reveal"]) - s["t0"] if s.get("reveal") else 0.6
         fr = xsection(vid, s, u, lt, (lt-r0)/s.get("reveal_dur", 1.3))
@@ -182,8 +204,8 @@ def render_frame(vid, T, shots, ovs, t, atmo):
     if not s.get("black"): fr = CG.screen(fr, s.get("img", "x"), lt, tuple(s.get("fx", [])))
     dim = s.get("dim", 0.0)
     for o in ovs:
-        if o["t0"] <= t < o["t1"] and o["type"] in ("kapitel", "titel", "videotitel"):
-            lo = t-o["t0"]; dim = max(dim, (0.72 if o["type"] == "kapitel" else 0.55)*ease(lo/0.4)*ease((o["t1"]-t)/0.4))
+        if o["t0"] <= t < o["t1"] and o["type"] in ("kapitel", "titel", "videotitel")+M.FULL:
+            lo = t-o["t0"]; dim = max(dim, (0.72 if o["type"] == "kapitel" else 0.84 if o["type"] in M.FULL else 0.55)*M.eout(lo/0.3)*ease((o["t1"]-t)/0.25))
     fr = fr*(1-dim)
     fr = finish(fr, t)
     layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
@@ -196,6 +218,7 @@ def render_frame(vid, T, shots, ovs, t, atmo):
         elif k == "kapitel": kapitelkarte(layer, lt, du, o["n"], o["title"])
         elif k == "titel": titelkarte(layer, lt, du, o["claim"])
         elif k == "videotitel": videotitel(layer, lt, du, o["lines"])
+        else: M.draw(layer, o, lt, du)
     im = Image.fromarray(np.clip(fr, 0, 255).astype(np.uint8)).convert("RGBA"); im.alpha_composite(layer)
     return np.asarray(im.convert("RGB"))
 
@@ -236,6 +259,11 @@ def audio(vid, out):
         if o["type"] in ("bauchbinde", "zahl"): ev.append((o["t0"], "ub_klick", 0.42))
     for c in T.chapters: ev.append((c["t0"]+0.15, spec.get("chapter_hit", "ub_hit"), 0.55))
     for e in spec.get("sfx", []): ev.append((T.at(e[0]), e[1], e[2] if len(e) > 2 else 0.6))
+    if spec.get("cut"):   # Schnitt-Sounds: Szenenwechsel leiser Whoosh, Grafiken Daten-Sound
+        for s in shots[1:]:
+            if not s.get("sub") and not s.get("black"): ev.append((s["t0"]-0.05, spec.get("cut_sound", "ub_whoosh"), 0.2))
+        for o in ovs:
+            if o["type"] in M.FULL+("tage", "ablauf"): ev.append((o["t0"], "ub_daten", 0.32))
     AK0 = _audiokit()
     if AK0: ev = AK0.clean_events(ev, "unterbau", os.path.join(REPO, "assets", "sfx"), extra_dirs=(f"{vid}/sfx", os.environ.get("SFX", "/home/claude/unterbau-work/sfx")))
     for t, name, g in ev: put(fx, load(sfx_path(vid, name)), t, g)

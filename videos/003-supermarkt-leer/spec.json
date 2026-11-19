@@ -2,6 +2,7 @@
  "titel": "Warum dein Supermarkt nach 3 Tagen leer wäre",
  "lead": 0.4,
  "tail": 2.0,
+ "cut": 3.4,
  "parts": [
   {
    "id": 1,
@@ -772,6 +773,17 @@
    ]
   },
   {
+   "img": "47",
+   "at": [
+    6,
+    "Sie liegt in"
+   ],
+   "move": "pull",
+   "fx": [
+    "fog"
+   ]
+  },
+  {
    "img": "48",
    "at": [
     6,
@@ -942,26 +954,6 @@
   },
   {
    "type": "zahl",
-   "big": "79 %",
-   "sub": "der Güter fahren per Lkw",
-   "at": [
-    3,
-    "Fast vier"
-   ],
-   "dur": 3.4
-  },
-  {
-   "type": "zahl",
-   "big": "9 Mio. t",
-   "sub": "pro Tag · ≈ 900 Eiffeltürme",
-   "at": [
-    3,
-    "neun Millionen"
-   ],
-   "dur": 3.4
-  },
-  {
-   "type": "zahl",
    "big": "40 Mrd. km",
    "sub": "Maut-Lkw pro Jahr",
    "at": [
@@ -991,18 +983,6 @@
     "vier Tage"
    ],
    "dur": 3.4
-  },
-  {
-   "type": "bauchbinde",
-   "lines": [
-    "Großbritannien, September 2000",
-    "Raffinerien blockiert"
-   ],
-   "at": [
-    4,
-    "Im September"
-   ],
-   "dur": 3.6
   },
   {
    "type": "zahl",
@@ -1054,19 +1034,7 @@
    ],
    "at": [
     4,
-    "Im März zweitausendzwanzig"
-   ],
-   "dur": 3.8
-  },
-  {
-   "type": "bauchbinde",
-   "lines": [
-    "Spanien, März 2022",
-    "Lkw-Streik, rund drei Wochen"
-   ],
-   "at": [
-    4,
-    "Im März zweitausendzweiundzwanzig"
+    "Zeitweise"
    ],
    "dur": 3.8
   },
@@ -1091,16 +1059,6 @@
     "Es sind"
    ],
    "dur": 3.8
-  },
-  {
-   "type": "zahl",
-   "big": "39 %",
-   "sub": "der Lkw-Fahrer sind 55+",
-   "at": [
-    5,
-    "Zwei von fünf"
-   ],
-   "dur": 3.4
   },
   {
    "type": "zahl",
@@ -1175,30 +1133,6 @@
    "dur": 4.0
   },
   {
-   "type": "bauchbinde",
-   "lines": [
-    "Tag 1",
-    "Mittag"
-   ],
-   "at": [
-    6,
-    "Tag eins"
-   ],
-   "dur": 3.0
-  },
-  {
-   "type": "bauchbinde",
-   "lines": [
-    "Tag 2",
-    "Tankstellen"
-   ],
-   "at": [
-    6,
-    "Tag zwei"
-   ],
-   "dur": 3.0
-  },
-  {
    "type": "zahl",
    "big": "> 14.000",
    "sub": "Tankstellen in Deutschland",
@@ -1217,17 +1151,6 @@
     "neunzig Tage"
    ],
    "dur": 3.4
-  },
-  {
-   "type": "bauchbinde",
-   "lines": [
-    "Tag 3"
-   ],
-   "at": [
-    6,
-    "Tag drei"
-   ],
-   "dur": 3.0
   },
   {
    "type": "zahl",
@@ -1262,18 +1185,6 @@
   {
    "type": "bauchbinde",
    "lines": [
-    "Notreserve des Bundes",
-    "Verteilung überwiegend per Lkw"
-   ],
-   "at": [
-    6,
-    "Verteilt wird"
-   ],
-   "dur": 4.0
-  },
-  {
-   "type": "bauchbinde",
-   "lines": [
     "Gesetz von 2017 (ESVG)",
     "Transporte anfordern · Höchstmengen"
    ],
@@ -1302,6 +1213,473 @@
     "zwanzig Liter"
    ],
    "dur": 3.4
+  },
+  {
+   "type": "ablauf",
+   "at": [
+    3,
+    "Ihr"
+   ],
+   "dur": 19.5,
+   "steps": [
+    [
+     "Molkerei",
+     [
+      3,
+      "Molkerei."
+     ]
+    ],
+    [
+     "Lkw",
+     [
+      3,
+      "Lkw"
+     ]
+    ],
+    [
+     "Zentrallager",
+     [
+      3,
+      "Zentrallager"
+     ]
+    ],
+    [
+     "Lkw",
+     [
+      3,
+      "nächsten"
+     ]
+    ],
+    [
+     "Filiale",
+     [
+      3,
+      "Rampe."
+     ]
+    ],
+    [
+     "Regal",
+     [
+      3,
+      "Regal."
+     ]
+    ]
+   ]
+  },
+  {
+   "type": "karte",
+   "at": [
+    3,
+    "In Deutschland werden"
+   ],
+   "dur": 5.2,
+   "view": [
+    5.6,
+    47.1,
+    15.3,
+    55.1
+   ],
+   "hl": [
+    "DE"
+   ],
+   "title": "Hauptrouten (Schema)",
+   "pins": [
+    [
+     9.99,
+     53.55,
+     ""
+    ],
+    [
+     13.4,
+     52.52,
+     ""
+    ],
+    [
+     11.58,
+     48.14,
+     ""
+    ],
+    [
+     8.68,
+     50.11,
+     ""
+    ],
+    [
+     6.96,
+     50.94,
+     ""
+    ]
+   ],
+   "routes": [
+    [
+     [
+      9.99,
+      53.55
+     ],
+     [
+      9.73,
+      52.37
+     ],
+     [
+      9.48,
+      51.31
+     ],
+     [
+      8.68,
+      50.11
+     ],
+     [
+      9.18,
+      48.78
+     ],
+     [
+      11.58,
+      48.14
+     ]
+    ],
+    [
+     [
+      7.47,
+      51.51
+     ],
+     [
+      6.96,
+      50.94
+     ],
+     [
+      8.68,
+      50.11
+     ]
+    ],
+    [
+     [
+      9.99,
+      53.55
+     ],
+     [
+      13.4,
+      52.52
+     ]
+    ],
+    [
+     [
+      13.4,
+      52.52
+     ],
+     [
+      12.37,
+      51.34
+     ],
+     [
+      11.08,
+      49.45
+     ],
+     [
+      11.58,
+      48.14
+     ]
+    ],
+    [
+     [
+      7.47,
+      51.51
+     ],
+     [
+      9.73,
+      52.37
+     ],
+     [
+      13.4,
+      52.52
+     ]
+    ]
+   ]
+  },
+  {
+   "type": "balken",
+   "at": [
+    3,
+    "Fast vier"
+   ],
+   "dur": 4.2,
+   "title": "So reisen Güter in Deutschland (2024)",
+   "bars": [
+    [
+     "Lkw",
+     79,
+     "%"
+    ],
+    [
+     "alle anderen",
+     21,
+     "%"
+    ]
+   ],
+   "quelle": "Quelle: Destatis, Anteil an der Gütermenge"
+  },
+  {
+   "type": "zaehler",
+   "at": [
+    3,
+    "Das sind jeden"
+   ],
+   "dur": 5.6,
+   "to": 9100000,
+   "unit": "t",
+   "sub": "Güter pro Tag per Lkw · ≈ 900 Eiffeltürme",
+   "quelle": "eigene Rechnung nach Destatis 2024"
+  },
+  {
+   "type": "karte",
+   "at": [
+    4,
+    "Großbritannien hat"
+   ],
+   "dur": 4.2,
+   "view": [
+    -11.0,
+    35.0,
+    21.0,
+    59.5
+   ],
+   "hl": [
+    "GB"
+   ],
+   "title": "Großbritannien, September 2000",
+   "pins": [
+    [
+     -1.5,
+     53.0,
+     "Raffinerien blockiert"
+    ]
+   ]
+  },
+  {
+   "type": "karte",
+   "at": [
+    4,
+    "Und Deutschland?"
+   ],
+   "dur": 3.2,
+   "view": [
+    -11.0,
+    35.0,
+    21.0,
+    59.5
+   ],
+   "hl": [
+    "DE"
+   ],
+   "title": "Deutschland, März 2020",
+   "pins": [
+    [
+     10.4,
+     51.2,
+     "Hamsterkäufe"
+    ]
+   ]
+  },
+  {
+   "type": "karte",
+   "at": [
+    4,
+    "Zwei Jahre später"
+   ],
+   "dur": 4.0,
+   "view": [
+    -11.0,
+    35.0,
+    21.0,
+    59.5
+   ],
+   "hl": [
+    "ES"
+   ],
+   "title": "Spanien, März 2022",
+   "pins": [
+    [
+     -3.7,
+     40.4,
+     "Lkw-Streik, rund 3 Wochen"
+    ]
+   ]
+  },
+  {
+   "type": "balken",
+   "at": [
+    5,
+    "Zwei von fünf"
+   ],
+   "dur": 5.5,
+   "title": "Anteil 55 Jahre und älter",
+   "bars": [
+    [
+     "Lkw-Fahrer",
+     39,
+     "%"
+    ],
+    [
+     "alle Berufe",
+     25,
+     "%"
+    ]
+   ],
+   "quelle": "Quelle: Destatis, Mikrozensus 2023"
+  },
+  {
+   "type": "ablauf",
+   "at": [
+    5,
+    "Denn zwischen"
+   ],
+   "dur": 16.0,
+   "steps": [
+    [
+     "Auftraggeber",
+     [
+      5,
+      "Auftraggeber"
+     ]
+    ],
+    [
+     "Spedition",
+     [
+      5,
+      "Spedition,"
+     ]
+    ],
+    [
+     "Subunternehmer",
+     [
+      5,
+      "Subunternehmer,"
+     ]
+    ],
+    [
+     "dessen Sub",
+     [
+      5,
+      "dessen"
+     ]
+    ],
+    [
+     "Fahrer",
+     [
+      5,
+      "unten"
+     ]
+    ]
+   ]
+  },
+  {
+   "type": "karte",
+   "at": [
+    5,
+    "Wie das im"
+   ],
+   "dur": 5.0,
+   "view": [
+    5.6,
+    47.1,
+    15.3,
+    55.1
+   ],
+   "hl": [
+    "DE"
+   ],
+   "title": "Frühjahr 2023",
+   "pins": [
+    [
+     8.66,
+     49.93,
+     "Rastplatz Gräfenhausen"
+    ]
+   ]
+  },
+  {
+   "type": "tage",
+   "at": [
+    6,
+    "Tag eins"
+   ],
+   "dur": 6.0,
+   "n": 1,
+   "items": [
+    "Frisches fehlt",
+    "Apotheken werden knapp"
+   ]
+  },
+  {
+   "type": "tage",
+   "at": [
+    6,
+    "Tag zwei"
+   ],
+   "dur": 6.5,
+   "n": 2,
+   "items": [
+    "erste Tankstellen leer",
+    "Müll bleibt liegen",
+    "Geldautomaten leer"
+   ]
+  },
+  {
+   "type": "tage",
+   "at": [
+    6,
+    "Tag drei"
+   ],
+   "dur": 5.0,
+   "n": 3,
+   "items": [
+    "Regale leer – überall"
+   ]
+  },
+  {
+   "type": "ablauf",
+   "at": [
+    6,
+    "Bleibt eine"
+   ],
+   "dur": 13.0,
+   "steps": [
+    [
+     "Notreserve",
+     [
+      6,
+      "Bleibt"
+     ]
+    ],
+    [
+     "über 150 Lager",
+     [
+      6,
+      "Wie"
+     ]
+    ],
+    [
+     "Lkw",
+     [
+      6,
+      "Verteilt"
+     ]
+    ],
+    [
+     "Menschen",
+     [
+      6,
+      "Verteilt",
+      0.6
+     ]
+    ]
+   ],
+   "break": [
+    2,
+    [
+     6,
+     "Zum zweiten"
+    ]
+   ]
   }
  ],
  "sfx": [
