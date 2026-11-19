@@ -3,6 +3,8 @@
  "lead": 0.4,
  "tail": 2.0,
  "cut": 3.4,
+ "text_sound": "whoosh_slow_soft",
+ "text_gain": 0.28,
  "parts": [
   {
    "id": 1,

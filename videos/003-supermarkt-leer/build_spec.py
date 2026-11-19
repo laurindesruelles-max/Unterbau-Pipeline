@@ -131,7 +131,7 @@ ov.append({"type":"tage","at":[6,"Tag drei"],"dur":5.0,"n":3,"items":["Regale le
 ov.append({"type":"ablauf","at":[6,"Bleibt eine"],"dur":13.0,"steps":[["Notreserve",[6,"Bleibt"]],["über 150 Lager",[6,"Wie"]],["Lkw",[6,"Verteilt"]],["Menschen",[6,"Verteilt",0.6]]],"break":[2,[6,"Zum zweiten"]]})
 for o in ov:
     if o["type"]=="bauchbinde" and o["lines"][1]=="": o["lines"]=o["lines"][:1]
-spec={"titel":"Warum dein Supermarkt nach 3 Tagen leer wäre","lead":0.4,"tail":2.0,"cut":3.4,
+spec={"titel":"Warum dein Supermarkt nach 3 Tagen leer wäre","lead":0.4,"tail":2.0,"cut":3.4,"text_sound":"whoosh_slow_soft","text_gain":0.28,
  "parts":[{"id":1,"audio":"audio/1.mp3","words":"words/w1.json","gap_after":5.4},
           {"id":2,"audio":"audio/2.mp3","words":"words/w2.json","gap_after":0.6},
           {"chapter":{"n":1,"title":"Die Kette in der Nacht","pause":4.5}},

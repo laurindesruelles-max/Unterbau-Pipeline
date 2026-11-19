@@ -256,14 +256,15 @@ def audio(vid, out):
     for p in T.parts.values(): put(voice, load(f"{vid}/{p['audio']}"), p["t0"], 1.0)
     ev = []   # (t, name, gain) – erst sammeln, dann von audiokit aufräumen lassen, dann mischen
     for o in ovs:   # Einblendungen bekommen den Unterbau-eigenen Klick (assets/sfx/ub_klick)
-        if o["type"] in ("bauchbinde", "zahl"): ev.append((o["t0"], "ub_klick", 0.42))
+        if o["type"] in ("bauchbinde", "zahl"): ev.append((o["t0"], spec.get("text_sound", "ub_klick"), spec.get("text_gain", 0.42)))
     for c in T.chapters: ev.append((c["t0"]+0.15, spec.get("chapter_hit", "ub_hit"), 0.55))
     for e in spec.get("sfx", []): ev.append((T.at(e[0]), e[1], e[2] if len(e) > 2 else 0.6))
     if spec.get("cut"):   # Schnitt-Sounds: Szenenwechsel leiser Whoosh, Grafiken Daten-Sound
         for s in shots[1:]:
-            if not s.get("sub") and not s.get("black"): ev.append((s["t0"]-0.05, spec.get("cut_sound", "ub_whoosh"), 0.2))
-        for o in ovs:
-            if o["type"] in M.FULL+("tage", "ablauf"): ev.append((o["t0"], "ub_daten", 0.32))
+            if not s.get("sub") and not s.get("black"): ev.append((s["t0"]-0.05, spec.get("cut_sound", "whoosh_slow_soft"), spec.get("cut_gain", 0.15)))
+        for o in ovs:   # Grafik kommt rein: tiefer Whoosh; Zahl/Balken landet: tiefer Impact (Laurin 19.11.: kein Piep-/Quietsch-Sound)
+            if o["type"] in M.FULL+("tage", "ablauf"): ev.append((o["t0"]-0.08, spec.get("graphic_sound", "diagram_whoosh"), 0.35))
+            if o["type"] in ("zaehler", "balken"): ev.append((o["t0"]+(1.4 if o["type"] == "zaehler" else 1.1), spec.get("number_sound", "reveal_impact_01"), 0.3))
     AK0 = _audiokit()
     if AK0: ev = AK0.clean_events(ev, "unterbau", os.path.join(REPO, "assets", "sfx"), extra_dirs=(f"{vid}/sfx", os.environ.get("SFX", "/home/claude/unterbau-work/sfx")))
     for t, name, g in ev: put(fx, load(sfx_path(vid, name)), t, g)
