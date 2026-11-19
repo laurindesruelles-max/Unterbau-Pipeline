@@ -58,3 +58,9 @@ Grundlage: Auswertung erfolgreicher Ausreißer-Videos in allen 5 Nischen (vidIQ)
 **Prüfung vor dem Rendern** (in qa.md eintragen): Sekunde, ab der das Thema klar ist (≤ 5), Sekunde der offenen Frage (≤ 15), Versprechen ja/nein, Hook-Länge (Wörter ÷ 2,4 = Sekunden).
 **Nach 48 h:** Retention bei 30 s per vidIQ (audience_retention) ins Video-Log. Ziel ≥ 70 %. Unter 50 % → beim nächsten Video den Alternativ-Typ unten nehmen.
 **Unterbau-Hook:** Die Hook-Formel der SKRIPT_BIBEL.md bleibt verbindlich (Kaltstart, Neugier-Lücke, Selbstbezug, kein Erwartungsbruch). Ergänzung: Das Rätsel steht im ersten Satz und ist ohne Vorwissen verständlich (Vorbild: „Jede Minute zuckt das Stromnetz.“). **Länge bis zur Titelkarte ≤ 45 s.**
+
+## Sound-Bibliothek aus Laurins Sammlung (19.11.2026)
+- setup.sh lädt `bibliothek/unterbau/` (NUR die Effekte dieses Kanals) + `bibliothek/gemeinsam/` (Foley, Atmos, Waffen) nach /home/claude/sfx-bibliothek/bibliothek. Liste: `bibliothek/unterbau/LISTE.md` im Repo sound-mediathek.
+- **Reihenfolge bei der Sound-Wahl:** 1. eigene assets/sfx (abgenommen) → 2. Bibliothek (`import bibliothek as BIB; BIB.pick("unterbau", "whoosh", seed=<video-ordner>)`, `BIB.suche("auto")`) → 3. Hugging Face/SFXMint nur, wenn nichts passt.
+- `seed` = Video-Ordner: so wechseln die Sounds von Video zu Video, ohne dass es zufällig klingt. Alle Bibliotheks-Sounds sind geprüft (audit.py), Memes/geschützte/kommerzielle Sounds sind aussortiert.
+- Nie Effekte aus fremden Kanal-Ordnern nehmen; `reserve/` nur nach Rückfrage bei Laurin.
