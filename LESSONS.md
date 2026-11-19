@@ -36,6 +36,7 @@ Jeder Lauf liest diese Datei vor der Produktion und befolgt sie. Neue Erkenntnis
 |---|---|---|---|
 | 001 | Das Kabel am Meeresgrund, an dem dein Internet hängt | fertig + abgenommen (09.11.2026), 9:07 Min., 7 Shorts, ~215 Credits | mehr echte Bewegung statt Standbilder; Timing per Spracherkennung messen; Shorts mit eigenem Einstieg. Recherche: https://claude.ai/artifact/2YiRjq3QSPVMRZYjD9HfQV · Skript: https://claude.ai/artifact/D1k4smGrysZTUVJmhkKNDH |
 | 002 | Was passiert, wenn deine Karte plötzlich nicht mehr geht | produziert (v2, 6 Shorts), Laurin: zu langweilig | daraus Kino-Stil + Skript-Bibel. Recherche: https://claude.ai/artifact/6sdhBxRn5mGdb1KuTEnWn3 · Skript: https://claude.ai/artifact/RtwMUcB9KcvoginUC1C2oP · Kino-Test-Drehbuch: https://claude.ai/artifact/1uAWKoP8jVQ7PySScZo2j2 |
+| 003 | Warum dein Supermarkt nach 3 Tagen leer wäre | produziert 19.11.2026, 9:53 Min., 6 Shorts, YouTube-Entwurf für 21.11. 19:00 (wartet auf Laurins „ja“) | **44,0 Credits** (Stimme 26,4 + 2 Korrektursätze 0,5 + Shorts-Sätze 2,85 + 58 Bilder 14,5; Musik/Geräusche 0). Thema von Laurin gewählt (Nr. 2). Kritiker-Agent: 28 Änderungen; Faktencheck: Spanien-Satz korrigiert (neu eingesprochen, gleiche Länge eingepasst). Drehbuch: https://claude.ai/artifact/B5673NgjsEXn2Juv8TPSGT |
 | Pilot | Seekabel-Kaltstart im neuen Look (ohne Kling) | 17.11.2026 Look-Test | siehe oben |
 
 ## Ton & Musik mit audiokit (Laurin 18.11.2026)
@@ -64,3 +65,14 @@ Grundlage: Auswertung erfolgreicher Ausreißer-Videos in allen 5 Nischen (vidIQ)
 - **Reihenfolge bei der Sound-Wahl:** 1. eigene assets/sfx (abgenommen) → 2. Bibliothek (`import bibliothek as BIB; BIB.pick("unterbau", "whoosh", seed=<video-ordner>)`, `BIB.suche("auto")`) → 3. Hugging Face/SFXMint nur, wenn nichts passt.
 - `seed` = Video-Ordner: so wechseln die Sounds von Video zu Video, ohne dass es zufällig klingt. Alle Bibliotheks-Sounds sind geprüft (audit.py), Memes/geschützte/kommerzielle Sounds sind aussortiert.
 - Nie Effekte aus fremden Kanal-Ordnern nehmen; `reserve/` nur nach Rückfrage bei Laurin.
+
+## Erkenntnisse Video 003 (19.11.2026)
+- Kosten real: Julian ≈ 3 Credits pro 1.000 Zeichen (8.750 Zeichen = 26,4). Mit 58 Bildern und 6 Shorts liegt ein 10-Min.-Video bei ~44 Credits – mehr Bilder oder neu eingesprochene Kapitel sprengen die Grenze. Shorts-Sätze kurz halten (~2,9 Credits für 12 Sätze).
+- Higgsfield-Guthaben wird von mehreren Kanälen geteilt: am 19.11. gingen parallel 65 Credits für Musik eines anderen Laufs ab. Vor großen Schritten `balance` + `transactions` prüfen.
+- gpt_image_2_6 liefert 1344×752; mit „gentle vignette“ malt es oft einen dunklen, abgerundeten Bildrand → alle Bilder vor dem Rendern 3 % beschneiden und auf 1920×1080 skalieren (in script.md beschrieben). Rate-Limit: höchstens 8 Bilder pro Batch.
+- Einzelne Sätze nachträglich korrigieren, ohne neu zu rendern: neuen Satz einsprechen, in die alte Lücke mit Stille einpassen (gleiche Länge), Wortzeiten neu, `dur` der alten words-Datei behalten, Ton neu mischen, mit dem fertigen Bild neu muxen.
+- Spracherkennung am fertigen Ton fand „Deutschland häldöl“ (verschluckt) → Satz umformuliert („lagert Erdöl“). Verbindungen wie „hält Erdöl“ vermeiden.
+- Rendern: 3 Abschnitte parallel auf 2 Kernen ≈ 45–57 Min. für 9:53. `--to` über das Ende hinaus rendert Leerlauf → beim Zusammenfügen mit `-t <Länge>` kappen.
+- Neues Werkzeug `engine/shorts.py` (Shorts aus dem fertigen Video: neuer Einstieg/Schluss, Wortzeit-Untertitel, Blur-Hintergrund, Schlusskarte).
+- mcp.vidiq.com ist vom Sandbox-Proxy gesperrt → Thumbnail erst per Higgsfield `media_upload` hochladen und die öffentliche URL an `vidiq_upload_image` geben.
+- Pixabay-Schlüssel war nicht verfügbar → alles über KI-Bilder (58) gelöst.

@@ -1,0 +1,68 @@
+UPLOAD-PAKET Unterbau 003 – Stand 19.11.2026
+
+TITEL (zum Kopieren):
+Warum dein Supermarkt nach 3 Tagen leer wäre
+
+ALTERNATIVTITEL (Test & Compare):
+1) Was passiert, wenn kein Lkw mehr fährt?
+2) Dein Supermarkt hat fast kein Lager
+
+FORMAT: Was wäre, wenn … (Gedankenexperiment)
+KATEGORIE: Bildung (categoryId 27)
+PLAYLIST (neu, Vorschlag): „Lieferketten & Logistik – was hinter deinem Alltag fährt“ – Beschreibung: „Wie Waren zu dir kommen, wer daran verdient und was passiert, wenn die Kette reißt.“
+TAGS: Supermarkt, Lieferkette, Lkw, Lkw-Fahrer, Fahrermangel, Logistik, Lebensmittelversorgung, Notvorrat, Notreserve, Krisenvorsorge, Vorrat anlegen, Hamsterkäufe, Was wäre wenn, Gedankenexperiment, Supply Chain, Gräfenhausen, Großbritannien Tankstellen 2000, BBK Vorrat, Dokumentation, Wissensvideo, Interessante Fakten, Unterbau
+THUMBNAILS: thumb_A.jpg („Nach 3 Tagen leer.“, Empfehlung), thumb_B.jpg („Ohne Lkw nur 3 Tage.“), thumb_C.jpg („Heute kommt keiner.“)
+VIDEO: Unterbau_003_Supermarkt_leer.mp4 (1080p) / Upload-Kopie Unterbau_003_upload.mp4
+KI-KENNZEICHNUNG: YouTube „Veränderte oder synthetische Inhalte“ = JA; TikTok/Instagram KI-Schalter an.
+BEZAHLTE WERBUNG: keine.
+
+BESCHREIBUNG:
+Dein Supermarkt hat fast kein Lager. Was passiert, wenn plötzlich kein Lkw mehr fährt? Ein Gedankenexperiment, Tag für Tag, mit echten Zahlen und echten Fällen: Großbritannien 2000 und 2021, Deutschland 2020, Spanien 2022 und der Fahrerstreik von Gräfenhausen.
+
+Wie viele Tage würdest du mit deinem Vorrat zu Hause durchhalten? Schreib es in die Kommentare.
+
+Kapitel
+0:00 Heute Nacht fährt kein Lkw
+0:46 Die Kette in der Nacht
+2:21 Es ist schon passiert
+4:18 Wer die Kette hält
+6:23 Tag drei
+8:40 Was bleibt
+
+Hinweis: Das Szenario ist ein Gedankenexperiment. Die Szenen in Gräfenhausen sind nachgestellt. Alle Bilder sind KI-generiert (Higgsfield), die Erzählerstimme ist synthetisch (KI-Stimme). Kennzeichnung nach Art. 50 EU-KI-Verordnung.
+
+Quellen
+Die Kette in der Nacht
+• Güterverkehr 2024 (Destatis): https://www.destatis.de/DE/Themen/Branchen-Unternehmen/Transport-Verkehr/Gueterverkehr/Tabellen/gueterbefoerderung-lr.html
+• Umweltbundesamt, Güterverkehr: https://www.umweltbundesamt.de/daten/umweltindikatoren/indikator-umweltfreundlicher-gueterverkehr
+• Toll Collect, Mautnetz und Lkw-Verkehr 2024: https://company.toll-collect.de/static/media/dokumente/report-mautnetz-und-lkw-verkehr/mautnetz-und-lkw-verkehr-2-halbjahr-2024.pdf
+• TAB-Bericht für den Bundestag (BT-Drs. 17/5672), S. 71–77: https://dserver.bundestag.de/btd/17/056/1705672.pdf
+• Eiffelturm, Gewicht: https://www.toureiffel.paris/en/the-monument/key-figures
+Es ist schon passiert
+• Großbritannien 2000, Unterhaus: https://api.parliament.uk/historic-hansard/commons/2000/nov/02/fuel-contingency-planning
+• CNN, 12.09.2000: https://money.cnn.com/2000/09/12/europe/oil_shortages/
+• BBC, 14.09.2000: https://news.bbc.co.uk/2/hi/uk_news/923405.stm
+• Großbritannien 2021, Regierung: https://www.gov.uk/government/news/military-finish-up-training-to-start-fuel-deliveries-as-government-extends-support-to-industry
+• Full Fact, Fahrermangel 2021: https://fullfact.org/economy/fuel-shortage-hgv-drivers/
+• Destatis, Hamsterkäufe 2020: https://www.destatis.de/EN/Press/2020/04/PE20_130_61.html
+• Bundestag, Sonntagsfahrverbot 2020: https://www.bundestag.de/webarchiv/presse/hib/2020_03/686978-686978
+• Spanien 2022: https://www.thedairysite.com/news/58299/spain-prevents-shortages-through-supermarket-rationing-2 und https://en.ara.cat/business/supermarkets-exceptionally-allowed-to-limit-hoarding_1_4320632.html
+Wer die Kette hält
+• Bundeskartellamt, 17.03.2021: https://www.bundeskartellamt.de/SharedDocs/Meldung/DE/Pressemitteilungen/2021/17_03_2021_EDEKA_Real.html
+• Destatis, Lkw-Fahrer 55+: https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/01/PD25_N001_13.html
+• BGL, Fahrermangel (Jan. 2026): https://www.bgl-ev.de/wp-content/uploads/simple-file-list/BGL-Verbandspositionen/2026-01_Verbaendeinitiative-Fahrermangel_final.pdf
+• BALM, Mautverkehr 2024: https://transport-online.de/sites/default/files/public/data-news/pm-07-25-balm-mautverkehr-kompakt-jahresausgabe-2024.pdf
+• Gräfenhausen: https://www.verkehrsrundschau.de/nachrichten/transport-logistik/sprecher-einigung-in-fernfahrerstreik-in-suedhessen-3367453 und https://www.verkehrsrundschau.de/nachrichten/vermischtes/graefenhausen-wochenlanger-fahrerstreik-auf-autobahnraststaette-beendet-3441048
+Tag drei
+• AOK, Pharmagroßhandel: https://www.aok.de/pp/fileadmin/medienbibliothek/AOK-Radioservice/Politische_Stichworte/Manuskripte/politisches_stichwort_pharmagrosshandel_062020.pdf
+• American Trucking Associations, „When Trucks Stop, America Stops“: https://www.trucking.org/sites/default/files/2019-12/When%20Trucks%20Stop%20America%20Stops.pdf
+• Tankstellenmarkt 2024: https://www.sprit-plus.de/downloadfile/3669939/tankstellenmarkt-2024.pdf
+• Erdölbevorratung: https://www.bundestag.de/presse/hib/kurzmeldungen-1127456
+• Notreserve (BLE): https://www.ernaehrungsvorsorge.de/staatliche-vorsorge/lagerhaltung und https://www.ernaehrungsvorsorge.de/staatliche-vorsorge/haeufig-gestellte-fragen-faq
+Was bleibt
+• Ernährungssicherstellungs- und -vorsorgegesetz: https://www.gesetze-im-internet.de/esvg/BJNR077210017.html
+• BBK, Vorrat anlegen: https://www.bbk.bund.de/DE/Warnung-Vorsorge/Vorsorge/So-koennen-Sie-sich-vorbereiten/Bevorraten/bevorraten_node.html
+
+Musik: eigene Unterbau-Musik. Geräusche: CC0 (Sound-Bibliothek des Kanals).
+
+#Unterbau #Supermarkt #Lieferkette

@@ -39,5 +39,6 @@ Ein neues Video geht aus **jedem** Claude-Chat mit dem Skill `unterbau-video` (R
 | `engine/stock.py`, `engine/sources.py` | echtes Videomaterial (Pixabay, Schlüssel bei Laurin) und Public-Domain-Archiv | 0 |
 | `engine/thumbnail.py` | Thumbnail-Vorlage | 0 |
 | `engine/qa.py` | Technik-Prüfung (Länge, Lautheit, Kontaktbogen) | 0 |
+| `engine/shorts.py` | 5–7 Shorts aus dem fertigen Video (neuer Einstieg/Schluss von Julian, Untertitel mit Wortzeiten, Schlusskarte) | nur die neuen Sätze |
 
 Credits pro Video: **Ziel 35–45, Obergrenze 45** wie Goldsmith/Meisterwerk (Stimme ~25, max. 60 Bilder = 15, Thumbnails ~1, Shorts-Sätze ~2). Keine KI-Videoclips, keine Musik pro Video (feste Bibliothek in assets/music), Geräusche kostenlos. Automatischer Lauf alle 2 Tage (Scheduled Task „Unterbau-Video alle 2 Tage“).

@@ -1,0 +1,1565 @@
+{
+ "titel": "Warum dein Supermarkt nach 3 Tagen leer wäre",
+ "lead": 0.4,
+ "tail": 2.0,
+ "parts": [
+  {
+   "id": 1,
+   "audio": "audio/1.mp3",
+   "words": "words/w1.json",
+   "gap_after": 5.4
+  },
+  {
+   "id": 2,
+   "audio": "audio/2.mp3",
+   "words": "words/w2.json",
+   "gap_after": 0.6
+  },
+  {
+   "chapter": {
+    "n": 1,
+    "title": "Die Kette in der Nacht",
+    "pause": 4.5
+   }
+  },
+  {
+   "id": 3,
+   "audio": "audio/3.mp3",
+   "words": "words/w3.json",
+   "gap_after": 0.6
+  },
+  {
+   "chapter": {
+    "n": 2,
+    "title": "Es ist schon passiert",
+    "pause": 4.5
+   }
+  },
+  {
+   "id": 4,
+   "audio": "audio/4.mp3",
+   "words": "words/w4.json",
+   "gap_after": 0.6
+  },
+  {
+   "chapter": {
+    "n": 3,
+    "title": "Wer die Kette hält",
+    "pause": 4.5
+   }
+  },
+  {
+   "id": 5,
+   "audio": "audio/5.mp3",
+   "words": "words/w5.json",
+   "gap_after": 0.6
+  },
+  {
+   "chapter": {
+    "n": 4,
+    "title": "Tag drei",
+    "pause": 4.5
+   }
+  },
+  {
+   "id": 6,
+   "audio": "audio/6.mp3",
+   "words": "words/w6.json",
+   "gap_after": 0.6
+  },
+  {
+   "chapter": {
+    "n": 5,
+    "title": "Was bleibt",
+    "pause": 4.5
+   }
+  },
+  {
+   "id": 7,
+   "audio": "audio/7.mp3",
+   "words": "words/w7.json",
+   "gap_after": 0.4
+  }
+ ],
+ "shots": [
+  {
+   "img": "01",
+   "at": [
+    1,
+    "Dein",
+    -0.4
+   ],
+   "move": "push",
+   "fx": [
+    "wet"
+   ],
+   "atmo": "dust"
+  },
+  {
+   "img": "02",
+   "at": [
+    1,
+    "Und heute Nacht"
+   ],
+   "move": "rise",
+   "fx": [
+    "wet"
+   ]
+  },
+  {
+   "img": "04",
+   "at": [
+    1,
+    "Wie lange"
+   ],
+   "move": "push",
+   "fx": [],
+   "atmo": "dust"
+  },
+  {
+   "img": "03",
+   "at": [
+    1,
+    "Fünf Uhr"
+   ],
+   "move": "left",
+   "fx": [
+    "wet",
+    "fog"
+   ]
+  },
+  {
+   "xsection": [
+    "06",
+    "06b"
+   ],
+   "at": [
+    1,
+    "Drinnen räumt"
+   ],
+   "reveal": [
+    1,
+    "Im Lager dahinter",
+    -0.3
+   ],
+   "reveal_dur": 1.6,
+   "waterline": 0.2,
+   "move": "push",
+   "fx": [
+    "wet"
+   ],
+   "fx_in": [
+    "fog"
+   ]
+  },
+  {
+   "img": "05",
+   "at": [
+    1,
+    "Wir gehen"
+   ],
+   "move": "right",
+   "fx": [],
+   "atmo": "dust"
+  },
+  {
+   "img": "07",
+   "at": [
+    1,
+    "Das ist ein"
+   ],
+   "move": "push",
+   "fx": [
+    "fog",
+    "wet"
+   ],
+   "atmo": "dust"
+  },
+  {
+   "img": "08",
+   "at": [
+    2,
+    "Um"
+   ],
+   "move": "push",
+   "fx": [
+    "fog"
+   ],
+   "atmo": "snow"
+  },
+  {
+   "img": "09",
+   "at": [
+    3,
+    "Ihr"
+   ],
+   "move": "right",
+   "fx": [
+    "wet"
+   ]
+  },
+  {
+   "img": "11",
+   "at": [
+    3,
+    "Ziel"
+   ],
+   "move": "orbit",
+   "fx": [
+    "fog"
+   ]
+  },
+  {
+   "img": "13",
+   "at": [
+    3,
+    "Dort kommt sie"
+   ],
+   "move": "push",
+   "fx": []
+  },
+  {
+   "img": "10",
+   "at": [
+    3,
+    "Dann geht es"
+   ],
+   "move": "push",
+   "fx": [
+    "cars"
+   ]
+  },
+  {
+   "img": "12",
+   "at": [
+    3,
+    "Das ist kein"
+   ],
+   "move": "push",
+   "fx": [],
+   "atmo": "dust"
+  },
+  {
+   "img": "14",
+   "at": [
+    3,
+    "In Deutschland werden"
+   ],
+   "move": "left",
+   "fx": [
+    "cars"
+   ]
+  },
+  {
+   "img": "15",
+   "at": [
+    3,
+    "Allein die"
+   ],
+   "move": "orbit",
+   "fx": []
+  },
+  {
+   "img": "16",
+   "at": [
+    3,
+    "Jetzt kommt der"
+   ],
+   "move": "push",
+   "fx": [
+    "wet"
+   ]
+  },
+  {
+   "img": "05",
+   "at": [
+    3,
+    "Und der Handel"
+   ],
+   "move": "right",
+   "fx": [],
+   "atmo": "dust"
+  },
+  {
+   "img": "17",
+   "at": [
+    3,
+    "Die Ware steht"
+   ],
+   "move": "push",
+   "fx": [],
+   "atmo": "dust"
+  },
+  {
+   "img": "18",
+   "at": [
+    3,
+    "Selbst in den"
+   ],
+   "move": "rise",
+   "fx": [
+    "fog"
+   ],
+   "atmo": "snow"
+  },
+  {
+   "img": "11",
+   "at": [
+    3,
+    "Das System ist"
+   ],
+   "move": "orbit",
+   "fx": [
+    "fog"
+   ]
+  },
+  {
+   "img": "03",
+   "at": [
+    3,
+    "Zurück an der"
+   ],
+   "move": "pull",
+   "fx": [
+    "wet",
+    "fog"
+   ]
+  },
+  {
+   "img": "19",
+   "at": [
+    3,
+    "Der Laden öffnet"
+   ],
+   "move": "push",
+   "fx": [
+    "rays"
+   ],
+   "atmo": "dust"
+  },
+  {
+   "img": "20",
+   "at": [
+    4,
+    "Klingt"
+   ],
+   "move": "push",
+   "fx": [
+    "fog"
+   ]
+  },
+  {
+   "img": "21",
+   "at": [
+    4,
+    "Nach wenigen"
+   ],
+   "move": "left",
+   "fx": [
+    "wet"
+   ]
+  },
+  {
+   "img": "22",
+   "at": [
+    4,
+    "Dann trifft es"
+   ],
+   "move": "push",
+   "fx": []
+  },
+  {
+   "img": "23",
+   "at": [
+    4,
+    "Andere Ketten"
+   ],
+   "move": "right",
+   "fx": [],
+   "atmo": "dust"
+  },
+  {
+   "img": "50",
+   "at": [
+    4,
+    "Danach arbeitet"
+   ],
+   "move": "pull",
+   "fx": [
+    "fog"
+   ]
+  },
+  {
+   "img": "24",
+   "at": [
+    4,
+    "Im Herbst"
+   ],
+   "move": "push",
+   "fx": [
+    "wet"
+   ],
+   "atmo": "rain"
+  },
+  {
+   "img": "21",
+   "at": [
+    4,
+    "Tankstellen laufen"
+   ],
+   "move": "right",
+   "fx": [
+    "wet"
+   ]
+  },
+  {
+   "img": "24",
+   "at": [
+    4,
+    "Rund hundert"
+   ],
+   "move": "pull",
+   "fx": [
+    "wet"
+   ],
+   "atmo": "rain"
+  },
+  {
+   "img": "25",
+   "at": [
+    4,
+    "Und Deutschland"
+   ],
+   "move": "push",
+   "fx": [],
+   "atmo": "dust"
+  },
+  {
+   "img": "26",
+   "at": [
+    4,
+    "Die Regierung hebt"
+   ],
+   "move": "left",
+   "fx": [
+    "cars",
+    "rays"
+   ]
+  },
+  {
+   "img": "27",
+   "at": [
+    4,
+    "Zwei Jahre später"
+   ],
+   "move": "right",
+   "fx": []
+  },
+  {
+   "img": "28",
+   "at": [
+    4,
+    "Teile der"
+   ],
+   "move": "push",
+   "fx": [],
+   "atmo": "dust"
+  },
+  {
+   "img": "29",
+   "at": [
+    4,
+    "Vier Fälle"
+   ],
+   "move": "push",
+   "fx": []
+  },
+  {
+   "img": "30",
+   "at": [
+    5,
+    "Am einen Ende"
+   ],
+   "move": "rise",
+   "fx": [
+    "screens"
+   ]
+  },
+  {
+   "img": "22",
+   "at": [
+    5,
+    "Von zehn Euro"
+   ],
+   "move": "left",
+   "fx": []
+  },
+  {
+   "img": "31",
+   "at": [
+    5,
+    "Am anderen Ende"
+   ],
+   "move": "push",
+   "fx": [
+    "wet"
+   ],
+   "atmo": "rain"
+  },
+  {
+   "img": "32",
+   "at": [
+    5,
+    "Zwei von fünf"
+   ],
+   "move": "push",
+   "fx": [
+    "rays"
+   ]
+  },
+  {
+   "img": "33",
+   "at": [
+    5,
+    "Der Branchenverband"
+   ],
+   "move": "left",
+   "fx": [
+    "wet",
+    "fog"
+   ]
+  },
+  {
+   "img": "26",
+   "at": [
+    5,
+    "Schon jetzt fährt"
+   ],
+   "move": "right",
+   "fx": [
+    "cars"
+   ]
+  },
+  {
+   "img": "34",
+   "at": [
+    5,
+    "Und hier wird"
+   ],
+   "move": "push",
+   "fx": [],
+   "atmo": "dust"
+  },
+  {
+   "img": "29",
+   "at": [
+    5,
+    "Spedition"
+   ],
+   "move": "push",
+   "fx": []
+  },
+  {
+   "img": "57",
+   "at": [
+    5,
+    "Wie das im"
+   ],
+   "move": "orbit",
+   "fx": []
+  },
+  {
+   "img": "35",
+   "at": [
+    5,
+    "Über sechzig"
+   ],
+   "move": "right",
+   "fx": []
+  },
+  {
+   "img": "56",
+   "at": [
+    5,
+    "Ihr Vorwurf"
+   ],
+   "move": "push",
+   "fx": [],
+   "atmo": "dust"
+  },
+  {
+   "img": "35",
+   "at": [
+    5,
+    "Sie streiken"
+   ],
+   "move": "pull",
+   "fx": []
+  },
+  {
+   "img": "36",
+   "at": [
+    5,
+    "Im Sommer"
+   ],
+   "move": "push",
+   "fx": [],
+   "atmo": "dust"
+  },
+  {
+   "img": "37",
+   "at": [
+    5,
+    "Das ist das"
+   ],
+   "move": "push",
+   "fx": [
+    "rays"
+   ],
+   "atmo": "dust"
+  },
+  {
+   "img": "02",
+   "at": [
+    5,
+    "Und genau diese"
+   ],
+   "move": "pull",
+   "fx": [
+    "wet"
+   ]
+  },
+  {
+   "img": "38",
+   "at": [
+    6,
+    "Tag eins"
+   ],
+   "move": "push",
+   "fx": []
+  },
+  {
+   "img": "39",
+   "at": [
+    6,
+    "Gleichzeitig"
+   ],
+   "move": "right",
+   "fx": [],
+   "atmo": "dust"
+  },
+  {
+   "img": "40",
+   "at": [
+    6,
+    "Für Kliniken"
+   ],
+   "move": "push",
+   "fx": []
+  },
+  {
+   "img": "41",
+   "at": [
+    6,
+    "Tag zwei"
+   ],
+   "move": "left",
+   "fx": [
+    "wet",
+    "fog"
+   ]
+  },
+  {
+   "img": "42",
+   "at": [
+    6,
+    "Dabei ist genug"
+   ],
+   "move": "orbit",
+   "fx": [
+    "fog"
+   ]
+  },
+  {
+   "img": "10",
+   "at": [
+    6,
+    "Zur Tankstelle"
+   ],
+   "move": "push",
+   "fx": [
+    "cars"
+   ]
+  },
+  {
+   "img": "43",
+   "at": [
+    6,
+    "Der Müll"
+   ],
+   "move": "push",
+   "fx": [
+    "wet"
+   ],
+   "atmo": "rain"
+  },
+  {
+   "img": "44",
+   "at": [
+    6,
+    "So steht es"
+   ],
+   "move": "push",
+   "fx": [
+    "wet"
+   ],
+   "atmo": "rain"
+  },
+  {
+   "img": "45",
+   "at": [
+    6,
+    "Tag drei"
+   ],
+   "move": "push",
+   "fx": [],
+   "atmo": "dust"
+  },
+  {
+   "img": "18",
+   "at": [
+    6,
+    "Eine Studie"
+   ],
+   "move": "pull",
+   "fx": [
+    "fog"
+   ],
+   "atmo": "snow"
+  },
+  {
+   "img": "45",
+   "at": [
+    6,
+    "Zwei Szenarien"
+   ],
+   "move": "pull",
+   "fx": [],
+   "atmo": "dust"
+  },
+  {
+   "xsection": [
+    "46",
+    "47"
+   ],
+   "at": [
+    6,
+    "Aber dafür hat"
+   ],
+   "reveal": [
+    6,
+    "Reis",
+    -0.2
+   ],
+   "reveal_dur": 1.6,
+   "waterline": 0.15,
+   "move": "push",
+   "fx": [
+    "fog"
+   ],
+   "fx_in": [
+    "fog"
+   ]
+  },
+  {
+   "img": "48",
+   "at": [
+    6,
+    "Bleibt eine"
+   ],
+   "move": "right",
+   "fx": [
+    "wet"
+   ]
+  },
+  {
+   "img": "07",
+   "at": [
+    6,
+    "Zum zweiten Mal"
+   ],
+   "move": "push",
+   "fx": [
+    "fog",
+    "wet"
+   ],
+   "atmo": "dust"
+  },
+  {
+   "img": "49",
+   "at": [
+    6,
+    "Und in Woche"
+   ],
+   "move": "left",
+   "fx": [
+    "fog"
+   ]
+  },
+  {
+   "img": "50",
+   "at": [
+    7,
+    "Hier halten"
+   ],
+   "move": "push",
+   "fx": [
+    "rays",
+    "fog"
+   ]
+  },
+  {
+   "img": "11",
+   "at": [
+    7,
+    "Ein Gesetz"
+   ],
+   "move": "orbit",
+   "fx": [
+    "fog"
+   ]
+  },
+  {
+   "img": "21",
+   "at": [
+    7,
+    "Aber Großbritannien"
+   ],
+   "move": "right",
+   "fx": [
+    "wet"
+   ]
+  },
+  {
+   "img": "51",
+   "at": [
+    7,
+    "Und was heißt"
+   ],
+   "move": "push",
+   "fx": [
+    "rays"
+   ],
+   "atmo": "dust"
+  },
+  {
+   "img": "52",
+   "at": [
+    7,
+    "Pro Person"
+   ],
+   "move": "push",
+   "fx": []
+  },
+  {
+   "img": "14",
+   "at": [
+    7,
+    "Kein Grund"
+   ],
+   "move": "left",
+   "fx": [
+    "cars"
+   ]
+  },
+  {
+   "xsection": [
+    "54",
+    "55"
+   ],
+   "at": [
+    7,
+    "Heute Nacht"
+   ],
+   "reveal": [
+    7,
+    "Am Steuer",
+    -0.2
+   ],
+   "reveal_dur": 1.6,
+   "waterline": 0.2,
+   "move": "push",
+   "fx": [
+    "wet"
+   ],
+   "fx_in": [
+    "fog"
+   ]
+  },
+  {
+   "img": "53",
+   "at": [
+    7,
+    "Jetzt weißt"
+   ],
+   "move": "push",
+   "fx": [
+    "wet",
+    "fog"
+   ]
+  }
+ ],
+ "title": {
+  "at": [
+   1,
+   "END",
+   0.6
+  ],
+  "dur": 4.6,
+  "claim": "Verstehen, wie die Welt funktioniert"
+ },
+ "overlays": [
+  {
+   "type": "hinweis",
+   "text": "Gedankenexperiment",
+   "at": [
+    1,
+    "Das ist ein"
+   ],
+   "dur": 4.6
+  },
+  {
+   "type": "videotitel",
+   "lines": [
+    "Warum dein Supermarkt",
+    "nach 3 Tagen leer wäre"
+   ],
+   "at": [
+    2,
+    "Um"
+   ],
+   "dur": 4.0
+  },
+  {
+   "type": "zahl",
+   "big": "79 %",
+   "sub": "der Güter fahren per Lkw",
+   "at": [
+    3,
+    "Fast vier"
+   ],
+   "dur": 3.4
+  },
+  {
+   "type": "zahl",
+   "big": "9 Mio. t",
+   "sub": "pro Tag · ≈ 900 Eiffeltürme",
+   "at": [
+    3,
+    "neun Millionen"
+   ],
+   "dur": 3.4
+  },
+  {
+   "type": "zahl",
+   "big": "40 Mrd. km",
+   "sub": "Maut-Lkw pro Jahr",
+   "at": [
+    3,
+    "vierzig Milliarden"
+   ],
+   "dur": 3.4
+  },
+  {
+   "type": "bauchbinde",
+   "lines": [
+    "Studie für den Bundestag (TAB)",
+    "kaum Lagerflächen in den Filialen"
+   ],
+   "at": [
+    3,
+    "Eine Studie"
+   ],
+   "dur": 4.0
+  },
+  {
+   "type": "zahl",
+   "big": "4 Tage",
+   "sub": "Frischware im Lager (Stand 2005)",
+   "at": [
+    3,
+    "vier Tage"
+   ],
+   "dur": 3.4
+  },
+  {
+   "type": "bauchbinde",
+   "lines": [
+    "Großbritannien, September 2000",
+    "Raffinerien blockiert"
+   ],
+   "at": [
+    4,
+    "Im September"
+   ],
+   "dur": 3.6
+  },
+  {
+   "type": "zahl",
+   "big": "3 von 4",
+   "sub": "Tankstellen ohne Sprit",
+   "at": [
+    4,
+    "drei von vier"
+   ],
+   "dur": 3.4
+  },
+  {
+   "type": "zahl",
+   "big": "+50 %",
+   "sub": "Absatz in zwei Tagen",
+   "at": [
+    4,
+    "die Hälfte"
+   ],
+   "dur": 3.4
+  },
+  {
+   "type": "bauchbinde",
+   "lines": [
+    "Großbritannien, Herbst 2021",
+    "Fahrermangel – die Armee fährt Tanklaster"
+   ],
+   "at": [
+    4,
+    "Im Herbst"
+   ],
+   "dur": 4.0
+  },
+  {
+   "type": "zahl",
+   "big": "5.000",
+   "sub": "Kurzzeit-Visa für Fahrer",
+   "at": [
+    4,
+    "Dazu kommen"
+   ],
+   "dur": 3.4
+  },
+  {
+   "type": "bauchbinde",
+   "lines": [
+    "Deutschland, März 2020",
+    "Mehl: bis +192 % Absatz"
+   ],
+   "at": [
+    4,
+    "Im März zweitausendzwanzig"
+   ],
+   "dur": 3.8
+  },
+  {
+   "type": "bauchbinde",
+   "lines": [
+    "Spanien, März 2022",
+    "Lkw-Streik, rund drei Wochen"
+   ],
+   "at": [
+    4,
+    "Im März zweitausendzweiundzwanzig"
+   ],
+   "dur": 3.8
+  },
+  {
+   "type": "zahl",
+   "big": "> 85 %",
+   "sub": "Lebensmittelhandel: vier Gruppen",
+   "at": [
+    5,
+    "fünfundachtzig"
+   ],
+   "dur": 3.4
+  },
+  {
+   "type": "bauchbinde",
+   "lines": [
+    "Bundeskartellamt",
+    "Edeka · Rewe · Schwarz-Gruppe · Aldi"
+   ],
+   "at": [
+    5,
+    "Es sind"
+   ],
+   "dur": 3.8
+  },
+  {
+   "type": "zahl",
+   "big": "39 %",
+   "sub": "der Lkw-Fahrer sind 55+",
+   "at": [
+    5,
+    "Zwei von fünf"
+   ],
+   "dur": 3.4
+  },
+  {
+   "type": "zahl",
+   "big": "> 70.000",
+   "sub": "fehlende Fahrer (Schätzung BGL)",
+   "at": [
+    5,
+    "siebzigtausend"
+   ],
+   "dur": 3.4
+  },
+  {
+   "type": "zahl",
+   "big": "≈ 50 %",
+   "sub": "der Maut-km: Lkw aus dem Ausland",
+   "at": [
+    5,
+    "jeden zweiten"
+   ],
+   "dur": 3.4
+  },
+  {
+   "type": "hinweis",
+   "text": "Szene nachgestellt",
+   "at": [
+    5,
+    "Gräfenhausen"
+   ],
+   "dur": 34.0
+  },
+  {
+   "type": "bauchbinde",
+   "lines": [
+    "Gräfenhausen (Hessen), Frühjahr 2023",
+    "über 60 Fahrer streiken"
+   ],
+   "at": [
+    5,
+    "Gräfenhausen"
+   ],
+   "dur": 4.0
+  },
+  {
+   "type": "zahl",
+   "big": "≈ 100.000 €",
+   "sub": "Lohnforderung zuletzt",
+   "at": [
+    5,
+    "hunderttausend"
+   ],
+   "dur": 3.4
+  },
+  {
+   "type": "bauchbinde",
+   "lines": [
+    "Sommer 2023",
+    "rund 80 Fahrer, ca. 30 im Hungerstreik"
+   ],
+   "at": [
+    5,
+    "Im Sommer"
+   ],
+   "dur": 4.0
+  },
+  {
+   "type": "hinweis",
+   "text": "Gedankenexperiment",
+   "at": [
+    6,
+    "Tag eins"
+   ],
+   "dur": 4.0
+  },
+  {
+   "type": "bauchbinde",
+   "lines": [
+    "Tag 1",
+    "Mittag"
+   ],
+   "at": [
+    6,
+    "Tag eins"
+   ],
+   "dur": 3.0
+  },
+  {
+   "type": "bauchbinde",
+   "lines": [
+    "Tag 2",
+    "Tankstellen"
+   ],
+   "at": [
+    6,
+    "Tag zwei"
+   ],
+   "dur": 3.0
+  },
+  {
+   "type": "zahl",
+   "big": "> 14.000",
+   "sub": "Tankstellen in Deutschland",
+   "at": [
+    6,
+    "vierzehntausend"
+   ],
+   "dur": 3.4
+  },
+  {
+   "type": "zahl",
+   "big": "90 Tage",
+   "sub": "Erdölvorrat (Importe)",
+   "at": [
+    6,
+    "neunzig Tage"
+   ],
+   "dur": 3.4
+  },
+  {
+   "type": "bauchbinde",
+   "lines": [
+    "Tag 3"
+   ],
+   "at": [
+    6,
+    "Tag drei"
+   ],
+   "dur": 3.0
+  },
+  {
+   "type": "zahl",
+   "big": "2–5 Tage",
+   "sub": "bis die Regale leer sind",
+   "at": [
+    6,
+    "zwei bis fünf"
+   ],
+   "dur": 3.4
+  },
+  {
+   "type": "zahl",
+   "big": "≈ 3 Tage",
+   "sub": "dann wäre dein Supermarkt leer",
+   "at": [
+    6,
+    "rund drei Tagen"
+   ],
+   "dur": 3.8
+  },
+  {
+   "type": "zahl",
+   "big": "> 150",
+   "sub": "geheime Lager der Notreserve",
+   "at": [
+    6,
+    "hundertfünfzig"
+   ],
+   "dur": 3.4
+  },
+  {
+   "type": "bauchbinde",
+   "lines": [
+    "Notreserve des Bundes",
+    "Verteilung überwiegend per Lkw"
+   ],
+   "at": [
+    6,
+    "Verteilt wird"
+   ],
+   "dur": 4.0
+  },
+  {
+   "type": "bauchbinde",
+   "lines": [
+    "Gesetz von 2017 (ESVG)",
+    "Transporte anfordern · Höchstmengen"
+   ],
+   "at": [
+    7,
+    "Ein Gesetz"
+   ],
+   "dur": 4.0
+  },
+  {
+   "type": "zahl",
+   "big": "10 Tage",
+   "sub": "Vorrat (Empfehlung BBK)",
+   "at": [
+    7,
+    "zehn Tage"
+   ],
+   "dur": 3.4
+  },
+  {
+   "type": "zahl",
+   "big": "20 Liter",
+   "sub": "Wasser pro Person für 10 Tage",
+   "at": [
+    7,
+    "zwanzig Liter"
+   ],
+   "dur": 3.4
+  }
+ ],
+ "sfx": [
+  [
+   [
+    1,
+    "Im Lager dahinter",
+    -2.0
+   ],
+   "ub_riser",
+   0.6
+  ],
+  [
+   [
+    1,
+    "Im Lager dahinter",
+    0.0
+   ],
+   "ub_whoosh",
+   0.5
+  ],
+  [
+   [
+    1,
+    "END",
+    0.1
+   ],
+   "ub_drop",
+   0.8
+  ],
+  [
+   [
+    1,
+    "END",
+    0.6
+   ],
+   "ub_hit",
+   0.6
+  ],
+  [
+   [
+    6,
+    "Reis",
+    -2.0
+   ],
+   "ub_riser",
+   0.6
+  ],
+  [
+   [
+    6,
+    "Reis",
+    0.0
+   ],
+   "ub_whoosh",
+   0.5
+  ],
+  [
+   [
+    6,
+    "Verteilt wird",
+    -0.1
+   ],
+   "ub_drop",
+   0.6
+  ],
+  [
+   [
+    3,
+    "In Deutschland werden",
+    0.2
+   ],
+   "car_pass",
+   0.35
+  ],
+  [
+   [
+    5,
+    "Schon jetzt fährt",
+    0.1
+   ],
+   "car_pass_2",
+   0.35
+  ],
+  [
+   [
+    7,
+    "Kein Grund",
+    0.1
+   ],
+   "car_pass",
+   0.3
+  ],
+  [
+   [
+    7,
+    "Am Steuer",
+    -1.8
+   ],
+   "ub_riser",
+   0.5
+  ],
+  [
+   [
+    7,
+    "Am Steuer",
+    0.0
+   ],
+   "ub_whoosh",
+   0.45
+  ]
+ ],
+ "amb": [
+  [
+   [
+    1,
+    "Dein",
+    -0.4
+   ],
+   [
+    1,
+    "Drinnen räumt"
+   ],
+   "amb_night",
+   0.35
+  ],
+  [
+   [
+    1,
+    "Drinnen räumt"
+   ],
+   [
+    1,
+    "Das ist ein"
+   ],
+   "amb_factory",
+   0.25
+  ],
+  [
+   [
+    4,
+    "Klingt"
+   ],
+   [
+    4,
+    "Nach wenigen"
+   ],
+   "amb_night",
+   0.3
+  ],
+  [
+   [
+    4,
+    "Dann trifft es"
+   ],
+   [
+    4,
+    "Andere Ketten"
+   ],
+   "amb_market",
+   0.3
+  ],
+  [
+   [
+    4,
+    "Im Herbst"
+   ],
+   [
+    4,
+    "Und Deutschland"
+   ],
+   "amb_rain",
+   0.3
+  ],
+  [
+   [
+    5,
+    "Am anderen Ende"
+   ],
+   [
+    5,
+    "Zwei von fünf"
+   ],
+   "amb_rain",
+   0.3
+  ],
+  [
+   [
+    5,
+    "Der Branchenverband"
+   ],
+   [
+    5,
+    "Und hier wird"
+   ],
+   "amb_night",
+   0.3
+  ],
+  [
+   [
+    6,
+    "Tag eins"
+   ],
+   [
+    6,
+    "Gleichzeitig"
+   ],
+   "amb_market",
+   0.3
+  ],
+  [
+   [
+    6,
+    "Der Müll"
+   ],
+   [
+    6,
+    "Tag drei"
+   ],
+   "amb_rain",
+   0.3
+  ],
+  [
+   [
+    6,
+    "Tag drei"
+   ],
+   [
+    6,
+    "Aber dafür hat"
+   ],
+   "amb_factory",
+   0.2
+  ],
+  [
+   [
+    7,
+    "Heute Nacht"
+   ],
+   [
+    7,
+    "END",
+    1.5
+   ],
+   "amb_night",
+   0.3
+  ]
+ ],
+ "music": {
+  "file": "music/ub_kaltstart_meer.mp3",
+  "mode": "dramaturgie",
+  "chapters": [
+   "ub_kaltstart_meer",
+   "ub_system_puls",
+   "ub_ausfall_dunkel",
+   "ub_system_puls",
+   "ub_spannung_aufbau",
+   "ub_aufloesung_weit"
+  ]
+ }
+}
