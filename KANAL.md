@@ -37,7 +37,7 @@ Verbindlich ist die Skript-Bibel: `SKRIPT_BIBEL.md` (Kopie des Claude-Docs https
 - Nachgestellte Szenen als „Szene nachgestellt“, Gedankenexperimente als „Gedankenexperiment“ kennzeichnen (Ton + Einblendung). Auch in fiktiven Szenen sind alle Fakten belegt.
 
 ## Stimme und Timing
-- Feste Erzählerstimme: Julian (Higgsfield `text2speech_v2`, variant `elevenlabs`, voice_type `preset`, voice_id `95429266-c0ac-4137-a209-63b8812b0f23`). Pro Kapitel eine Datei, kurze Hook-Sätze dürfen einzeln eingesprochen werden. Zahlen und schwierige Namen ausschreiben („achtzehnhundertachtundfünfzig“, „C-Lion-1“).
+- Feste Erzählerstimme: Julian, **nur noch über ElevenLabs v4 Turbo** (Laurin 19.11.2026: alle Kanäle nur ElevenLabs-Stimmen, die Higgsfield-Stimmen sprechen nicht alles sauber aus): `generate_audio_batch`, model `elevenlabs_v4_turbo`, `dialogue: [{text, voice_type: "preset", voice_id: "95429266-c0ac-4137-a209-63b8812b0f23"}]`, `use_unlim: false`. NICHT mehr `text2speech_v2`. Kosten ≈ 3 Credits pro 1.000 Zeichen. Pro Kapitel eine Datei, kurze Hook-Sätze dürfen einzeln eingesprochen werden. Zahlen und schwierige Namen ausschreiben („achtzehnhundertachtundfünfzig“, „C-Lion-1“).
 - Wortgenaues Timing mit Parakeet (sherpa-onnx, kostenlos): `engine/wordtimes.py`. Satzzeiten werden NIE geschätzt.
 - Mindestdauern: Kapitelkarte = eigene Pause 4,5 s, mind. 4 s sichtbar; Titelkarte mind. 4 s; Texteinblendung mind. 2,5 s; jedes Bild mind. 2 s (`engine/unterbau.py check`).
 

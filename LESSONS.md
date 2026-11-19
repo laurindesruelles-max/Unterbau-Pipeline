@@ -13,6 +13,8 @@ Jeder Lauf liest diese Datei vor der Produktion und befolgt sie. Neue Erkenntnis
 - Shorts brauchen einen eigenen Einstieg ohne Vorwissen.
 - Musik ist kanal-eigen: nie Goldsmith-/Meisterwerk-Musik verwenden (Laurin 17.11.2026).
 - **Kosten wie Goldsmith/Meisterwerk (Laurin 17.11.2026):** 35–45 Credits pro Video, nie mehr als 45. KEINE KI-Videoclips (auch nicht für den Höhepunkt), KEINE neue Musik pro Video (nur assets/music; neue Tracks nur auf Laurins ausdrücklichen Wunsch), höchstens 60 KI-Bilder (Rest kostenlos über Pixabay/Public Domain), Geräusche kostenlos (gemeinsame Bibliothek → assets/sfx → Hugging Face CC0; mirelo nur letzte Wahl). Unter 45 Credits Guthaben: Laurin bitten aufzuladen und stoppen.
+- **Stimme (Laurin 19.11.2026):** Julian nur noch über ElevenLabs v4 Turbo (`elevenlabs_v4_turbo`, Preset-Voice 95429266-…). Gilt für alle Kanäle: nur ElevenLabs-Stimmen, keine Higgsfield-`text2speech_v2`-Stimmen mehr (Aussprache). Eleven v4 (voll) wäre ~4,6 Credits/1.000 Zeichen (~40 pro Video) → Turbo gewählt.
+- **Lebendiger Schnitt (Laurin 19.11.2026: „so langweilig“):** Standbilder mit langsamer Fahrt und 8 s pro Bild sind zu ruhig. Schnitt alle 3–4 s, animierte Grafiken (Karten, Zähler, Ablauf-Ketten), echte Pixabay-Clips, mehr Bewegung im Bild und Schnitt-Sounds.
 - **Rhythmus (Laurin 17.11.2026):** alle 2 Tage ein Video wie bei Goldsmith und Meisterwerk.
 
 ## Umstellung 17.11.2026 (Laurin): GitHub statt Claude-Projekt, günstig statt Kling
