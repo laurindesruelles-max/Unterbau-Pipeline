@@ -37,3 +37,14 @@ Gemeinsame Regeln: `HANDWERK.md`. Hier steht nur, was Unterbau von den anderen K
 **Raus:** KI-Standbilder mit Kamerafahrt als eigene Einstellung. Sie kommen nur noch als Bildschirm in der Welt vor.
 
 Stilprobe: `stilprobe_unterbau.mp4` (20.11.2026, Test der Mischform). Sounds folgen nach dem Casting (`doku-ohren`).
+
+## Sound je Effekt (Stand 20.11.2026, Demo geschickt (20.11.2026))
+Geplant nach dem Grundsatz aus `HANDWERK.md`: erst festlegen, wo überhaupt ein Sound hingehört, dann je Stelle genau einen. Skripte: `engine/stilproben/ton_*.py`.
+
+| Effekt | Sound |
+| --- | --- |
+| Countdown in der Welt | paper_flip (Fallblatt) pro Sprung, bei der vollen Stunde Musik-Abbruch + reveal_impact_01 + sub_drop |
+| Lichter gehen aus | ein schwerer Klack (door_lock_01) pro Block, Stadtbrummen (fire_electric_hum_39) reißt mit dem letzten Block ab |
+| Dein Haus | whoosh_slow_soft leise; Licht aus: Klack + ub_drop |
+| Wetter | amb_rain leise, nur wenn es im Bild regnet |
+| Musik | ub_system_puls bis zum Abbruch, danach ub_ausfall_dunkel |
