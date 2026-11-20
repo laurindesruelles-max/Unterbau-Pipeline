@@ -1,5 +1,8 @@
 # LESSONS – Unterbau (feste Regeln, Erkenntnisse, Video-Log)
 
+> **Seit 20.11.2026 zuerst lesen:** `HANDWERK.md` (Regeln für alle Kanäle) und `EFFEKTE.md` (Handschrift und erlaubte Effekte dieses Kanals, von Laurin abgenommen). Bei Widerspruch gelten diese beiden Dateien.
+
+
 Jeder Lauf liest diese Datei vor der Produktion und befolgt sie. Neue Erkenntnisse und Laurins Entscheidungen hier eintragen (mit Datum).
 
 ## Feste Regeln (Laurin)

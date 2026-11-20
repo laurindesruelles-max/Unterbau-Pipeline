@@ -1,0 +1,39 @@
+# Unterbau – Handschrift und Effekte (von Laurin abgenommen am 20.11.2026)
+
+Gemeinsame Regeln: `HANDWERK.md`. Hier steht nur, was Unterbau von den anderen Kanälen unterscheidet. Ergänzt `KANAL.md`. Bei Widerspruch gilt diese Datei, weil sie neuer ist.
+
+## Erkennungsmerkmale
+| | Unterbau |
+| --- | --- |
+| Sprache | Deutsch |
+| Welt | Miniatur-Modellstadt bei Nacht (`engine/miniwelt.py`). Das ganze Video spielt dort |
+| Technik | Blender-Miniaturwelt plus Querschnitt. Mischform: Einzelbilder mit Tiefeninfo plus 2,5D-Kamera und animierten Ebenen, echtes 3D für Schlüsselmomente |
+| Farben | Nachtblau, orange Lichter (echtes Licht, kein Leuchteffekt) |
+| Kamera | Tilt-Shift-Flug über die Stadt (gehört nur Unterbau) |
+| Tempo | ~3,4 s, Countdown-Druck |
+| Schrift | Inter, sachlich |
+| Übergang | Flug durch die Stadt zum nächsten Ort |
+| Zahlen und Karten | in der Welt: Regale, Lichter, Anzeigetafel, Countdown-Uhr, Modellgelände |
+| Musik | filmisch, Countdown-Puls, Pausen vor großen Sätzen |
+| Stimme | Julian (ElevenLabs v4 Turbo) |
+
+## Effekt-Katalog (nur diese verwenden)
+| Effekt | Was passiert | Wann | Status |
+| --- | --- | --- | --- |
+| Dein Haus | Ein Haus in der Stadt ist „deins“, mit Licht im Fenster. Jedes Kapitel startet und endet dort | Du-Bezug | neu |
+| Countdown in der Welt | Die Uhr am Rathaus springt weiter, Tag und Nacht wechseln | Spannungslinie | neu |
+| Lichter gehen aus | Straße für Straße erlöschen die Fenster | Ausfall, Kettenreaktion | neu, Stilprobe 20.11. |
+| Warenstrom | Orange LKW-Lichter fahren über die Straßen und werden weniger | Lieferketten | neu |
+| Regale leeren sich | Im Modell-Supermarkt verschwinden die Waren Reihe für Reihe | Mangel | neu |
+| Querschnitt | Die Oberfläche reißt auf und zeigt das System darunter | Einstieg und Schluss | steht (`xsection`) |
+| Tilt-Shift-Flug | Die Kamera fliegt zum nächsten Ort | Übergang | steht |
+| Modell-Karte | Die Stadt zoomt raus zur Landkarte als Modellgelände | größerer Maßstab | neu, ersetzt die flache Karte |
+| Zahl in der Welt | Die Zahl klappt auf einer Anzeigetafel am Bahnhof um | harte Zahl | neu, ersetzt den flachen Zähler |
+| Balken als Häuser | Die Werte wachsen als Häuserzeilen | Vergleich | neu, ersetzt flache Balken |
+| Wetter und Leben | Regen, Nebel, Rauch, fahrende Autos | durchgehend | steht (2,5D-fx) |
+| Bildschirm in der Welt | Echte Clips (Pixabay) laufen auf einem Fernseher oder Plakat im Modell | echte Bilder | neu |
+| Ablauf-Kette | Ein Teil des Systems fällt nach dem anderen wie Dominosteine | „Wenn A ausfällt, dann …“ | neu |
+
+**Raus:** KI-Standbilder mit Kamerafahrt als eigene Einstellung. Sie kommen nur noch als Bildschirm in der Welt vor.
+
+Stilprobe: `stilprobe_unterbau.mp4` (20.11.2026, Test der Mischform). Sounds folgen nach dem Casting (`doku-ohren`).
