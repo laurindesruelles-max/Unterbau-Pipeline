@@ -38,13 +38,13 @@ Gemeinsame Regeln: `HANDWERK.md`. Hier steht nur, was Unterbau von den anderen K
 
 Stilprobe: `stilprobe_unterbau.mp4` (20.11.2026, Test der Mischform). Sounds folgen nach dem Casting (`doku-ohren`).
 
-## Sound je Effekt (Stand 20.11.2026, Demo geschickt (20.11.2026))
+## Sound je Effekt (Stand 20.11.2026, Version 2 nach Laurins Kritik)
 Geplant nach dem Grundsatz aus `HANDWERK.md`: erst festlegen, wo überhaupt ein Sound hingehört, dann je Stelle genau einen. Skripte: `engine/stilproben/ton_*.py`.
 
 | Effekt | Sound |
 | --- | --- |
-| Countdown in der Welt | paper_flip (Fallblatt) pro Sprung, bei der vollen Stunde Musik-Abbruch + reveal_impact_01 + sub_drop |
-| Lichter gehen aus | ein schwerer Klack (door_lock_01) pro Block, Stadtbrummen (fire_electric_hum_39) reißt mit dem letzten Block ab |
-| Dein Haus | whoosh_slow_soft leise; Licht aus: Klack + ub_drop |
+| Countdown in der Welt | paper_flip (Fallblatt) pro Sprung, bei der vollen Stunde Musik-Abbruch + weicher sub_drop (kein harter Anschlag) |
+| Lichter gehen aus | **keine Einzel-Klacks** (Laurin 20.11.: door_lock_01 klang wie Schüsse, nie verwenden). Stadtbrummen fällt in der Tonhöhe ab und erstirbt (`hum_stromausfall`, aus fire_electric_hum_39 per Tonhöhen-Gleiten, siehe ton_unterbau.py) |
+| Dein Haus | whoosh_slow_soft leise; Licht aus: nur leiser ub_drop |
 | Wetter | amb_rain leise, nur wenn es im Bild regnet |
 | Musik | ub_system_puls bis zum Abbruch, danach ub_ausfall_dunkel |
