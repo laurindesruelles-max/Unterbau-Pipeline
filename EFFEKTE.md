@@ -6,7 +6,7 @@ Gemeinsame Regeln: `HANDWERK.md`. Hier steht nur, was Unterbau von den anderen K
 | | Unterbau |
 | --- | --- |
 | Sprache | Deutsch |
-| Welt | Miniatur-Modellstadt bei Nacht (`engine/miniwelt.py`). Das ganze Video spielt dort |
+| Welt | Miniatur-Modellstadt bei Nacht (`engine/miniwelt.py`) als Markenzeichen und Hauptform, aber **nicht das einzige Mittel** (Laurin, 20.11.2026). Daneben echte Clips, Querschnitt, animierte Karten und Grafiken, solange alles durchgehend bewegt ist |
 | Technik | Blender-Miniaturwelt plus Querschnitt. Mischform: Einzelbilder mit Tiefeninfo plus 2,5D-Kamera und animierten Ebenen, echtes 3D für Schlüsselmomente |
 | Farben | Nachtblau, orange Lichter (echtes Licht, kein Leuchteffekt) |
 | Kamera | Tilt-Shift-Flug über die Stadt (gehört nur Unterbau) |
@@ -20,7 +20,7 @@ Gemeinsame Regeln: `HANDWERK.md`. Hier steht nur, was Unterbau von den anderen K
 ## Effekt-Katalog (nur diese verwenden)
 | Effekt | Was passiert | Wann | Status |
 | --- | --- | --- | --- |
-| Dein Haus | Ein Haus in der Stadt ist „deins“, mit Licht im Fenster. Jedes Kapitel startet und endet dort | Du-Bezug | neu |
+| Dein Haus | Ein Haus in der Stadt ist „deins“, mit Licht im Fenster | wenn der Du-Bezug trägt, **kein Pflicht-Start** (Laurin, 20.11.2026) | neu, Stilprobe 20.11. |
 | Countdown in der Welt | Die Uhr am Rathaus springt weiter, Tag und Nacht wechseln | Spannungslinie | neu |
 | Lichter gehen aus | Straße für Straße erlöschen die Fenster | Ausfall, Kettenreaktion | neu, Stilprobe 20.11. |
 | Warenstrom | Orange LKW-Lichter fahren über die Straßen und werden weniger | Lieferketten | neu |

@@ -35,7 +35,7 @@ Verbindlich ist die Skript-Bibel: `SKRIPT_BIBEL.md` (Kopie des Claude-Docs https
 - Alle 30–45 Sekunden ein neuer Haken (im Drehbuch mit ▸). Kurze Sätze, in Szenen höchstens 14 Wörter. Jede Zahl mit Vergleich.
 - Schluss: auflösen, durchatmen, Schritt in die Wirklichkeit, letzter Satz greift den Anfang auf, „Das war Unterbau.“
 - **Ergänzung nach 003 (Laurin 20.11.2026, Vorlage `videos/003-supermarkt-leer/skript_v2.md`):**
-  - **Du ist die Hauptfigur.** Dein Kühlschrank, dein Markt, deine Apotheke, dein Tank. Jedes Kapitel startet bei dir und kehrt zu dir zurück („Zurück zu dir.“).
+  - **Du-Bezug, wo er trägt** (gelockert am 20.11.2026, siehe HANDWERK.md): Dein Kühlschrank, dein Markt, deine Apotheke, wenn es das Thema stärker macht. Ein Video oder Kapitel muss nicht bei dir starten. Entscheidend ist der stärkste Hook.
   - **Die Spannungslinie läuft ab Minute 1 durch** (Countdown mit Uhrzeit: „Tag eins, achtzehn Uhr.“). Keine Hintergrund-Kapitel vor dem eigentlichen Versprechen.
   - **Höchstens eine harte Zahl alle ~20 Sekunden.** Keine Zahlenkolonnen.
   - **Ein Beispiel ausführlich als Szene statt vieler Fälle als Liste.** Weitere Fälle nur als Ein-Satz-Rückblende.
