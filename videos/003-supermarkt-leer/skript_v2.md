@@ -94,4 +94,5 @@ Heute Nacht fährt wieder ein Lkw zu deinem Supermarkt. [MW: Lkw fährt los, Spu
 Auf der Ladefläche: vielleicht deine Milch. Am Steuer: vielleicht jemand, der seit Wochen nicht zu Hause war.
 Wenn du morgen deinen Kühlschrank aufmachst, weißt du jetzt, wie viel Weg darin steckt.
 Wie viele Tage würdest du mit dem durchhalten, was gerade bei dir zu Hause ist? Schreib es in die Kommentare.
+Und wenn du sehen willst, welches System als Nächstes unter deinem Alltag steckt: Abonnier Unterbau und mach die Glocke an.
 Das war Unterbau.
