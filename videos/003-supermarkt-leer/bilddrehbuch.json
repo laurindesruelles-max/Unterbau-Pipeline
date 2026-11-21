@@ -1,0 +1,3227 @@
+[
+ {
+  "satz": "Mach in Gedanken mal deinen Kühlschrank auf.",
+  "sek": 2.48,
+  "zeigt": "Dein Haus in der Modellstadt, Kamera fährt ans Fenster, drinnen öffnet sich die Kühlschranktür und Licht fällt heraus",
+  "animation": "Dein Haus",
+  "inhalt": [
+   "ort",
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 1,
+  "set": "haus_kueche",
+  "i": 0,
+  "t0": 0
+ },
+ {
+  "satz": "Die Milch darin hast du vorgestern gekauft.",
+  "sek": 2.48,
+  "zeigt": "Blick in den offenen Kühlschrank: eine Milchtüte im Türfach, Datum-Etikett unscharf",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 1,
+  "set": "kuehlschrank",
+  "i": 1,
+  "t0": 2.48
+ },
+ {
+  "satz": "Aber die Milch, die du übermorgen kaufst, steht noch in keinem Regal.",
+  "sek": 3.76,
+  "zeigt": "Supermarktregal im Modell, im Milchfach eine leere Lücke mit Preisschild",
+  "animation": "Regale leeren sich",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "kapitel": 1,
+  "set": "markt_regal_voll",
+  "i": 2,
+  "t0": 4.96
+ },
+ {
+  "satz": "Sie ist unterwegs.",
+  "sek": 1.2,
+  "zeigt": "Tilt-Shift-Flug hinaus aus der Stadt bis zur Autobahn bei Nacht",
+  "animation": "Tilt-Shift-Flug",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 1,
+  "set": "autobahn_nacht",
+  "i": 3,
+  "t0": 8.72
+ },
+ {
+  "satz": "Auf einem Lkw, irgendwo auf der Autobahn, heute Nacht.",
+  "sek": 3.76,
+  "zeigt": "Orange Lkw-Lichter ziehen in langen Ketten über die Autobahn, eine Kette trägt ein Milch-Symbol",
+  "animation": "Warenstrom",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 1,
+  "set": "autobahn_nacht",
+  "i": 4,
+  "t0": 9.92
+ },
+ {
+  "satz": "Und jetzt stell dir vor:",
+  "sek": 1.48,
+  "zeigt": "Totale der Modellstadt bei Nacht, alle Straßen voller fahrender Lkw-Lichter",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "stimmung",
+  "neugier": "",
+  "kapitel": 1,
+  "set": "stadt_total",
+  "i": 5,
+  "t0": 13.68
+ },
+ {
+  "satz": "Heute Nacht fährt kein einziger Lkw.",
+  "sek": 3.28,
+  "zeigt": "Die Lkw-Lichter auf allen Straßen bleiben stehen und erlöschen nacheinander",
+  "animation": "Warenstrom",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "teaser:stillstand",
+  "kapitel": 1,
+  "set": "stadt_total",
+  "i": 6,
+  "t0": 15.16
+ },
+ {
+  "satz": "Nicht in deiner Stadt.",
+  "sek": 1.28,
+  "zeigt": "Auch die Straße vor deinem Haus wird dunkel, kein Licht fährt mehr",
+  "animation": "Lichter gehen aus",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 1,
+  "set": "stadt_total",
+  "i": 7,
+  "t0": 18.44
+ },
+ {
+  "satz": "Nirgendwo in Deutschland.",
+  "sek": 1.6,
+  "zeigt": "Rauszoomen zur Modell-Karte Deutschland: alle Autobahnen leer und dunkel",
+  "animation": "Modell-Karte",
+  "inhalt": [
+   "ort",
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 1,
+  "set": "karte_de",
+  "i": 8,
+  "t0": 19.72
+ },
+ {
+  "satz": "Wie lange dauert es, bis das Regal in deinem Supermarkt leer ist?",
+  "sek": 3.84,
+  "zeigt": "Zurück am vollen Supermarktregal, darüber springt eine Uhr auf 0",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "frage:wielange",
+  "kapitel": 1,
+  "set": "markt_regal_voll",
+  "i": 9,
+  "t0": 21.32
+ },
+ {
+  "satz": "Die Antwort ist kürzer, als du denkst.",
+  "sek": 2.32,
+  "zeigt": "Das Regal leert sich im Zeitraffer bis auf wenige Packungen, dann stoppt das Bild",
+  "animation": "Regale leeren sich",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 1,
+  "set": "markt_regal_voll",
+  "i": 10,
+  "t0": 25.16
+ },
+ {
+  "satz": "Und wir gehen sie gemeinsam durch.",
+  "sek": 1.92,
+  "zeigt": "Rathausuhr in der Modellstadt springt von Stunde 0 weiter",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 1,
+  "set": "rathaus_uhr",
+  "i": 11,
+  "t0": 27.48
+ },
+ {
+  "satz": "Tag für Tag.",
+  "sek": 1.04,
+  "zeigt": "Fallblatt-Anzeige klappt TAG 1 – TAG 2 – TAG 3 durch",
+  "animation": "Tag-Nacht-Zeitraffer",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 1,
+  "set": "rathaus_uhr",
+  "i": 12,
+  "t0": 29.4
+ },
+ {
+  "satz": "Bis zu dem Moment, in dem selbst der Staat ein Problem hat.",
+  "sek": 3.68,
+  "zeigt": "Ein großes Lagertor mit neutralem Behördenschild bleibt im Dunkeln, nur halb sichtbar",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "stimmung",
+  "neugier": "frage:staat",
+  "kapitel": 1,
+  "set": "notreserve_aussen",
+  "i": 13,
+  "t0": 30.44
+ },
+ {
+  "satz": "Das ist ein Gedankenexperiment.",
+  "sek": 2.16,
+  "zeigt": "Einblendung GEDANKENEXPERIMENT auf einer Anzeigetafel am Bahnhof",
+  "animation": "Zahl in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 1,
+  "set": "stadt_total",
+  "i": 14,
+  "t0": 34.12
+ },
+ {
+  "satz": "Aber jede Zahl darin ist belegt.",
+  "sek": 3.96,
+  "zeigt": "Die Straße reißt auf, darunter das Netz aus Lieferwegen als Querschnitt",
+  "animation": "Querschnitt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "kapitel": 1,
+  "set": "querschnitt_stadt",
+  "i": 15,
+  "t0": 36.28
+ },
+ {
+  "satz": "Fangen wir mit einer einzigen Palette an.",
+  "sek": 2.32,
+  "zeigt": "Kamerafahrt zur Molkerei am Stadtrand, Silos, Laderampe mit Licht",
+  "animation": "Tilt-Shift-Flug",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "frage:palette",
+  "kapitel": 2,
+  "set": "molkerei",
+  "i": 16,
+  "t0": 40.24
+ },
+ {
+  "satz": "Deiner Palette Milch.",
+  "sek": 1.52,
+  "zeigt": "Eine Palette Milch steht an der Rampe, ein oranger Rahmen markiert sie als deine",
+  "animation": "Dein Haus",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 2,
+  "set": "molkerei",
+  "i": 17,
+  "t0": 42.56
+ },
+ {
+  "satz": "Sie wird heute Nacht um 22 Uhr in einer Molkerei auf einen Lkw geladen.",
+  "sek": 3.52,
+  "zeigt": "Gabelstapler schiebt die Palette auf einen Lkw, Uhr an der Rampe zeigt 22:00",
+  "animation": "Warenstrom",
+  "inhalt": [
+   "geschehen",
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 2,
+  "set": "molkerei",
+  "i": 18,
+  "t0": 44.08
+ },
+ {
+  "satz": "Der bringt sie in ein Zentrallager.",
+  "sek": 2.08,
+  "zeigt": "Der Lkw fährt los, hinter ihm leuchtet die Route orange bis zum Zentrallager",
+  "animation": "Ablauf-Kette",
+  "inhalt": [
+   "ort",
+   "geschehen"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "kapitel": 2,
+  "set": "route_lager",
+  "i": 19,
+  "t0": 47.6
+ },
+ {
+  "satz": "Dort kommt sie zu Nudeln, Äpfeln und Zahnpasta, alles bestellt für deinen Markt.",
+  "sek": 2.4,
+  "zeigt": "Im Zentrallager: Paletten mit Nudeln, Äpfeln, Zahnpasta rollen zur Milch dazu",
+  "animation": "Modellbahn-Warenstrom",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "kapitel": 2,
+  "set": "zentrallager_innen",
+  "i": 20,
+  "t0": 49.68
+ },
+ {
+  "satz": "Dort kommt sie zu Nudeln, Äpfeln und Zahnpasta, alles bestellt für deinen Markt.",
+  "sek": 2.4,
+  "zeigt": "Ein Etikett mit dem Namen deines Marktes klappt auf die gemischte Palette",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 2,
+  "set": "zentrallager_innen",
+  "i": 20,
+  "t0": 52.08
+ },
+ {
+  "satz": "Und noch vor Sonnenaufgang soll sie mit dem nächsten Lkw an deiner Rampe stehen.",
+  "sek": 2.28,
+  "zeigt": "Zweiter Lkw fährt durch die dunkle Stadt zur Rampe deines Marktes, Sonnenaufgang noch nicht da",
+  "animation": "Warenstrom",
+  "inhalt": [
+   "geschehen",
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 2,
+  "set": "route_markt",
+  "i": 21,
+  "t0": 54.48
+ },
+ {
+  "satz": "Und noch vor Sonnenaufgang soll sie mit dem nächsten Lkw an deiner Rampe stehen.",
+  "sek": 2.28,
+  "zeigt": "Die Rampe deines Marktes wartet mit offenem Tor",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 2,
+  "set": "markt_rampe",
+  "i": 21,
+  "t0": 56.76
+ },
+ {
+  "satz": "Das ist kein Sonderfall.",
+  "sek": 1.36,
+  "zeigt": "Rauszoomen: tausende orange Routen bilden ein Netz über dem Land",
+  "animation": "Netzwerk-Karte",
+  "inhalt": [
+   "vergleich"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "kapitel": 2,
+  "set": "karte_de",
+  "i": 22,
+  "t0": 59.04
+ },
+ {
+  "satz": "So kommt fast alles zu dir.",
+  "sek": 1.76,
+  "zeigt": "Alle Routen enden in kleinen Supermärkten, die aufleuchten",
+  "animation": "Netzwerk-Karte",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "kapitel": 2,
+  "set": "karte_de",
+  "i": 23,
+  "t0": 60.4
+ },
+ {
+  "satz": "In Deutschland fahren fast 4 von 5 Tonnen Gütern auf dem Lkw.",
+  "sek": 4.32,
+  "zeigt": "Häuserzeilen wachsen: 4 von 5 Zeilen sind Lkw, 1 Zeile Bahn und Schiff, Zahl 4 von 5 auf der Anzeigetafel",
+  "animation": "Balken als Häuser",
+  "inhalt": [
+   "zahl",
+   "vergleich"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 2,
+  "set": "balken_tonnen",
+  "i": 24,
+  "t0": 62.16
+ },
+ {
+  "satz": "Jeden Tag so viel Ware, wie 900 Eiffeltürme wiegen, 900 Tonnen-Vergleich.",
+  "sek": 4.19,
+  "zeigt": "Auf dem Modellgelände stapeln sich Eiffelturm-Modelle bis zur Zahl 900 auf der Fallblatt-Anzeige",
+  "animation": "Zahl in der Welt",
+  "inhalt": [
+   "zahl",
+   "vergleich"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 2,
+  "set": "eiffel",
+  "i": 25,
+  "t0": 66.48
+ },
+ {
+  "satz": "Und jetzt das, was kaum jemand weiß:",
+  "sek": 2.48,
+  "zeigt": "Kamera umkreist deinen Supermarkt, die Rückseite liegt noch im Dunkeln",
+  "animation": "Tilt-Shift-Flug",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "stimmung",
+  "neugier": "frage:lager",
+  "kapitel": 2,
+  "set": "markt_aussen",
+  "i": 26,
+  "t0": 70.67
+ },
+ {
+  "satz": "Hinter deinem Supermarkt ist fast nichts.",
+  "sek": 2.96,
+  "zeigt": "Der Supermarkt klappt im Querschnitt auf: hinter dem Verkaufsraum nur ein winziger, fast leerer Lagerraum",
+  "animation": "Querschnitt",
+  "inhalt": [
+   "erklaerung",
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "antwort:lager",
+  "kapitel": 2,
+  "set": "markt_querschnitt",
+  "i": 27,
+  "t0": 73.15
+ },
+ {
+  "satz": "Eine Studie für den Bundestag hält fest:",
+  "sek": 2.48,
+  "zeigt": "Ein Bildschirm in der Welt zeigt den Deckel einer Bundestagsstudie (ohne Text), Lampe flackert an",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 2,
+  "set": "steuerzentrale",
+  "i": 28,
+  "t0": 76.11
+ },
+ {
+  "satz": "Die wenigsten Lebensmittelgeschäfte haben nennenswerte Lagerflächen.",
+  "sek": 3.57,
+  "zeigt": "Querschnitt mehrerer Läden nebeneinander, alle mit winzigem Lager",
+  "animation": "Querschnitt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "kapitel": 2,
+  "set": "markt_querschnitt",
+  "i": 29,
+  "t0": 78.59
+ },
+ {
+  "satz": "Was du im Regal siehst, ist im Grunde alles, was da ist.",
+  "sek": 3.6,
+  "zeigt": "Das volle Regal, eine Linie zeigt: dahinter kommt nichts mehr",
+  "animation": "Lagerbestand-Turm",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "kapitel": 2,
+  "set": "markt_regal_voll",
+  "i": 30,
+  "t0": 82.16
+ },
+ {
+  "satz": "Der Rest ist ständig unterwegs.",
+  "sek": 2.4,
+  "zeigt": "Die Ware fließt als Lichterkette über die Autobahn",
+  "animation": "Warenstrom",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "kapitel": 2,
+  "set": "autobahn_nacht",
+  "i": 31,
+  "t0": 85.76
+ },
+ {
+  "satz": "Selbst in den großen Lagern ist der Puffer klein.",
+  "sek": 2.75,
+  "zeigt": "Hochregal im Zentrallager, Füllstand sinkt sichtbar",
+  "animation": "Lagerbestand-Turm",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "kapitel": 2,
+  "set": "zentrallager_innen",
+  "i": 32,
+  "t0": 88.16
+ },
+ {
+  "satz": "Nach Zahlen des Agrarministeriums reichte frische Ware dort im Schnitt nur 4 Tage.",
+  "sek": 5.04,
+  "zeigt": "Tage-Zähler an der Wand des Hochregals zeigt 4 TAGE für Frischware",
+  "animation": "Zahl in der Welt",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 2,
+  "set": "zentrallager_innen",
+  "i": 33,
+  "t0": 90.91
+ },
+ {
+  "satz": "Kühlware 5 Tage.",
+  "sek": 1.52,
+  "zeigt": "Kühlhaus-Regal, Zähler klappt auf 5 TAGE",
+  "animation": "Lagerbestand-Turm",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 2,
+  "set": "zentrallager_kuehl",
+  "i": 34,
+  "t0": 95.95
+ },
+ {
+  "satz": "Das spart Platz, Geld und Zeit.",
+  "sek": 2.56,
+  "zeigt": "Die Stadt läuft wie ein Uhrwerk: Lichter fahren, Tore öffnen sich im Takt",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "kapitel": 2,
+  "set": "stadt_total",
+  "i": 35,
+  "t0": 97.47
+ },
+ {
+  "satz": "Solange alles fährt.",
+  "sek": 1.6,
+  "zeigt": "Lkw-Lichter auf der Autobahn, eins nach dem anderen",
+  "animation": "Warenstrom",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 2,
+  "set": "autobahn_nacht",
+  "i": 36,
+  "t0": 100.03
+ },
+ {
+  "satz": "Heute Nacht fährt nichts.",
+  "sek": 2.0,
+  "zeigt": "Alle Lkw-Lichter erlöschen gleichzeitig, die Autobahn ist schwarz",
+  "animation": "Lichter gehen aus",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 2,
+  "set": "autobahn_nacht",
+  "i": 37,
+  "t0": 101.63
+ },
+ {
+  "satz": "5 Uhr früh.",
+  "sek": 1.28,
+  "zeigt": "Rathausuhr springt auf 05:00",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 2,
+  "set": "rathaus_uhr",
+  "i": 38,
+  "t0": 103.63
+ },
+ {
+  "satz": "Das Tor an der Rampe deines Marktes steht offen.",
+  "sek": 2.72,
+  "zeigt": "Das Rampentor deines Marktes fährt hoch, Licht fällt auf die leere Rampe",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen",
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 2,
+  "set": "markt_rampe",
+  "i": 39,
+  "t0": 104.91
+ },
+ {
+  "satz": "Niemand kommt.",
+  "sek": 1.2,
+  "zeigt": "Die Straße vor der Rampe bleibt leer, kein Scheinwerfer erscheint",
+  "animation": "Warenstrom",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 2,
+  "set": "markt_rampe",
+  "i": 40,
+  "t0": 107.63
+ },
+ {
+  "satz": "7 Uhr.",
+  "sek": 1.04,
+  "zeigt": "Rathausuhr springt auf 07:00, Himmel wird blau",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 2,
+  "set": "rathaus_uhr",
+  "i": 41,
+  "t0": 108.83
+ },
+ {
+  "satz": "Dein Markt öffnet ganz normal.",
+  "sek": 2.0,
+  "zeigt": "Die Schiebetür deines Marktes öffnet sich, Leuchtschrift geht an",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 2,
+  "set": "markt_aussen",
+  "i": 42,
+  "t0": 109.87
+ },
+ {
+  "satz": "Und noch merkt niemand etwas.",
+  "sek": 3.72,
+  "zeigt": "Erste Kunden-Figuren gehen durch volle Gänge",
+  "animation": "Menschen reagieren",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 2,
+  "set": "markt_regal_voll",
+  "i": 43,
+  "t0": 111.87
+ },
+ {
+  "satz": "Tag 1, 18 Uhr.",
+  "sek": 2.16,
+  "zeigt": "Fallblatt TAG 1, Uhr springt auf 18:00, Abendlicht",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 3,
+  "set": "rathaus_uhr",
+  "i": 44,
+  "t0": 115.59
+ },
+ {
+  "satz": "Du kommst nach der Arbeit in deinen Markt.",
+  "sek": 2.4,
+  "zeigt": "Eine Figur (du) geht vom Haus durch die Abendstraße in den Markt",
+  "animation": "Dein Haus",
+  "inhalt": [
+   "ort",
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 3,
+  "set": "markt_aussen",
+  "i": 45,
+  "t0": 117.75
+ },
+ {
+  "satz": "Und irgendwas ist anders.",
+  "sek": 2.16,
+  "zeigt": "Kamera gleitet am Regal entlang, eine einzelne Lücke taucht auf",
+  "animation": "Regale leeren sich",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "teaser:anders",
+  "kapitel": 3,
+  "set": "markt_regal_halb",
+  "i": 46,
+  "t0": 120.15
+ },
+ {
+  "satz": "Beim Brot sind Lücken.",
+  "sek": 1.52,
+  "zeigt": "Brotregal: Reihen verschwinden, Lücken bleiben",
+  "animation": "Regale leeren sich",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 3,
+  "set": "markt_brot",
+  "i": 47,
+  "t0": 122.31
+ },
+ {
+  "satz": "Obst ist kaum noch da.",
+  "sek": 1.76,
+  "zeigt": "Obstkisten fast leer, nur noch wenige Äpfel",
+  "animation": "Lagerbestand-Turm",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 3,
+  "set": "markt_obst",
+  "i": 48,
+  "t0": 123.83
+ },
+ {
+  "satz": "Die Milch, deine Milch, ist nie angekommen.",
+  "sek": 3.52,
+  "zeigt": "Das Milchfach: dein oranger Rahmen markiert eine leere Stelle",
+  "animation": "Regale leeren sich",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 3,
+  "set": "markt_milch",
+  "i": 49,
+  "t0": 125.59
+ },
+ {
+  "satz": "Du bist nicht der Einzige, dem das auffällt.",
+  "sek": 2.4,
+  "zeigt": "Andere Figuren bleiben stehen und schauen auf die Lücken",
+  "animation": "Menschen reagieren",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 3,
+  "set": "markt_gang",
+  "i": 50,
+  "t0": 129.11
+ },
+ {
+  "satz": "Und jetzt passiert etwas, das man vorhersagen kann.",
+  "sek": 3.04,
+  "zeigt": "Kamera fährt zurück, die Szene friert ein und entsättigt sich",
+  "animation": "Tilt-Shift-Flug",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "stimmung",
+  "neugier": "frage:passiert",
+  "kapitel": 3,
+  "set": "markt_gang",
+  "i": 51,
+  "t0": 131.51
+ },
+ {
+  "satz": "Weil es schon einmal passiert ist.",
+  "sek": 2.4,
+  "zeigt": "Modell-Karte dreht nach Großbritannien, Archiv-Körnung im Bild",
+  "animation": "Modell-Karte",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 3,
+  "set": "uk_karte",
+  "i": 52,
+  "t0": 134.55
+ },
+ {
+  "satz": "Großbritannien, September 2000.",
+  "sek": 3.0,
+  "zeigt": "Anzeigetafel klappt GROSSBRITANNIEN SEPTEMBER 2000",
+  "animation": "Zahl in der Welt",
+  "inhalt": [
+   "ort",
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "antwort:passiert",
+  "kapitel": 3,
+  "set": "uk_karte",
+  "i": 53,
+  "t0": 136.95
+ },
+ {
+  "satz": "Aus Protest gegen hohe Spritpreise blockieren Demonstranten Raffinerien und Tanklager.",
+  "sek": 2.6,
+  "zeigt": "Bildschirm in der Welt: Raffinerie bei Nacht, Traktoren blockieren die Zufahrt (KI-Bild)",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "geschehen",
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 3,
+  "set": "uk_raffinerie",
+  "i": 54,
+  "t0": 139.95
+ },
+ {
+  "satz": "Aus Protest gegen hohe Spritpreise blockieren Demonstranten Raffinerien und Tanklager.",
+  "sek": 2.6,
+  "zeigt": "Vor der Raffinerie im Modell bleiben die Tanklaster-Lichter stehen",
+  "animation": "Warenstrom",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 3,
+  "set": "uk_raffinerie",
+  "i": 54,
+  "t0": 142.55
+ },
+ {
+  "satz": "Ohne Diesel wird es bald auch für die Lebensmittel-Lkw eng.",
+  "sek": 3.6,
+  "zeigt": "Ein Lebensmittel-Lkw rollt aus, Tanknadel fällt auf null",
+  "animation": "Ablauf-Kette",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 3,
+  "set": "uk_strasse",
+  "i": 55,
+  "t0": 145.15
+ },
+ {
+  "satz": "Nach wenigen Tagen ist an 3 von 4 Tankstellen kein Sprit mehr.",
+  "sek": 4.0,
+  "zeigt": "Auf der Modell-Karte erlöschen 3 von 4 Tankstellen-Lichtern, Zahl 3 von 4",
+  "animation": "Prozent als Stadtteil",
+  "inhalt": [
+   "zahl",
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 3,
+  "set": "uk_tankstellen",
+  "i": 56,
+  "t0": 148.75
+ },
+ {
+  "satz": "Dann kommen die Supermärkte.",
+  "sek": 1.92,
+  "zeigt": "Bildschirm: britische Supermarktkasse mit langen Schlangen (KI-Bild)",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 3,
+  "set": "uk_markt",
+  "i": 57,
+  "t0": 152.75
+ },
+ {
+  "satz": "Die Menschen kaufen, was sie tragen können.",
+  "sek": 2.24,
+  "zeigt": "Figuren schieben überladene Einkaufswagen aus dem Markt",
+  "animation": "Menschen reagieren",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 3,
+  "set": "uk_markt",
+  "i": 58,
+  "t0": 154.67
+ },
+ {
+  "satz": "Eine große Kette verkauft in 2 Tagen 50 Prozent mehr als sonst.",
+  "sek": 4.08,
+  "zeigt": "Häuserzeile wächst von 100 auf 150 Prozent, Anzeige +50 Prozent in 2 Tagen",
+  "animation": "Balken als Häuser",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 3,
+  "set": "balken_uk",
+  "i": 59,
+  "t0": 156.91
+ },
+ {
+  "satz": "Und warnt öffentlich:",
+  "sek": 1.68,
+  "zeigt": "Ein Lautsprecher-Mast im Modell leuchtet auf, Figuren drehen sich um",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 3,
+  "set": "uk_markt",
+  "i": 60,
+  "t0": 160.99
+ },
+ {
+  "satz": "Die Lebensmittel könnten innerhalb von Tagen ausgehen.",
+  "sek": 3.28,
+  "zeigt": "Bildschirm: fast leeres Brotregal mit handgeschriebenem Zettel (KI-Bild)",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 3,
+  "set": "uk_regal",
+  "i": 61,
+  "t0": 162.67
+ },
+ {
+  "satz": "Andere Ketten fangen an zu rationieren.",
+  "sek": 2.52,
+  "zeigt": "Ein Schild mit maximaler Stückzahl klappt ans Regal, Figuren nehmen nur noch eins",
+  "animation": "Menschen reagieren",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 3,
+  "set": "uk_regal",
+  "i": 62,
+  "t0": 165.95
+ },
+ {
+  "satz": "Das Ganze dauert eine einzige Woche im Jahr 2000.",
+  "sek": 2.64,
+  "zeigt": "Kalenderblätter 7. bis 14. September 2000 blättern im Modell",
+  "animation": "Tag-Nacht-Zeitraffer",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 3,
+  "set": "kalender",
+  "i": 63,
+  "t0": 168.47
+ },
+ {
+  "satz": "Vom 7. bis zum 14. September 2000.",
+  "sek": 2.88,
+  "zeigt": "Fallblatt zeigt 07.09. – 14.09.2000",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 3,
+  "set": "kalender",
+  "i": 64,
+  "t0": 171.11
+ },
+ {
+  "satz": "7 Tage.",
+  "sek": 1.2,
+  "zeigt": "Große 7 TAGE auf der Anzeigetafel",
+  "animation": "Zahl in der Welt",
+  "inhalt": [
+   "zahl",
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 3,
+  "set": "kalender",
+  "i": 65,
+  "t0": 173.99
+ },
+ {
+  "satz": "Mehr brauchte es nicht.",
+  "sek": 1.76,
+  "zeigt": "Die Karte Großbritanniens wird wieder hell, Lichter fahren wieder",
+  "animation": "Lichter gehen aus",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "kapitel": 3,
+  "set": "uk_karte",
+  "i": 66,
+  "t0": 175.19
+ },
+ {
+  "satz": "Zurück zu dir.",
+  "sek": 1.32,
+  "zeigt": "Rückflug zum Anfang: zurück in deinen Markt, Archiv-Körnung verschwindet",
+  "animation": "Rückflug zum Anfang",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 3,
+  "set": "markt_gang",
+  "i": 67,
+  "t0": 176.95
+ },
+ {
+  "satz": "Du tust, was die Briten getan haben.",
+  "sek": 2.16,
+  "zeigt": "Deine Figur greift ins Regal",
+  "animation": "Menschen reagieren",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 3,
+  "set": "markt_gang",
+  "i": 68,
+  "t0": 178.27
+ },
+ {
+  "satz": "Du kaufst mehr.",
+  "sek": 1.28,
+  "zeigt": "Dein Einkaufswagen füllt sich",
+  "animation": "Menschen reagieren",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 3,
+  "set": "markt_gang",
+  "i": 69,
+  "t0": 180.43
+ },
+ {
+  "satz": "Alle kaufen mehr.",
+  "sek": 1.28,
+  "zeigt": "Viele Figuren mit vollen Wagen, Schlange an der Kasse",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 3,
+  "set": "markt_gang",
+  "i": 70,
+  "t0": 181.71
+ },
+ {
+  "satz": "Und das Regal leert sich noch schneller.",
+  "sek": 2.32,
+  "zeigt": "Regal leert sich im doppelten Tempo, Reihe für Reihe",
+  "animation": "Regale leeren sich",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 3,
+  "set": "markt_regal_halb",
+  "i": 71,
+  "t0": 182.99
+ },
+ {
+  "satz": "Auf dem Heimweg willst du noch dein Rezept in der Apotheke abholen.",
+  "sek": 3.44,
+  "zeigt": "Kamera fliegt die Abendstraße entlang zur Apotheke mit grünem Kreuz-Licht",
+  "animation": "Tilt-Shift-Flug",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 3,
+  "set": "apotheke_aussen",
+  "i": 72,
+  "t0": 185.31
+ },
+ {
+  "satz": "Deine Apotheke hat zwar einen Vorrat.",
+  "sek": 2.28,
+  "zeigt": "Schubladenschrank der Apotheke, Schubladen gefüllt",
+  "animation": "Lagerbestand-Turm",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 3,
+  "set": "apotheke_innen",
+  "i": 73,
+  "t0": 188.75
+ },
+ {
+  "satz": "Normalerweise kommt mehrmals am Tag Nachschub, um 8, 12 und 16 Uhr.",
+  "sek": 4.16,
+  "zeigt": "Lieferwagen-Lichter kommen mehrmals am Tag an, Uhr springt 8:00 – 12:00 – 16:00",
+  "animation": "Warenstrom",
+  "inhalt": [
+   "erklaerung",
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 3,
+  "set": "apotheke_route",
+  "i": 74,
+  "t0": 191.03
+ },
+ {
+  "satz": "Ab heute nicht mehr.",
+  "sek": 1.52,
+  "zeigt": "Die Lieferroute zur Apotheke erlischt",
+  "animation": "Lichter gehen aus",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 3,
+  "set": "apotheke_route",
+  "i": 75,
+  "t0": 195.19
+ },
+ {
+  "satz": "In Kliniken geht es noch schneller.",
+  "sek": 2.24,
+  "zeigt": "Krankenhaus im Modell, Notaufnahme-Licht",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "frage:klinik",
+  "kapitel": 3,
+  "set": "klinik",
+  "i": 76,
+  "t0": 196.71
+ },
+ {
+  "satz": "Die amerikanische Lkw-Branche hat genau dieses Szenario durchgespielt.",
+  "sek": 4.56,
+  "zeigt": "Bildschirm in der Welt zeigt ein Szenario-Diagramm der US-Lkw-Branche",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 3,
+  "set": "steuerzentrale",
+  "i": 77,
+  "t0": 198.95
+ },
+ {
+  "satz": "Ihr Ergebnis:",
+  "sek": 1.2,
+  "zeigt": "Stundenzähler an der Klinikwand läuft",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 3,
+  "set": "klinik",
+  "i": 78,
+  "t0": 203.51
+ },
+ {
+  "satz": "Klinikbedarf wird schon nach Stunden knapp.",
+  "sek": 2.63,
+  "zeigt": "Lagerregal der Klinik leert sich innerhalb von Stunden",
+  "animation": "Regale leeren sich",
+  "inhalt": [
+   "geschehen",
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "antwort:klinik",
+  "kapitel": 3,
+  "set": "klinik",
+  "i": 79,
+  "t0": 204.71
+ },
+ {
+  "satz": "Und bevor du schlafen gehst, denkst du:",
+  "sek": 2.24,
+  "zeigt": "Dein Haus, im Schlafzimmer geht das Licht aus",
+  "animation": "Dein Haus",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 3,
+  "set": "haus_nacht",
+  "i": 80,
+  "t0": 207.34
+ },
+ {
+  "satz": "Morgen fahre ich lieber noch tanken.",
+  "sek": 3.64,
+  "zeigt": "Tilt-Shift zur Tankstelle um die Ecke, noch beleuchtet",
+  "animation": "Tilt-Shift-Flug",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "frage:tank",
+  "kapitel": 3,
+  "set": "tankstelle_nacht",
+  "i": 81,
+  "t0": 209.58
+ },
+ {
+  "satz": "Tag 2, 7 Uhr früh.",
+  "sek": 2.4,
+  "zeigt": "Fallblatt TAG 2, Uhr 07:00",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "antwort:tank",
+  "kapitel": 4,
+  "set": "rathaus_uhr",
+  "i": 82,
+  "t0": 213.22
+ },
+ {
+  "satz": "Deine Tankstelle hat Absperrband um die Zapfsäulen.",
+  "sek": 3.28,
+  "zeigt": "Tankstelle: rot-weißes Absperrband spannt sich um die Zapfsäulen",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 4,
+  "set": "tankstelle_tag",
+  "i": 83,
+  "t0": 215.62
+ },
+ {
+  "satz": "Über 14.000 Tankstellen gibt es in Deutschland.",
+  "sek": 3.2,
+  "zeigt": "Modell-Karte: 14.000 Tankstellen-Punkte leuchten auf",
+  "animation": "Netzwerk-Karte",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 4,
+  "set": "karte_tankstellen",
+  "i": 84,
+  "t0": 218.9
+ },
+ {
+  "satz": "Jede einzelne lebt vom Tanklaster.",
+  "sek": 2.72,
+  "zeigt": "Jede Tankstelle ist mit einer Tanklaster-Linie verbunden",
+  "animation": "Ablauf-Kette",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "frage:sprit",
+  "kapitel": 4,
+  "set": "karte_tankstellen",
+  "i": 85,
+  "t0": 222.1
+ },
+ {
+  "satz": "Und hier ist das Seltsame:",
+  "sek": 1.84,
+  "zeigt": "Kamera senkt sich auf riesige Tanklager",
+  "animation": "Tilt-Shift-Flug",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "stimmung",
+  "neugier": "",
+  "kapitel": 4,
+  "set": "tanklager",
+  "i": 86,
+  "t0": 224.82
+ },
+ {
+  "satz": "Deutschland hält Erdöl und Kraftstoffe für 90 Tage vor.",
+  "sek": 3.96,
+  "zeigt": "Tanks füllen sich sichtbar, Zähler 90 TAGE",
+  "animation": "Fluss in Rohren",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 4,
+  "set": "tanklager",
+  "i": 87,
+  "t0": 226.66
+ },
+ {
+  "satz": "Für genau so einen Fall.",
+  "sek": 2.0,
+  "zeigt": "Tanks voll, Ventile geschlossen",
+  "animation": "Lagerbestand-Turm",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "kapitel": 4,
+  "set": "tanklager",
+  "i": 88,
+  "t0": 230.62
+ },
+ {
+  "satz": "Der Sprit wäre also da.",
+  "sek": 1.76,
+  "zeigt": "Pegelanzeige im Querschnitt: voll",
+  "animation": "Querschnitt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "antwort:sprit",
+  "kapitel": 4,
+  "set": "tanklager",
+  "i": 89,
+  "t0": 232.62
+ },
+ {
+  "satz": "Nur liegt das in großen Lagern.",
+  "sek": 2.16,
+  "zeigt": "Kamera zieht zurück, zwischen Tanklager und Stadt liegt eine lange Straße",
+  "animation": "Was-wäre-wenn-Teilung",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "frage:weg",
+  "kapitel": 4,
+  "set": "tanklager_strasse",
+  "i": 90,
+  "t0": 234.38
+ },
+ {
+  "satz": "Zu deiner Tankstelle kommt es auf dem Lkw.",
+  "sek": 2.8,
+  "zeigt": "Ein Tanklaster-Symbol fährt die Straße zur Tankstelle",
+  "animation": "Warenstrom",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "kapitel": 4,
+  "set": "tanklager_strasse",
+  "i": 91,
+  "t0": 236.54
+ },
+ {
+  "satz": "Und ohne Fahrer bewegt sich kein einziger Liter.",
+  "sek": 3.6,
+  "zeigt": "Der Tanklaster stoppt, Fahrerkabine leer, Straße bleibt dunkel",
+  "animation": "Lichter gehen aus",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "antwort:weg",
+  "kapitel": 4,
+  "set": "tanklager_strasse",
+  "i": 92,
+  "t0": 239.34
+ },
+ {
+  "satz": "Im amerikanischen Szenario passiert ab jetzt noch mehr.",
+  "sek": 3.36,
+  "zeigt": "Bildschirm: US-Szenario-Seite, Tag 2–3 markiert",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 4,
+  "set": "steuerzentrale",
+  "i": 93,
+  "t0": 242.94
+ },
+ {
+  "satz": "Der Müll bleibt liegen.",
+  "sek": 1.52,
+  "zeigt": "Mülltonnen quellen über, Müllwagen steht im Hof",
+  "animation": "Ablauf-Kette",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 4,
+  "set": "strasse_muell",
+  "i": 94,
+  "t0": 246.3
+ },
+ {
+  "satz": "Geldautomaten werden nicht mehr aufgefüllt.",
+  "sek": 2.48,
+  "zeigt": "Geldautomat-Display wechselt auf außer Betrieb (Symbol)",
+  "animation": "Ablauf-Kette",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 4,
+  "set": "geldautomat",
+  "i": 95,
+  "t0": 247.82
+ },
+ {
+  "satz": "Und wer hat dir die Milch eigentlich bisher gebracht?",
+  "sek": 2.8,
+  "zeigt": "Kamera fährt in eine leere, dunkle Fahrerkabine",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "frage:fahrer",
+  "kapitel": 4,
+  "set": "fahrerkabine",
+  "i": 96,
+  "t0": 250.3
+ },
+ {
+  "satz": "Am einen Ende der Kette sitzen wenige Große.",
+  "sek": 3.12,
+  "zeigt": "Geteiltes Bild: links vier große Handelstürme",
+  "animation": "Was-wäre-wenn-Teilung",
+  "inhalt": [
+   "vergleich"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "kapitel": 4,
+  "set": "was_waere",
+  "i": 97,
+  "t0": 253.1
+ },
+ {
+  "satz": "Laut Bundeskartellamt kaufen 4 Handelsgruppen mehr als 85 Prozent der Ware ein",
+  "sek": 3.88,
+  "zeigt": "Prozent als Stadtteil: 85 von 100 Häusern färben sich in vier Farbblöcken",
+  "animation": "Prozent als Stadtteil",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 4,
+  "set": "balken_handel",
+  "i": 98,
+  "t0": 256.22
+ },
+ {
+  "satz": "85 Prozent über den Lebensmittelhandel.",
+  "sek": 3.88,
+  "zeigt": "Zahl 85 % klappt auf der Anzeigetafel",
+  "animation": "Zahl in der Welt",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 4,
+  "set": "balken_handel",
+  "i": 98,
+  "t0": 260.1
+ },
+ {
+  "satz": "Edeka, Rewe, die Schwarz-Gruppe und Aldi.",
+  "sek": 3.92,
+  "zeigt": "Vier Blöcke beschriften sich: Edeka, Rewe, Schwarz-Gruppe, Aldi (nur Text, keine Logos)",
+  "animation": "Balken als Häuser",
+  "inhalt": [
+   "vergleich"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 4,
+  "set": "balken_handel",
+  "i": 99,
+  "t0": 263.98
+ },
+ {
+  "satz": "Am anderen Ende sitzt ein einzelner Mensch.",
+  "sek": 2.96,
+  "zeigt": "Rechte Bildhälfte: eine einzelne kleine Fahrerkabine",
+  "animation": "Was-wäre-wenn-Teilung",
+  "inhalt": [
+   "vergleich"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "antwort:fahrer",
+  "kapitel": 4,
+  "set": "was_waere",
+  "i": 100,
+  "t0": 267.9
+ },
+ {
+  "satz": "Allein in einer Fahrerkabine.",
+  "sek": 2.4,
+  "zeigt": "In der Kabine brennt eine einzelne Lampe, ein Fahrer von hinten",
+  "animation": "Menschen reagieren",
+  "inhalt": [
+   "person"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 4,
+  "set": "fahrerkabine",
+  "i": 101,
+  "t0": 270.86
+ },
+ {
+  "satz": "Zwei von fünf Lkw-Fahrern in Deutschland sind 55 Jahre oder älter.",
+  "sek": 4.64,
+  "zeigt": "Fünf Fahrer-Figuren, zwei davon färben sich orange, Anzeige 55+",
+  "animation": "Prozent als Stadtteil",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 4,
+  "set": "balken_fahrer",
+  "i": 102,
+  "t0": 273.26
+ },
+ {
+  "satz": "Mehr als 70.000 Fahrer fehlen, schätzt der Branchenverband.",
+  "sek": 4.96,
+  "zeigt": "Eine Reihe Fahrerkabinen, viele bleiben dunkel, Zähler 70.000",
+  "animation": "Zahl in der Welt",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 4,
+  "set": "balken_fahrer",
+  "i": 103,
+  "t0": 277.9
+ },
+ {
+  "satz": "Wie es ganz unten in dieser Kette aussehen kann, hat ein Rastplatz in Südhessen gezeigt.",
+  "sek": 4.96,
+  "zeigt": "Modell-Karte zoomt nach Südhessen, Ortsmarke Rastplatz",
+  "animation": "Modell-Karte",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "teaser:graef",
+  "kapitel": 4,
+  "set": "karte_hessen",
+  "i": 104,
+  "t0": 282.86
+ },
+ {
+  "satz": "Gräfenhausen, Frühjahr 2023.",
+  "sek": 3.72,
+  "zeigt": "Fallblatt GRÄFENHAUSEN 2023 über dem Rastplatz",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "ort",
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 4,
+  "set": "rastplatz",
+  "i": 105,
+  "t0": 287.82
+ },
+ {
+  "satz": "Über 60 Fahrer stellen ihre Lkw ab",
+  "sek": 3.44,
+  "zeigt": "Über 60 Lkw-Modelle stehen in Reihen auf dem Rastplatz, Motoren aus",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen",
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 4,
+  "set": "rastplatz",
+  "i": 106,
+  "t0": 291.54
+ },
+ {
+  "satz": "und fahren nicht weiter.",
+  "sek": 3.44,
+  "zeigt": "Figuren steigen aus und stehen zusammen",
+  "animation": "Menschen reagieren",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 4,
+  "set": "rastplatz",
+  "i": 106,
+  "t0": 294.98
+ },
+ {
+  "satz": "Sie sagen, eine polnische Spedition schuldet ihnen Lohn.",
+  "sek": 3.68,
+  "zeigt": "Ein Transparent ohne Text hängt zwischen zwei Lkw",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 4,
+  "set": "rastplatz",
+  "i": 107,
+  "t0": 298.42
+ },
+ {
+  "satz": "Zuletzt fordern sie noch fast 100.000 Euro.",
+  "sek": 3.28,
+  "zeigt": "Anzeigetafel: Forderung fast 100.000 €",
+  "animation": "Zahl in der Welt",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 4,
+  "set": "rastplatz",
+  "i": 108,
+  "t0": 302.1
+ },
+ {
+  "satz": "Nach gut 5 Wochen gibt es eine Einigung.",
+  "sek": 4.32,
+  "zeigt": "Kalender blättert 5 Wochen, dann fahren die Lkw ab",
+  "animation": "Tag-Nacht-Zeitraffer",
+  "inhalt": [
+   "zeit",
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 4,
+  "set": "rastplatz",
+  "i": 109,
+  "t0": 305.38
+ },
+ {
+  "satz": "Im Sommer stehen wieder Fahrer auf demselben Rastplatz, wieder mit dem Vorwurf, dass Löhne nicht gezahlt wurden.",
+  "sek": 3.08,
+  "zeigt": "Sommerlicht, wieder stehen Lkw auf demselben Rastplatz",
+  "animation": "Tag-Nacht-Zeitraffer",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 4,
+  "set": "rastplatz_sommer",
+  "i": 110,
+  "t0": 309.7
+ },
+ {
+  "satz": "Im Sommer stehen wieder Fahrer auf demselben Rastplatz, wieder mit dem Vorwurf, dass Löhne nicht gezahlt wurden.",
+  "sek": 3.08,
+  "zeigt": "Figuren stehen zwischen den Lkw, Transparent",
+  "animation": "Menschen reagieren",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 4,
+  "set": "rastplatz_sommer",
+  "i": 110,
+  "t0": 312.78
+ },
+ {
+  "satz": "Diesmal rund 80.",
+  "sek": 1.92,
+  "zeigt": "Zähler klappt auf rund 80",
+  "animation": "Zahl in der Welt",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 4,
+  "set": "rastplatz_sommer",
+  "i": 111,
+  "t0": 315.86
+ },
+ {
+  "satz": "Etwa 30 von ihnen treten in den Hungerstreik.",
+  "sek": 3.04,
+  "zeigt": "30 Figuren setzen sich hin, Teller leer",
+  "animation": "Menschen reagieren",
+  "inhalt": [
+   "zahl",
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 4,
+  "set": "rastplatz_sommer",
+  "i": 112,
+  "t0": 317.78
+ },
+ {
+  "satz": "Auch auf solchen Menschen steht dein Frühstück.",
+  "sek": 2.8,
+  "zeigt": "Dein Frühstückstisch im Haus, Kamera zieht zurück zur Straße",
+  "animation": "Dein Haus",
+  "inhalt": [
+   "vergleich"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "kapitel": 4,
+  "set": "haus_kueche",
+  "i": 113,
+  "t0": 320.82
+ },
+ {
+  "satz": "Zurück zu deiner Tankstelle.",
+  "sek": 1.76,
+  "zeigt": "Rückflug durch die Straßen zurück zur Tankstelle",
+  "animation": "Rückflug zum Anfang",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 4,
+  "set": "tankstelle_tag",
+  "i": 114,
+  "t0": 323.62
+ },
+ {
+  "satz": "Das Band hängt immer noch.",
+  "sek": 1.6,
+  "zeigt": "Das Absperrband flattert im Wind",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 4,
+  "set": "tankstelle_tag",
+  "i": 115,
+  "t0": 325.38
+ },
+ {
+  "satz": "Und deine Palette Milch steht noch immer in der Molkerei.",
+  "sek": 3.36,
+  "zeigt": "Molkerei: deine Palette steht noch immer an der Rampe",
+  "animation": "Tilt-Shift-Flug",
+  "inhalt": [
+   "ort",
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 4,
+  "set": "molkerei",
+  "i": 116,
+  "t0": 326.98
+ },
+ {
+  "satz": "Inzwischen ist sie abgelaufen.",
+  "sek": 3.48,
+  "zeigt": "Das Licht über der Palette erlischt, Datum-Etikett läuft ab",
+  "animation": "Lichter gehen aus",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "antwort:palette",
+  "kapitel": 4,
+  "set": "molkerei",
+  "i": 117,
+  "t0": 330.34
+ },
+ {
+  "satz": "Tag 3, 10 Uhr.",
+  "sek": 2.0,
+  "zeigt": "Fallblatt TAG 3, Uhr 10:00",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 5,
+  "set": "rathaus_uhr",
+  "i": 118,
+  "t0": 333.82
+ },
+ {
+  "satz": "Du stehst wieder in deinem Markt.",
+  "sek": 2.0,
+  "zeigt": "Deine Figur betritt den Markt",
+  "animation": "Dein Haus",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 5,
+  "set": "markt_aussen",
+  "i": 119,
+  "t0": 335.82
+ },
+ {
+  "satz": "Und jetzt ist es nicht mehr lückig.",
+  "sek": 2.32,
+  "zeigt": "Kamera gleitet am Regal entlang, nur noch Reste",
+  "animation": "Regale leeren sich",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 5,
+  "set": "markt_regal_leer",
+  "i": 120,
+  "t0": 337.82
+ },
+ {
+  "satz": "Es ist leer.",
+  "sek": 1.12,
+  "zeigt": "Die letzten Packungen verschwinden nacheinander, das Regal steht komplett leer",
+  "animation": "Regale leeren sich",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 5,
+  "set": "markt_regal_leer",
+  "i": 121,
+  "t0": 340.14
+ },
+ {
+  "satz": "Du gehst durch die Gänge.",
+  "sek": 1.44,
+  "zeigt": "Langsame Fahrt durch leere Gänge",
+  "animation": "Tilt-Shift-Flug",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 5,
+  "set": "markt_gang_leer",
+  "i": 122,
+  "t0": 341.26
+ },
+ {
+  "satz": "Du hörst nur noch die Kühlregale brummen.",
+  "sek": 2.56,
+  "zeigt": "Leere Kühlregale, nur ihr Licht flackert",
+  "animation": "Lichter gehen aus",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 5,
+  "set": "markt_kuehl_leer",
+  "i": 123,
+  "t0": 342.7
+ },
+ {
+  "satz": "Nicht nur bei dir.",
+  "sek": 1.28,
+  "zeigt": "Rauszoomen: in der ganzen Stadt sind die Märkte grau",
+  "animation": "Prozent als Stadtteil",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 5,
+  "set": "stadt_total",
+  "i": 124,
+  "t0": 345.26
+ },
+ {
+  "satz": "Überall.",
+  "sek": 0.96,
+  "zeigt": "Modell-Karte: alle Marktpunkte im Land werden grau",
+  "animation": "Modell-Karte",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 5,
+  "set": "karte_de",
+  "i": 125,
+  "t0": 346.54
+ },
+ {
+  "satz": "Ist das übertrieben?",
+  "sek": 1.64,
+  "zeigt": "Leitstand mit zwei Bildschirmen geht an",
+  "animation": "Steuerzentrale",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "frage:uebertrieben",
+  "kapitel": 5,
+  "set": "steuerzentrale",
+  "i": 126,
+  "t0": 347.5
+ },
+ {
+  "satz": "Eine Studie für den Bundestag hat einen großen Stromausfall durchgespielt, also eine ganz andere Ursache.",
+  "sek": 3.2,
+  "zeigt": "Linker Bildschirm: Stromausfall-Szenario, Stadt im Dunkeln",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 5,
+  "set": "steuerzentrale",
+  "i": 127,
+  "t0": 349.14
+ },
+ {
+  "satz": "Eine Studie für den Bundestag hat einen großen Stromausfall durchgespielt, also eine ganz andere Ursache.",
+  "sek": 3.2,
+  "zeigt": "Ein Hinweis ANDERE URSACHE blinkt auf",
+  "animation": "Steuerzentrale",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 5,
+  "set": "steuerzentrale",
+  "i": 127,
+  "t0": 352.34
+ },
+ {
+  "satz": "Ihr Ergebnis:",
+  "sek": 1.28,
+  "zeigt": "Auf dem Leitstand springt eine orange Ergebnis-Leuchte an",
+  "animation": "Steuerzentrale",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 5,
+  "set": "steuerzentrale",
+  "i": 128,
+  "t0": 355.54
+ },
+ {
+  "satz": "Nach 2 bis 5 Tagen sind die Regale leer.",
+  "sek": 2.92,
+  "zeigt": "Skala Tag 1–5 im Modell, Bereich 2–5 leuchtet",
+  "animation": "Zahl in der Welt",
+  "inhalt": [
+   "zahl",
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "antwort:uebertrieben",
+  "kapitel": 5,
+  "set": "tage_skala",
+  "i": 129,
+  "t0": 356.82
+ },
+ {
+  "satz": "Im US-Szenario wird Essen schon nach 1 Tag knapp",
+  "sek": 4.06,
+  "zeigt": "Zweite Skala: US-Szenario, Tag 1 knapp",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit",
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 5,
+  "set": "tage_skala",
+  "i": 130,
+  "t0": 359.74
+ },
+ {
+  "satz": "ab Tag 2 bis 3 durch Hamsterkäufe ernst.",
+  "sek": 4.06,
+  "zeigt": "Tag 2–3: Figuren mit vollen Wagen, Hamsterkäufe",
+  "animation": "Menschen reagieren",
+  "inhalt": [
+   "zeit",
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 5,
+  "set": "tage_skala",
+  "i": 130,
+  "t0": 363.8
+ },
+ {
+  "satz": "Zwei Szenarien, ein ähnliches Ergebnis.",
+  "sek": 3.2,
+  "zeigt": "Beide Skalen schieben sich übereinander",
+  "animation": "Was-wäre-wenn-Teilung",
+  "inhalt": [
+   "vergleich"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "kapitel": 5,
+  "set": "tage_skala",
+  "i": 131,
+  "t0": 367.86
+ },
+ {
+  "satz": "Nach rund 3 Tagen wäre dein Supermarkt weitgehend leer.",
+  "sek": 3.76,
+  "zeigt": "Die Überlappung bei Tag 3 leuchtet orange, Fallblatt TAG 3",
+  "animation": "Zahl in der Welt",
+  "inhalt": [
+   "zahl",
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "antwort:wielange",
+  "kapitel": 5,
+  "set": "tage_skala",
+  "i": 132,
+  "t0": 371.06
+ },
+ {
+  "satz": "Aber jetzt kommt der Gedanke, den fast jeder hat.",
+  "sek": 3.04,
+  "zeigt": "Kamera steigt über der grauen Stadt auf",
+  "animation": "Tilt-Shift-Flug",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "stimmung",
+  "neugier": "frage:reserve",
+  "kapitel": 5,
+  "set": "stadt_total",
+  "i": 133,
+  "t0": 374.82
+ },
+ {
+  "satz": "Dafür hat der Staat doch vorgesorgt.",
+  "sek": 2.52,
+  "zeigt": "Ein großes, unscheinbares Lagertor am Stadtrand",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 5,
+  "set": "notreserve_aussen",
+  "i": 134,
+  "t0": 377.86
+ },
+ {
+  "satz": "Und das stimmt.",
+  "sek": 1.04,
+  "zeigt": "Das Tor öffnet sich, Licht fällt hinein",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "antwort:reserve",
+  "kapitel": 5,
+  "set": "notreserve_innen",
+  "i": 135,
+  "t0": 380.38
+ },
+ {
+  "satz": "Es gibt eine Notreserve.",
+  "sek": 2.0,
+  "zeigt": "Licht fällt auf Hallen voller Säcke und Kisten bis unter die Decke",
+  "animation": "Lagerbestand-Turm",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 5,
+  "set": "notreserve_innen",
+  "i": 136,
+  "t0": 381.42
+ },
+ {
+  "satz": "Reis, Erbsen, Linsen, Kondensmilch.",
+  "sek": 3.12,
+  "zeigt": "Säcke Reis, Erbsen, Linsen, Dosen Kondensmilch stapeln sich",
+  "animation": "Lagerbestand-Turm",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 5,
+  "set": "notreserve_innen",
+  "i": 137,
+  "t0": 383.42
+ },
+ {
+  "satz": "Dazu Getreide.",
+  "sek": 1.44,
+  "zeigt": "Getreidesilo daneben füllt sich",
+  "animation": "Fluss in Rohren",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 5,
+  "set": "notreserve_innen",
+  "i": 138,
+  "t0": 386.54
+ },
+ {
+  "satz": "Verteilt auf mehr als 150 Lager.",
+  "sek": 2.88,
+  "zeigt": "Modell-Karte: 150 Lagerpunkte erscheinen, verschwommen",
+  "animation": "Netzwerk-Karte",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 5,
+  "set": "karte_reserve",
+  "i": 139,
+  "t0": 387.98
+ },
+ {
+  "satz": "Wo genau, ist geheim.",
+  "sek": 1.76,
+  "zeigt": "Die Punkte verschwinden im Nebel, Fragezeichen",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 5,
+  "set": "karte_reserve",
+  "i": 140,
+  "t0": 390.86
+ },
+ {
+  "satz": "Sie soll helfen, dass die Menschen wenigstens eine Mahlzeit am Tag bekommen.",
+  "sek": 4.24,
+  "zeigt": "Ein Teller mit einer Mahlzeit wird aus den Vorräten zusammengesetzt",
+  "animation": "Menschen reagieren",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "kapitel": 5,
+  "set": "notreserve_innen",
+  "i": 141,
+  "t0": 392.62
+ },
+ {
+  "satz": "Vor allem in Großstädten.",
+  "sek": 1.6,
+  "zeigt": "Die großen Städte auf der Karte leuchten",
+  "animation": "Modell-Karte",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 5,
+  "set": "stadt_total",
+  "i": 142,
+  "t0": 396.86
+ },
+ {
+  "satz": "Vielleicht also auch du.",
+  "sek": 1.52,
+  "zeigt": "Dein Haus in der Stadt leuchtet orange auf",
+  "animation": "Dein Haus",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 5,
+  "set": "haus_kueche",
+  "i": 143,
+  "t0": 398.46
+ },
+ {
+  "satz": "Und nur für kurze Zeit.",
+  "sek": 1.84,
+  "zeigt": "Der Lagerbestand-Turm im Lager sinkt schnell ab",
+  "animation": "Lagerbestand-Turm",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "kapitel": 5,
+  "set": "notreserve_innen",
+  "i": 144,
+  "t0": 399.98
+ },
+ {
+  "satz": "Bleibt nur eine Frage.",
+  "sek": 1.84,
+  "zeigt": "Kamera vor dem Lagertor, Straße davor",
+  "animation": "Tilt-Shift-Flug",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "stimmung",
+  "neugier": "frage:reisweg",
+  "kapitel": 5,
+  "set": "notreserve_aussen",
+  "i": 145,
+  "t0": 401.82
+ },
+ {
+  "satz": "Wie kommt der Reis aus diesem Lager zu dir?",
+  "sek": 2.92,
+  "zeigt": "Gestrichelte Linie vom Lager zu deinem Haus",
+  "animation": "Ablauf-Kette",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "kapitel": 5,
+  "set": "notreserve_strasse",
+  "i": 146,
+  "t0": 403.66
+ },
+ {
+  "satz": "Die zuständige Behörde beantwortet das selbst.",
+  "sek": 2.8,
+  "zeigt": "Bildschirm: Behörden-FAQ-Seite (ohne lesbaren Text)",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 5,
+  "set": "steuerzentrale",
+  "i": 147,
+  "t0": 406.58
+ },
+ {
+  "satz": "Kaum ein Lager hat einen Gleisanschluss.",
+  "sek": 2.48,
+  "zeigt": "Gleise enden weit vor dem Lager",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 5,
+  "set": "notreserve_aussen",
+  "i": 148,
+  "t0": 409.38
+ },
+ {
+  "satz": "Verteilt wird überwiegend per Lkw.",
+  "sek": 2.56,
+  "zeigt": "Lkw-Symbole auf der Straße vom Lager",
+  "animation": "Warenstrom",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "antwort:reisweg",
+  "kapitel": 5,
+  "set": "notreserve_strasse",
+  "i": 149,
+  "t0": 411.86
+ },
+ {
+  "satz": "Im Notfall kann der Staat Speditionen verpflichten, THW und Bundeswehr können helfen.",
+  "sek": 2.66,
+  "zeigt": "THW- und Bundeswehr-Fahrzeuge (neutral, ohne Wappen) rollen an",
+  "animation": "Warenstrom",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "kapitel": 5,
+  "set": "notreserve_strasse",
+  "i": 150,
+  "t0": 414.42
+ },
+ {
+  "satz": "Im Notfall kann der Staat Speditionen verpflichten, THW und Bundeswehr können helfen.",
+  "sek": 2.66,
+  "zeigt": "Sie fahren auf derselben Straße",
+  "animation": "Ablauf-Kette",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "kapitel": 5,
+  "set": "notreserve_strasse",
+  "i": 150,
+  "t0": 417.08
+ },
+ {
+  "satz": "Aber auch sie brauchen Fahrer und Lkw.",
+  "sek": 2.8,
+  "zeigt": "Leere Fahrerkabinen in einer Reihe",
+  "animation": "Lichter gehen aus",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 5,
+  "set": "fahrerkabine",
+  "i": 151,
+  "t0": 419.74
+ },
+ {
+  "satz": "Zum zweiten Mal in dieser Geschichte ist der Vorrat da.",
+  "sek": 3.2,
+  "zeigt": "Rückflug in das volle Lager, Kamera gleitet an den Säcken entlang",
+  "animation": "Rückflug zum Anfang",
+  "inhalt": [
+   "vergleich"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "frage:laenger",
+  "kapitel": 5,
+  "set": "notreserve_innen",
+  "i": 152,
+  "t0": 422.54
+ },
+ {
+  "satz": "Nur der Weg zu dir fehlt.",
+  "sek": 1.76,
+  "zeigt": "Die Straße zu deinem Haus bleibt dunkel",
+  "animation": "Lichter gehen aus",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "antwort:staat",
+  "kapitel": 5,
+  "set": "notreserve_strasse",
+  "i": 153,
+  "t0": 425.74
+ },
+ {
+  "satz": "Und wenn es noch länger dauert?",
+  "sek": 2.04,
+  "zeigt": "Kamera senkt sich auf ein Wasserwerk",
+  "animation": "Tilt-Shift-Flug",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "stimmung",
+  "neugier": "",
+  "kapitel": 5,
+  "set": "wasserwerk",
+  "i": 154,
+  "t0": 427.5
+ },
+ {
+  "satz": "In der zweiten Woche, Woche 2, wird sauberes Wasser knapp.",
+  "sek": 4.72,
+  "zeigt": "Querschnitt: Wasser fließt durch Rohre, Fluss wird schwächer, Kalender WOCHE 2",
+  "animation": "Fluss in Rohren",
+  "inhalt": [
+   "zeit",
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "frage:lehre",
+  "kapitel": 5,
+  "set": "wasserwerk_quer",
+  "i": 155,
+  "t0": 429.54
+ },
+ {
+  "satz": "Denn auch die Chemikalien für die Aufbereitung kommen mit dem Lkw.",
+  "sek": 5.4,
+  "zeigt": "Ein Chemikalien-Lkw fehlt an der Anlieferung, Tank leer",
+  "animation": "Ablauf-Kette",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "antwort:laenger",
+  "kapitel": 5,
+  "set": "wasserwerk_quer",
+  "i": 156,
+  "t0": 434.26
+ },
+ {
+  "satz": "Hier halten wir an.",
+  "sek": 1.44,
+  "zeigt": "Morgenlicht über der Modellstadt, alle Lichter fahren wieder",
+  "animation": "Tag-Nacht-Zeitraffer",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "stimmung",
+  "neugier": "",
+  "kapitel": 6,
+  "set": "stadt_morgen",
+  "i": 157,
+  "t0": 439.66
+ },
+ {
+  "satz": "Durchatmen.",
+  "sek": 1.2,
+  "zeigt": "Ruhige Autobahn im Morgenlicht, Lkw fahren",
+  "animation": "Warenstrom",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "stimmung",
+  "neugier": "",
+  "kapitel": 6,
+  "set": "autobahn_morgen",
+  "i": 158,
+  "t0": 441.1
+ },
+ {
+  "satz": "Unser Szenario ist erfunden.",
+  "sek": 2.16,
+  "zeigt": "Einblendung GEDANKENEXPERIMENT auf der Anzeigetafel",
+  "animation": "Zahl in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 6,
+  "set": "stadt_morgen",
+  "i": 159,
+  "t0": 442.3
+ },
+ {
+  "satz": "Dass von einem Tag auf den anderen alle Lkw stehen, ist sehr unwahrscheinlich.",
+  "sek": 2.5,
+  "zeigt": "Alle Lkw fahren normal, Häkchen",
+  "animation": "Warenstrom",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 6,
+  "set": "autobahn_morgen",
+  "i": 160,
+  "t0": 444.46
+ },
+ {
+  "satz": "Dass von einem Tag auf den anderen alle Lkw stehen, ist sehr unwahrscheinlich.",
+  "sek": 2.5,
+  "zeigt": "Die Karte ist überall hell",
+  "animation": "Modell-Karte",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 6,
+  "set": "karte_de",
+  "i": 160,
+  "t0": 446.96
+ },
+ {
+  "satz": "Und der Staat ist nicht hilflos.",
+  "sek": 2.08,
+  "zeigt": "Leitstand mit Behörden-Symbol schaltet sich ein",
+  "animation": "Steuerzentrale",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "kapitel": 6,
+  "set": "steuerzentrale",
+  "i": 161,
+  "t0": 449.46
+ },
+ {
+  "satz": "Seit 2017 kann der Staat in einer Versorgungskrise",
+  "sek": 3.28,
+  "zeigt": "Fallblatt klappt auf 2017, daneben ein Gesetzbuch-Symbol",
+  "animation": "Zahl in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 6,
+  "set": "steuerzentrale",
+  "i": 162,
+  "t0": 451.54
+ },
+ {
+  "satz": "Lkw-Transporte anfordern.",
+  "sek": 3.28,
+  "zeigt": "Lkw werden per Leitstand auf Routen geschickt",
+  "animation": "Warenstrom",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "kapitel": 6,
+  "set": "notreserve_strasse",
+  "i": 162,
+  "t0": 454.82
+ },
+ {
+  "satz": "Und per Verordnung festlegen, wie viel jeder höchstens kaufen darf.",
+  "sek": 4.12,
+  "zeigt": "Schild mit Höchstmenge klappt ans Regal",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 6,
+  "set": "markt_regal_halb",
+  "i": 163,
+  "t0": 458.1
+ },
+ {
+  "satz": "Aber es muss gar nicht alles stehen.",
+  "sek": 2.32,
+  "zeigt": "Nur ein Teil der Stadt wird dunkel, der Rest läuft",
+  "animation": "Was-wäre-wenn-Teilung",
+  "inhalt": [
+   "vergleich"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "frage:wastun",
+  "kapitel": 6,
+  "set": "stadt_total",
+  "i": 164,
+  "t0": 462.22
+ },
+ {
+  "satz": "Das ist die eigentliche Lehre.",
+  "sek": 1.92,
+  "zeigt": "Die halbdunkle Stadt im Ganzen",
+  "animation": "Prozent als Stadtteil",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "antwort:lehre",
+  "kapitel": 6,
+  "set": "stadt_total",
+  "i": 165,
+  "t0": 464.54
+ },
+ {
+  "satz": "Erinnerst du dich an März 2020?",
+  "sek": 2.72,
+  "zeigt": "Fallblatt am Bahnhof klappt auf MÄRZ 2020",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 6,
+  "set": "kalender",
+  "i": 166,
+  "t0": 466.46
+ },
+ {
+  "satz": "Leere Mehlregale.",
+  "sek": 1.84,
+  "zeigt": "Leeres Mehlregal im Modell, ein Paket bleibt",
+  "animation": "Regale leeren sich",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 6,
+  "set": "markt_mehl",
+  "i": 167,
+  "t0": 469.18
+ },
+ {
+  "satz": "Zeitweise wurde fast 3 mal so viel Mehl gekauft wie sonst.",
+  "sek": 3.48,
+  "zeigt": "Häuserzeile Mehl wächst auf fast das Dreifache, Anzeige x3",
+  "animation": "Balken als Häuser",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 6,
+  "set": "balken_mehl",
+  "i": 168,
+  "t0": 471.02
+ },
+ {
+  "satz": "Dabei fuhren alle Lkw.",
+  "sek": 2.0,
+  "zeigt": "Alle Lkw fahren, trotzdem leeres Regal im Bildschirm",
+  "animation": "Was-wäre-wenn-Teilung",
+  "inhalt": [
+   "vergleich"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 6,
+  "set": "autobahn_morgen",
+  "i": 169,
+  "t0": 474.5
+ },
+ {
+  "satz": "Bund und Länder haben 2020 das Sonntagsfahrverbot ausgesetzt,",
+  "sek": 3.24,
+  "zeigt": "Sonntag auf der Autobahn: Verbotsschild klappt weg, Lkw fahren los",
+  "animation": "Tag-Nacht-Zeitraffer",
+  "inhalt": [
+   "geschehen",
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 6,
+  "set": "autobahn_sonntag",
+  "i": 170,
+  "t0": 476.5
+ },
+ {
+  "satz": "damit die Märkte versorgt bleiben.",
+  "sek": 3.24,
+  "zeigt": "Lkw-Lichter strömen zu den Märkten",
+  "animation": "Warenstrom",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 6,
+  "set": "autobahn_sonntag",
+  "i": 170,
+  "t0": 479.74
+ },
+ {
+  "satz": "In Großbritannien fehlen im Herbst 2021",
+  "sek": 2.7,
+  "zeigt": "Modell-Karte Großbritannien, Fallblatt HERBST 2021",
+  "animation": "Modell-Karte",
+  "inhalt": [
+   "ort",
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 6,
+  "set": "uk_karte",
+  "i": 171,
+  "t0": 482.98
+ },
+ {
+  "satz": "Zehntausende Fahrer.",
+  "sek": 2.7,
+  "zeigt": "Viele Fahrerkabinen bleiben leer",
+  "animation": "Lichter gehen aus",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 6,
+  "set": "uk_fahrer",
+  "i": 171,
+  "t0": 485.68
+ },
+ {
+  "satz": "Als das bekannt wird, setzen Hamsterkäufe ein, und viele Tankstellen laufen trocken.",
+  "sek": 2.6,
+  "zeigt": "Figuren stauen sich an Tankstellen",
+  "animation": "Menschen reagieren",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 6,
+  "set": "uk_tankstellen",
+  "i": 172,
+  "t0": 488.38
+ },
+ {
+  "satz": "Als das bekannt wird, setzen Hamsterkäufe ein, und viele Tankstellen laufen trocken.",
+  "sek": 2.6,
+  "zeigt": "Die Lichter der Tankstellen erlöschen nacheinander",
+  "animation": "Lichter gehen aus",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 6,
+  "set": "uk_tankstellen",
+  "i": 172,
+  "t0": 490.98
+ },
+ {
+  "satz": "Die Regierung schickt die Armee.",
+  "sek": 2.0,
+  "zeigt": "Bildschirm: Militär-Tanklaster im Depot (KI-Bild)",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 6,
+  "set": "uk_armee",
+  "i": 173,
+  "t0": 493.58
+ },
+ {
+  "satz": "Rund 100 Soldaten fahren Tanklaster.",
+  "sek": 2.72,
+  "zeigt": "Zähler 100 SOLDATEN, Tanklaster-Lichter fahren",
+  "animation": "Zahl in der Welt",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 6,
+  "set": "uk_armee",
+  "i": 174,
+  "t0": 495.58
+ },
+ {
+  "satz": "Und in Spanien streiken 2022 Lkw-Fahrer",
+  "sek": 2.62,
+  "zeigt": "Modell-Karte dreht nach Spanien, Fallblatt 2022, Lkw am Straßenrand",
+  "animation": "Modell-Karte",
+  "inhalt": [
+   "ort",
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 6,
+  "set": "es_karte",
+  "i": 175,
+  "t0": 498.3
+ },
+ {
+  "satz": "rund 3 Wochen lang.",
+  "sek": 2.62,
+  "zeigt": "Bildschirm: Lkw-Reihen am Seitenstreifen (KI-Bild), Kalender 3 Wochen",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "geschehen",
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 6,
+  "set": "es_streik",
+  "i": 175,
+  "t0": 500.92
+ },
+ {
+  "satz": "Teile der Milchindustrie stoppen die Produktion.",
+  "sek": 3.28,
+  "zeigt": "Spanische Molkerei im Modell, Bänder stoppen",
+  "animation": "Ablauf-Kette",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 6,
+  "set": "es_molkerei",
+  "i": 176,
+  "t0": 503.54
+ },
+ {
+  "satz": "Milch, Eier und Mehl werden knapp.",
+  "sek": 4.2,
+  "zeigt": "Milch, Eier, Mehl verschwinden aus dem Regal",
+  "animation": "Regale leeren sich",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 6,
+  "set": "es_regal",
+  "i": 177,
+  "t0": 506.82
+ },
+ {
+  "satz": "Und was heißt das jetzt für dich?",
+  "sek": 1.92,
+  "zeigt": "Rückflug zu deinem Haus, Licht im Fenster",
+  "animation": "Rückflug zum Anfang",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "teaser:puffer",
+  "kapitel": 7,
+  "set": "haus_aussen",
+  "i": 178,
+  "t0": 511.02
+ },
+ {
+  "satz": "Keine Panik.",
+  "sek": 1.36,
+  "zeigt": "Ruhige Küche bei Tag, alles ist normal und hell",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "gefuehl"
+  ],
+  "genauigkeit": "stimmung",
+  "neugier": "",
+  "kapitel": 7,
+  "set": "haus_kueche",
+  "i": 179,
+  "t0": 512.94
+ },
+ {
+  "satz": "Aber ein kleiner Puffer zu Hause.",
+  "sek": 2.32,
+  "zeigt": "Ein kleines Vorratsregal neben dem Kühlschrank füllt sich",
+  "animation": "Lagerbestand-Turm",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 7,
+  "set": "haus_vorrat",
+  "i": 180,
+  "t0": 514.3
+ },
+ {
+  "satz": "Das Bundesamt empfiehlt einen Vorrat für 10 Tage.",
+  "sek": 4.4,
+  "zeigt": "Tage-Zähler am Regal: 10 TAGE",
+  "animation": "Zahl in der Welt",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "antwort:wastun",
+  "kapitel": 7,
+  "set": "haus_vorrat",
+  "i": 181,
+  "t0": 516.62
+ },
+ {
+  "satz": "Schon 3 Tage helfen.",
+  "sek": 1.48,
+  "zeigt": "Markierung bei 3 TAGEN leuchtet",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 7,
+  "set": "haus_vorrat",
+  "i": 182,
+  "t0": 521.02
+ },
+ {
+  "satz": "Also genau die Zeit, die dein Supermarkt durchhalten würde.",
+  "sek": 3.76,
+  "zeigt": "Die Tag-3-Marke des Supermarkts und deine 3-Tage-Marke liegen übereinander",
+  "animation": "Was-wäre-wenn-Teilung",
+  "inhalt": [
+   "vergleich"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 7,
+  "set": "tage_skala",
+  "i": 183,
+  "t0": 522.5
+ },
+ {
+  "satz": "Pro Person und Tag 2 Liter Wasser.",
+  "sek": 4.72,
+  "zeigt": "Wasserflaschen: 2 Liter pro Person und Tag",
+  "animation": "Zahl in der Welt",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 7,
+  "set": "haus_wasser",
+  "i": 184,
+  "t0": 526.26
+ },
+ {
+  "satz": "Für 10 Tage sind das 20 Liter pro Person.",
+  "sek": 3.04,
+  "zeigt": "Flaschen stapeln sich auf 20 Liter",
+  "animation": "Balken als Häuser",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 7,
+  "set": "haus_wasser",
+  "i": 185,
+  "t0": 530.98
+ },
+ {
+  "satz": "So viel wie zwei große Putzeimer.",
+  "sek": 2.72,
+  "zeigt": "Zwei Putzeimer stehen daneben, gleich hoch",
+  "animation": "Lagerbestand-Turm",
+  "inhalt": [
+   "vergleich"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 7,
+  "set": "haus_wasser",
+  "i": 186,
+  "t0": 534.02
+ },
+ {
+  "satz": "Heute Nacht fährt wieder ein Lkw zu deinem Supermarkt.",
+  "sek": 3.12,
+  "zeigt": "Nacht über der Stadt, ein einzelnes Lkw-Licht fährt zu deinem Markt",
+  "animation": "Warenstrom",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 7,
+  "set": "stadt_total",
+  "i": 187,
+  "t0": 536.74
+ },
+ {
+  "satz": "Auf der Ladefläche:",
+  "sek": 1.28,
+  "zeigt": "Die Plane des Lkw öffnet sich im Querschnitt, Blick auf die Ladefläche",
+  "animation": "Querschnitt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 7,
+  "set": "lkw_ladung",
+  "i": 188,
+  "t0": 539.86
+ },
+ {
+  "satz": "vielleicht deine Milch.",
+  "sek": 1.48,
+  "zeigt": "Deine Palette Milch mit orangem Rahmen",
+  "animation": "Dein Haus",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 7,
+  "set": "lkw_ladung",
+  "i": 189,
+  "t0": 541.14
+ },
+ {
+  "satz": "Am Steuer:",
+  "sek": 0.96,
+  "zeigt": "Kamera fährt an die beleuchtete Fahrerkabine heran",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "person"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 7,
+  "set": "fahrerkabine",
+  "i": 190,
+  "t0": 542.62
+ },
+ {
+  "satz": "vielleicht jemand, der seit Wochen nicht zu Hause war.",
+  "sek": 2.88,
+  "zeigt": "Ein Fahrer von hinten, Foto auf dem Armaturenbrett unscharf",
+  "animation": "Menschen reagieren",
+  "inhalt": [
+   "person"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 7,
+  "set": "fahrerkabine",
+  "i": 191,
+  "t0": 543.58
+ },
+ {
+  "satz": "Wenn du morgen deinen Kühlschrank aufmachst, weißt du jetzt, wie viel Weg darin steckt.",
+  "sek": 4.8,
+  "zeigt": "Rückflug zum Anfang: dein Kühlschrank öffnet sich, Milch steht drin",
+  "animation": "Rückflug zum Anfang",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 7,
+  "set": "kuehlschrank",
+  "i": 192,
+  "t0": 546.46
+ },
+ {
+  "satz": "Wie viele Tage würdest du mit dem durchhalten, was gerade bei dir zu Hause ist?",
+  "sek": 4.44,
+  "zeigt": "Dein Vorratsregal, Tage-Zähler mit Fragezeichen",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "frage:deinetage",
+  "kapitel": 7,
+  "set": "haus_vorrat",
+  "i": 193,
+  "t0": 551.26
+ },
+ {
+  "satz": "Schreib es in die Kommentare.",
+  "sek": 1.52,
+  "zeigt": "Eine Sprechblase steigt wie ein Licht über deinem Haus auf",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 7,
+  "set": "stadt_total",
+  "i": 194,
+  "t0": 555.7
+ },
+ {
+  "satz": "Und wenn du sehen willst, welches System als Nächstes unter deinem Alltag steckt:",
+  "sek": 4.08,
+  "zeigt": "Die Straße reißt auf und zeigt weitere Systeme: Strom, Wasser, Daten",
+  "animation": "Querschnitt",
+  "inhalt": [
+   "teaser"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "teaser:naechstes",
+  "kapitel": 7,
+  "set": "querschnitt_stadt",
+  "i": 195,
+  "t0": 557.22
+ },
+ {
+  "satz": "Abonnier Unterbau und mach die Glocke an.",
+  "sek": 2.64,
+  "zeigt": "Glocke an der Rathausuhr schwingt",
+  "animation": "Netz-Puls",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 7,
+  "set": "stadt_total",
+  "i": 196,
+  "t0": 561.3
+ },
+ {
+  "satz": "Das war Unterbau.",
+  "sek": 2.04,
+  "zeigt": "UNTERBAU-Logo auf der Anzeigetafel, Lichter gehen an",
+  "animation": "Tilt-Shift-Flug",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "kapitel": 7,
+  "set": "stadt_total",
+  "i": 197,
+  "t0": 563.94
+ }
+]
