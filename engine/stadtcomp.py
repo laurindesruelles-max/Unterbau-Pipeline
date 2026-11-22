@@ -80,7 +80,7 @@ def label(img, text, x, y, alpha=1.0, size=44, sub=None):
     d.rounded_rectangle([x, y, x + w + 60, y + size + 34], 8, fill=(8, 14, 28, int(205 * alpha)))
     d.rectangle([x, y, x + 7, y + size + 34], fill=(255, 110, 20, int(255 * alpha)))
     d.text((x + 30, y + 14), text, font=f, fill=(238, 240, 246, int(255 * alpha)))
-    if sub: d.text((x + 30, y + size + 40), sub, font=font(28, False), fill=(175, 185, 205, int(255 * alpha)))
+    if sub: d.text((x + 30, y + size + 40), sub, font=font(int(size * 0.62), False), fill=(175, 185, 205, int(255 * alpha)))
     im.alpha_composite(ov); return np.array(im.convert("RGB")).astype(np.float32)
 
 def glow_dots(img, pts, rad=5, col=WARM, gain=1.0):
@@ -193,7 +193,7 @@ class Shot:
                 x, y, _ = A[fx["anchor"]][0]; y = y - 150
             else:
                 x, y = fx.get("pos", (s.W * 0.5, s.H * 0.12))
-            return label(img, fx["text"], x, y, al, fx.get("size", 44), fx.get("sub"))
+            return label(img, fx["text"], x, y, al, fx.get("size", int(58 * s.W / 1920 * 1.33)), fx.get("sub"))
         if ty == "frame" and fx["anchor"] in A:
             q = np.array([p[:2] for p in A[fx["anchor"]]], np.int32); al = ease((u - fx.get("t0", 0.2)) / 0.2)
             ov = np.zeros(img.shape[:2], np.float32); cv2.polylines(ov, [q], True, 1.0, 4, cv2.LINE_AA)
@@ -202,13 +202,14 @@ class Shot:
             g = img.mean(axis=2, keepdims=True); a = fx.get("amount", 0.6) * ease((u - fx.get("t0", 0.3)) / 0.4)
             return img * (1 - a) + g * a * np.array([0.9, 0.95, 1.05])
         if ty == "screen" and fx["anchor"] in A:
-            if not hasattr(s, "_scr"):
+            if not hasattr(s, "_scrs"): s._scrs = {}
+            if fx["img"] not in s._scrs:
                 im = cv2.cvtColor(cv2.imread(fx["img"]), cv2.COLOR_BGR2RGB); im = cv2.resize(im, (960, 540))
                 g = im.astype(np.float32); g = g * 0.85 + 12                                   # Bildschirm: etwas flacher, leicht bläulich
                 g[..., 2] += 8; sl = (np.arange(540) % 4 < 1)[:, None, None] * 10              # feine Zeilen
-                s._scr = np.dstack([np.clip(g - sl, 0, 255).astype(np.uint8), np.full((540, 960), 255, np.uint8)])
+                s._scrs[fx["img"]] = np.dstack([np.clip(g - sl, 0, 255).astype(np.uint8), np.full((540, 960), 255, np.uint8)])
             al = ease(u / 0.12)
-            out = quad_overlay(img, A[fx["anchor"]], s._scr)
+            out = quad_overlay(img, A[fx["anchor"]], s._scrs[fx["img"]])
             return img * (1 - al) + out * al
         if ty == "hl":
             al = ease((u - fx.get("t0", 0.1)) / 0.15); ov = np.zeros(img.shape[:2], np.float32)
@@ -246,7 +247,7 @@ def main():
     a = ap.parse_args()
     plan = json.load(open(a.plan))[a.i0:a.i1]
     p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{OW}x{OH}", "-r", str(FPS), "-i", "-",
-                          "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-pix_fmt", "yuv420p", a.out], stdin=subprocess.PIPE)
+                          "-c:v", "libx264", "-preset", "veryfast", "-crf", "21", "-pix_fmt", "yuv420p", a.out], stdin=subprocess.PIPE)
     rng = np.random.default_rng(1); n = 0; tacc = 0.0
     for spec in plan:
         sh = Shot(spec, a.rdir, OW, OH)

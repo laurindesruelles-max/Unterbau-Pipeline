@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/claude/unterbau-pipeline/engine/stadtcomp.py", line 260, in <module>
+    main()
+    ~~~~^^
+  File "/home/claude/unterbau-pipeline/engine/stadtcomp.py", line 247, in main
+    plan = json.load(open(a.plan))[a.i0:a.i1]
+                     ~~~~^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'full/plan.json'

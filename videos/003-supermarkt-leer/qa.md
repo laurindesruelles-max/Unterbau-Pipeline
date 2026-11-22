@@ -48,3 +48,13 @@ Tabelle: Aussage im Skript | Quelle (Link) | Stimmt? (ja / teilweise / nein / un
 - Hook-Prüfung: Thema klar bei 0–4 s („Dein Supermarkt hat fast kein Lager … kommt per Lkw nach“), offene Frage bei 10 s, Versprechen bei 25 s („Tag für Tag … bis selbst der Staat ein Problem hat“), Hook bis Titelkarte 36 s (≤ 45 s).
 - Faktencheck (separater Agent, Primärquellen selbst geöffnet): alles korrekt oder gering ungenau; 1 Punkt mittel (Spanien: Abgabegrenzen) → Satz neu eingesprochen („Milch, Eier und Mehl werden knapp. Supermärkte dürfen die Abgabe begrenzen.“). Mehl-Beleg auf Destatis PE20_130 korrigiert.
 - Recht: keine Namen von Privatpersonen; Gräfenhausen nur als „Vorwurf“ ohne Firmennamen; Handelsgruppen nur mit Kartellamts-Zahl, ohne Bezug zu Gräfenhausen; „Gedankenexperiment“ und „Szene nachgestellt“ im Ton und als Einblendung; KI-Hinweis in der Beschreibung, bei YouTube „Veränderte oder synthetische Inhalte“ setzen; keine fremden Fotos/Videos/Musik; keine Schwachstellen von Infrastruktur (Lagerorte nicht genannt). Keine Werbung.
+
+## Fassung 2 (22.11.2026): Modellstadt, neues Skript, Julian Turbo
+- Bild-Drehbuch: 213 Einstellungen, 22,6 Bild-Ereignisse/Min, Prüfung OK (bilddrehbuch.json, engine/bilddrehbuch.py)
+- Länge 9:25, Endmix −14,3 LUFS, True Peak −2,6 dB
+- earshot gegen doku_profil.json: launch-grade, 22/23, 0 major (qa_sound_v2.txt); Gemini (3.5-flash-lite) Vorschau 2 Min: 8/10, keine Fundstelle im Video
+- Sound-Casting (Gemini, 22.11.): Treffer sub_drop PREMIUM, Whoosh whoosh_slow_soft PREMIUM, Uhr tick PREMIUM, Stromausfall hum_fall PREMIUM; door_open CHEAP → fridge_door_open (Freesound CC0), Rolltor Garuda1982 (CC BY, in der Beschreibung genannt)
+- ASR Endmix gegen Skript: 95,1 %
+- Faktencheck Skript v2: unabhängiger Agent, 20 Punkte korrigiert (siehe Verlauf)
+- Shorts: 5 Ausschnitte (shorts_003.py), ohne neue Sätze
+- vidIQ-Entwurf neu: postId 9ec00502-5e27-46ee-a500-b654616ad663 (geplant 24.11.2026 19:00, erst nach Laurins „ja“)

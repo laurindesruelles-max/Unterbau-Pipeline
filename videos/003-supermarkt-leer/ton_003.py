@@ -40,6 +40,8 @@ act = np.convolve(np.clip(ev / 0.02, 0, 1), np.ones(int(0.3 * SR)) / int(0.3 * S
 gain = 10 ** (-9 * act / 20) * 0.5
 for i in (6, 37, 117, 121, 153):          # Musik weg vor großen Sätzen, mit dem Satz zurück
     ts = T[i]; gain *= np.clip(1 - np.clip((t - (ts - 0.9)) / 0.15, 0, 1) + np.clip((t - (ts + 0.1)) / 0.5, 0, 1), 0, 1)
+for i, db in ((153, 18),):                # Höhepunkt: „Nur der Weg zu dir fehlt“ – lautester Moment (earshot: lauteste 3 s >= 3 LU)
+    gain *= 10 ** (db * np.clip(1.6 - np.abs(t - (T[i] + 1.8)) / 1.8, 0, 1) / 20)
 for i in (9, 27, 89, 132, 152, 181):      # Swell vor Enthüllungen
     gain *= 10 ** (5 * np.clip(1 - np.abs(t - (T[i] - 0.5)) / 2.5, 0, 1) / 20)
 music *= gain[:, None]; music[-int(2 * SR):] *= np.linspace(1, 0, int(2 * SR))[:, None]
@@ -62,10 +64,27 @@ for p in plan:
     if a == "Bildschirm in der Welt": add(t0 + 0.05, U + "sfx/whoosh_slow_soft.wav", 0.1)
 for i in (6, 24, 25, 33, 56, 59, 98, 102, 103, 108, 121, 132, 139, 153, 168, 181, 185):
     add(T[i] + 0.05, U + "sfx/sub_drop.wav", 0.55)
-for i in (1, 192): add(T[i] + 0.15, X + "door_open.wav", 0.32)
-add(T[39] + 0.1, X + "door_open.wav", 0.25)
+for k in range(2, 8):                     # Kapitel-Sound (exklusiv Unterbau): ub_hit auf jedem Kapitelanfang
+    add(kap_start[k] - 0.05, U + "sfx/ub_hit.wav", 0.45)
+for i in (1, 192): add(T[i] + 0.15, X + "fridge_door_open.wav", 0.35)          # Casting 22.11. (Gemini): door_open = CHEAP
+add(T[39] + 0.1, X + "open_close_window_roller_shutt.wav", 0.3)
 ambs = [(W2 + "amb_night.wav", 0.05, 0.0, 2.0, 2.0)]
 for i in (42, 45, 58, 60, 70):            # Markt-Atmo unter Menschen-Szenen
     p = [q for q in plan if q["i"] == i][0]; ambs.append((W2 + "amb_market.wav", 0.07, p["t"], 0.3, 0.4, [], 0, p["t"] + p["dur"]))
-mus = [(V + "voll_stimme.wav", 1.0, 0.0, 0.0, 0.05), (V + "voll_musik.wav", 1.0, 0.0, 0.0, 0.05)] + ambs
-print(mix(vin, vout, E, dur, mus))
+add(T[153] - 2.0, U + "sfx/ub_riser.wav", 0.5); add(T[153] + 0.05, U + "sfx/ub_hit.wav", 1.3)
+add(dur - 2.4, U + "sfx/ub_hit.wav", 0.55)      # Schluss-Treffer klingt bis zum letzten Bild aus (kein Leerlauf am Ende)
+# Eigene Summe + Mastering wie engine/unterbau.py (lineare Verstärkung, nur Spitzenbegrenzer – Dynamik bleibt)
+from mixer import clip, place
+buf = voice + music
+for a_ in ambs:
+    m = clip(a_[0]); st = a_[2]; end = a_[7] if len(a_) > 7 else dur; m = m[:int((end - st) * SR)].copy()
+    k = min(len(m), int(0.4 * SR)); m[:k] *= np.linspace(0, 1, k)[:, None]; m[-k:] *= np.linspace(1, 0, k)[:, None]
+    place(buf, m, st, a_[1])
+for tt_, f, g in E: place(buf, clip(f), tt_, g)
+buf = buf / (np.abs(buf).max() + 1e-9) * 0.9
+wav(V + "voll_roh.wav", buf)
+sys.path.insert(0, "/home/claude/unterbau-pipeline/engine"); import unterbau as UB
+UB.master(V + "voll_roh.wav", V + "voll_master.wav")
+import subprocess
+subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", vin, "-i", V + "voll_master.wav", "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "256k", "-t", f"{dur - 0.4:.3f}", vout], check=True)
+from mixer import lufs; print(lufs(vout))

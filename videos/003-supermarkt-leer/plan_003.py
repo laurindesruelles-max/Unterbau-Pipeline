@@ -55,7 +55,7 @@ SETS = {   # loc, tgt, lens, A-Zustand, Anker
  "tanklager":        ((18, -17.5, 4), (23.6, -11.2, 0.5), 38, {}, []),
  "tanklager_strasse":((10, -22, 8), (17, -10, 0), 38, {"lkw": 0}, ["route_autobahn"]),
  "strasse_muell":    ((-9.4, -11.2, 1.0), (-10.6, -9.1, 0.15), 38, {"muell": 1}, []),
- "geldautomat":      ((1.7, -10.4, 0.5), (1.4, -9.37, 0.38), 40, {}, ["atm"]),
+ "geldautomat":      ((2.4, -11.6, 0.9), (1.3, -9.3, 0.35), 35, {}, ["atm"]),
  "fahrerkabine":     ((1100.15, -1.0, 1.4), (1099.7, 1.5, 0.95), 24, {}, ["cab_strasse"]),
  "uk_fahrer":        ((1101.0, -0.6, 1.5), (1099.8, 1.2, 0.9), 26, {"driver": 0}, []),
  "steuerzentrale":   ((1200, -2.5, 1.7), (1200, 2.5, 1.6), 24, {}, ["screen_l", "screen_c", "screen_r"]),
@@ -266,6 +266,8 @@ def main():
         if "cam" not in sp: loc = jitter(sid, loc, 0.6)
         shots.append({"id": sid, "set": st, "cam": {"loc": list(loc), "tgt": list(tgt), "lens": lens}, "A": {**A, **sp.get("A", {})},
                       "B": sp.get("B"), "anchors": anc})
+        if st == "steuerzentrale" and not any(f.get("type") == "screen" for f in sp.get("fx", [])):
+            sp["fx"] = list(sp.get("fx", [])) + [dict(SCR("02"), anchor="screen_l"), dict(SCR(14), anchor="screen_c"), dict(SCR(26), anchor="screen_r")]
         plan.append({"id": sid, "dur": e["sek"], "move": sp.get("move", "push"), "trans": sp.get("trans", "diff"),
                      "t_trans": sp.get("t_trans", [0.2, 0.8]), "fx": sp.get("fx", []), "anim": e["animation"], "i": e["i"]})
     json.dump(shots, open(os.path.join(a.out, "shots.json"), "w"), indent=0)

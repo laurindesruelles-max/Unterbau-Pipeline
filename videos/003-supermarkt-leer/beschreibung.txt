@@ -1,16 +1,17 @@
-Dein Supermarkt hat fast kein Lager. Was passiert, wenn plötzlich kein Lkw mehr fährt? Ein Gedankenexperiment, Tag für Tag, mit echten Zahlen und echten Fällen: Großbritannien 2000 und 2021, Deutschland 2020, Spanien 2022 und der Fahrerstreik von Gräfenhausen.
+Dein Supermarkt hat fast kein Lager. Was passiert, wenn plötzlich kein Lkw mehr fährt? Ein Gedankenexperiment, Tag für Tag, in einer Modellstadt bei Nacht – mit echten Zahlen und echten Fällen: Großbritannien 2000 und 2021, Deutschland 2020, Spanien 2022 und der Fahrerstreik von Gräfenhausen.
 
 Wie viele Tage würdest du mit deinem Vorrat zu Hause durchhalten? Schreib es in die Kommentare.
 
 Kapitel
 0:00 Heute Nacht fährt kein Lkw
-0:46 Die Kette in der Nacht
-2:21 Es ist schon passiert
-4:18 Wer die Kette hält
-6:23 Tag drei
-8:40 Was bleibt
+0:40 Die Nacht, in der nichts kommt
+1:55 Tag eins: Lücken im Regal
+3:33 Tag zwei: Der Sprit ist da
+5:33 Tag drei: Das leere Regal
+7:19 Durchatmen
+8:31 Was das für dich heißt
 
-Hinweis: Das Szenario ist ein Gedankenexperiment. Die Szenen in Gräfenhausen sind nachgestellt. Alle Bilder sind KI-generiert (Higgsfield), die Erzählerstimme ist synthetisch (KI-Stimme). Kennzeichnung nach Art. 50 EU-KI-Verordnung.
+Hinweis: Das Szenario ist ein Gedankenexperiment. Die Bilder zeigen eine selbst gebaute 3D-Modellstadt; die Bilder auf den Bildschirmen im Modell sind KI-generiert (Higgsfield), die Erzählerstimme ist synthetisch (KI-Stimme, ElevenLabs). Kennzeichnung nach Art. 50 EU-KI-Verordnung.
 
 Quellen
 Die Kette in der Nacht
@@ -44,6 +45,6 @@ Was bleibt
 • Ernährungssicherstellungs- und -vorsorgegesetz: https://www.gesetze-im-internet.de/esvg/BJNR077210017.html
 • BBK, Vorrat anlegen: https://www.bbk.bund.de/DE/Warnung-Vorsorge/Vorsorge/So-koennen-Sie-sich-vorbereiten/Bevorraten/bevorraten_node.html
 
-Musik: eigene Unterbau-Musik. Geräusche: CC0 (Sound-Bibliothek des Kanals).
+Musik: eigene Unterbau-Musik. Geräusche: CC0 (Sound-Bibliothek des Kanals, Freesound) sowie „open close window roller shutters wooden sound effect“ von Garuda1982 – CC BY 4.0 – https://freesound.org/people/Garuda1982/sounds/552385
 
 #Unterbau #Supermarkt #Lieferkette

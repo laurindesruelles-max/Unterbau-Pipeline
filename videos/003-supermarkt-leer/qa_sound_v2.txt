@@ -1,0 +1,46 @@
+earshot critique: Unterbau_003_v2.mp4 (565.6 s) vs 4 reference films (/home/claude/unterbau-pipeline/assets/doku_profil.json)
+VERDICT: launch-grade - 22 of 23 scored metrics in range (weighted 97%), 0 critical and 0 major issues.
+FIX FIRST (most important first):
+  1. [minor] recessed mids: clicks and voice will not cut through phone speakers; lift 1-3 kHz on SFX / VO (-13.7 dB share, refs -10.5 dB .. -9.7 dB)
+  tip: 57 of 220 visual events get no sound at all (no onset within 100 ms, no whoosh / riser peak within 300 ms, no level peak within 150 ms; the matcher earshot timeline uses): 0:02.48, 0:04.96, 0:09.92, 0:13.68, 0:21.32, 0:25.16, 0:27.48, 0:30.44 (+49 more); give the ones that matter a whoosh into the cut, a hit or a UI click, or keep one as a deliberate stop-down; 20 more are met only by a level peak (a soft swell, or just the bed: check 0:59.04, 2:05.60, 3:01.72, 3:03.00 (+16 more) on the sheet)
+  tip: voice detected in 99% of windows: duck music 3-6 dB under the voice and keep SFX out of 1-4 kHz while it speaks
+SCORECARD                                      value   ok range                        ref median  status
+  loudness integrated loudness             -14.2 LUFS   -16.0 LUFS .. -9.0 LUFS (web)   -17.6 LUFS  ok
+  loudness true peak                        -2.6 dBTP   <= 0.0 dBTP (decoded lossy)      -0.9 dBTP  ok
+  realness realness (p_real)                     0.96   >= 0.77 (realness model)                    ok
+  music    music presence                         93%   >= 56%                                 76%  ok
+  sync     onset on visual events +-100ms         61%   >= 26%                                 58%  ok
+  loudness loudness range                      2.4 LU   1.4 LU .. 17.2 LU                   4.6 LU  ok
+  loudness loudest 3 s above integrated        3.5 LU   3.0 LU .. 9.9 LU                    4.8 LU  ok
+  arc      time to first sound                 0.07 s   <= 2.30 s                           0.14 s  ok
+  ending   dead air at the end                 0.01 s   <= 0.25 s                           0.00 s  ok
+  arc      longest silent gap inside           0.48 s   <= 2.11 s                           1.11 s  ok
+  ending   final moment vs integrated          2.9 LU   -2.8 LU .. 4.0 LU                   1.3 LU  ok
+  density  onset density                      4.79 /s   1.95 /s .. 6.03 /s                 4.25 /s  ok
+  density  salient hit density                1.29 /s   0.56 /s .. 1.92 /s                 1.64 /s  ok
+  arc      opening level (first 10%)          -0.8 LU   -7.6 LU .. 2.6 LU                  -0.9 LU  ok
+  arc      closing level (last 10%)           -0.0 LU   -4.2 LU .. 1.7 LU                   0.1 LU  ok
+  ending   final fade / ring-out length        0.18 s   <= 3.00 s                           0.00 s  ok
+  spectrum sub 20-60 Hz share                 -7.7 dB   -15.9 dB .. -5.4 dB               -11.2 dB  ok
+  spectrum low 60-250 Hz share                -3.1 dB   -6.6 dB .. -1.9 dB                 -4.3 dB  ok
+  spectrum low-mid 250-1k share               -5.6 dB   -5.9 dB .. -2.0 dB                 -4.2 dB  ok
+  spectrum mid 1-4 kHz share                 -13.7 dB   -12.0 dB .. -8.2 dB                -9.8 dB  low (minor)
+  spectrum presence 4-8 kHz share            -18.5 dB   -20.1 dB .. -14.8 dB              -17.8 dB  ok
+  spectrum air 8-16 kHz share                -18.6 dB   -23.6 dB .. -16.6 dB              -20.4 dB  ok
+  stereo   stereo width (side vs mid)        -11.4 dB   -17.0 dB .. -4.9 dB               -10.1 dB  ok
+LOUDNESS ARC (LU vs integrated at 0%, 10% .. 100% of the film; not scored):
+  this film      -1.0   -0.3   -0.7   +0.3   -0.1   -0.2   -0.2   +0.7   +0.1   -0.3   +0.1
+  refs median    -1.7   -0.3   +0.1   -0.2   -0.1   -0.2   -0.5   -0.5   -0.9   -0.9   -0.1
+NOT SCORED (style choices, shown for context):
+  voice / speech presence                                           99%   refs p10-p90 64% .. 98%
+  tempo                                                         126 BPM   refs p10-p90 116 BPM .. 133 BPM
+  position of the loudest 3 s                                      0.76   refs p10-p90 0.04 .. 0.55
+  final hit ring-out                                             0.83 s   refs p10-p90 1.13 s .. 2.55 s
+  stop-downs                                                   1.7 /min   refs p10-p90 4.3 /min .. 8.4 /min
+  visual events (cuts, big changes)                             0.39 /s   refs p10-p90 0.19 /s .. 0.43 /s
+  visual events with a salient hit +-100 ms            25% (chance 24%)   refs p10-p90 12% .. 36%
+  visual events with an onset +-1 frame                33% (chance 42%)   refs p10-p90 19% .. 44%
+  visual events on the beat grid +-70 ms               17% (chance 31%)   refs p10-p90 26% .. 33%
+  brightness (median spectral centroid)                         1194 Hz   refs p10-p90 1382 Hz .. 1791 Hz
+  L/R correlation                                                  0.86   refs p10-p90 0.65 .. 0.92
+realness: Unterbau_003_v2.mp4: real or pro-produced (p_real 0.96, mean of 142 4 s windows; file thresholds lo 0.4 / hi 0.77, weak calibration): 0 of 142 windows lean synthesized (p_real < 0.5); mean CLAP head score +2.8. No window leans synthesized (lowest p_real 0.87); that does not rule out a code-made layer under a louder real mix (most are missed): judge the source files and stems.
