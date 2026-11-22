@@ -325,6 +325,264 @@ def build_cut():
     STATE_OBJ["c_deckel"] = boxes("c_deckel", [((X, -0.5, -0.6), (8.0, 2.0, 1.1))], M["erde"])
     ANCH["cut"] = [Vector((X - 4, -1.5, -0.25)), Vector((X + 4, -1.5, -0.25))]
 
+# ------------------------------------------------------------------ Details + weitere Schauplätze (22.11.2026)
+def build_detail():
+    rnd = random.Random(11)
+    mat("tree", (0.025, 0.07, 0.045, 1), rough=0.9); mat("trunk", (0.08, 0.05, 0.03, 1)); mat("pool", (0.16, 0.09, 0.04, 1), 0.35)
+    for i, c in enumerate([(0.5, 0.06, 0.05, 1), (0.08, 0.15, 0.35, 1), (0.6, 0.6, 0.62, 1), (0.05, 0.05, 0.06, 1), (0.25, 0.3, 0.33, 1)]):
+        mat(f"car{i}", c, rough=0.35, metal=0.4)
+    # Dachkanten + Dachaufbauten auf allen Häusern
+    hs = bpy.data.objects["houses"]; caps, ac = [], []
+    me = hs.data; import collections
+    # Häuser aus Bounding-Boxen der Mesh-Inseln (je 8 Vertices = 1 Quader)
+    vs = [hs.matrix_world @ v.co for v in me.vertices]
+    for k in range(0, len(vs), 8):
+        q = vs[k:k + 8]; xs = [v.x for v in q]; ys = [v.y for v in q]; zs = [v.z for v in q]
+        cx, cy, top = (min(xs) + max(xs)) / 2, (min(ys) + max(ys)) / 2, max(zs); w, d = max(xs) - min(xs), max(ys) - min(ys)
+        caps.append(((cx, cy, top + 0.02), (w + 0.05, d + 0.05, 0.04)))
+        if rnd.random() < 0.5: ac.append(((cx + rnd.uniform(-w / 4, w / 4), cy + rnd.uniform(-d / 4, d / 4), top + 0.08), (0.18, 0.14, 0.1)))
+    boxes("dachkanten", caps, M["roof"]); boxes("dachaufbauten", ac, M["grey"], 0.01)
+    # Lichtkegel unter den Laternen (Fake-Licht auf dem Boden)
+    bm = bmesh.new()
+    for x in range(-16, 17, 4):
+        for y in range(-12, 13, 4):
+            r = bmesh.ops.create_circle(bm, cap_ends=True, segments=24, radius=0.32)
+            for v in r["verts"]: v.co += Vector((x + 0.45, y + 0.45, 0.014))
+    o = mesh_obj("lichtkegel", bm, M["pool"]); STATE_OBJ["pools"] = o
+    # Bäume außerhalb der Stadt und in Lücken
+    tr, tk = [], []
+    for _ in range(420):
+        x, y = rnd.uniform(-46, 46), rnd.uniform(-31, 31)
+        if abs(x) < 17 and abs(y) < 13: continue
+        if (abs(x) > 21 and abs(x) < 29 and -17 < y < 19) or (abs(y + 16) < 1.6 or abs(y - 18) < 1.6) and abs(x) < 29: continue
+        if (-26 < x < -16 and -15 < y < -8) or (15 < x < 25 and 7 < y < 13) or (-26 < x < -19 and 7 < y < 13) or (20 < x < 27 and -15 < y < -9) or (29 < x < 38 and -6 < y < 10): continue
+        h = rnd.uniform(0.5, 1.1); tr.append(((x, y, 0.15 + h / 2), h * 0.38, h)); tk.append(((x, y, 0.08), (0.06, 0.06, 0.16)))
+    bm = bmesh.new()
+    for c, r, h in tr:
+        res = bmesh.ops.create_cone(bm, cap_ends=True, segments=8, radius1=r, radius2=0.02, depth=h)
+        for v in res["verts"]: v.co += Vector(c)
+    mesh_obj("baeume", bm, M["tree"]); boxes("staemme", tk, M["trunk"])
+    # Parkende Autos an den Straßenrändern
+    cars = []
+    for _ in range(160):
+        if rnd.random() < 0.5:
+            x = rnd.choice(range(-16, 17, 4)) + rnd.choice([-0.42, 0.42]); y = rnd.uniform(-11.5, 11.5); s = (0.16, 0.34, 0.12)
+        else:
+            y = rnd.choice(range(-12, 13, 4)) + rnd.choice([-0.42, 0.42]); x = rnd.uniform(-15.5, 15.5); s = (0.34, 0.16, 0.12)
+        if abs(x + 12) < 1.5 and abs(y + 8) < 1.5: continue
+        cars.append(((x, y, 0.07), s, rnd.randrange(5)))
+    boxes("autos", cars, [M[f"car{i}"] for i in range(5)], 0.02)
+    # Lkw: Fahrerhaus + Auflieger statt Kiste
+    bpy.data.objects.remove(STATE_OBJ["lkw_body"]); bpy.data.objects.remove(STATE_OBJ["lkw_hl"])
+    body, hl, tail = [], [], []
+    pts = ANCH["route_autobahn"]; n = len(pts)
+    for k in range(0, n, max(1, n // 34)):
+        p = pts[k]; q = pts[min(k + 1, n - 1)]; d = (q - p); d.z = 0
+        if d.length < 1e-4: continue
+        d.normalize(); side = Vector((-d.y, d.x, 0)) * (0.35 if (k // (n // 34)) % 2 else -0.35)
+        c = p + side; c.z = 0
+        def ob(center, lx, ly, h):
+            return ((center.x, center.y, h / 2 + 0.03), (abs(d.x) * lx + abs(d.y) * ly, abs(d.y) * lx + abs(d.x) * ly, h))
+        body.append(ob(c - d * 0.12, 0.7, 0.24, 0.3) + (0,)); body.append(ob(c + d * 0.35, 0.2, 0.24, 0.26) + (1,))
+        f = c + d * 0.46; hl.append(((f.x, f.y, 0.08), (0.05 + abs(d.y) * 0.16, 0.05 + abs(d.x) * 0.16, 0.04)))
+        b = c - d * 0.48; tail.append(((b.x, b.y, 0.1), (0.04 + abs(d.y) * 0.18, 0.04 + abs(d.x) * 0.18, 0.03)))
+    STATE_OBJ["lkw_body"] = boxes("lkw_body", body, [M["white"], M["orange"]], 0.015)
+    STATE_OBJ["lkw_hl"] = boxes("lkw_hl", hl + tail, M["hl"])
+    # Wiesen/Felder am Stadtrand
+    boxes("felder", [((x, y, 0.004), (7.5, 5.5, 0.006)) for x, y in ((-38, 22), (-38, -22), (38, 22), (38, -22), (0, 26), (0, -27))], M["grass"])
+
+def build_racks(name, X, kind="kisten", rows=3, levels=4, light=(1, 0.95, 0.85)):
+    """Hochregal-Halle bei x=X: kind kisten|saecke|weiss|klein. Zustand rfill."""
+    rnd = random.Random(len(name))
+    mat(f"{name}_l", (*light, 1), 7.0)
+    boxes(f"{name}_boden", [((X, 0, -0.01), (10, 14, 0.02))], M["floor"]); boxes(f"{name}_decke", [((X, 0, 4.2), (10, 14, 0.05))], M["bld"])
+    boxes(f"{name}_lampen", [((X + dx, y, 4.1), (0.12, 1.8, 0.04)) for dx in (-2, 0, 2) for y in range(-6, 7, 3)], M[f"{name}_l"])
+    rk, items = [], []
+    pal = {"kisten": [(0.7, 0.55, 0.35, 1), (0.6, 0.15, 0.1, 1), (0.85, 0.75, 0.3, 1), (0.25, 0.4, 0.65, 1)], "saecke": [(0.72, 0.66, 0.5, 1), (0.6, 0.55, 0.42, 1), (0.8, 0.8, 0.78, 1)],
+           "weiss": [(0.85, 0.88, 0.9, 1), (0.75, 0.8, 0.85, 1)], "klein": [(0.9, 0.9, 0.88, 1), (0.3, 0.5, 0.75, 1), (0.85, 0.3, 0.2, 1)]}[kind]
+    for i, c in enumerate(pal): mat(f"{name}_p{i}", c, rough=0.8)
+    for r in range(rows):
+        x = X - 3 + r * 3
+        for lv in range(levels):
+            z = 0.05 + lv * 0.95; rk.append(((x, 0, z), (1.1, 12, 0.05)))
+            for y in [k * 1.2 - 5.4 for k in range(10)]:
+                for side in (-0.28, 0.28):
+                    if kind == "saecke":
+                        for st in range(3): items.append(dict(c=(x + side, y, z + 0.12 + st * 0.2), s=(0.5, 1.0, 0.18), m=rnd.randrange(len(pal)), r=rnd.random()))
+                    else:
+                        hh = rnd.uniform(0.4, 0.75); items.append(dict(c=(x + side, y, z + 0.03 + hh / 2), s=(0.5, 1.05, hh), m=rnd.randrange(len(pal)), r=rnd.random()))
+        rk += [((x + sx, y, levels * 0.95 / 2), (0.06, 0.06, levels * 0.95)) for sx in (-0.55, 0.55) for y in (-6, -2, 2, 6)]
+    boxes(f"{name}_regal", rk, M["orange"] if kind in ("kisten", "saecke") else M["shelf"])
+    STATE_OBJ.setdefault("racks", {})[name] = (items, len(pal))
+    ANCH[f"{name}_zaehler"] = [Vector((X - 4.5, -6.9, 3.3)), Vector((X - 2.5, -6.9, 3.3)), Vector((X - 2.5, -6.9, 2.5)), Vector((X - 4.5, -6.9, 2.5))]
+    boxes(f"{name}_tafel", [((X - 3.5, -6.95, 2.9), (2.1, 0.04, 0.9))], M["tafel"])
+    set_rack(name, 1.0)
+
+def set_rack(name, fill):
+    o = bpy.data.objects.get(f"{name}_ware")
+    if o: bpy.data.objects.remove(o)
+    items, npal = STATE_OBJ["racks"][name]
+    keep = [(it["c"], it["s"], it["m"]) for it in items if it["r"] < fill]
+    if keep: boxes(f"{name}_ware", keep, [M[f"{name}_p{i}"] for i in range(npal)], 0.01)
+
+def build_cab(X=1100):
+    mat("cab_in", (0.05, 0.055, 0.065, 1), rough=0.6); mat("dash_l", (1.0, 0.55, 0.2, 1), 3.0); mat("skin", (0.35, 0.25, 0.2, 1)); mat("shirt", (0.12, 0.16, 0.22, 1))
+    boxes("cab_raum", [((X, 0, 0), (3, 3, 0.05)), ((X, 0.9, 0.6), (2.4, 0.6, 0.25)), ((X - 1.3, 0, 1.0), (0.05, 3, 2.0)), ((X, -1.0, 1.9), (3, 1.2, 0.05))], M["cab_in"])
+    boxes("cab_dash_l", [((X + dx, 0.62, 0.74), (0.12, 0.01, 0.05)) for dx in (-0.6, -0.4, 0.3)], M["dash_l"])
+    whl = cyls("cab_lenkrad", [((X - 0.5, 0.55, 0.95), 0.22, 0.04)], M["dark"], 32)
+    bpy.ops.object.light_add(type="POINT", location=(X - 0.2, 0.3, 1.2)); Lc = bpy.context.object; Lc.data.energy = 25; Lc.data.color = (1.0, 0.7, 0.4)
+    boxes("cab_sitz", [((X - 0.5, -0.2, 0.45), (0.5, 0.5, 0.12)), ((X - 0.5, -0.45, 0.85), (0.5, 0.1, 0.8))], M["dark"])
+    STATE_OBJ["fahrer"] = [boxes("fahrer_k", [((X - 0.5, -0.25, 0.9), (0.42, 0.26, 0.55))], M["shirt"], 0.08), cyls("fahrer_kopf", [((X - 0.5, -0.25, 1.32), 0.12, 0.22)], M["skin"])]
+    # Blick durch die Frontscheibe: Straße bei Nacht
+    boxes("cab_strasse", [((X, 12, -0.6), (6, 22, 0.05))], M["road"]); boxes("cab_marks", [((X, y, -0.57), (0.06, 0.6, 0.01)) for y in range(2, 24, 2)], M["lane"])
+    ANCH["cab_strasse"] = [Vector((X + 0.3 + 0.05 * k, 3 + k * 0.5, -0.5)) for k in range(40)]
+
+def build_leitstand(X=1200):
+    mat("screen", (0.01, 0.012, 0.02, 1), 0, 0.1); mat("desk", (0.12, 0.13, 0.16, 1), rough=0.4)
+    boxes("ls_raum", [((X, 0, 0), (8, 6, 0.05)), ((X, 2.6, 1.5), (8, 0.05, 3)), ((X, 0, 3), (8, 6, 0.05))], M["bld"])
+    bpy.ops.object.light_add(type="AREA", location=(X, -1, 2.8)); Ll = bpy.context.object; Ll.data.energy = 250; Ll.data.size = 4; Ll.data.color = (0.6, 0.7, 1.0)
+    boxes("ls_tisch", [((X, 0.6, 0.45), (5, 0.9, 0.9))], M["desk"])
+    boxes("ls_lampen", [((X + dx, 0, 2.95), (1.2, 0.1, 0.03)) for dx in (-2.5, 0, 2.5)], M["ceil_l"])
+    scr = []
+    for name, cx in (("screen_l", -2.1), ("screen_c", 0), ("screen_r", 2.1)):
+        scr.append(((X + cx, 2.5, 1.7), (1.9, 0.06, 1.1)))
+        ANCH[name] = [Vector((X + cx - 0.9, 2.46, 2.22)), Vector((X + cx + 0.9, 2.46, 2.22)), Vector((X + cx + 0.9, 2.46, 1.18)), Vector((X + cx - 0.9, 2.46, 1.18))]
+    boxes("ls_screens", scr, M["screen"])
+    STATE_OBJ["alarm"] = boxes("ls_alarm", [((X + dx, 1.0, 0.92), (0.1, 0.1, 0.04)) for dx in (-1.5, 0, 1.5)], M["sign"])
+
+def build_markt_cut(X=1300):
+    """Supermarkt im Querschnitt: großer Verkaufsraum, dahinter winziger Lagerraum."""
+    boxes("mc_boden", [((X, 0, -0.01), (8, 4, 0.02)), ((X, 0, -0.3), (8.4, 4.4, 0.6))], [M["floor"], M["ground"]])
+    boxes("mc_waende", [((X, 2.0, 1.2), (8, 0.06, 2.4)), ((X + 4, 0, 1.2), (0.06, 4, 2.4)), ((X - 4, 0, 1.2), (0.06, 4, 2.4)), ((X + 2.6, 0.6, 1.2), (0.06, 2.8, 2.4))], M["bld"])
+    boxes("mc_dach", [((X, 0.4, 2.42), (8, 3.2, 0.05))], M["roof"])
+    sh, pr = [], []; rnd = random.Random(9)
+    for r in range(4):
+        x = X - 3.2 + r * 1.4
+        sh.append(((x, 0.4, 0.9), (0.45, 2.6, 0.04)))
+        for z in (0.1, 0.5, 0.9, 1.3): sh.append(((x, 0.4, z), (0.5, 2.6, 0.03)))
+        for z in (0.12, 0.52, 0.92, 1.32):
+            for y in [k * 0.2 - 0.85 for k in range(13)]: pr.append(((x + rnd.choice([-0.12, 0.12]), y, z + 0.11), (0.18, 0.17, 0.2), rnd.randrange(7)))
+    boxes("mc_regale", sh, M["shelf"]); boxes("mc_ware", pr, [M[f"prod{i}"] for i in range(7)], 0.01)
+    boxes("mc_lager", [((X + 3.3, 1.0, 0.15), (0.5, 0.5, 0.3)), ((X + 3.3, 1.0, 0.45), (0.4, 0.4, 0.3))], M["prod0"], 0.01)
+    boxes("mc_lager_l", [((X + 3.3, 0.6, 2.35), (0.4, 0.3, 0.03))], M["lamp"]); boxes("mc_licht", [((X - 0.7, 0.4, 2.36), (4.5, 0.3, 0.03))], M["ceil_l"])
+    ANCH["mc_lager"] = [Vector((X + 2.65, -1.1, 2.3)), Vector((X + 3.95, -1.1, 2.3)), Vector((X + 3.95, -1.1, 0.02)), Vector((X + 2.65, -1.1, 0.02))]
+
+def build_bars(X=1400):
+    """Modellgelände für Zahlen: Häuserzeilen (Balken), 100-Häuser-Raster (Prozent), Eiffeltürme, Tage-Skala."""
+    mat("bar_o", C["orange"], 1.5, 0.5); mat("bar_g", (0.3, 0.34, 0.42, 1)); mat("pct_on", C["orange"], 3.0)
+    boxes("bars_boden", [((X, 0, -0.01), (30, 30, 0.02))], M["ground"])
+    ANCH["bars_base"] = [Vector((X - 6, -3, 0)), Vector((X + 6, -3, 0))]
+    # Tage-Skala 1..5 (Platten mit Ziffern)
+    for k in range(5):
+        boxes(f"tag{k}", [((X - 4 + 2 * k, 8, 0.05), (1.7, 1.7, 0.1))], M["bar_g"], 0.02)
+        text(f"tagz{k}", str(k + 1), (X - 4 + 2 * k, 8, 0.11), 1.0, M["clock"], rot=(0, 0, 0))
+        ANCH[f"tag{k + 1}"] = [Vector((X - 4.85 + 2 * k, 8.85, 0.12)), Vector((X - 3.15 + 2 * k, 8.85, 0.12)), Vector((X - 3.15 + 2 * k, 7.15, 0.12)), Vector((X - 4.85 + 2 * k, 7.15, 0.12))]
+
+def set_bars(vals, X=1400):
+    """vals: Liste (höhe, orange?) -> Häuserzeilen nebeneinander; Höhe in Häusern."""
+    for n in ("bars_haeuser", "bars_haeuser_o"):
+        o = bpy.data.objects.get(n)
+        if o: bpy.data.objects.remove(o)
+    g, o_ = [], []
+    for i, (h, orange) in enumerate(vals):
+        x = X - (len(vals) - 1) * 1.2 + i * 2.4
+        for k in range(int(round(h))):
+            (o_ if orange else g).append(((x, -2 + (k % 6) * 0.0, 0.25 + k * 0.5), (1.6, 1.6, 0.46)))
+    if g: boxes("bars_haeuser", g, M["bar_g"], 0.03)
+    if o_: boxes("bars_haeuser_o", o_, M["bar_o"], 0.03)
+
+def set_pct(n_on, X=1400, n=100, cols=10, groups=None):
+    for nm in ("pct_aus", "pct_an"):
+        o = bpy.data.objects.get(nm)
+        if o: bpy.data.objects.remove(o)
+    a, b = [], []
+    for k in range(n):
+        r, c = divmod(k, cols); it = ((X - 4.5 + c, -6 - r, 0.25), (0.7, 0.7, 0.5))
+        (b if k < n_on else a).append(it)
+    if a: boxes("pct_aus", a, M["bar_g"], 0.03)
+    if b: boxes("pct_an", b, M["pct_on"], 0.03)
+
+def set_eiffel(n, X=1400):
+    o = bpy.data.objects.get("eiffel")
+    if o: bpy.data.objects.remove(o)
+    it = []
+    for k in range(n):
+        cx, cy = X - 9 + (k % 12) * 1.5, 10 + (k // 12) * 1.5
+        for j, (w, h) in enumerate(((0.9, 0.5), (0.6, 0.5), (0.35, 0.6), (0.15, 0.7))):
+            it.append(((cx, cy, 0.25 + sum(x[1] for x in ((0.9, 0.5), (0.6, 0.5), (0.35, 0.6), (0.15, 0.7))[:j]) + h / 2 - 0.25), (w, w, h)))
+    if it: boxes("eiffel", it, M["metal"], 0.01)
+
+def build_rastplatz():
+    """Rastplatz östlich der Autobahn (x 31..37): Reihen abgestellter Lkw, Figuren."""
+    boxes("rp_platz", [((34, 2, 0.008), (6.5, 12, 0.01))], M["road"])
+    boxes("rp_marks", [((34 + dx, 2 + y, 0.015), (0.03, 0.9, 0.003)) for dx in (-2.4, -0.8, 0.8, 2.4) for y in range(-5, 6)], M["lane"])
+    rnd = random.Random(5); body = []
+    for dx in (-1.6, 0, 1.6):
+        for y in range(-5, 6):
+            if rnd.random() < 0.15: continue
+            body.append(((34 + dx, 2 + y * 0.95 - 0.12, 0.2), (0.28, 0.7, 0.3), 0)); body.append(((34 + dx, 2 + y * 0.95 + 0.35, 0.16), (0.28, 0.2, 0.26), 1))
+    boxes("rp_lkw", body, [M["white"], M["orange"]], 0.015)
+    boxes("rp_lampen", [((31, y, 0.5), (0.04, 0.04, 1.0)) for y in range(-3, 9, 3)], M["metal"])
+    boxes("rp_lampenk", [((31.1, y, 1.0), (0.2, 0.08, 0.04)) for y in range(-3, 9, 3)], M["lamp"])
+    ppl = []
+    for _ in range(40):
+        x, y = rnd.uniform(32, 36), rnd.uniform(-3, 7)
+        ppl.append(((x, y, 0.09), (0.06, 0.06, 0.16), 0)); ppl.append(((x, y, 0.2), (0.05, 0.05, 0.05), 1))
+    mat("person", (0.2, 0.22, 0.28, 1)); mat("kopf", (0.4, 0.3, 0.25, 1))
+    STATE_OBJ["rp_people"] = boxes("rp_leute", ppl, [M["person"], M["kopf"]])
+    boxes("rp_transparent", [((33.2, 2.4, 0.42), (0.02, 1.4, 0.3))], M["white"])
+    ANCH["rastplatz"] = [Vector((34, -4.3, 0.6))]
+
+def build_wasserwerk():
+    mat("wasser", (0.05, 0.15, 0.3, 1), 0.3, 0.05)
+    boxes("ww_becken", [((-38 + 2.2 * i, -6, 0.1), (2.0, 3.0, 0.2)) for i in range(3)], M["grey"], 0.02)
+    boxes("ww_wasser", [((-38 + 2.2 * i, -6, 0.19), (1.8, 2.8, 0.02)) for i in range(3)], M["wasser"])
+    boxes("ww_halle", [((-36, -2.2, 0.5), (4.5, 2.0, 1.0))], M["bld"], 0.03)
+    boxes("ww_win", [((-37.5 + 0.6 * k, -3.21, 0.6), (0.25, 0.02, 0.2)) for k in range(6)], M["win"])
+
+def build_haus_vorrat(X=300):
+    """In der Küche (build_fridge): Vorratsregal, Wasserflaschen, zwei Putzeimer. Zustand vorrat 0..1, wasser 0..20."""
+    mat("flasche", (0.6, 0.75, 0.9, 1), 0.0, 0.05); mat("eimer", (0.2, 0.35, 0.7, 1), rough=0.4)
+    boxes("hv_regal", [((X - 1.5, 2.3, z), (1.2, 0.35, 0.03)) for z in (0.3, 0.7, 1.1, 1.5)] + [((X - 1.5 + sx, 2.3, 0.9), (0.03, 0.35, 1.8)) for sx in (-0.6, 0.6)], M["wood"] if "wood" in M else mat("wood", C["wood"]))
+    rnd = random.Random(2); it = []
+    for z in (0.32, 0.72, 1.12, 1.52):
+        for k in range(8): it.append(dict(c=(X - 2.0 + k * 0.14, 2.3, z + 0.1), s=(0.11, 0.2, 0.18 + rnd.random() * 0.06), m=rnd.randrange(7), r=rnd.random()))
+    STATE_OBJ["hv_items"] = it
+    boxes("hv_eimer", [((X + 1.3, 1.6, 0.18), (0.3, 0.3, 0.36)), ((X + 1.7, 1.6, 0.18), (0.3, 0.3, 0.36))], M["eimer"], 0.05)
+    ANCH["hv_regal"] = [Vector((X - 2.15, 2.1, 1.9)), Vector((X - 0.85, 2.1, 1.9)), Vector((X - 0.85, 2.1, 1.7)), Vector((X - 2.15, 2.1, 1.7))]
+
+def set_vorrat(fill, wasser):
+    for nm in ("hv_ware", "hv_flaschen"):
+        o = bpy.data.objects.get(nm)
+        if o: bpy.data.objects.remove(o)
+    keep = [(i["c"], i["s"], i["m"]) for i in STATE_OBJ["hv_items"] if i["r"] < fill]
+    if keep: boxes("hv_ware", keep, [M[f"prod{i}"] for i in range(7)], 0.01)
+    fl = [((300 + 0.6 + (k % 5) * 0.13, 1.2 + (k // 5) * 0.13, 0.14), (0.1, 0.1, 0.28)) for k in range(int(wasser / 2))]
+    if fl: boxes("hv_flaschen", fl, M["flasche"], 0.03)
+
+def build_ladung(X=1500):
+    boxes("ld_boden", [((X, 0, 0.3), (1.2, 4, 0.06)), ((X - 0.6, 0, 0.9), (0.04, 4, 1.2)), ((X, 2, 0.9), (1.2, 0.04, 1.2))], M["white"])
+    it = []
+    for k in range(5):
+        y = -1.5 + k * 0.75
+        it.append(((X, y, 0.36), (1.0, 0.7, 0.06), 0)); it.append(((X, y, 0.75), (0.95, 0.65, 0.7), 1 if k != 3 else 2))
+    mat("ld_milch", (0.92, 0.92, 0.9, 1))
+    boxes("ld_paletten", it, [M["wood"] if "wood" in M else mat("wood", C["wood"]), M["prod0"], M["ld_milch"]], 0.01)
+    ANCH["ld_milch"] = [Vector((X + 0.5, 0.4, 1.12)), Vector((X + 0.5, 0.4 + 0.66, 1.12)), Vector((X + 0.5, 0.4 + 0.66, 0.4)), Vector((X + 0.5, 0.4, 0.4))]
+
+def build_extra_town():
+    # Mülltonnen an deinem Haus, Geldautomat am Markt, Figuren vor dem Markt / an der Tankstelle
+    mat("tonne", (0.1, 0.2, 0.12, 1)); mat("atm", (0.3, 0.6, 0.9, 1), 2.0)
+    boxes("muell", [((-10.9 + 0.22 * k, -9.0, 0.12), (0.18, 0.18, 0.24)) for k in range(4)], M["tonne"], 0.02)
+    STATE_OBJ["muell_voll"] = boxes("muell_voll", [((-10.9 + 0.22 * k + 0.05, -9.25, 0.05), (0.14, 0.14, 0.1)) for k in range(6)] + [((-10.4, -9.3, 0.06), (0.3, 0.2, 0.12))], M["grey"], 0.03)
+    boxes("atm_box", [((1.4, -9.33, 0.3), (0.3, 0.06, 0.5))], M["grey"]); STATE_OBJ["atm"] = boxes("atm_screen", [((1.4, -9.37, 0.38), (0.18, 0.01, 0.12))], M["atm"])
+    ANCH["atm"] = [Vector((1.31, -9.38, 0.44)), Vector((1.49, -9.38, 0.44)), Vector((1.49, -9.38, 0.32)), Vector((1.31, -9.38, 0.32))]
+    rnd = random.Random(3); ppl = []
+    for _ in range(30):
+        x, y = rnd.uniform(-1.5, 1.5), rnd.uniform(-10.4, -9.6); ppl.append(((x, y, 0.09), (0.06, 0.06, 0.16), 0)); ppl.append(((x, y, 0.2), (0.05, 0.05, 0.05), 1))
+    if "person" not in M: mat("person", (0.2, 0.22, 0.28, 1)); mat("kopf", (0.4, 0.3, 0.25, 1))
+    STATE_OBJ["markt_people"] = boxes("markt_leute", ppl, [M["person"], M["kopf"]])
+
 def apply_state(st):
     def g(k, d): return st.get(k, d)
     emit("win", 7.0 * g("lights", 1.0)); emit("win_mine", 3.0 * g("mine", 1)); emit("hl", 30.0 * g("trucks", 1)); emit("lamp", 12.0 * g("lights", 1.0) ** 0.5)
@@ -340,6 +598,18 @@ def apply_state(st):
         piv = Vector((300 + 0.42, 1.73, 0)); o.matrix_world = __import__("mathutils").Matrix.Translation(piv) @ __import__("mathutils").Matrix.Rotation(-a * 1.9, 4, "Z") @ __import__("mathutils").Matrix.Translation(-piv)
         emit("flicht", 2.2 * a); STATE_OBJ["k_lamp"].data.energy = 20 * a
     if "fill" in st or "gap" in st: set_products(g("fill", 1.0), g("gap", 0))
+    if "rfill" in st:
+        for nm in STATE_OBJ.get("racks", {}): set_rack(nm, g("rfill", 1.0))
+    if "bars" in st: set_bars(st["bars"])
+    if "pct" in st: set_pct(st["pct"])
+    if "eiffel" in st: set_eiffel(st["eiffel"])
+    if "vorrat" in st or "wasser" in st: set_vorrat(g("vorrat", 0.0), g("wasser", 0))
+    for k, key in (("rp_people", "people"), ("markt_people", "people"), ("muell_voll", "muell")):
+        if k in STATE_OBJ: STATE_OBJ[k].hide_render = not g(key, 0 if key == "muell" else 1)
+    if "fahrer" in STATE_OBJ:
+        for o in STATE_OBJ["fahrer"]: o.hide_render = not g("driver", 1)
+    if "atm" in STATE_OBJ: emit("atm", 2.0 * (1 - g("atm_off", 0)))
+    if "pools" in STATE_OBJ: emit("pool", 0.35 * g("lights", 1.0))
     if "c_deckel" in STATE_OBJ: STATE_OBJ["c_deckel"].hide_render = g("cut", 0) > 0.5
     w = bpy.context.scene.world.node_tree.nodes["Background"]
     day = g("day", 0.0)
@@ -352,6 +622,10 @@ def setup_scene(W, H, samples):
     bpy.ops.object.light_add(type="SUN", rotation=(math.radians(55), math.radians(8), math.radians(-35))); s = bpy.context.object; s.name = "sonne"
     s.data.angle = math.radians(6)
     build_town(); build_karte(); build_aisle(); build_fridge(); build_cut()
+    build_detail(); build_rastplatz(); build_wasserwerk(); build_extra_town(); build_haus_vorrat(); set_vorrat(0.0, 0)
+    build_racks("zlager", 700, "kisten"); build_racks("kuehl", 760, "weiss", light=(0.75, 0.88, 1.0)); build_racks("reserve", 820, "saecke")
+    build_racks("apo", 880, "klein", rows=2, levels=3); build_racks("klinik", 940, "weiss", rows=2, levels=3)
+    build_cab(); build_leitstand(); build_markt_cut(); build_bars(); build_ladung()
     r = sc.render; r.engine = "CYCLES"; sc.cycles.device = "CPU"; sc.cycles.samples = samples; sc.cycles.use_denoising = True
     sc.cycles.max_bounces = 4; sc.cycles.light_sampling_threshold = 0.02; r.resolution_x, r.resolution_y = W, H
     sc.view_settings.view_transform = "AgX"; sc.view_settings.look = "AgX - Medium High Contrast"

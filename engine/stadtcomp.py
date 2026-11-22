@@ -201,6 +201,31 @@ class Shot:
         if ty == "grey":
             g = img.mean(axis=2, keepdims=True); a = fx.get("amount", 0.6) * ease((u - fx.get("t0", 0.3)) / 0.4)
             return img * (1 - a) + g * a * np.array([0.9, 0.95, 1.05])
+        if ty == "screen" and fx["anchor"] in A:
+            if not hasattr(s, "_scr"):
+                im = cv2.cvtColor(cv2.imread(fx["img"]), cv2.COLOR_BGR2RGB); im = cv2.resize(im, (960, 540))
+                g = im.astype(np.float32); g = g * 0.85 + 12                                   # Bildschirm: etwas flacher, leicht bläulich
+                g[..., 2] += 8; sl = (np.arange(540) % 4 < 1)[:, None, None] * 10              # feine Zeilen
+                s._scr = np.dstack([np.clip(g - sl, 0, 255).astype(np.uint8), np.full((540, 960), 255, np.uint8)])
+            al = ease(u / 0.12)
+            out = quad_overlay(img, A[fx["anchor"]], s._scr)
+            return img * (1 - al) + out * al
+        if ty == "hl":
+            al = ease((u - fx.get("t0", 0.1)) / 0.15); ov = np.zeros(img.shape[:2], np.float32)
+            for k in fx["anchors"]:
+                if k in A: cv2.fillPoly(ov, [np.array([p[:2] for p in A[k]], np.int32)], 1.0, cv2.LINE_AA)
+            return img + (ov * 0.35 + cv2.GaussianBlur(ov, (0, 0), 10) * 0.6)[..., None] * ORANGE * al
+        if ty == "scatter":
+            if not hasattr(s, "_sc"):
+                pts = np.array([p[:2] for v in A.values() for p in v if p[2] > 0], np.float32) if A else np.array([[s.W / 2, s.H / 2]], np.float32)
+                lo, hi = pts.min(0), pts.max(0); rng = np.random.default_rng(7)
+                if hi[0] - lo[0] < 50: lo, hi = np.array([s.W * 0.3, s.H * 0.3]), np.array([s.W * 0.7, s.H * 0.75])
+                s._sc = lo + rng.random((fx.get("n", 100), 2)) * (hi - lo); s._sct = rng.random(fx.get("n", 100))
+            al = np.clip((u - fx.get("t0", 0.0) - s._sct * 0.5) / 0.1, 0, 1)
+            if fx.get("fade") is not None: al = al * (1 - ease((u - fx["fade"]) / 0.4))
+            return glow_dots(img, [(x, y, a) for (x, y), a in zip(s._sc, al)], 4, ORANGE)
+        if ty == "fadein":
+            return img * ease(u / 0.3)
         if ty == "flicker":
             return img * (0.9 + 0.1 * math.sin(t * 31) * math.sin(t * 7.3))
         return img
