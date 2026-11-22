@@ -35,6 +35,7 @@ tx = 1040
 d.text((tx, 545), "UNTERBAU", font=f1, fill=WHITE)
 d.rectangle([tx + 4, 745, tx + 14, 812], fill=ORANGE)
 d.text((tx + 36, 742), "Verstehen, wie die Welt funktioniert.", font=f2, fill=WHITE)
-d.text((tx + 36, 832), "NEUES VIDEO ALLE 2 TAGE", font=f3, fill=ORANGE)
+ZEILE = sys.argv[3] if len(sys.argv) > 3 else ""   # z. B. "NEUES VIDEO ALLE 4 TAGE"; leer = keine Rhythmus-Zeile (Laurin 22.11.2026)
+if ZEILE: d.text((tx + 36, 832), ZEILE, font=f3, fill=ORANGE)
 im.save(out, optimize=True)
 print(out, im.size)
