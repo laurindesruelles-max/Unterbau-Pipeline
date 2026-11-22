@@ -660,11 +660,18 @@ def main():
     a = ap.parse_args(sys.argv[sys.argv.index("--") + 1:] if "--" in sys.argv else sys.argv[1:])
     os.makedirs(a.out, exist_ok=True)
     shots = json.load(open(a.shots)); only = set(a.only.split(",")) if a.only else None
-    sc, cam = setup_scene(a.w, a.h, a.samples)
+    sc, cam = setup_scene(a.w, a.h, a.samples); DONE = {}
     for s in shots:
         if only and s["id"] not in only: continue
         base = os.path.join(a.out, s["id"])
         if os.path.exists(base + ".json"): continue
+        key = json.dumps([s["cam"], s.get("A", {}), s.get("B"), sorted(s.get("anchors", []))], sort_keys=True)
+        if key in DONE:   # gleiche Kamera + gleicher Zustand (Folge am selben Ort) -> Bilder wiederverwenden
+            import shutil
+            for suf in ("_A.png", "_B.png", "_Z.exr", ".json"):
+                if os.path.exists(DONE[key] + suf): shutil.copy(DONE[key] + suf, base + suf)
+            print("fertig", s["id"], "(kopiert)", flush=True); continue
+        DONE[key] = base
         c = s["cam"]; look_at(cam, c["loc"], c["tgt"], c.get("lens", 50))
         apply_state(s.get("A", {})); render(sc, base + "_A.png")
         render(sc, base + "_Z.exr", "exr", samples=1)

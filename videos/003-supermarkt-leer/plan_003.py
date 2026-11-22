@@ -270,6 +270,18 @@ def main():
             sp["fx"] = list(sp.get("fx", [])) + [dict(SCR("02"), anchor="screen_l"), dict(SCR(14), anchor="screen_c"), dict(SCR(26), anchor="screen_r")]
         plan.append({"id": sid, "dur": e["sek"], "move": sp.get("move", "push"), "trans": sp.get("trans", "diff"),
                      "t_trans": sp.get("t_trans", [0.2, 0.8]), "fx": sp.get("fx", []), "anim": e["animation"], "i": e["i"]})
+    # Folgen am selben Schauplatz = eine Kamera, eine durchgehende Fahrt (Laurin 22.11.2026: keine Sprung-Schnitte)
+    i = 0
+    while i < len(shots):
+        j = i
+        while j + 1 < len(shots) and shots[j + 1]["set"] == shots[i]["set"]: j += 1
+        tot = sum(plan[k]["dur"] for k in range(i, j + 1)); acc = 0.0
+        mv = plan[i]["move"] if plan[i]["move"] != "still" else "push"
+        for k in range(i, j + 1):
+            shots[k]["cam"] = shots[i]["cam"]
+            plan[k].update(run_k=k - i, run_len=j - i + 1, run_move=mv, run_dir=1 if (i % 2) else -1,
+                           run_u=[acc / tot, (acc + plan[k]["dur"]) / tot]); acc += plan[k]["dur"]
+        i = j + 1
     json.dump(shots, open(os.path.join(a.out, "shots.json"), "w"), indent=0)
     json.dump(plan, open(os.path.join(a.out, "plan.json"), "w"), indent=0, ensure_ascii=False)
     print(len(shots), "Einstellungen,", round(sum(p["dur"] for p in plan), 1), "s")

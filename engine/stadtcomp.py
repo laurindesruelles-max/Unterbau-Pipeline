@@ -121,16 +121,22 @@ class Shot:
         s.TS = np.clip((np.abs(s.YY - s.H * 0.5) - s.H * 0.2) / (s.H * 0.25), 0, 1) if spec.get("tilt", True) else None
 
     def warp(s, img, u):
-        mv = s.sp.get("move", "push"); d = s.dir
-        if mv == "flight": z0, z1, px, py = 1.0, 1.28, 160 * d, -40
-        elif mv == "pan": z0, z1, px, py = 1.08, 1.1, 180 * d, 0
-        elif mv == "pull": z0, z1, px, py = 1.2, 1.02, -60 * d, 20
-        elif mv == "still": z0, z1, px, py = 1.04, 1.06, 10 * d, 0
-        else: z0, z1, px, py = 1.03, 1.13, 50 * d, -15
-        e = ease(u); z = z0 + (z1 - z0) * e; dx = -px / 2 + px * e; dy = -py / 2 + py * e
-        k = 0.3 + 0.7 * s.near; cx, cy = s.W / 2, s.H / 2
-        mx = cx + (s.XX - cx) / (1 + (z - 1) * k) - dx * k; my = cy + (s.YY - cy) / (1 + (z - 1) * k) - dy * k
-        return cv2.remap(img, mx, my, cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)
+        """Keine 2,5D-Verzerrung mehr (Laurin 22.11.2026: bei Blender-Objekten verschwommen). Ruhige, gleichmäßige Kamerafahrt
+        (Zoom + Schwenk) über die ganze Folge am selben Schauplatz; das Bild bleibt scharf."""
+        mv = s.sp.get("run_move", s.sp.get("move", "push")); d = s.sp.get("run_dir", s.dir)
+        r0, r1 = s.sp.get("run_u", [0.0, 1.0]); ur = r0 + (r1 - r0) * u
+        if mv == "flight": z0, z1, px, py = 1.0, 1.14, 90 * d, -30
+        elif mv == "pan": z0, z1, px, py = 1.06, 1.06, 100 * d, 0
+        elif mv == "pull": z0, z1, px, py = 1.12, 1.0, -40 * d, 15
+        elif mv == "still": z0, z1, px, py = 1.0, 1.03, 10 * d, 0
+        else: z0, z1, px, py = 1.0, 1.08, 40 * d, -10
+        e = ease(ur) if s.sp.get("run_len", 1) == 1 else ur          # in längeren Folgen gleichmäßig, damit es an den Übergängen nicht stockt
+        z = z0 + (z1 - z0) * e; dx = -px / 2 + px * e; dy = -py / 2 + py * e
+        lim_x = (z - 1) * s.W / 2; lim_y = (z - 1) * s.H / 2
+        dx = max(-lim_x, min(lim_x, dx)); dy = max(-lim_y, min(lim_y, dy))
+        cx, cy = s.W / 2, s.H / 2
+        M = np.float32([[z, 0, cx - z * cx - dx * z], [0, z, cy - z * cy - dy * z]])
+        return cv2.warpAffine(img, M, (s.W, s.H), flags=cv2.INTER_CUBIC, borderMode=cv2.BORDER_REFLECT)
 
     def frame(s, t):
         sp = s.sp; dur = sp["dur"]; u = t / dur
@@ -195,9 +201,19 @@ class Shot:
                 x, y = fx.get("pos", (s.W * 0.5, s.H * 0.12))
             return label(img, fx["text"], x, y, al, fx.get("size", int(58 * s.W / 1920 * 1.33)), fx.get("sub"))
         if ty == "frame" and fx["anchor"] in A:
-            q = np.array([p[:2] for p in A[fx["anchor"]]], np.int32); al = ease((u - fx.get("t0", 0.2)) / 0.2)
-            ov = np.zeros(img.shape[:2], np.float32); cv2.polylines(ov, [q], True, 1.0, 4, cv2.LINE_AA)
-            return img + (ov + cv2.GaussianBlur(ov, (0, 0), 5) * 1.5)[..., None] * ORANGE * al * 0.8
+            # Markierung: Rahmen zeichnet sich ein, Fläche füllt sich orange und pulsiert (Laurin 22.11.: Stelle mit Farbe zeigen)
+            q = np.array([p[:2] for p in A[fx["anchor"]]], np.float32); g = (u - fx.get("t0", 0.2)) / 0.25
+            if g <= 0: return img
+            per = np.vstack([q, q[:1]]); seg = np.linalg.norm(np.diff(per, axis=0), axis=1); L = seg.sum(); dl = min(1, g) * L
+            ov = np.zeros(img.shape[:2], np.float32); fill = np.zeros_like(ov)
+            for k in range(4):
+                if dl <= 0: break
+                f = min(1, dl / seg[k]); p1 = per[k] + (per[k + 1] - per[k]) * f
+                cv2.line(ov, tuple(int(v) for v in per[k]), tuple(int(v) for v in p1), 1.0, 5, cv2.LINE_AA); dl -= seg[k]
+            if g > 1:
+                cv2.fillPoly(fill, [q.astype(np.int32)], 1.0, cv2.LINE_AA)
+                fill *= (0.22 + 0.12 * math.sin((u * s.sp["dur"]) * 4.5)) * min(1, (g - 1) * 2)
+            return img * (1 - fill[..., None] * 0.5) + (ov + cv2.GaussianBlur(ov, (0, 0), 6) * 1.4)[..., None] * ORANGE * 0.85 + fill[..., None] * ORANGE * 0.9
         if ty == "grey":
             g = img.mean(axis=2, keepdims=True); a = fx.get("amount", 0.6) * ease((u - fx.get("t0", 0.3)) / 0.4)
             return img * (1 - a) + g * a * np.array([0.9, 0.95, 1.05])
@@ -249,11 +265,17 @@ def main():
     p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{OW}x{OH}", "-r", str(FPS), "-i", "-",
                           "-c:v", "libx264", "-preset", "veryfast", "-crf", "21", "-pix_fmt", "yuv420p", a.out], stdin=subprocess.PIPE)
     rng = np.random.default_rng(1); n = 0; tacc = 0.0
+    prev = None
     for spec in plan:
         sh = Shot(spec, a.rdir, OW, OH)
         tacc += spec["dur"]; frames = int(round(tacc * FPS)) - n
+        last = None
         for k in range(frames):
-            p.stdin.write(grade(sh.frame(k / FPS), rng).tobytes())
+            fr = sh.frame(k / FPS)
+            if prev is not None and spec.get("run_k", 0) > 0 and k / FPS < 0.4:   # gleicher Ort: weich überblenden statt schneiden
+                w = ease(k / FPS / 0.4); fr = prev * (1 - w) + fr * w
+            last = fr; p.stdin.write(grade(fr, rng).tobytes())
+        prev = last
         n += frames; print("comp", spec["id"], flush=True)
     p.stdin.close(); p.wait()
 

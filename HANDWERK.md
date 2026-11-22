@@ -17,6 +17,9 @@ Quelle: Claude-Doc „Kanal-Handschriften“ https://claude.ai/artifact/UGsg2WZK
 - **Jeder Absatz hat ein Bild-Ereignis.** Kein Bild steht länger als ~5 s ohne Eigenbewegung, geschnitten wird alle 3–5 s. Das sind mindestens 12 Bild-Ereignisse pro Minute, und das wird gemessen.
 - **Nur Effekte aus `EFFEKTE.md` und `ANIMATION.md` des Kanals.** `ANIMATION.md` enthält alle für die Nische freigegebenen Animationsarten (Laurin, 21.11.2026: alles außer Higgsfield-Videoclips). Weitere Effekte erst nach Laurins Freigabe.
 - **Wetter nicht als Standard** (Laurin, 20.11.2026): Regen, Schnee oder Nebel nur, wenn Geschichte oder Ort es verlangen, nicht in jedem Video und nicht als Dauer-Atmosphäre. Bewegung im Bild kommt aus Handlung, Licht, Fahrzeugen und Menschen.
+- **Keine Sprung-Schnitte** (Laurin 22.11.2026): Folgen am selben Ort sind eine durchgehende Kamerafahrt oder eine Überblendung, nie ein harter Schnitt auf einen anderen Winkel desselben Motivs.
+- **Keine 2,5D-Verzerrung auf 3D-Renders** (Laurin 22.11.2026: wirkt verschwommen). Bewegung bei Blender-Bildern: echte oder gleichmäßige Kamerafahrt, Markierungen in Farbe, Zustandswechsel.
+- **Bild-Prüfung ist Pflicht vor jeder Abgabe:** `python3 engine/bildcheck.py VIDEO.mp4 --plan <render-ordner> --out qa_bild.md` (Sprung-Schnitte, Unschärfe, zu dunkel, Standbild > 5 s). Erst bei 0 Fehlern geht etwas an Laurin. Dazu Kontaktabzug ansehen.
 - **Kein Bild kommt zweimal vor.** Günstige Bewegung: Blender, eigene Motion-Grafik, Pixabay. KI-Videoclips nur mit Laurins Freigabe.
 
 ## Bild-Drehbuch: Darstellung von Zeit und Geschehen (Laurin, 21.11.2026)
