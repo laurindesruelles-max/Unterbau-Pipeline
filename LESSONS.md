@@ -91,3 +91,11 @@ Grundlage: Auswertung erfolgreicher Ausreißer-Videos in allen 5 Nischen (vidIQ)
 - **Musik:** Gemini einzeln: ub_kaltstart_meer 9/10 („wie Max Richter, passt zu fern/Simplicissimus“), ub_spannung_aufbau 6–7.5, ub_system_puls = Akustikgitarre/Folk, passt nicht zu Technik-Spannung → nur noch für ruhige Momente.
 - **Mix-Fehler gefunden und behoben:** audiokit-Musik wechselte alle 60–80 s Track/Stelle mit 19 Stopps/Min. (Profis 4–8) → neuer Modus `music: {"mode": "kapitel"}` (ein Stück pro Kapitel, Musik trägt unter Kapitelkarten +7 dB, Anschwellen vor Enthüllungen, Stopps nur bewusst). Einstufiges `loudnorm` quetschte die Dynamik → `master()`: EQ (Sub, 2,5 kHz, Präsenz), lineare Verstärkung + Spitzenbegrenzer (−3 dBFS, sonst AAC-Überschwinger). Bewusste Höhepunkte als `hits` (werden vom Aufräumen nicht leiser gemacht).
 - Ergebnis Vorschau 003: earshot-Profilvergleich 17/23 → **22/23 (launch-grade, 0 major)**.
+
+## Erzähl-Bausteine + echte Clips nach Wissenswert-Vorbild (Laurin 22.11.2026, gilt ab dem nächsten Video)
+Referenz: Wissenswert „Wie eine Spionin den größten CEO der Welt ruinierte“ (372 Tsd. Aufrufe in 2 Tagen). Laurin: „hat richtig Spaß gemacht, viele echte Clips“ – echte Clips und Fun-Facts sollen auch bei Unterbau rein.
+- **Echte Clips: mindestens 1 pro Minute**, schnell geschnitten (2–4 s), immer in der Unterbau-Welt eingebettet: Bildschirme im Modell-Leitstand, Übergang Miniatur → echter Clip → zurück in die Miniatur (Match-Cut auf gleiche Bewegung), Split-Screen Modell/Realität. Quellen nur Pixabay (`engine/stock.py`, ohne Marken/Logos) und Public Domain/Wikimedia (`engine/sources.py`). Nie Nachrichten- oder fremde YouTube-Ausschnitte. Lizenz je Clip in `qa.md`.
+- **Fun-Facts:** alle 2–3 Min. ein überraschendes, belegtes Detail zum System (Zahl, Kuriosität, Herkunft eines Namens) – als kurze Einblendung mit Zähler/Grafik.
+- **Kaltstart als Szene mit Datum + Ort** („Es ist der 3. März 2021, 6:40 Uhr, Hafen von …“), dann Eskalationstreppe (3–4 Stufen, jede größer) und ein 3-teiliges Versprechen.
+- **Rahmen:** Das erste Bild des Videos kommt am Ende verändert zurück.
+- **Schluss mit 3 Szenarien** (was passiert, wenn …) + Kommentar-Frage.
