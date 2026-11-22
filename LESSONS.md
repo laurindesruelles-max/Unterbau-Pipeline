@@ -19,6 +19,7 @@ Jeder Lauf liest diese Datei vor der Produktion und befolgt sie. Neue Erkenntnis
 - **Stimme (Laurin 19.11.2026):** Julian nur noch über ElevenLabs v4 Turbo (`elevenlabs_v4_turbo`, Preset-Voice 95429266-…). Gilt für alle Kanäle: nur ElevenLabs-Stimmen, keine Higgsfield-`text2speech_v2`-Stimmen mehr (Aussprache). Eleven v4 (voll) wäre ~4,6 Credits/1.000 Zeichen (~40 pro Video) → Turbo gewählt.
 - **Lebendiger Schnitt (Laurin 19.11.2026: „so langweilig“):** Standbilder mit langsamer Fahrt und 8 s pro Bild sind zu ruhig. Schnitt alle 3–4 s, animierte Grafiken (Karten, Zähler, Ablauf-Ketten), echte Pixabay-Clips, mehr Bewegung im Bild und Schnitt-Sounds.
 - **Sounds vorher anhören (Laurin 19.11.2026: Grafik-Sound „Müll“):** ub_daten (Quietsch-/Piepton) und ub_klick (Kamera-Auslöser) nicht mehr verwenden. Jeden Effekt vor dem Einbau mit `earshot describe` prüfen und die Effektspur mit `earshot timeline` durchhören. Grafik kommt rein = diagram_whoosh, Zahl landet = reveal_impact_01, Text = whoosh_slow_soft leise.
+  - **Klarstellung (Laurin 22.11.2026):** Piep- und Daten-Töne sind nicht grundsätzlich verboten – nur schlechte. Gesperrt sind genau diese zwei Dateien (Sperrliste in sound-bibliothek/profiles.json). Neue Daten-Töne sind erlaubt, wenn sie im earshot-/Gemini-Casting gut abschneiden.
 - **Rhythmus (Laurin 17.11.2026):** alle 2 Tage ein Video wie bei Goldsmith und Meisterwerk.
 
 ## Umstellung 17.11.2026 (Laurin): GitHub statt Claude-Projekt, günstig statt Kling
