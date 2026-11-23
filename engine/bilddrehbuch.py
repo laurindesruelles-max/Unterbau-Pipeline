@@ -24,15 +24,16 @@ bilddrehbuch.json = Liste von Einstellungen in Videoreihenfolge:
 import json, re, sys, pathlib, argparse
 
 WPS = 2.4
-# Lesbarkeit (Laurin 23.11.2026, alle Kanäle: „zu viele Animationen hintereinander bzw. zu kurz – man kam nicht hinterher“)
-MIN_TEXT = 4.0   # Einstellung mit Text, Zahl, Datum oder Grafik bleibt mindestens so lange stehen
-MIN_BILD = 2.5   # jede andere Einstellung  # deutsche/englische Sprechgeschwindigkeit der Kanalstimmen, Wörter pro Sekunde
+# Lesbarkeit (Laurin 23.11.2026, alle Kanäle): der normale Schnitt-Takt bleibt („davor war das Video wesentlich besser“),
+# nur 2D-Grafiken/-Animationen und Fallblatt-Tafeln brauchen Lesezeit („2–3 Folien/Animationen zu schnell, meist 2D-animiert“)
+MIN_GRAFIK = 4.0   # 2D-Grafik/Motion-Animation (zusammenhängende Teile zählen zusammen): Animation fertig + stehen lassen
+MIN_TAFEL = 2.4    # Fallblatt-/Tafel-Folie
 
 # Kanal-Regeln: welche Animationen Zeit/Zahl EXAKT tragen können (zusätzlich zur Pflicht „exakt“)
 KANAL = {
-    "goldsmith":   {"min_events": 11, "max_sek": 5.5},
+    "goldsmith":   {"min_events": 12, "max_sek": 5.5},
     "meisterwerk": {"min_events": 12, "max_sek": 6.0},
-    "unterbau":    {"min_events": 10, "max_sek": 6.0},
+    "unterbau":    {"min_events": 15, "max_sek": 4.5},
     "denkmuster":  {"min_events": 12, "max_sek": 6.0},
     "nachtausgabe": {"min_events": 13, "max_sek": 5.0},
 }
@@ -93,10 +94,11 @@ def main():
         if len(zeigt.split()) < 4:
             fehler.append(f"{ort} „zeigt“ zu vage – konkret beschreiben, was im Bild passiert")
         textlast = bool(inhalt & {"zahl", "zeit"}) or "motion" in anim or "Zahl" in anim or "Tafel" in anim or bool(s.get("text"))
-        if sek < MIN_BILD - 0.05:
-            fehler.append(f"{ort} nur {sek:.1f}s – zu kurz, der Zuschauer kommt nicht hinterher (min {MIN_BILD}s; Sätze zusammenfassen)")
-        elif textlast and sek < MIN_TEXT - 0.05:
-            fehler.append(f"{ort} Text/Zahl/Grafik nur {sek:.1f}s sichtbar (min {MIN_TEXT}s) – mit Nachbarsatz zusammenfassen oder früher einblenden")
+        al = anim.lower(); grafik = any(w in al for w in ("motion", "grafik", "2d", "diagramm", "karte", "zähler", "balken"))
+        if grafik and sek < MIN_GRAFIK - 0.05:
+            fehler.append(f"{ort} 2D-Grafik nur {sek:.1f}s (min {MIN_GRAFIK}s) – Zeit von der Blender-Einstellung daneben nehmen, Grafik am Ende stehen lassen")
+        elif "tafel" in al and sek < MIN_TAFEL - 0.05:
+            fehler.append(f"{ort} Tafel nur {sek:.1f}s (min {MIN_TAFEL}s) – zu kurz zum Mitlesen")
         if sek > regel["max_sek"] + (3.0 if textlast else 1.0):
             fehler.append(f"{ort} {sek:.1f}s ohne neues Bild-Ereignis (max {regel['max_sek']}s) – Satz teilen oder zweites Ereignis")
         elif sek > regel["max_sek"]:

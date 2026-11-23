@@ -11,7 +11,8 @@ vin, vout, W = sys.argv[1], sys.argv[2], sys.argv[3]
 U = "/home/claude/unterbau-pipeline/assets/"; X = W + "/sfx/"; V = W + "/v4/"
 plan = json.load(open(V + "plan.json")); S = json.load(open(V + "saetze.json"))
 # Satzzeiten immer aus dem Original-Plan (Ton bleibt, wo er war); Bild-Ereignisse aus dem ruhigen Schnitt, falls vorhanden
-bild = json.load(open(V + "plan_ruhig.json")) if os.path.exists(V + "plan_ruhig.json") else None
+BP = os.environ.get("BILDPLAN", V + "plan_grafik.json")   # Bild-Ereignisse aus dem tatsächlich verwendeten Schnitt (23.11.: plan_grafik.json)
+bild = json.load(open(BP)) if os.path.exists(BP) else None
 jobs = {j["key"]: j for j in json.load(open(V + "motion_jobs.json"))}
 for k, j in jobs.items(): MO._JOBS[k] = {"comp": j["comp"], "props": j["props"], "len": j["len"]}
 T, tt = {}, 0.0

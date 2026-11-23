@@ -8,7 +8,7 @@
 - [x] OK: Spitzenpegel -2.8 dBFS (max. −0,5)
 - [x] OK: Schwarzbilder mitten im Video: keine
 - [x] OK: Standbild-Stellen (≥4 s ohne Bewegung): 0 
-- [x] OK: Dateigröße 1193 MB (Info – Upload-Kopie muss < 299 MB sein)
+- [x] OK: Dateigröße 626 MB (Info – Upload-Kopie muss < 299 MB sein)
 - [ ] Kontaktbogen `qa_frames.jpg` angesehen: Tippfehler in Einblendungen, abgeschnittener Text, Bildfehler, Ton synchron (Stichproben)
 
 ## 2. Fakten (unabhängiger Faktencheck durch separaten Agenten)
