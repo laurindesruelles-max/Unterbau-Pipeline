@@ -1,4551 +1,4520 @@
 [
-{
-"id": "s000",
-"tilt": false,
-"dur": 2.5,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "screen",
-"anchor": "k_phone",
-"img": "/home/claude/unterbau-work/scr/call.png"
-}
-],
-"anim": "Bildschirm in der Welt",
-"i": 0,
-"keys": [
-0
-],
-"set": "k_handy",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-]
-},
-{
-"id": "s001",
-"tilt": false,
-"dur": 1.93,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "label",
-"text": "Kassel · 04:12 Uhr",
-"t0": 0.15,
-"anchor": "haus",
-"sub": "eine Novembernacht"
-}
-],
-"anim": "Dein Haus",
-"i": 1,
-"keys": [
-1
-],
-"set": "haus_aussen",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": 1,
-"run_u": [
-0.0,
-1.0
-],
-"lead": 0.44
-},
-{
-"id": "s002",
-"tilt": false,
-"dur": 6.649,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "tafel",
-"anchor": "k_uhr",
-"texts": [
-"04:12"
-]
-}
-],
-"anim": "Countdown in der Welt",
-"i": 1,
-"keys": [
-1,
-2,
-3,
-4
-],
-"set": "k_uhr",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-],
-"ids": [
-"s002",
-"s003",
-"s004"
-]
-},
-{
-"id": "s007",
-"video": "/home/claude/unterbau-work/motion/d19b5208b044.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 6.64,
-"fx": [
-{
-"type": "label",
-"text": "MINUTE 0",
-"pos": [
-800,
-90
-],
-"t0": 0.027
-}
-],
-"anim": "Lichter-aus-Raster (`motion` grid)",
-"i": 6,
-"keys": [
-5,
-6,
-6
-],
-"set": "mo:d19b5208b044.mp4",
-"ids": [
-"s006",
-"s007",
-"s008"
-],
-"lead": 1.76
-},
-{
-"id": "s009",
-"tilt": false,
-"dur": 3.2,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "flicker"
-}
-],
-"anim": "Steuerzentrale",
-"i": 7,
-"keys": [
-7,
-8,
-9
-],
-"set": "ls_innen",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": 1,
-"run_u": [
-0.0,
-1.0
-]
-},
-{
-"id": "s010",
-"tilt": true,
-"dur": 7.76,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "label",
-"text": "Leitstelle",
-"t0": 0.15,
-"anchor": "leitstelle"
-}
-],
-"anim": "Tilt-Shift-Flug",
-"i": 10,
-"keys": [
-10,
-11
-],
-"set": "stadt_total",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-],
-"ids": [
-"s010",
-"s011"
-]
-},
-{
-"id": "s012",
-"video": "/home/claude/unterbau-work/motion/5935939e5278.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 6.64,
-"fx": [],
-"anim": "Warenstrom-Karte (`motion` map)",
-"i": 12,
-"keys": [
-12,
-12
-],
-"set": "mo:5935939e5278.mp4",
-"ids": [
-"s012",
-"s013"
-]
-},
-{
-"id": "s014",
-"tilt": false,
-"dur": 3.92,
-"move": "push",
-"trans": "wipe_down",
-"t_trans": [
-0.1,
-0.6
-],
-"fx": [
-{
-"type": "dots",
-"path": "cut",
-"n": 14,
-"speed": 0.05,
-"r": 6
-}
-],
-"anim": "Querschnitt",
-"i": 13,
-"keys": [
-13
-],
-"set": "querschnitt_stadt",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-]
-},
-{
-"id": "s015",
-"tilt": false,
-"dur": 3.96,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "label",
-"text": "Szene nachgestellt",
-"t0": 0.05,
-"pos": [
-800,
-90
-]
-}
-],
-"anim": "Leben in der Welt",
-"i": 14,
-"keys": [
-14,
-15
-],
-"set": "k_total",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": 1,
-"run_u": [
-0.0,
-1.0
-],
-"ids": [
-"s015",
-"s016"
-]
-},
-{
-"id": "s017",
-"tilt": true,
-"dur": 4.6,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "card",
-"top": "WAS WIRKLICH PASSIERT, WENN DU 112 WÄHLST",
-"title": "UNTERBAU",
-"sub": "Verstehen, wie die Welt funktioniert"
-}
-],
-"anim": "Tilt-Shift-Flug",
-"i": -1,
-"keys": [
-"T"
-],
-"set": "stadt_total",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": 1,
-"run_u": [
-0.0,
-1.0
-]
-},
-{
-"id": "s018",
-"tilt": true,
-"dur": 5.7,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "card",
-"top": "KAPITEL 1",
-"title": "Die erste Minute",
-"sub": "Minute 0 · 04:12 Uhr"
-}
-],
-"anim": "Tilt-Shift-Flug",
-"i": -1,
-"keys": [
-"K1",
-16
-],
-"set": "leitstelle_aussen",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-]
-},
-{
-"id": "s020",
-"tilt": true,
-"dur": 3.36,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "dots",
-"path": "funk_weg",
-"n": 6,
-"speed": 0.06,
-"r": 6
-},
-{
-"type": "label",
-"text": "Funkmast",
-"t0": 0.15,
-"anchor": "mast_top"
-}
-],
-"anim": "Netz-Puls",
-"i": 17,
-"keys": [
-17
-],
-"set": "mast_haus",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-]
-},
-{
-"id": "s021",
-"tilt": false,
-"dur": 6.0,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "label",
-"text": "keine Zentrale für ganz Deutschland",
-"t0": 0.2,
-"pos": [
-800,
-90
-]
-}
-],
-"anim": "Modell-Karte",
-"i": 18,
-"keys": [
-18,
-19
-],
-"set": "karte_de",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": 1,
-"run_u": [
-0.0,
-1.0
-],
-"ids": [
-"s021",
-"s022"
-]
-},
-{
-"id": "s023",
-"video": "/home/claude/unterbau-work/motion/d5269ee94133.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 5.096,
-"fx": [],
-"anim": "Ablauf-Kette 2D (`motion` flow)",
-"i": 20,
-"keys": [
-20,
-20
-],
-"set": "mo:d5269ee94133.mp4",
-"ids": [
-"s023",
-"s024"
-]
-},
-{
-"id": "s025",
-"video": "/home/claude/unterbau-work/motion/0461f148da85.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 3.12,
-"fx": [],
-"anim": "Fallblatt-Zahl (`motion` counter)",
-"i": 21,
-"keys": [
-21
-],
-"set": "mo:0461f148da85.mp4"
-},
-{
-"id": "s026",
-"tilt": true,
-"dur": 5.64,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "label",
-"text": "betrieben von Kreis oder Stadt",
-"t0": 0.15,
-"anchor": "leitstelle"
-}
-],
-"anim": "Leben in der Welt",
-"i": 22,
-"keys": [
-22,
-23
-],
-"set": "leitstelle_aussen",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-],
-"ids": [
-"s026",
-"s027"
-]
-},
-{
-"id": "s028",
-"tilt": true,
-"dur": 2.5,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "scatter",
-"n": 220,
-"t0": 0.0
-}
-],
-"anim": "Netzwerk-Karte",
-"i": 23,
-"keys": [
-23
-],
-"set": "stadt_total",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": 1,
-"run_u": [
-0.0,
-1.0
-]
-},
-{
-"id": "s029",
-"video": "/home/claude/unterbau-work/motion/1ce7eb727def.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 6.194,
-"fx": [
-{
-"type": "label",
-"text": "Berlin: alle 28 s ein Notruf",
-"t0": 0.489,
-"sub": "2024",
-"pos": [
-800,
-90
-]
-}
-],
-"anim": "Fallblatt-Zahl (`motion` counter)",
-"i": 24,
-"keys": [
-24,
-25
-],
-"set": "mo:1ce7eb727def.mp4",
-"lead": 0.34,
-"ids": [
-"s029",
-"s030"
-]
-},
-{
-"id": "s031",
-"video": "/home/claude/unterbau-work/vid/px1110.mp4",
-"ss": 0.5,
-"kind": "clip",
-"dur": 4.32,
-"fx": [
-{
-"type": "label",
-"text": "ohne SIM-Karte: kein Notruf",
-"t0": 0.1,
-"pos": [
-800,
-90
-],
-"sub": "seit 2009"
-}
-],
-"anim": "Bildschirm in der Welt",
-"i": 26,
-"keys": [
-26
-],
-"set": "cl:px1110.mp4"
-},
-{
-"id": "s032",
-"video": "/home/claude/unterbau-work/vid/px204018.mp4",
-"ss": 3.0,
-"kind": "clip",
-"dur": 4.32,
-"fx": [
-{
-"type": "label",
-"text": "fremdes Netz: geht",
-"t0": 0.1,
-"pos": [
-800,
-90
-],
-"sub": "auch ohne Guthaben"
-}
-],
-"anim": "Bildschirm in der Welt",
-"i": 27,
-"keys": [
-27
-],
-"set": "cl:px204018.mp4"
-},
-{
-"id": "s034",
-"video": "/home/claude/unterbau-work/motion/41ec753c017e.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 7.41,
-"fx": [],
-"anim": "Anzeigetafel dreht sich (`motion` flip)",
-"i": 29,
-"keys": [
-28,
-29,
-30,
-29,
-30
-],
-"set": "mo:41ec753c017e.mp4",
-"ids": [
-"s033",
-"s034",
-"s035"
-],
-"lead": 2.05
-},
-{
-"id": "s036",
-"tilt": false,
-"dur": 4.16,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [],
-"anim": "Leben in der Welt",
-"i": 31,
-"keys": [
-31,
-32
-],
-"set": "wache",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-]
-},
-{
-"id": "s038",
-"tilt": false,
-"dur": 7.76,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "label",
-"text": "Hausnummer?",
-"t0": 0.15,
-"anchor": "haus"
-}
-],
-"anim": "Dein Haus",
-"i": 33,
-"keys": [
-33,
-34,
-35
-],
-"set": "haus_aussen",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-],
-"ids": [
-"s038",
-"s039",
-"s040"
-]
-},
-{
-"id": "s042",
-"video": "/home/claude/unterbau-work/motion/1e0ad62fcfac.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 4.72,
-"fx": [],
-"anim": "Anzeigetafel dreht sich (`motion` flip)",
-"i": 37,
-"keys": [
-36,
-37
-],
-"set": "mo:1e0ad62fcfac.mp4",
-"ids": [
-"s041",
-"s042"
-],
-"lead": 2.32
-},
-{
-"id": "s043",
-"video": "/home/claude/unterbau-work/motion/67f052c28050.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 6.506,
-"fx": [
-{
-"type": "label",
-"text": "8 von 10 Fällen: ± 30 m",
-"t0": 0.425,
-"pos": [
-800,
-90
-]
-}
-],
-"anim": "Häuserzeilen-Balken (`motion` bars)",
-"i": 38,
-"keys": [
-38,
-39
-],
-"set": "mo:67f052c28050.mp4",
-"ids": [
-"s043",
-"s044"
-]
-},
-{
-"id": "s045",
-"tilt": false,
-"dur": 5.76,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "tafel",
-"anchor": "tafel",
-"texts": [
-"MINUTE 1"
-]
-}
-],
-"anim": "Countdown in der Welt",
-"i": 40,
-"keys": [
-40,
-41,
-41
-],
-"set": "bahnhof_tafel",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": 1,
-"run_u": [
-0.0,
-1.0
-],
-"ids": [
-"s045",
-"s046",
-"s047"
-]
-},
-{
-"id": "s048",
-"tilt": false,
-"dur": 3.574,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "screen",
-"anchor": "screen_c",
-"img": "/home/claude/unterbau-work/scr/einsatz.png"
-},
-{
-"type": "flicker"
-}
-],
-"anim": "Steuerzentrale",
-"i": 42,
-"keys": [
-42
-],
-"set": "ls_innen",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-]
-},
-{
-"id": "s049",
-"tilt": false,
-"dur": 3.68,
-"move": "push",
-"trans": "lights",
-"t_trans": [
-0.2,
-0.5
-],
-"fx": [],
-"anim": "Leben in der Welt",
-"i": 43,
-"keys": [
-43,
-44
-],
-"set": "wache",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": 1,
-"run_u": [
-0.0,
-1.0
-],
-"ids": [
-"s049",
-"s050"
-]
-},
-{
-"id": "s051",
-"video": "/home/claude/unterbau-work/motion/169861c1916c.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 6.8,
-"fx": [],
-"anim": "Bildschirm in der Welt",
-"i": 45,
-"keys": [
-45,
-46,
-47,
-45,
-46,
-47
-],
-"set": "mo:169861c1916c.mp4",
-"ids": [
-"s051",
-"s052"
-]
-},
-{
-"id": "s053",
-"tilt": false,
-"dur": 2.88,
-"move": "push",
-"trans": "fade",
-"t_trans": [
-0.2,
-0.5
-],
-"fx": [],
-"anim": "Menschen reagieren",
-"i": 48,
-"keys": [
-48,
-49
-],
-"set": "k_total",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": 1,
-"run_u": [
-0.0,
-1.0
-],
-"ids": [
-"s053",
-"s054"
-]
-},
-{
-"id": "s055",
-"tilt": false,
-"dur": 4.0,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "label",
-"text": "Telefonreanimation",
-"t0": 0.1,
-"pos": [
-800,
-90
-]
-}
-],
-"anim": "Menschen reagieren",
-"i": 50,
-"keys": [
-50
-],
-"set": "k_seite",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": 1,
-"run_u": [
-0.0,
-1.0
-],
-"lead": 1.52
-},
-{
-"id": "s056",
-"video": "/home/claude/unterbau-work/motion/f267246d57ac.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 7.36,
-"fx": [],
-"anim": "Häuserzeilen-Balken (`motion` bars)",
-"i": 51,
-"keys": [
-51,
-52,
-51,
-52
-],
-"set": "mo:f267246d57ac.mp4",
-"ids": [
-"s056",
-"s057"
-]
-},
-{
-"id": "s058",
-"tilt": false,
-"dur": 4.3,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "blink",
-"anchors": [
-"rtw_strasse"
-]
-},
-{
-"type": "dots",
-"path": "route_rtw",
-"n": 3,
-"speed": 0.03,
-"r": 7,
-"col": "blue",
-"blink": true
-}
-],
-"anim": "Leben in der Welt",
-"i": 53,
-"keys": [
-53,
-54
-],
-"set": "strasse_rtw",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-],
-"ids": [
-"s058",
-"s059"
-]
-},
-{
-"id": "s060",
-"tilt": false,
-"dur": 2.62,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "grey",
-"amount": 0.85,
-"t0": 0
-}
-],
-"anim": "Tag-Nacht-Zeitraffer",
-"i": 54,
-"keys": [
-54
-],
-"set": "s69",
-"run_k": 0,
-"run_len": 3,
-"run_move": "push",
-"run_dir": 1,
-"run_u": [
-0.0,
-0.26626016260162605
-]
-},
-{
-"id": "s061",
-"tilt": false,
-"dur": 4.5,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "grey",
-"amount": 0.85,
-"t0": 0
-},
-{
-"type": "card",
-"top": "KAPITEL 2",
-"title": "Winnenden, 1969"
-}
-],
-"anim": "Leben in der Welt",
-"i": -1,
-"keys": [
-"K2"
-],
-"set": "s69",
-"run_k": 1,
-"run_len": 3,
-"run_move": "push",
-"run_dir": 1,
-"run_u": [
-0.26626016260162605,
-0.7235772357723578
-]
-},
-{
-"id": "s062",
-"tilt": false,
-"dur": 2.72,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "grey",
-"amount": 0.85,
-"t0": 0
-},
-{
-"type": "label",
-"text": "3. Mai 1969",
-"t0": 0.05,
-"pos": [
-800,
-90
-]
-}
-],
-"anim": "Countdown in der Welt",
-"i": 55,
-"keys": [
-55
-],
-"set": "s69",
-"run_k": 2,
-"run_len": 3,
-"run_move": "push",
-"run_dir": 1,
-"run_u": [
-0.7235772357723578,
-1.0
-]
-},
-{
-"id": "s063",
-"tilt": false,
-"dur": 5.04,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "grey",
-"amount": 0.85,
-"t0": 0
-},
-{
-"type": "label",
-"text": "Winnenden",
-"t0": 0.15,
-"anchor": "pin_winnenden",
-"sub": "bei Stuttgart"
-}
-],
-"anim": "Modell-Karte",
-"i": 56,
-"keys": [
-56,
-57
-],
-"set": "karte_winnenden",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": 1,
-"run_u": [
-0.0,
-1.0
-],
-"ids": [
-"s063",
-"s064"
-]
-},
-{
-"id": "s066",
-"tilt": false,
-"dur": 3.397,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "grey",
-"amount": 0.85,
-"t0": 0
-},
-{
-"type": "label",
-"text": "Welche Nummer?",
-"t0": 0.53,
-"anchor": "zelle"
-}
-],
-"anim": "Leben in der Welt",
-"i": 59,
-"keys": [
-58,
-59
-],
-"set": "s69_zelle",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": 1,
-"run_u": [
-0.0,
-1.0
-],
-"ids": [
-"s065",
-"s066"
-],
-"lead": 1.52
-},
-{
-"id": "s067",
-"video": "/home/claude/unterbau-work/motion/db21ba93033b.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 5.92,
-"fx": [],
-"anim": "Anzeigetafel dreht sich (`motion` flip)",
-"i": 60,
-"keys": [
-60,
-61
-],
-"set": "mo:db21ba93033b.mp4",
-"ids": [
-"s067",
-"s068"
-]
-},
-{
-"id": "s069",
-"tilt": false,
-"dur": 4.08,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "grey",
-"amount": 0.85,
-"t0": 0
-},
-{
-"type": "label",
-"text": "Björn Steiger",
-"t0": 0.05,
-"pos": [
-800,
-90
-],
-"sub": "8 Jahre"
-}
-],
-"anim": "Leben in der Welt",
-"i": 62,
-"keys": [
-62,
-63
-],
-"set": "s69",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": 1,
-"run_u": [
-0.0,
-1.0
-],
-"ids": [
-"s069",
-"s070"
-]
-},
-{
-"id": "s071",
-"video": "/home/claude/unterbau-work/motion/99a7f8043723.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 5.322,
-"fx": [],
-"anim": "Anzeigetafel dreht sich (`motion` flip)",
-"i": 64,
-"keys": [
-64,
-64
-],
-"set": "mo:99a7f8043723.mp4",
-"ids": [
-"s071",
-"s072"
-]
-},
-{
-"id": "s073",
-"tilt": false,
-"dur": 5.44,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "grey",
-"amount": 0.85,
-"t0": 0
-},
-{
-"type": "label",
-"text": "7. Juli 1969",
-"t0": 0.15,
-"anchor": "zelle",
-"sub": "Björn Steiger Stiftung"
-}
-],
-"anim": "Countdown in der Welt",
-"i": 65,
-"keys": [
-65,
-65
-],
-"set": "s69_zelle",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": 1,
-"run_u": [
-0.0,
-1.0
-],
-"ids": [
-"s073",
-"s074"
-]
-},
-{
-"id": "s075",
-"video": "/home/claude/unterbau-work/motion/cc038b534ced.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 2.32,
-"fx": [],
-"anim": "Ablauf-Kette 2D (`motion` flow)",
-"i": 66,
-"keys": [
-66
-],
-"set": "mo:cc038b534ced.mp4"
-},
-{
-"id": "s076",
-"video": "/home/claude/unterbau-work/motion/be72e60d8f4f.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 5.84,
-"fx": [],
-"anim": "Anzeigetafel dreht sich (`motion` flip)",
-"i": 67,
-"keys": [
-67,
-67
-],
-"set": "mo:be72e60d8f4f.mp4",
-"ids": [
-"s076",
-"s077"
-]
-},
-{
-"id": "s078",
-"tilt": false,
-"dur": 3.52,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "grey",
-"amount": 0.85,
-"t0": 0
-},
-{
-"type": "tafel",
-"anchor": "tafel",
-"texts": [
-"KLAGE",
-"ABGEWIESEN"
-]
-}
-],
-"anim": "Zahl in der Welt",
-"i": 68,
-"keys": [
-68,
-69
-],
-"set": "bahnhof_tafel",
-"run_k": 0,
-"run_len": 2,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-0.5333333333333333
-],
-"ids": [
-"s078",
-"s079"
-]
-},
-{
-"id": "s080",
-"tilt": false,
-"dur": 3.08,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "grey",
-"amount": 0.5,
-"t0": 0
-},
-{
-"type": "tafel",
-"anchor": "tafel",
-"texts": [
-"20.09.1973"
-]
-}
-],
-"anim": "Countdown in der Welt",
-"i": 70,
-"keys": [
-70
-],
-"set": "bahnhof_tafel",
-"run_k": 1,
-"run_len": 2,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.5333333333333333,
-1.0
-]
-},
-{
-"id": "s081",
-"tilt": false,
-"dur": 3.08,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "grey",
-"amount": 0.5,
-"t0": 0
-},
-{
-"type": "label",
-"text": "Ministerpräsidenten + Bundeskanzler",
-"t0": 0.1,
-"pos": [
-800,
-90
-],
-"sub": "20. September 1973"
-}
-],
-"anim": "Leben in der Welt",
-"i": 70,
-"keys": [
-70
-],
-"set": "rathaus_uhr",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": 1,
-"run_u": [
-0.0,
-1.0
-]
-},
-{
-"id": "s082",
-"video": "/home/claude/unterbau-work/motion/48b58ed19934.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 4.24,
-"fx": [],
-"anim": "Anzeigetafel dreht sich (`motion` flip)",
-"i": 71,
-"keys": [
-71
-],
-"set": "mo:48b58ed19934.mp4"
-},
-{
-"id": "s083",
-"tilt": false,
-"dur": 2.8,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "tafel",
-"anchor": "tafel",
-"texts": [
-"110 + 112"
-]
-}
-],
-"anim": "Zahl in der Welt",
-"i": 72,
-"keys": [
-72
-],
-"set": "bahnhof_tafel",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": 1,
-"run_u": [
-0.0,
-1.0
-]
-},
-{
-"id": "s084",
-"tilt": false,
-"dur": 6.08,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "lines",
-"pairs": [
-"de_HHH",
-"de_HDO",
-"de_DOK",
-"de_KF",
-"de_FN",
-"de_NM",
-"de_FS",
-"de_SM",
-"de_HL",
-"de_LB",
-"de_HHB",
-"de_LN"
-],
-"cities": "de_staedte",
-"grow": 0.8
-},
-{
-"type": "label",
-"text": "Ende 1979",
-"t0": 0.3,
-"pos": [
-800,
-90
-],
-"sub": "letztes Ortsnetz angeschlossen"
-}
-],
-"anim": "Netzwerk-Karte",
-"i": 73,
-"keys": [
-73,
-73
-],
-"set": "karte_de",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-],
-"ids": [
-"s084",
-"s085"
-]
-},
-{
-"id": "s086",
-"tilt": false,
-"dur": 2.841,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "label",
-"text": "1991",
-"t0": 0.1,
-"pos": [
-800,
-90
-],
-"sub": "Europa zieht nach"
-}
-],
-"anim": "Modell-Karte",
-"i": 74,
-"keys": [
-74
-],
-"set": "karte_eu",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-]
-},
-{
-"id": "s087",
-"video": "/home/claude/unterbau-work/motion/f34aceb2abfd.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 7.52,
-"fx": [],
-"anim": "Warenstrom-Karte (`motion` map)",
-"i": 75,
-"keys": [
-75,
-75
-],
-"set": "mo:f34aceb2abfd.mp4",
-"ids": [
-"s087",
-"s088"
-]
-},
-{
-"id": "s089",
-"tilt": false,
-"dur": 4.88,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "label",
-"text": "112",
-"t0": 0.1,
-"anchor": "pin_lissabon",
-"sub": "Lissabon"
-},
-{
-"type": "label",
-"text": "112",
-"t0": 0.45,
-"anchor": "pin_warschau",
-"sub": "Warschau"
-}
-],
-"anim": "Modell-Karte",
-"i": 76,
-"keys": [
-76,
-76
-],
-"set": "karte_eu",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": 1,
-"run_u": [
-0.0,
-1.0
-],
-"ids": [
-"s089",
-"s090"
-]
-},
-{
-"id": "s091",
-"tilt": false,
-"dur": 5.179,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "tafel",
-"anchor": "tafel",
-"texts": [
-"112"
-]
-}
-],
-"anim": "Zahl in der Welt",
-"i": 77,
-"keys": [
-77,
-78
-],
-"set": "bahnhof_tafel",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": 1,
-"run_u": [
-0.0,
-1.0
-],
-"ids": [
-"s091",
-"s092"
-]
-},
-{
-"id": "s093",
-"tilt": false,
-"dur": 2.42,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "clock",
-"anchor": "uhr16_0",
-"from": 0,
-"to": 40,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_1",
-"from": 67,
-"to": 110,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_2",
-"from": 134,
-"to": 180,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_3",
-"from": 201,
-"to": 250,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_4",
-"from": 268,
-"to": 320,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_5",
-"from": 335,
-"to": 390,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_6",
-"from": 402,
-"to": 460,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_7",
-"from": 469,
-"to": 530,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_8",
-"from": 536,
-"to": 600,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_9",
-"from": 603,
-"to": 670,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_10",
-"from": 670,
-"to": 740,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_11",
-"from": 737,
-"to": 810,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_12",
-"from": 84,
-"to": 160,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_13",
-"from": 151,
-"to": 230,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_14",
-"from": 218,
-"to": 300,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_15",
-"from": 285,
-"to": 370,
-"t0": 0.05,
-"tl": 0.9
-}
-],
-"anim": "Countdown in der Welt",
-"i": 78,
-"keys": [
-78
-],
-"set": "uhren16",
-"run_k": 0,
-"run_len": 2,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-0.34971098265895956
-]
-},
-{
-"id": "s094",
-"tilt": false,
-"dur": 4.5,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "clock",
-"anchor": "uhr16_0",
-"from": 0,
-"to": 40,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_1",
-"from": 67,
-"to": 110,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_2",
-"from": 134,
-"to": 180,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_3",
-"from": 201,
-"to": 250,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_4",
-"from": 268,
-"to": 320,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_5",
-"from": 335,
-"to": 390,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_6",
-"from": 402,
-"to": 460,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_7",
-"from": 469,
-"to": 530,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_8",
-"from": 536,
-"to": 600,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_9",
-"from": 603,
-"to": 670,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_10",
-"from": 670,
-"to": 740,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_11",
-"from": 737,
-"to": 810,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_12",
-"from": 84,
-"to": 160,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_13",
-"from": 151,
-"to": 230,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_14",
-"from": 218,
-"to": 300,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_15",
-"from": 285,
-"to": 370,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "card",
-"top": "KAPITEL 3",
-"title": "Sechzehn Uhren"
-}
-],
-"anim": "Leben in der Welt",
-"i": -1,
-"keys": [
-"K3"
-],
-"set": "uhren16",
-"run_k": 1,
-"run_len": 2,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.34971098265895956,
-1.0
-]
-},
-{
-"id": "s096",
-"tilt": false,
-"dur": 5.92,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "tafel",
-"anchor": "tafel",
-"texts": [
-"MINUTE 4"
-]
-}
-],
-"anim": "Countdown in der Welt",
-"i": 80,
-"keys": [
-79,
-80,
-81
-],
-"set": "bahnhof_tafel",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-],
-"ids": [
-"s095",
-"s096",
-"s097"
-],
-"lead": 1.6
-},
-{
-"id": "s098",
-"tilt": true,
-"dur": 3.44,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "dots",
-"path": "route_rtw",
-"n": 3,
-"speed": 0.03,
-"r": 7,
-"col": "blue",
-"blink": true
-},
-{
-"type": "blink",
-"anchors": [
-"haus"
-],
-"gain": 0.6
-}
-],
-"anim": "Tilt-Shift-Flug",
-"i": 82,
-"keys": [
-82
-],
-"set": "route_total",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-]
-},
-{
-"id": "s099",
-"video": "/home/claude/unterbau-work/vid/px7315.mp4",
-"ss": 0.5,
-"kind": "clip",
-"dur": 2.8,
-"fx": [],
-"anim": "Bildschirm in der Welt",
-"i": 83,
-"keys": [
-83
-],
-"set": "cl:px7315.mp4"
-},
-{
-"id": "s100",
-"tilt": false,
-"dur": 1.84,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [],
-"anim": "Modell-Karte",
-"i": 84,
-"keys": [
-84
-],
-"set": "karte_de",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-]
-},
-{
-"id": "s101",
-"video": "/home/claude/unterbau-work/motion/2a7eaf03d45b.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 6.707,
-"fx": [
-{
-"type": "label",
-"text": "Kassel",
-"t0": 0.775,
-"sub": "Hessen",
-"pos": [
-800,
-90
-]
-}
-],
-"anim": "Warenstrom-Karte (`motion` map)",
-"i": 85,
-"keys": [
-85,
-86,
-87
-],
-"set": "mo:2a7eaf03d45b.mp4",
-"ids": [
-"s101",
-"s102",
-"s103"
-]
-},
-{
-"id": "s104",
-"video": "/home/claude/unterbau-work/motion/82b98dc04ee5.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 4.16,
-"fx": [],
-"anim": "Fallblatt-Zahl (`motion` counter)",
-"i": 88,
-"keys": [
-88
-],
-"set": "mo:82b98dc04ee5.mp4"
-},
-{
-"id": "s105",
-"tilt": false,
-"dur": 4.0,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "clock",
-"anchor": "uhr",
-"from": 252,
-"to": 262,
-"t0": 0.05,
-"tl": 0.8
-}
-],
-"anim": "Countdown in der Welt",
-"i": 89,
-"keys": [
-89
-],
-"set": "rathaus_uhr",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": 1,
-"run_u": [
-0.0,
-1.0
-]
-},
-{
-"id": "s106",
-"video": "/home/claude/unterbau-work/motion/48f5f0a3b43d.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 4.8,
-"fx": [],
-"anim": "Häuserzeilen-Balken (`motion` bars)",
-"i": 90,
-"keys": [
-90,
-90
-],
-"set": "mo:48f5f0a3b43d.mp4",
-"ids": [
-"s106",
-"s107"
-]
-},
-{
-"id": "s108",
-"tilt": false,
-"dur": 2.24,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "clock",
-"anchor": "uhr16_0",
-"from": 0,
-"to": 40,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_1",
-"from": 67,
-"to": 110,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_2",
-"from": 134,
-"to": 180,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_3",
-"from": 201,
-"to": 250,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_4",
-"from": 268,
-"to": 320,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_5",
-"from": 335,
-"to": 390,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_6",
-"from": 402,
-"to": 460,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_7",
-"from": 469,
-"to": 530,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_8",
-"from": 536,
-"to": 600,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_9",
-"from": 603,
-"to": 670,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_10",
-"from": 670,
-"to": 740,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_11",
-"from": 737,
-"to": 810,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_12",
-"from": 84,
-"to": 160,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_13",
-"from": 151,
-"to": 230,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_14",
-"from": 218,
-"to": 300,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_15",
-"from": 285,
-"to": 370,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "label",
-"text": "Bayern: 12 Minuten",
-"t0": 0.1,
-"pos": [
-800,
-90
-]
-}
-],
-"anim": "Countdown in der Welt",
-"i": 91,
-"keys": [
-91
-],
-"set": "uhren16",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-]
-},
-{
-"id": "s109",
-"tilt": false,
-"dur": 3.36,
-"move": "push",
-"trans": "wipe_down",
-"t_trans": [
-0.1,
-0.7
-],
-"fx": [
-{
-"type": "label",
-"text": "Uhr startet beim Ausrücken",
-"t0": 0.3,
-"pos": [
-800,
-90
-],
-"sub": "Bayern"
-}
-],
-"anim": "Leben in der Welt",
-"i": 92,
-"keys": [
-92
-],
-"set": "wache_nah",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": 1,
-"run_u": [
-0.0,
-1.0
-]
-},
-{
-"id": "s110",
-"video": "/home/claude/unterbau-work/motion/10bb6da7c261.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 6.92,
-"fx": [],
-"anim": "Anzeigetafel dreht sich (`motion` flip)",
-"i": 93,
-"keys": [
-93,
-93
-],
-"set": "mo:10bb6da7c261.mp4",
-"ids": [
-"s110",
-"s111"
-]
-},
-{
-"id": "s112",
-"video": "/home/claude/unterbau-work/motion/7a88df34d638.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 5.44,
-"fx": [],
-"anim": "Fallblatt-Zahl (`motion` counter)",
-"i": 94,
-"keys": [
-94,
-94
-],
-"set": "mo:7a88df34d638.mp4",
-"ids": [
-"s112",
-"s113"
-]
-},
-{
-"id": "s114",
-"tilt": false,
-"dur": 4.999,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "clock",
-"anchor": "uhr16_0",
-"from": 0,
-"to": 40,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_1",
-"from": 67,
-"to": 110,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_2",
-"from": 134,
-"to": 180,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_3",
-"from": 201,
-"to": 250,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_4",
-"from": 268,
-"to": 320,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_5",
-"from": 335,
-"to": 390,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_6",
-"from": 402,
-"to": 460,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_7",
-"from": 469,
-"to": 530,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_8",
-"from": 536,
-"to": 600,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_9",
-"from": 603,
-"to": 670,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_10",
-"from": 670,
-"to": 740,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_11",
-"from": 737,
-"to": 810,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_12",
-"from": 84,
-"to": 160,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_13",
-"from": 151,
-"to": 230,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_14",
-"from": 218,
-"to": 300,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "clock",
-"anchor": "uhr16_15",
-"from": 285,
-"to": 370,
-"t0": 0.05,
-"tl": 0.9
-},
-{
-"type": "label",
-"text": "dieselbe Not · 16 Uhren",
-"t0": 0.1,
-"pos": [
-800,
-90
-]
-}
-],
-"anim": "Countdown in der Welt",
-"i": 95,
-"keys": [
-95,
-96,
-97
-],
-"set": "uhren16",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-],
-"ids": [
-"s114",
-"s115"
-]
-},
-{
-"id": "s116",
-"video": "/home/claude/unterbau-work/motion/31baa8e2fc1a.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 5.92,
-"fx": [],
-"anim": "Ablauf-Kette 2D (`motion` flow)",
-"i": 98,
-"keys": [
-98,
-99
-],
-"set": "mo:31baa8e2fc1a.mp4",
-"ids": [
-"s116",
-"s117"
-]
-},
-{
-"id": "s118",
-"video": "/home/claude/unterbau-work/motion/a4271ed3ebff.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 4.0,
-"fx": [],
-"anim": "Häuserzeilen-Balken (`motion` bars)",
-"i": 100,
-"keys": [
-100,
-101
-],
-"set": "mo:a4271ed3ebff.mp4"
-},
-{
-"id": "s119",
-"video": "/home/claude/unterbau-work/motion/a4271ed3ebff.mp4",
-"ss": 4.0,
-"kind": "mo",
-"dur": 4.0,
-"fx": [],
-"anim": "Häuserzeilen-Balken (`motion` bars)",
-"i": 100,
-"keys": [
-100,
-101
-],
-"set": "mo:a4271ed3ebff.mp4"
-},
-{
-"id": "s120",
-"video": "/home/claude/unterbau-work/motion/73834b0bda78.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 4.4,
-"fx": [],
-"anim": "Ablauf-Kette 2D (`motion` flow)",
-"i": 102,
-"keys": [
-102,
-102
-],
-"set": "mo:73834b0bda78.mp4",
-"ids": [
-"s120",
-"s121"
-]
-},
-{
-"id": "s122",
-"tilt": false,
-"dur": 4.16,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "tafel",
-"anchor": "tafel",
-"texts": [
-"EINSATZ",
-"MEHRERE 100 €"
-]
-}
-],
-"anim": "Zahl in der Welt",
-"i": 103,
-"keys": [
-103
-],
-"set": "bahnhof_tafel",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-]
-},
-{
-"id": "s123",
-"video": "/home/claude/unterbau-work/motion/d31ae9ab31b8.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 4.052,
-"fx": [],
-"anim": "Fallblatt-Zahl (`motion` counter)",
-"i": 104,
-"keys": [
-104
-],
-"set": "mo:d31ae9ab31b8.mp4"
-},
-{
-"id": "s124",
-"tilt": false,
-"dur": 5.92,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "flicker"
-},
-{
-"type": "screen",
-"anchor": "screen_l",
-"img": "/home/claude/unterbau-work/scr/einsatz.png"
-}
-],
-"anim": "Steuerzentrale",
-"i": 105,
-"keys": [
-105,
-106
-],
-"set": "ls_innen",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-],
-"ids": [
-"s124",
-"s125"
-]
-},
-{
-"id": "s126",
-"video": "/home/claude/unterbau-work/motion/588eb3443683.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 6.708,
-"fx": [],
-"anim": "Anzeigetafel dreht sich (`motion` flip)",
-"i": 107,
-"keys": [
-107,
-107
-],
-"set": "mo:588eb3443683.mp4",
-"ids": [
-"s126",
-"s127"
-]
-},
-{
-"id": "s129",
-"video": "/home/claude/unterbau-work/motion/1027baf9e0cd.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 7.92,
-"fx": [],
-"anim": "Ablauf-Kette 2D (`motion` flow)",
-"i": 109,
-"keys": [
-108,
-109,
-109
-],
-"set": "mo:1027baf9e0cd.mp4",
-"ids": [
-"s128",
-"s129",
-"s130"
-],
-"lead": 1.92
-},
-{
-"id": "s131",
-"video": "/home/claude/unterbau-work/motion/ea5e27312379.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 6.8,
-"fx": [
-{
-"type": "label",
-"text": "OKT. 2026 · NOTFALLREFORM",
-"pos": [
-800,
-90
-],
-"t0": 0.672
-}
-],
-"anim": "Lichter-aus-Raster (`motion` grid)",
-"i": 110,
-"keys": [
-110,
-111
-],
-"set": "mo:ea5e27312379.mp4",
-"ids": [
-"s131",
-"s132"
-]
-},
-{
-"id": "s134",
-"video": "/home/claude/unterbau-work/motion/dfa33cfad532.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 5.12,
-"fx": [
-{
-"type": "label",
-"text": "OKT. 2026 · NOTFALLREFORM",
-"pos": [
-800,
-90
-],
-"t0": 0.048
-}
-],
-"anim": "Anzeigetafel dreht sich (`motion` flip)",
-"i": 112,
-"keys": [
-111,
-112
-],
-"set": "mo:dfa33cfad532.mp4",
-"ids": [
-"s133",
-"s134"
-],
-"lead": 2.48
-},
-{
-"id": "s135",
-"video": "/home/claude/unterbau-work/motion/f15895f80766.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 6.56,
-"fx": [],
-"anim": "Ablauf-Kette 2D (`motion` flow)",
-"i": 113,
-"keys": [
-113,
-113
-],
-"set": "mo:f15895f80766.mp4",
-"ids": [
-"s135",
-"s136"
-]
-},
-{
-"id": "s138",
-"tilt": false,
-"dur": 5.599,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "tafel",
-"anchor": "tafel",
-"texts": [
-"MINUTE 5"
-]
-}
-],
-"anim": "Countdown in der Welt",
-"i": 115,
-"keys": [
-114,
-115,
-116
-],
-"set": "bahnhof_tafel",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-],
-"ids": [
-"s137",
-"s138",
-"s139"
-],
-"lead": 1.519
-},
-{
-"id": "s140",
-"tilt": false,
-"dur": 2.0,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "screen",
-"anchor": "ls_mon",
-"img": "/home/claude/unterbau-work/scr/call.png"
-}
-],
-"anim": "Steuerzentrale",
-"i": 117,
-"keys": [
-117
-],
-"set": "ls_schulter",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-]
-},
-{
-"id": "s141",
-"video": "/home/claude/unterbau-work/motion/1d5fa905c5d3.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 7.836,
-"fx": [],
-"anim": "Häuserzeilen-Balken (`motion` bars)",
-"i": 118,
-"keys": [
-118,
-119,
-118,
-119
-],
-"set": "mo:1d5fa905c5d3.mp4",
-"ids": [
-"s141",
-"s142"
-]
-},
-{
-"id": "s143",
-"video": "/home/claude/unterbau-work/motion/5712e88b6a85.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 4.8,
-"fx": [],
-"anim": "Warenstrom-Karte (`motion` map)",
-"i": 120,
-"keys": [
-120,
-120
-],
-"set": "mo:5712e88b6a85.mp4",
-"ids": [
-"s143",
-"s144"
-]
-},
-{
-"id": "s145",
-"video": "/home/claude/unterbau-work/vid/px4360.mp4",
-"ss": 2.0,
-"kind": "clip",
-"dur": 3.12,
-"fx": [],
-"anim": "Bildschirm in der Welt",
-"i": 121,
-"keys": [
-121
-],
-"set": "cl:px4360.mp4"
-},
-{
-"id": "s146",
-"tilt": false,
-"dur": 4.52,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [],
-"anim": "Steuerzentrale",
-"i": 122,
-"keys": [
-122,
-123
-],
-"set": "ls_innen",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-],
-"ids": [
-"s146",
-"s147"
-]
-},
-{
-"id": "s148",
-"tilt": true,
-"dur": 4.5,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "card",
-"top": "KAPITEL 4",
-"title": "Wenn niemand durchkommt"
-}
-],
-"anim": "Leben in der Welt",
-"i": -1,
-"keys": [
-"K4"
-],
-"set": "stadt_total",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": 1,
-"run_u": [
-0.0,
-1.0
-]
-},
-{
-"id": "s149",
-"tilt": false,
-"dur": 2.64,
-"move": "push",
-"trans": "fade",
-"t_trans": [
-0.3,
-0.6
-],
-"fx": [],
-"anim": "Lichter gehen aus",
-"i": 124,
-"keys": [
-124
-],
-"set": "mast",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": 1,
-"run_u": [
-0.0,
-1.0
-]
-},
-{
-"id": "s150",
-"tilt": false,
-"dur": 4.48,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "tafel",
-"anchor": "tafel",
-"texts": [
-"11.11.2021"
-]
-}
-],
-"anim": "Countdown in der Welt",
-"i": 125,
-"keys": [
-125,
-126
-],
-"set": "bahnhof_tafel",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-],
-"ids": [
-"s150",
-"s151"
-]
-},
-{
-"id": "s152",
-"tilt": false,
-"dur": 6.186,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "tafel",
-"anchor": "k_uhr",
-"texts": [
-"SZENE 04:12",
-"AUSFALL 04:30"
-]
-}
-],
-"anim": "Rückflug zum Anfang",
-"i": 127,
-"keys": [
-127,
-128
-],
-"set": "k_uhr",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-],
-"ids": [
-"s152",
-"s153"
-]
-},
-{
-"id": "s154",
-"tilt": true,
-"dur": 4.04,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "scatter",
-"n": 180,
-"t0": 0.0,
-"col": "red"
-}
-],
-"anim": "Netzwerk-Karte",
-"i": 128,
-"keys": [
-128,
-129
-],
-"set": "stadt_total",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": 1,
-"run_u": [
-0.0,
-1.0
-],
-"ids": [
-"s154",
-"s155"
-]
-},
-{
-"id": "s156",
-"video": "/home/claude/unterbau-work/vid/px14900.mp4",
-"ss": 2.0,
-"kind": "clip",
-"dur": 3.76,
-"fx": [
-{
-"type": "label",
-"text": "Wartung · neue Software",
-"t0": 0.1,
-"pos": [
-800,
-90
-]
-}
-],
-"anim": "Bildschirm in der Welt",
-"i": 130,
-"keys": [
-130
-],
-"set": "cl:px14900.mp4"
-},
-{
-"id": "s157",
-"video": "/home/claude/unterbau-work/motion/0d44d45555c4.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 3.453,
-"fx": [],
-"anim": "Anzeigetafel dreht sich (`motion` flip)",
-"i": 131,
-"keys": [
-131,
-132
-],
-"set": "mo:0d44d45555c4.mp4"
-},
-{
-"id": "s158",
-"video": "/home/claude/unterbau-work/motion/82f71acd0ddc.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 5.12,
-"fx": [],
-"anim": "Fallblatt-Zahl (`motion` counter)",
-"i": 133,
-"keys": [
-133,
-133
-],
-"set": "mo:82f71acd0ddc.mp4",
-"ids": [
-"s158",
-"s159"
-]
-},
-{
-"id": "s160",
-"tilt": false,
-"dur": 2.88,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "clock",
-"anchor": "uhr",
-"from": 270,
-"to": 340,
-"t0": 0.05,
-"tl": 0.8
-}
-],
-"anim": "Countdown in der Welt",
-"i": 134,
-"keys": [
-134
-],
-"set": "rathaus_uhr",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-]
-},
-{
-"id": "s161",
-"video": "/home/claude/unterbau-work/motion/6e355ad09145.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 4.0,
-"fx": [],
-"anim": "Anzeigetafel dreht sich (`motion` flip)",
-"i": 135,
-"keys": [
-135,
-136
-],
-"set": "mo:6e355ad09145.mp4"
-},
-{
-"id": "s163",
-"video": "/home/claude/unterbau-work/motion/4da3cc127f8c.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 7.92,
-"fx": [],
-"anim": "Warenstrom-Karte (`motion` map)",
-"i": 138,
-"keys": [
-137,
-138,
-138
-],
-"set": "mo:4da3cc127f8c.mp4",
-"ids": [
-"s162",
-"s163",
-"s164"
-],
-"lead": 2.08
-},
-{
-"id": "s166",
-"video": "/home/claude/unterbau-work/motion/7f1b7c15736a.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 5.72,
-"fx": [],
-"anim": "Fallblatt-Zahl (`motion` counter)",
-"i": 140,
-"keys": [
-139,
-140
-],
-"set": "mo:7f1b7c15736a.mp4",
-"ids": [
-"s165",
-"s166"
-],
-"lead": 2.16
-},
-{
-"id": "s167",
-"tilt": true,
-"dur": 3.28,
-"move": "push",
-"trans": "lights",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "grey",
-"amount": 0.5,
-"t0": 0.2
-},
-{
-"type": "label",
-"text": "3 Todesfälle",
-"t0": 0.2,
-"pos": [
-800,
-90
-],
-"sub": "mit dem Ausfall in Verbindung gebracht"
-}
-],
-"anim": "Lichter gehen aus",
-"i": 141,
-"keys": [
-141
-],
-"set": "stadt_total",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": 1,
-"run_u": [
-0.0,
-1.0
-]
-},
-{
-"id": "s168",
-"video": "/home/claude/unterbau-work/motion/42e6498b2d55.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 3.84,
-"fx": [],
-"anim": "Warenstrom-Karte (`motion` map)",
-"i": 142,
-"keys": [
-142
-],
-"set": "mo:42e6498b2d55.mp4"
-},
-{
-"id": "s169",
-"video": "/home/claude/unterbau-work/motion/3f28af325601.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 3.84,
-"fx": [],
-"anim": "Fallblatt-Zahl (`motion` counter)",
-"i": 142,
-"keys": [
-142
-],
-"set": "mo:3f28af325601.mp4"
-},
-{
-"id": "s170",
-"video": "/home/claude/unterbau-work/motion/e7938693c878.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 4.36,
-"fx": [],
-"anim": "Fallblatt-Zahl (`motion` counter)",
-"i": 143,
-"keys": [
-143
-],
-"set": "mo:e7938693c878.mp4"
-},
-{
-"id": "s171",
-"tilt": true,
-"dur": 3.92,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "scatter",
-"n": 320,
-"t0": 0.0
-}
-],
-"anim": "Netzwerk-Karte",
-"i": 144,
-"keys": [
-144
-],
-"set": "stadt_total",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": 1,
-"run_u": [
-0.0,
-1.0
-]
-},
-{
-"id": "s172",
-"video": "/home/claude/unterbau-work/vid/px14324.mp4",
-"ss": 0.0,
-"kind": "clip",
-"dur": 4.72,
-"fx": [
-{
-"type": "label",
-"text": "14. Juli 2021",
-"t0": 0.05,
-"pos": [
-800,
-90
-],
-"sub": "Flutnacht im Ahrtal"
-}
-],
-"anim": "Bildschirm in der Welt",
-"i": 145,
-"keys": [
-145,
-145
-],
-"set": "cl:px14324.mp4",
-"ids": [
-"s172",
-"s173"
-]
-},
-{
-"id": "s174",
-"tilt": false,
-"dur": 4.32,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "label",
-"text": "Leitstelle Koblenz",
-"t0": 0.15,
-"anchor": "pin_koblenz"
-}
-],
-"anim": "Modell-Karte",
-"i": 146,
-"keys": [
-146
-],
-"set": "karte_koblenz",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-]
-},
-{
-"id": "s176",
-"video": "/home/claude/unterbau-work/motion/ec341b6a6b5f.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 6.12,
-"fx": [],
-"anim": "Fallblatt-Zahl (`motion` counter)",
-"i": 148,
-"keys": [
-147,
-148
-],
-"set": "mo:ec341b6a6b5f.mp4",
-"ids": [
-"s175",
-"s176"
-],
-"lead": 1.88
-},
-{
-"id": "s177",
-"tilt": false,
-"dur": 4.158,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "flicker"
-},
-{
-"type": "screen",
-"anchor": "screen_c",
-"img": "/home/claude/unterbau-work/scr/schlange.png"
-}
-],
-"anim": "Steuerzentrale",
-"i": 149,
-"keys": [
-149,
-150
-],
-"set": "ls_innen",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": 1,
-"run_u": [
-0.0,
-1.0
-]
-},
-{
-"id": "s178",
-"tilt": false,
-"dur": 2.721,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "screen",
-"anchor": "screen_c",
-"video": "/home/claude/unterbau-work/vid/px14324.mp4",
-"ss": 7.0
-},
-{
-"type": "screen",
-"anchor": "screen_l",
-"img": "/home/claude/unterbau-work/scr/schlange.png"
-}
-],
-"anim": "Bildschirm in der Welt",
-"i": 151,
-"keys": [
-151
-],
-"set": "ls_wand",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-]
-},
-{
-"id": "s179",
-"tilt": true,
-"dur": 5.359,
-"move": "push",
-"trans": "lights",
-"t_trans": [
-0.2,
-0.9
-],
-"fx": [],
-"anim": "Lichter gehen aus",
-"i": 152,
-"keys": [
-152,
-153
-],
-"set": "stadt_total",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": 1,
-"run_u": [
-0.0,
-1.0
-]
-},
-{
-"id": "s181",
-"tilt": false,
-"dur": 7.04,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "label",
-"text": "Leuchttürme",
-"t0": 0.15,
-"anchor": "pin_berlin",
-"sub": "Berlin"
-}
-],
-"anim": "Modell-Karte",
-"i": 154,
-"keys": [
-154,
-155
-],
-"set": "karte_de",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": 1,
-"run_u": [
-0.0,
-1.0
-],
-"ids": [
-"s181",
-"s182"
-]
-},
-{
-"id": "s183",
-"tilt": false,
-"dur": 6.442,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "blink",
-"anchors": [
-"wache"
-],
-"gain": 0.5
-}
-],
-"anim": "Menschen reagieren",
-"i": 156,
-"keys": [
-156,
-157
-],
-"set": "wache",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-],
-"ids": [
-"s183",
-"s184"
-]
-},
-{
-"id": "s185",
-"video": "/home/claude/unterbau-work/vid/px63970.mp4",
-"ss": 2.0,
-"kind": "clip",
-"dur": 2.2,
-"fx": [],
-"anim": "Bildschirm in der Welt",
-"i": 158,
-"keys": [
-158
-],
-"set": "cl:px63970.mp4"
-},
-{
-"id": "s186",
-"tilt": false,
-"dur": 4.5,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "card",
-"top": "KAPITEL 5",
-"title": "Minute neun"
-}
-],
-"anim": "Leben in der Welt",
-"i": -1,
-"keys": [
-"K5"
-],
-"set": "haus_nacht",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-]
-},
-{
-"id": "s188",
-"tilt": false,
-"dur": 5.76,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "tafel",
-"anchor": "k_uhr",
-"texts": [
-"04:21"
-]
-}
-],
-"anim": "Countdown in der Welt",
-"i": 160,
-"keys": [
-159,
-160,
-161
-],
-"set": "k_uhr",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-],
-"ids": [
-"s187",
-"s188",
-"s189"
-],
-"lead": 1.36
-},
-{
-"id": "s190",
-"tilt": false,
-"dur": 6.319,
-"move": "push",
-"trans": "fade",
-"t_trans": [
-0.2,
-0.6
-],
-"fx": [
-{
-"type": "wash",
-"gain": 0.5
-},
-{
-"type": "label",
-"text": "Minute 9",
-"t0": 0.4,
-"pos": [
-800,
-90
-]
-}
-],
-"anim": "Menschen reagieren",
-"i": 162,
-"keys": [
-162,
-163,
-164
-],
-"set": "k_tuer",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-],
-"ids": [
-"s190",
-"s191"
-]
-},
-{
-"id": "s192",
-"tilt": false,
-"dur": 4.24,
-"move": "push",
-"trans": "wipe_down",
-"t_trans": [
-0.1,
-0.6
-],
-"fx": [
-{
-"type": "dots",
-"path": "cut",
-"n": 14,
-"speed": 0.05,
-"r": 6
-}
-],
-"anim": "Querschnitt",
-"i": 165,
-"keys": [
-165,
-166
-],
-"set": "querschnitt_stadt",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-],
-"ids": [
-"s192",
-"s193"
-]
-},
-{
-"id": "s194",
-"tilt": false,
-"dur": 3.12,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [],
-"anim": "Dein Haus",
-"i": 167,
-"keys": [
-167
-],
-"set": "k_total",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-]
-},
-{
-"id": "s196",
-"video": "/home/claude/unterbau-work/motion/73f1e819c056.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 7.44,
-"fx": [],
-"anim": "Fallblatt-Zahl (`motion` counter)",
-"i": 169,
-"keys": [
-168,
-169,
-169
-],
-"set": "mo:73f1e819c056.mp4",
-"ids": [
-"s195",
-"s196",
-"s197"
-],
-"lead": 1.44
-},
-{
-"id": "s198",
-"tilt": false,
-"dur": 2.8,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "tafel",
-"anchor": "tafel",
-"texts": [
-"370 PRO TAG"
-]
-}
-],
-"anim": "Zahl in der Welt",
-"i": 170,
-"keys": [
-170
-],
-"set": "bahnhof_tafel",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-]
-},
-{
-"id": "s199",
-"video": "/home/claude/unterbau-work/motion/1caa471eb5df.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 4.24,
-"fx": [],
-"anim": "Lichter-aus-Raster (`motion` grid)",
-"i": 171,
-"keys": [
-171
-],
-"set": "mo:1caa471eb5df.mp4"
-},
-{
-"id": "s200",
-"tilt": false,
-"dur": 6.198,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "label",
-"text": "Szene nachgestellt",
-"t0": 0.05,
-"pos": [
-800,
-90
-]
-}
-],
-"anim": "Leben in der Welt",
-"i": 172,
-"keys": [
-172,
-173
-],
-"set": "k_total",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-],
-"ids": [
-"s200",
-"s201"
-]
-},
-{
-"id": "s203",
-"video": "/home/claude/unterbau-work/motion/cd92c463e975.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 6.24,
-"fx": [
-{
-"type": "label",
-"text": "1 · 2 · 3",
-"pos": [
-800,
-90
-],
-"t0": 0.041
-}
-],
-"anim": "Bildschirm in der Welt",
-"i": 175,
-"keys": [
-174,
-175
-],
-"set": "mo:cd92c463e975.mp4",
-"ids": [
-"s202",
-"s203"
-],
-"lead": 2.56
-},
-{
-"id": "s204",
-"tilt": false,
-"dur": 3.04,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "screen",
-"anchor": "k_phone",
-"img": "/home/claude/unterbau-work/scr/call.png"
-},
-{
-"type": "label",
-"text": "nicht auflegen",
-"t0": 0.1,
-"pos": [
-800,
-90
-]
-}
-],
-"anim": "Leben in der Welt",
-"i": 176,
-"keys": [
-176
-],
-"set": "k_handy",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-]
-},
-{
-"id": "s205",
-"video": "/home/claude/unterbau-work/motion/05592f176938.mp4",
-"ss": 0.0,
-"kind": "mo",
-"dur": 6.522,
-"fx": [],
-"anim": "Ablauf-Kette 2D (`motion` flow)",
-"i": 177,
-"keys": [
-177,
-177
-],
-"set": "mo:05592f176938.mp4",
-"ids": [
-"s205",
-"s206"
-]
-},
-{
-"id": "s207",
-"tilt": false,
-"dur": 4.32,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [],
-"anim": "Menschen reagieren",
-"i": 178,
-"keys": [
-178
-],
-"set": "wache",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": 1,
-"run_u": [
-0.0,
-1.0
-]
-},
-{
-"id": "s208",
-"video": "/home/claude/unterbau-work/vid/px86507.mp4",
-"ss": 8.0,
-"kind": "clip",
-"dur": 5.2,
-"fx": [
-{
-"type": "label",
-"text": "Drittens: drücken",
-"t0": 0.1,
-"pos": [
-800,
-90
-]
-}
-],
-"anim": "Bildschirm in der Welt",
-"i": 179,
-"keys": [
-179,
-179
-],
-"set": "cl:px86507.mp4",
-"ids": [
-"s208",
-"s209"
-]
-},
-{
-"id": "s210",
-"tilt": false,
-"dur": 4.64,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "label",
-"text": "fest und schnell · Mitte der Brust",
-"t0": 0.1,
-"pos": [
-800,
-90
-]
-}
-],
-"anim": "Menschen reagieren",
-"i": 180,
-"keys": [
-180,
-181
-],
-"set": "k_total",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-],
-"ids": [
-"s210",
-"s211"
-]
-},
-{
-"id": "s212",
-"tilt": false,
-"dur": 3.36,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "screen",
-"anchor": "k_phone",
-"img": "/home/claude/unterbau-work/scr/call.png"
-}
-],
-"anim": "Bildschirm in der Welt",
-"i": 182,
-"keys": [
-182,
-183
-],
-"set": "k_handy",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-],
-"ids": [
-"s212",
-"s213"
-]
-},
-{
-"id": "s214",
-"tilt": false,
-"dur": 4.0,
-"move": "push",
-"trans": "fade",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "label",
-"text": "du",
-"t0": 0.3,
-"anchor": "haus"
-}
-],
-"anim": "Dein Haus",
-"i": 184,
-"keys": [
-184
-],
-"set": "haus_aussen",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-],
-"lead": 1.6
-},
-{
-"id": "s215",
-"tilt": false,
-"dur": 5.241,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "tafel",
-"anchor": "tafel",
-"texts": [
-"112?"
-]
-}
-],
-"anim": "Zahl in der Welt",
-"i": 185,
-"keys": [
-185,
-186
-],
-"set": "bahnhof_tafel",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": 1,
-"run_u": [
-0.0,
-1.0
-],
-"ids": [
-"s215",
-"s216"
-]
-},
-{
-"id": "s217",
-"tilt": true,
-"dur": 4.04,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "label",
-"text": "Schreib's in die Kommentare",
-"t0": 0.15,
-"anchor": "leitstelle"
-}
-],
-"anim": "Leben in der Welt",
-"i": 187,
-"keys": [
-187,
-188
-],
-"set": "leitstelle_aussen",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": 1,
-"run_u": [
-0.0,
-1.0
-],
-"ids": [
-"s217",
-"s218"
-]
-},
-{
-"id": "s220",
-"tilt": false,
-"dur": 6.0,
-"move": "push",
-"trans": "diff",
-"t_trans": [
-0.2,
-0.8
-],
-"fx": [
-{
-"type": "card",
-"title": "UNTERBAU",
-"sub": "Verstehen, wie die Welt funktioniert",
-"fade": true
-}
-],
-"anim": "Rückflug zum Anfang",
-"i": 189,
-"keys": [
-188,
-189
-],
-"set": "k_handy",
-"run_k": 0,
-"run_len": 1,
-"run_move": "push",
-"run_dir": -1,
-"run_u": [
-0.0,
-1.0
-],
-"ids": [
-"s219",
-"s220"
-],
-"lead": 2.36
-}
+ {
+  "id": "s000",
+  "tilt": false,
+  "dur": 2.5,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "screen",
+    "anchor": "k_phone",
+    "img": "/home/claude/unterbau-work/scr/call.png"
+   }
+  ],
+  "anim": "Bildschirm in der Welt",
+  "i": 0,
+  "keys": [
+   0
+  ],
+  "set": "k_handy",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ]
+ },
+ {
+  "id": "s001",
+  "tilt": false,
+  "dur": 1.93,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "label",
+    "text": "Kassel · 04:12 Uhr",
+    "t0": 0.15,
+    "anchor": "haus",
+    "sub": "eine Novembernacht"
+   }
+  ],
+  "anim": "Dein Haus",
+  "i": 1,
+  "keys": [
+   1
+  ],
+  "set": "haus_aussen",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": 1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "lead": 0.44
+ },
+ {
+  "id": "s002",
+  "tilt": false,
+  "dur": 6.649,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "tafel",
+    "anchor": "k_uhr",
+    "texts": [
+     "04:12"
+    ]
+   }
+  ],
+  "anim": "Countdown in der Welt",
+  "i": 1,
+  "keys": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "set": "k_uhr",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "ids": [
+   "s002",
+   "s003",
+   "s004"
+  ]
+ },
+ {
+  "id": "s007",
+  "video": "/home/claude/unterbau-work/motion/d19b5208b044.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 6.64,
+  "fx": [
+   {
+    "type": "label",
+    "text": "MINUTE 0",
+    "pos": [
+     800,
+     90
+    ],
+    "t0": 0.027
+   }
+  ],
+  "anim": "Lichter-aus-Raster (`motion` grid)",
+  "i": 6,
+  "keys": [
+   5,
+   6,
+   6
+  ],
+  "set": "mo:d19b5208b044.mp4",
+  "ids": [
+   "s006",
+   "s007",
+   "s008"
+  ],
+  "lead": 1.76
+ },
+ {
+  "id": "s009",
+  "tilt": false,
+  "dur": 3.2,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "flicker"
+   }
+  ],
+  "anim": "Steuerzentrale",
+  "i": 7,
+  "keys": [
+   7,
+   8,
+   9
+  ],
+  "set": "ls_innen",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": 1,
+  "run_u": [
+   0.0,
+   1.0
+  ]
+ },
+ {
+  "id": "s010",
+  "tilt": true,
+  "dur": 7.76,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "label",
+    "text": "Leitstelle",
+    "t0": 0.15,
+    "anchor": "leitstelle"
+   }
+  ],
+  "anim": "Tilt-Shift-Flug",
+  "i": 10,
+  "keys": [
+   10,
+   11
+  ],
+  "set": "stadt_total",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "ids": [
+   "s010",
+   "s011"
+  ]
+ },
+ {
+  "id": "s012",
+  "video": "/home/claude/unterbau-work/motion/5935939e5278.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 6.64,
+  "fx": [],
+  "anim": "Warenstrom-Karte (`motion` map)",
+  "i": 12,
+  "keys": [
+   12,
+   12
+  ],
+  "set": "mo:5935939e5278.mp4",
+  "ids": [
+   "s012",
+   "s013"
+  ]
+ },
+ {
+  "id": "s014",
+  "tilt": false,
+  "dur": 3.92,
+  "move": "push",
+  "trans": "wipe_down",
+  "t_trans": [
+   0.1,
+   0.6
+  ],
+  "fx": [
+   {
+    "type": "dots",
+    "path": "cut",
+    "n": 14,
+    "speed": 0.05,
+    "r": 6
+   }
+  ],
+  "anim": "Querschnitt",
+  "i": 13,
+  "keys": [
+   13
+  ],
+  "set": "querschnitt_stadt",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ]
+ },
+ {
+  "id": "s015",
+  "tilt": false,
+  "dur": 3.96,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "label",
+    "text": "Szene nachgestellt",
+    "t0": 0.05,
+    "pos": [
+     800,
+     90
+    ]
+   }
+  ],
+  "anim": "Leben in der Welt",
+  "i": 14,
+  "keys": [
+   14,
+   15
+  ],
+  "set": "k_total",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": 1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "ids": [
+   "s015",
+   "s016"
+  ]
+ },
+ {
+  "id": "s017",
+  "tilt": true,
+  "dur": 4.6,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "card",
+    "top": "WAS WIRKLICH PASSIERT, WENN DU 112 WÄHLST",
+    "title": "UNTERBAU",
+    "sub": "Verstehen, wie die Welt funktioniert"
+   }
+  ],
+  "anim": "Tilt-Shift-Flug",
+  "i": -1,
+  "keys": [
+   "T"
+  ],
+  "set": "stadt_total",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": 1,
+  "run_u": [
+   0.0,
+   1.0
+  ]
+ },
+ {
+  "id": "s018",
+  "tilt": true,
+  "dur": 5.7,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "card",
+    "top": "KAPITEL 1",
+    "title": "Die erste Minute",
+    "sub": "Minute 0 · 04:12 Uhr"
+   }
+  ],
+  "anim": "Tilt-Shift-Flug",
+  "i": -1,
+  "keys": [
+   "K1",
+   16
+  ],
+  "set": "leitstelle_aussen",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ]
+ },
+ {
+  "id": "s020",
+  "tilt": true,
+  "dur": 3.36,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "dots",
+    "path": "funk_weg",
+    "n": 6,
+    "speed": 0.06,
+    "r": 6
+   },
+   {
+    "type": "label",
+    "text": "Funkmast",
+    "t0": 0.15,
+    "anchor": "mast_top"
+   }
+  ],
+  "anim": "Netz-Puls",
+  "i": 17,
+  "keys": [
+   17
+  ],
+  "set": "mast_haus",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ]
+ },
+ {
+  "id": "s021",
+  "tilt": false,
+  "dur": 6.0,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "label",
+    "text": "keine Zentrale für ganz Deutschland",
+    "t0": 0.2,
+    "pos": [
+     800,
+     90
+    ]
+   }
+  ],
+  "anim": "Modell-Karte",
+  "i": 18,
+  "keys": [
+   18,
+   19
+  ],
+  "set": "karte_de",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": 1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "ids": [
+   "s021",
+   "s022"
+  ]
+ },
+ {
+  "id": "s023",
+  "video": "/home/claude/unterbau-work/motion/d5269ee94133.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 5.096,
+  "fx": [],
+  "anim": "Ablauf-Kette 2D (`motion` flow)",
+  "i": 20,
+  "keys": [
+   20,
+   20
+  ],
+  "set": "mo:d5269ee94133.mp4",
+  "ids": [
+   "s023",
+   "s024"
+  ]
+ },
+ {
+  "id": "s025",
+  "video": "/home/claude/unterbau-work/motion/0461f148da85.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 3.12,
+  "fx": [],
+  "anim": "Fallblatt-Zahl (`motion` counter)",
+  "i": 21,
+  "keys": [
+   21
+  ],
+  "set": "mo:0461f148da85.mp4"
+ },
+ {
+  "id": "s026",
+  "tilt": true,
+  "dur": 5.64,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "label",
+    "text": "betrieben von Kreis oder Stadt",
+    "t0": 0.15,
+    "anchor": "leitstelle"
+   }
+  ],
+  "anim": "Leben in der Welt",
+  "i": 22,
+  "keys": [
+   22,
+   23
+  ],
+  "set": "leitstelle_aussen",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "ids": [
+   "s026",
+   "s027"
+  ]
+ },
+ {
+  "id": "s028",
+  "tilt": true,
+  "dur": 2.5,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "scatter",
+    "n": 220,
+    "t0": 0.0
+   }
+  ],
+  "anim": "Netzwerk-Karte",
+  "i": 23,
+  "keys": [
+   23
+  ],
+  "set": "stadt_total",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": 1,
+  "run_u": [
+   0.0,
+   1.0
+  ]
+ },
+ {
+  "id": "s029",
+  "video": "/home/claude/unterbau-work/motion/1ce7eb727def.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 6.194,
+  "fx": [
+   {
+    "type": "label",
+    "text": "Berlin: alle 28 s ein Notruf",
+    "t0": 0.489,
+    "sub": "2024",
+    "pos": [
+     800,
+     90
+    ]
+   }
+  ],
+  "anim": "Fallblatt-Zahl (`motion` counter)",
+  "i": 24,
+  "keys": [
+   24,
+   25
+  ],
+  "set": "mo:1ce7eb727def.mp4",
+  "lead": 0.34,
+  "ids": [
+   "s029",
+   "s030"
+  ]
+ },
+ {
+  "id": "s031",
+  "video": "/home/claude/unterbau-work/vid/px1110.mp4",
+  "ss": 0.5,
+  "kind": "clip",
+  "dur": 4.32,
+  "fx": [
+   {
+    "type": "label",
+    "text": "ohne SIM-Karte: kein Notruf",
+    "t0": 0.1,
+    "pos": [
+     800,
+     90
+    ],
+    "sub": "seit 2009"
+   }
+  ],
+  "anim": "Bildschirm in der Welt",
+  "i": 26,
+  "keys": [
+   26
+  ],
+  "set": "cl:px1110.mp4"
+ },
+ {
+  "id": "s032",
+  "video": "/home/claude/unterbau-work/vid/px204018.mp4",
+  "ss": 3.0,
+  "kind": "clip",
+  "dur": 4.32,
+  "fx": [
+   {
+    "type": "label",
+    "text": "fremdes Netz: geht",
+    "t0": 0.1,
+    "pos": [
+     800,
+     90
+    ],
+    "sub": "auch ohne Guthaben"
+   }
+  ],
+  "anim": "Bildschirm in der Welt",
+  "i": 27,
+  "keys": [
+   27
+  ],
+  "set": "cl:px204018.mp4"
+ },
+ {
+  "id": "s034",
+  "video": "/home/claude/unterbau-work/motion/41ec753c017e.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 7.41,
+  "fx": [],
+  "anim": "Anzeigetafel dreht sich (`motion` flip)",
+  "i": 29,
+  "keys": [
+   28,
+   29,
+   30,
+   29,
+   30
+  ],
+  "set": "mo:41ec753c017e.mp4",
+  "ids": [
+   "s033",
+   "s034",
+   "s035"
+  ],
+  "lead": 2.05
+ },
+ {
+  "id": "s036",
+  "tilt": false,
+  "dur": 4.16,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [],
+  "anim": "Leben in der Welt",
+  "i": 31,
+  "keys": [
+   31,
+   32
+  ],
+  "set": "wache",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ]
+ },
+ {
+  "id": "s038",
+  "tilt": false,
+  "dur": 7.76,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "label",
+    "text": "Hausnummer?",
+    "t0": 0.15,
+    "anchor": "haus"
+   }
+  ],
+  "anim": "Dein Haus",
+  "i": 33,
+  "keys": [
+   33,
+   34,
+   35
+  ],
+  "set": "haus_aussen",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "ids": [
+   "s038",
+   "s039",
+   "s040"
+  ]
+ },
+ {
+  "id": "s042",
+  "video": "/home/claude/unterbau-work/motion/1e0ad62fcfac.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 4.72,
+  "fx": [],
+  "anim": "Anzeigetafel dreht sich (`motion` flip)",
+  "i": 37,
+  "keys": [
+   36,
+   37
+  ],
+  "set": "mo:1e0ad62fcfac.mp4",
+  "ids": [
+   "s041",
+   "s042"
+  ],
+  "lead": 2.32
+ },
+ {
+  "id": "s043",
+  "video": "/home/claude/unterbau-work/motion/67f052c28050.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 6.506,
+  "fx": [
+   {
+    "type": "label",
+    "text": "8 von 10 Fällen: ± 30 m",
+    "t0": 0.425,
+    "pos": [
+     800,
+     90
+    ]
+   }
+  ],
+  "anim": "Häuserzeilen-Balken (`motion` bars)",
+  "i": 38,
+  "keys": [
+   38,
+   39
+  ],
+  "set": "mo:67f052c28050.mp4",
+  "ids": [
+   "s043",
+   "s044"
+  ]
+ },
+ {
+  "id": "s045",
+  "tilt": false,
+  "dur": 5.76,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "tafel",
+    "anchor": "tafel",
+    "texts": [
+     "MINUTE 1"
+    ]
+   }
+  ],
+  "anim": "Countdown in der Welt",
+  "i": 40,
+  "keys": [
+   40,
+   41,
+   41
+  ],
+  "set": "bahnhof_tafel",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": 1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "ids": [
+   "s045",
+   "s046",
+   "s047"
+  ]
+ },
+ {
+  "id": "s048",
+  "tilt": false,
+  "dur": 3.574,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "screen",
+    "anchor": "screen_c",
+    "img": "/home/claude/unterbau-work/scr/einsatz.png"
+   },
+   {
+    "type": "flicker"
+   }
+  ],
+  "anim": "Steuerzentrale",
+  "i": 42,
+  "keys": [
+   42
+  ],
+  "set": "ls_innen",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ]
+ },
+ {
+  "id": "s049",
+  "tilt": false,
+  "dur": 3.68,
+  "move": "push",
+  "trans": "lights",
+  "t_trans": [
+   0.2,
+   0.5
+  ],
+  "fx": [],
+  "anim": "Leben in der Welt",
+  "i": 43,
+  "keys": [
+   43,
+   44
+  ],
+  "set": "wache",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": 1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "ids": [
+   "s049",
+   "s050"
+  ]
+ },
+ {
+  "id": "s051",
+  "video": "/home/claude/unterbau-work/motion/169861c1916c.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 6.8,
+  "fx": [],
+  "anim": "Bildschirm in der Welt",
+  "i": 45,
+  "keys": [
+   45,
+   46,
+   47,
+   45,
+   46,
+   47
+  ],
+  "set": "mo:169861c1916c.mp4",
+  "ids": [
+   "s051",
+   "s052"
+  ]
+ },
+ {
+  "id": "s053",
+  "tilt": false,
+  "dur": 2.88,
+  "move": "push",
+  "trans": "fade",
+  "t_trans": [
+   0.2,
+   0.5
+  ],
+  "fx": [],
+  "anim": "Menschen reagieren",
+  "i": 48,
+  "keys": [
+   48,
+   49
+  ],
+  "set": "k_total",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": 1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "ids": [
+   "s053",
+   "s054"
+  ]
+ },
+ {
+  "id": "s055",
+  "tilt": false,
+  "dur": 4.0,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "label",
+    "text": "Telefonreanimation",
+    "t0": 0.1,
+    "pos": [
+     800,
+     90
+    ]
+   }
+  ],
+  "anim": "Menschen reagieren",
+  "i": 50,
+  "keys": [
+   50
+  ],
+  "set": "k_seite",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": 1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "lead": 1.52
+ },
+ {
+  "id": "s056",
+  "video": "/home/claude/unterbau-work/motion/f267246d57ac.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 7.36,
+  "fx": [],
+  "anim": "Häuserzeilen-Balken (`motion` bars)",
+  "i": 51,
+  "keys": [
+   51,
+   52,
+   51,
+   52
+  ],
+  "set": "mo:f267246d57ac.mp4",
+  "ids": [
+   "s056",
+   "s057"
+  ]
+ },
+ {
+  "id": "s058",
+  "tilt": false,
+  "dur": 4.3,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "blink",
+    "anchors": [
+     "rtw_strasse"
+    ]
+   },
+   {
+    "type": "dots",
+    "path": "route_rtw",
+    "n": 3,
+    "speed": 0.03,
+    "r": 7,
+    "col": "blue",
+    "blink": true
+   }
+  ],
+  "anim": "Leben in der Welt",
+  "i": 53,
+  "keys": [
+   53,
+   54
+  ],
+  "set": "strasse_rtw",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "ids": [
+   "s058",
+   "s059"
+  ]
+ },
+ {
+  "id": "s060",
+  "tilt": false,
+  "dur": 2.62,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "grey",
+    "amount": 0.85,
+    "t0": 0
+   }
+  ],
+  "anim": "Tag-Nacht-Zeitraffer",
+  "i": 54,
+  "keys": [
+   54
+  ],
+  "set": "s69",
+  "run_k": 0,
+  "run_len": 3,
+  "run_move": "push",
+  "run_dir": 1,
+  "run_u": [
+   0.0,
+   0.26626016260162605
+  ]
+ },
+ {
+  "id": "s061",
+  "tilt": false,
+  "dur": 4.5,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "grey",
+    "amount": 0.85,
+    "t0": 0
+   },
+   {
+    "type": "card",
+    "top": "KAPITEL 2",
+    "title": "Winnenden, 1969"
+   }
+  ],
+  "anim": "Leben in der Welt",
+  "i": -1,
+  "keys": [
+   "K2"
+  ],
+  "set": "s69",
+  "run_k": 1,
+  "run_len": 3,
+  "run_move": "push",
+  "run_dir": 1,
+  "run_u": [
+   0.26626016260162605,
+   0.7235772357723578
+  ]
+ },
+ {
+  "id": "s062",
+  "tilt": false,
+  "dur": 2.72,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "grey",
+    "amount": 0.85,
+    "t0": 0
+   },
+   {
+    "type": "label",
+    "text": "3. Mai 1969",
+    "t0": 0.05,
+    "pos": [
+     800,
+     90
+    ]
+   }
+  ],
+  "anim": "Countdown in der Welt",
+  "i": 55,
+  "keys": [
+   55
+  ],
+  "set": "s69",
+  "run_k": 2,
+  "run_len": 3,
+  "run_move": "push",
+  "run_dir": 1,
+  "run_u": [
+   0.7235772357723578,
+   1.0
+  ]
+ },
+ {
+  "id": "s063",
+  "tilt": false,
+  "dur": 5.04,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "grey",
+    "amount": 0.85,
+    "t0": 0
+   },
+   {
+    "type": "label",
+    "text": "Winnenden",
+    "t0": 0.15,
+    "anchor": "pin_winnenden",
+    "sub": "bei Stuttgart"
+   }
+  ],
+  "anim": "Modell-Karte",
+  "i": 56,
+  "keys": [
+   56,
+   57
+  ],
+  "set": "karte_winnenden",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": 1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "ids": [
+   "s063",
+   "s064"
+  ]
+ },
+ {
+  "id": "s066",
+  "tilt": false,
+  "dur": 3.397,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "grey",
+    "amount": 0.85,
+    "t0": 0
+   },
+   {
+    "type": "label",
+    "text": "Welche Nummer?",
+    "t0": 0.53,
+    "anchor": "zelle"
+   }
+  ],
+  "anim": "Leben in der Welt",
+  "i": 59,
+  "keys": [
+   58,
+   59
+  ],
+  "set": "s69_zelle",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": 1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "ids": [
+   "s065",
+   "s066"
+  ],
+  "lead": 1.52
+ },
+ {
+  "id": "s067",
+  "video": "/home/claude/unterbau-work/motion/db21ba93033b.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 5.92,
+  "fx": [],
+  "anim": "Anzeigetafel dreht sich (`motion` flip)",
+  "i": 60,
+  "keys": [
+   60,
+   61
+  ],
+  "set": "mo:db21ba93033b.mp4",
+  "ids": [
+   "s067",
+   "s068"
+  ]
+ },
+ {
+  "id": "s069",
+  "tilt": false,
+  "dur": 4.08,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "grey",
+    "amount": 0.85,
+    "t0": 0
+   },
+   {
+    "type": "label",
+    "text": "Björn Steiger",
+    "t0": 0.05,
+    "pos": [
+     800,
+     90
+    ],
+    "sub": "8 Jahre"
+   }
+  ],
+  "anim": "Leben in der Welt",
+  "i": 62,
+  "keys": [
+   62,
+   63
+  ],
+  "set": "s69",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": 1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "ids": [
+   "s069",
+   "s070"
+  ]
+ },
+ {
+  "id": "s071",
+  "video": "/home/claude/unterbau-work/motion/99a7f8043723.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 5.322,
+  "fx": [],
+  "anim": "Anzeigetafel dreht sich (`motion` flip)",
+  "i": 64,
+  "keys": [
+   64,
+   64
+  ],
+  "set": "mo:99a7f8043723.mp4",
+  "ids": [
+   "s071",
+   "s072"
+  ]
+ },
+ {
+  "id": "s073",
+  "tilt": false,
+  "dur": 5.44,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "grey",
+    "amount": 0.85,
+    "t0": 0
+   },
+   {
+    "type": "label",
+    "text": "7. Juli 1969",
+    "t0": 0.15,
+    "anchor": "zelle",
+    "sub": "Björn Steiger Stiftung"
+   }
+  ],
+  "anim": "Countdown in der Welt",
+  "i": 65,
+  "keys": [
+   65,
+   65
+  ],
+  "set": "s69_zelle",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": 1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "ids": [
+   "s073",
+   "s074"
+  ]
+ },
+ {
+  "id": "s075",
+  "video": "/home/claude/unterbau-work/motion/cc038b534ced.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 2.32,
+  "fx": [],
+  "anim": "Ablauf-Kette 2D (`motion` flow)",
+  "i": 66,
+  "keys": [
+   66
+  ],
+  "set": "mo:cc038b534ced.mp4"
+ },
+ {
+  "id": "s076",
+  "video": "/home/claude/unterbau-work/motion/be72e60d8f4f.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 5.84,
+  "fx": [],
+  "anim": "Anzeigetafel dreht sich (`motion` flip)",
+  "i": 67,
+  "keys": [
+   67,
+   67
+  ],
+  "set": "mo:be72e60d8f4f.mp4",
+  "ids": [
+   "s076",
+   "s077"
+  ]
+ },
+ {
+  "id": "s078",
+  "tilt": false,
+  "dur": 3.52,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "grey",
+    "amount": 0.85,
+    "t0": 0
+   },
+   {
+    "type": "tafel",
+    "anchor": "tafel",
+    "texts": [
+     "KLAGE",
+     "ABGEWIESEN"
+    ]
+   }
+  ],
+  "anim": "Zahl in der Welt",
+  "i": 68,
+  "keys": [
+   68,
+   69
+  ],
+  "set": "bahnhof_tafel",
+  "run_k": 0,
+  "run_len": 2,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   0.5333333333333333
+  ],
+  "ids": [
+   "s078",
+   "s079"
+  ]
+ },
+ {
+  "id": "s080",
+  "tilt": false,
+  "dur": 3.08,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "grey",
+    "amount": 0.5,
+    "t0": 0
+   },
+   {
+    "type": "tafel",
+    "anchor": "tafel",
+    "texts": [
+     "20.09.1973"
+    ]
+   }
+  ],
+  "anim": "Countdown in der Welt",
+  "i": 70,
+  "keys": [
+   70
+  ],
+  "set": "bahnhof_tafel",
+  "run_k": 1,
+  "run_len": 2,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.5333333333333333,
+   1.0
+  ]
+ },
+ {
+  "id": "s081",
+  "tilt": false,
+  "dur": 3.08,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "grey",
+    "amount": 0.5,
+    "t0": 0
+   },
+   {
+    "type": "label",
+    "text": "Ministerpräsidenten + Bundeskanzler",
+    "t0": 0.1,
+    "pos": [
+     800,
+     90
+    ],
+    "sub": "20. September 1973"
+   }
+  ],
+  "anim": "Leben in der Welt",
+  "i": 70,
+  "keys": [
+   70
+  ],
+  "set": "rathaus_uhr",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": 1,
+  "run_u": [
+   0.0,
+   1.0
+  ]
+ },
+ {
+  "id": "s082",
+  "video": "/home/claude/unterbau-work/motion/48b58ed19934.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 4.24,
+  "fx": [],
+  "anim": "Anzeigetafel dreht sich (`motion` flip)",
+  "i": 71,
+  "keys": [
+   71
+  ],
+  "set": "mo:48b58ed19934.mp4"
+ },
+ {
+  "id": "s083",
+  "tilt": false,
+  "dur": 2.8,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "tafel",
+    "anchor": "tafel",
+    "texts": [
+     "110 + 112"
+    ]
+   }
+  ],
+  "anim": "Zahl in der Welt",
+  "i": 72,
+  "keys": [
+   72
+  ],
+  "set": "bahnhof_tafel",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": 1,
+  "run_u": [
+   0.0,
+   1.0
+  ]
+ },
+ {
+  "id": "s084",
+  "tilt": false,
+  "dur": 6.08,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "lines",
+    "pairs": [
+     "de_HHH",
+     "de_HDO",
+     "de_DOK",
+     "de_KF",
+     "de_FN",
+     "de_NM",
+     "de_FS",
+     "de_SM",
+     "de_HL",
+     "de_LB",
+     "de_HHB",
+     "de_LN"
+    ],
+    "cities": "de_staedte",
+    "grow": 0.8
+   },
+   {
+    "type": "label",
+    "text": "Ende 1979",
+    "t0": 0.3,
+    "pos": [
+     800,
+     90
+    ],
+    "sub": "letztes Ortsnetz angeschlossen"
+   }
+  ],
+  "anim": "Netzwerk-Karte",
+  "i": 73,
+  "keys": [
+   73,
+   73
+  ],
+  "set": "karte_de",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "ids": [
+   "s084",
+   "s085"
+  ]
+ },
+ {
+  "id": "s086",
+  "tilt": false,
+  "dur": 2.841,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "label",
+    "text": "1991",
+    "t0": 0.1,
+    "pos": [
+     800,
+     90
+    ],
+    "sub": "Europa zieht nach"
+   }
+  ],
+  "anim": "Modell-Karte",
+  "i": 74,
+  "keys": [
+   74
+  ],
+  "set": "karte_eu",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ]
+ },
+ {
+  "id": "s087",
+  "video": "/home/claude/unterbau-work/motion/f34aceb2abfd.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 7.52,
+  "fx": [],
+  "anim": "Warenstrom-Karte (`motion` map)",
+  "i": 75,
+  "keys": [
+   75,
+   75
+  ],
+  "set": "mo:f34aceb2abfd.mp4",
+  "ids": [
+   "s087",
+   "s088"
+  ]
+ },
+ {
+  "id": "s089",
+  "tilt": false,
+  "dur": 4.88,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "label",
+    "text": "112",
+    "t0": 0.1,
+    "anchor": "pin_lissabon",
+    "sub": "Lissabon"
+   },
+   {
+    "type": "label",
+    "text": "112",
+    "t0": 0.45,
+    "anchor": "pin_warschau",
+    "sub": "Warschau"
+   }
+  ],
+  "anim": "Modell-Karte",
+  "i": 76,
+  "keys": [
+   76,
+   76
+  ],
+  "set": "karte_eu",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": 1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "ids": [
+   "s089",
+   "s090"
+  ]
+ },
+ {
+  "id": "s091",
+  "tilt": false,
+  "dur": 5.179,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "tafel",
+    "anchor": "tafel",
+    "texts": [
+     "112"
+    ]
+   }
+  ],
+  "anim": "Zahl in der Welt",
+  "i": 77,
+  "keys": [
+   77,
+   78
+  ],
+  "set": "bahnhof_tafel",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": 1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "ids": [
+   "s091",
+   "s092"
+  ]
+ },
+ {
+  "id": "s093",
+  "tilt": false,
+  "dur": 2.42,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "clock",
+    "anchor": "uhr16_0",
+    "from": 0,
+    "to": 40,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_1",
+    "from": 67,
+    "to": 110,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_2",
+    "from": 134,
+    "to": 180,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_3",
+    "from": 201,
+    "to": 250,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_4",
+    "from": 268,
+    "to": 320,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_5",
+    "from": 335,
+    "to": 390,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_6",
+    "from": 402,
+    "to": 460,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_7",
+    "from": 469,
+    "to": 530,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_8",
+    "from": 536,
+    "to": 600,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_9",
+    "from": 603,
+    "to": 670,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_10",
+    "from": 670,
+    "to": 740,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_11",
+    "from": 737,
+    "to": 810,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_12",
+    "from": 84,
+    "to": 160,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_13",
+    "from": 151,
+    "to": 230,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_14",
+    "from": 218,
+    "to": 300,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_15",
+    "from": 285,
+    "to": 370,
+    "t0": 0.05,
+    "tl": 0.9
+   }
+  ],
+  "anim": "Countdown in der Welt",
+  "i": 78,
+  "keys": [
+   78
+  ],
+  "set": "uhren16",
+  "run_k": 0,
+  "run_len": 2,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   0.34971098265895956
+  ]
+ },
+ {
+  "id": "s094",
+  "tilt": false,
+  "dur": 4.5,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "clock",
+    "anchor": "uhr16_0",
+    "from": 0,
+    "to": 40,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_1",
+    "from": 67,
+    "to": 110,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_2",
+    "from": 134,
+    "to": 180,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_3",
+    "from": 201,
+    "to": 250,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_4",
+    "from": 268,
+    "to": 320,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_5",
+    "from": 335,
+    "to": 390,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_6",
+    "from": 402,
+    "to": 460,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_7",
+    "from": 469,
+    "to": 530,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_8",
+    "from": 536,
+    "to": 600,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_9",
+    "from": 603,
+    "to": 670,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_10",
+    "from": 670,
+    "to": 740,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_11",
+    "from": 737,
+    "to": 810,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_12",
+    "from": 84,
+    "to": 160,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_13",
+    "from": 151,
+    "to": 230,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_14",
+    "from": 218,
+    "to": 300,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_15",
+    "from": 285,
+    "to": 370,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "card",
+    "top": "KAPITEL 3",
+    "title": "Sechzehn Uhren"
+   }
+  ],
+  "anim": "Leben in der Welt",
+  "i": -1,
+  "keys": [
+   "K3"
+  ],
+  "set": "uhren16",
+  "run_k": 1,
+  "run_len": 2,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.34971098265895956,
+   1.0
+  ]
+ },
+ {
+  "id": "s096",
+  "tilt": false,
+  "dur": 5.92,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "tafel",
+    "anchor": "tafel",
+    "texts": [
+     "MINUTE 4"
+    ]
+   }
+  ],
+  "anim": "Countdown in der Welt",
+  "i": 80,
+  "keys": [
+   79,
+   80,
+   81
+  ],
+  "set": "bahnhof_tafel",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "ids": [
+   "s095",
+   "s096",
+   "s097"
+  ],
+  "lead": 1.6
+ },
+ {
+  "id": "s098",
+  "tilt": true,
+  "dur": 3.44,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "dots",
+    "path": "route_rtw",
+    "n": 3,
+    "speed": 0.03,
+    "r": 7,
+    "col": "blue",
+    "blink": true
+   },
+   {
+    "type": "blink",
+    "anchors": [
+     "haus"
+    ],
+    "gain": 0.6
+   }
+  ],
+  "anim": "Tilt-Shift-Flug",
+  "i": 82,
+  "keys": [
+   82
+  ],
+  "set": "route_total",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ]
+ },
+ {
+  "id": "s099",
+  "video": "/home/claude/unterbau-work/vid/px7315.mp4",
+  "ss": 0.5,
+  "kind": "clip",
+  "dur": 2.8,
+  "fx": [],
+  "anim": "Bildschirm in der Welt",
+  "i": 83,
+  "keys": [
+   83
+  ],
+  "set": "cl:px7315.mp4"
+ },
+ {
+  "id": "s100",
+  "tilt": false,
+  "dur": 1.84,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [],
+  "anim": "Modell-Karte",
+  "i": 84,
+  "keys": [
+   84
+  ],
+  "set": "karte_de",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ]
+ },
+ {
+  "id": "s101",
+  "video": "/home/claude/unterbau-work/motion/2a7eaf03d45b.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 6.707,
+  "fx": [],
+  "anim": "Warenstrom-Karte (`motion` map)",
+  "i": 85,
+  "keys": [
+   85,
+   86,
+   87
+  ],
+  "set": "mo:2a7eaf03d45b.mp4",
+  "ids": [
+   "s101",
+   "s102",
+   "s103"
+  ]
+ },
+ {
+  "id": "s104",
+  "video": "/home/claude/unterbau-work/motion/82b98dc04ee5.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 4.16,
+  "fx": [],
+  "anim": "Fallblatt-Zahl (`motion` counter)",
+  "i": 88,
+  "keys": [
+   88
+  ],
+  "set": "mo:82b98dc04ee5.mp4"
+ },
+ {
+  "id": "s105",
+  "tilt": false,
+  "dur": 4.0,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "clock",
+    "anchor": "uhr",
+    "from": 252,
+    "to": 262,
+    "t0": 0.05,
+    "tl": 0.8
+   }
+  ],
+  "anim": "Countdown in der Welt",
+  "i": 89,
+  "keys": [
+   89
+  ],
+  "set": "rathaus_uhr",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": 1,
+  "run_u": [
+   0.0,
+   1.0
+  ]
+ },
+ {
+  "id": "s106",
+  "video": "/home/claude/unterbau-work/motion/48f5f0a3b43d.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 4.8,
+  "fx": [],
+  "anim": "Häuserzeilen-Balken (`motion` bars)",
+  "i": 90,
+  "keys": [
+   90,
+   90
+  ],
+  "set": "mo:48f5f0a3b43d.mp4",
+  "ids": [
+   "s106",
+   "s107"
+  ]
+ },
+ {
+  "id": "s108",
+  "tilt": false,
+  "dur": 2.24,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "clock",
+    "anchor": "uhr16_0",
+    "from": 0,
+    "to": 40,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_1",
+    "from": 67,
+    "to": 110,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_2",
+    "from": 134,
+    "to": 180,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_3",
+    "from": 201,
+    "to": 250,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_4",
+    "from": 268,
+    "to": 320,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_5",
+    "from": 335,
+    "to": 390,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_6",
+    "from": 402,
+    "to": 460,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_7",
+    "from": 469,
+    "to": 530,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_8",
+    "from": 536,
+    "to": 600,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_9",
+    "from": 603,
+    "to": 670,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_10",
+    "from": 670,
+    "to": 740,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_11",
+    "from": 737,
+    "to": 810,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_12",
+    "from": 84,
+    "to": 160,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_13",
+    "from": 151,
+    "to": 230,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_14",
+    "from": 218,
+    "to": 300,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_15",
+    "from": 285,
+    "to": 370,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "label",
+    "text": "Bayern: 12 Minuten",
+    "t0": 0.1,
+    "pos": [
+     800,
+     90
+    ]
+   }
+  ],
+  "anim": "Countdown in der Welt",
+  "i": 91,
+  "keys": [
+   91
+  ],
+  "set": "uhren16",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ]
+ },
+ {
+  "id": "s109",
+  "tilt": false,
+  "dur": 3.36,
+  "move": "push",
+  "trans": "wipe_down",
+  "t_trans": [
+   0.1,
+   0.7
+  ],
+  "fx": [
+   {
+    "type": "label",
+    "text": "Uhr startet beim Ausrücken",
+    "t0": 0.3,
+    "pos": [
+     800,
+     90
+    ],
+    "sub": "Bayern"
+   }
+  ],
+  "anim": "Leben in der Welt",
+  "i": 92,
+  "keys": [
+   92
+  ],
+  "set": "wache_nah",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": 1,
+  "run_u": [
+   0.0,
+   1.0
+  ]
+ },
+ {
+  "id": "s110",
+  "video": "/home/claude/unterbau-work/motion/10bb6da7c261.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 6.92,
+  "fx": [],
+  "anim": "Anzeigetafel dreht sich (`motion` flip)",
+  "i": 93,
+  "keys": [
+   93,
+   93
+  ],
+  "set": "mo:10bb6da7c261.mp4",
+  "ids": [
+   "s110",
+   "s111"
+  ]
+ },
+ {
+  "id": "s112",
+  "video": "/home/claude/unterbau-work/motion/7a88df34d638.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 5.44,
+  "fx": [],
+  "anim": "Fallblatt-Zahl (`motion` counter)",
+  "i": 94,
+  "keys": [
+   94,
+   94
+  ],
+  "set": "mo:7a88df34d638.mp4",
+  "ids": [
+   "s112",
+   "s113"
+  ]
+ },
+ {
+  "id": "s114",
+  "tilt": false,
+  "dur": 4.999,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "clock",
+    "anchor": "uhr16_0",
+    "from": 0,
+    "to": 40,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_1",
+    "from": 67,
+    "to": 110,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_2",
+    "from": 134,
+    "to": 180,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_3",
+    "from": 201,
+    "to": 250,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_4",
+    "from": 268,
+    "to": 320,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_5",
+    "from": 335,
+    "to": 390,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_6",
+    "from": 402,
+    "to": 460,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_7",
+    "from": 469,
+    "to": 530,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_8",
+    "from": 536,
+    "to": 600,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_9",
+    "from": 603,
+    "to": 670,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_10",
+    "from": 670,
+    "to": 740,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_11",
+    "from": 737,
+    "to": 810,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_12",
+    "from": 84,
+    "to": 160,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_13",
+    "from": 151,
+    "to": 230,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_14",
+    "from": 218,
+    "to": 300,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "clock",
+    "anchor": "uhr16_15",
+    "from": 285,
+    "to": 370,
+    "t0": 0.05,
+    "tl": 0.9
+   },
+   {
+    "type": "label",
+    "text": "dieselbe Not · 16 Uhren",
+    "t0": 0.1,
+    "pos": [
+     800,
+     90
+    ]
+   }
+  ],
+  "anim": "Countdown in der Welt",
+  "i": 95,
+  "keys": [
+   95,
+   96,
+   97
+  ],
+  "set": "uhren16",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "ids": [
+   "s114",
+   "s115"
+  ]
+ },
+ {
+  "id": "s116",
+  "video": "/home/claude/unterbau-work/motion/31baa8e2fc1a.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 5.92,
+  "fx": [],
+  "anim": "Ablauf-Kette 2D (`motion` flow)",
+  "i": 98,
+  "keys": [
+   98,
+   99
+  ],
+  "set": "mo:31baa8e2fc1a.mp4",
+  "ids": [
+   "s116",
+   "s117"
+  ]
+ },
+ {
+  "id": "s118",
+  "video": "/home/claude/unterbau-work/motion/a4271ed3ebff.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 4.0,
+  "fx": [],
+  "anim": "Häuserzeilen-Balken (`motion` bars)",
+  "i": 100,
+  "keys": [
+   100,
+   101
+  ],
+  "set": "mo:a4271ed3ebff.mp4"
+ },
+ {
+  "id": "s119",
+  "video": "/home/claude/unterbau-work/motion/a4271ed3ebff.mp4",
+  "ss": 4.0,
+  "kind": "mo",
+  "dur": 4.0,
+  "fx": [],
+  "anim": "Häuserzeilen-Balken (`motion` bars)",
+  "i": 100,
+  "keys": [
+   100,
+   101
+  ],
+  "set": "mo:a4271ed3ebff.mp4"
+ },
+ {
+  "id": "s120",
+  "video": "/home/claude/unterbau-work/motion/73834b0bda78.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 4.4,
+  "fx": [],
+  "anim": "Ablauf-Kette 2D (`motion` flow)",
+  "i": 102,
+  "keys": [
+   102,
+   102
+  ],
+  "set": "mo:73834b0bda78.mp4",
+  "ids": [
+   "s120",
+   "s121"
+  ]
+ },
+ {
+  "id": "s122",
+  "tilt": false,
+  "dur": 4.16,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "tafel",
+    "anchor": "tafel",
+    "texts": [
+     "EINSATZ",
+     "MEHRERE 100 €"
+    ]
+   }
+  ],
+  "anim": "Zahl in der Welt",
+  "i": 103,
+  "keys": [
+   103
+  ],
+  "set": "bahnhof_tafel",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ]
+ },
+ {
+  "id": "s123",
+  "video": "/home/claude/unterbau-work/motion/d31ae9ab31b8.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 4.052,
+  "fx": [],
+  "anim": "Fallblatt-Zahl (`motion` counter)",
+  "i": 104,
+  "keys": [
+   104
+  ],
+  "set": "mo:d31ae9ab31b8.mp4"
+ },
+ {
+  "id": "s124",
+  "tilt": false,
+  "dur": 5.92,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "flicker"
+   },
+   {
+    "type": "screen",
+    "anchor": "screen_l",
+    "img": "/home/claude/unterbau-work/scr/einsatz.png"
+   }
+  ],
+  "anim": "Steuerzentrale",
+  "i": 105,
+  "keys": [
+   105,
+   106
+  ],
+  "set": "ls_innen",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "ids": [
+   "s124",
+   "s125"
+  ]
+ },
+ {
+  "id": "s126",
+  "video": "/home/claude/unterbau-work/motion/588eb3443683.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 6.708,
+  "fx": [],
+  "anim": "Anzeigetafel dreht sich (`motion` flip)",
+  "i": 107,
+  "keys": [
+   107,
+   107
+  ],
+  "set": "mo:588eb3443683.mp4",
+  "ids": [
+   "s126",
+   "s127"
+  ]
+ },
+ {
+  "id": "s129",
+  "video": "/home/claude/unterbau-work/motion/1027baf9e0cd.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 7.92,
+  "fx": [],
+  "anim": "Ablauf-Kette 2D (`motion` flow)",
+  "i": 109,
+  "keys": [
+   108,
+   109,
+   109
+  ],
+  "set": "mo:1027baf9e0cd.mp4",
+  "ids": [
+   "s128",
+   "s129",
+   "s130"
+  ],
+  "lead": 1.92
+ },
+ {
+  "id": "s131",
+  "video": "/home/claude/unterbau-work/motion/ea5e27312379.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 6.8,
+  "fx": [],
+  "anim": "Lichter-aus-Raster (`motion` grid)",
+  "i": 110,
+  "keys": [
+   110,
+   111
+  ],
+  "set": "mo:ea5e27312379.mp4",
+  "ids": [
+   "s131",
+   "s132"
+  ]
+ },
+ {
+  "id": "s134",
+  "video": "/home/claude/unterbau-work/motion/dfa33cfad532.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 5.12,
+  "fx": [
+   {
+    "type": "label",
+    "text": "NOTFALLREFORM",
+    "pos": [
+     800,
+     90
+    ],
+    "t0": 0.048
+   }
+  ],
+  "anim": "Anzeigetafel dreht sich (`motion` flip)",
+  "i": 112,
+  "keys": [
+   111,
+   112
+  ],
+  "set": "mo:dfa33cfad532.mp4",
+  "ids": [
+   "s133",
+   "s134"
+  ],
+  "lead": 2.48
+ },
+ {
+  "id": "s135",
+  "video": "/home/claude/unterbau-work/motion/f15895f80766.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 6.56,
+  "fx": [],
+  "anim": "Ablauf-Kette 2D (`motion` flow)",
+  "i": 113,
+  "keys": [
+   113,
+   113
+  ],
+  "set": "mo:f15895f80766.mp4",
+  "ids": [
+   "s135",
+   "s136"
+  ]
+ },
+ {
+  "id": "s138",
+  "tilt": false,
+  "dur": 5.599,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "tafel",
+    "anchor": "tafel",
+    "texts": [
+     "MINUTE 5"
+    ]
+   }
+  ],
+  "anim": "Countdown in der Welt",
+  "i": 115,
+  "keys": [
+   114,
+   115,
+   116
+  ],
+  "set": "bahnhof_tafel",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "ids": [
+   "s137",
+   "s138",
+   "s139"
+  ],
+  "lead": 1.519
+ },
+ {
+  "id": "s140",
+  "tilt": false,
+  "dur": 2.0,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "screen",
+    "anchor": "ls_mon",
+    "img": "/home/claude/unterbau-work/scr/call.png"
+   }
+  ],
+  "anim": "Steuerzentrale",
+  "i": 117,
+  "keys": [
+   117
+  ],
+  "set": "ls_schulter",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ]
+ },
+ {
+  "id": "s141",
+  "video": "/home/claude/unterbau-work/motion/1d5fa905c5d3.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 7.836,
+  "fx": [],
+  "anim": "Häuserzeilen-Balken (`motion` bars)",
+  "i": 118,
+  "keys": [
+   118,
+   119,
+   118,
+   119
+  ],
+  "set": "mo:1d5fa905c5d3.mp4",
+  "ids": [
+   "s141",
+   "s142"
+  ]
+ },
+ {
+  "id": "s143",
+  "video": "/home/claude/unterbau-work/motion/5712e88b6a85.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 4.8,
+  "fx": [],
+  "anim": "Warenstrom-Karte (`motion` map)",
+  "i": 120,
+  "keys": [
+   120,
+   120
+  ],
+  "set": "mo:5712e88b6a85.mp4",
+  "ids": [
+   "s143",
+   "s144"
+  ]
+ },
+ {
+  "id": "s145",
+  "video": "/home/claude/unterbau-work/vid/px4360.mp4",
+  "ss": 2.0,
+  "kind": "clip",
+  "dur": 3.12,
+  "fx": [],
+  "anim": "Bildschirm in der Welt",
+  "i": 121,
+  "keys": [
+   121
+  ],
+  "set": "cl:px4360.mp4"
+ },
+ {
+  "id": "s146",
+  "tilt": false,
+  "dur": 4.52,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [],
+  "anim": "Steuerzentrale",
+  "i": 122,
+  "keys": [
+   122,
+   123
+  ],
+  "set": "ls_innen",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "ids": [
+   "s146",
+   "s147"
+  ]
+ },
+ {
+  "id": "s148",
+  "tilt": true,
+  "dur": 4.5,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "card",
+    "top": "KAPITEL 4",
+    "title": "Wenn niemand durchkommt"
+   }
+  ],
+  "anim": "Leben in der Welt",
+  "i": -1,
+  "keys": [
+   "K4"
+  ],
+  "set": "stadt_total",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": 1,
+  "run_u": [
+   0.0,
+   1.0
+  ]
+ },
+ {
+  "id": "s149",
+  "tilt": false,
+  "dur": 2.64,
+  "move": "push",
+  "trans": "fade",
+  "t_trans": [
+   0.3,
+   0.6
+  ],
+  "fx": [],
+  "anim": "Lichter gehen aus",
+  "i": 124,
+  "keys": [
+   124
+  ],
+  "set": "mast",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": 1,
+  "run_u": [
+   0.0,
+   1.0
+  ]
+ },
+ {
+  "id": "s150",
+  "tilt": false,
+  "dur": 4.48,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "tafel",
+    "anchor": "tafel",
+    "texts": [
+     "11.11.2021"
+    ]
+   }
+  ],
+  "anim": "Countdown in der Welt",
+  "i": 125,
+  "keys": [
+   125,
+   126
+  ],
+  "set": "bahnhof_tafel",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "ids": [
+   "s150",
+   "s151"
+  ]
+ },
+ {
+  "id": "s152",
+  "tilt": false,
+  "dur": 6.186,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "tafel",
+    "anchor": "k_uhr",
+    "texts": [
+     "SZENE 04:12",
+     "AUSFALL 04:30"
+    ]
+   }
+  ],
+  "anim": "Rückflug zum Anfang",
+  "i": 127,
+  "keys": [
+   127,
+   128
+  ],
+  "set": "k_uhr",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "ids": [
+   "s152",
+   "s153"
+  ]
+ },
+ {
+  "id": "s154",
+  "tilt": true,
+  "dur": 4.04,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "scatter",
+    "n": 180,
+    "t0": 0.0,
+    "col": "red"
+   }
+  ],
+  "anim": "Netzwerk-Karte",
+  "i": 128,
+  "keys": [
+   128,
+   129
+  ],
+  "set": "stadt_total",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": 1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "ids": [
+   "s154",
+   "s155"
+  ]
+ },
+ {
+  "id": "s156",
+  "video": "/home/claude/unterbau-work/vid/px14900.mp4",
+  "ss": 2.0,
+  "kind": "clip",
+  "dur": 3.76,
+  "fx": [
+   {
+    "type": "label",
+    "text": "Wartung · neue Software",
+    "t0": 0.1,
+    "pos": [
+     800,
+     90
+    ]
+   }
+  ],
+  "anim": "Bildschirm in der Welt",
+  "i": 130,
+  "keys": [
+   130
+  ],
+  "set": "cl:px14900.mp4"
+ },
+ {
+  "id": "s157",
+  "video": "/home/claude/unterbau-work/motion/0d44d45555c4.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 3.453,
+  "fx": [],
+  "anim": "Anzeigetafel dreht sich (`motion` flip)",
+  "i": 131,
+  "keys": [
+   131,
+   132
+  ],
+  "set": "mo:0d44d45555c4.mp4"
+ },
+ {
+  "id": "s158",
+  "video": "/home/claude/unterbau-work/motion/82f71acd0ddc.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 5.12,
+  "fx": [],
+  "anim": "Fallblatt-Zahl (`motion` counter)",
+  "i": 133,
+  "keys": [
+   133,
+   133
+  ],
+  "set": "mo:82f71acd0ddc.mp4",
+  "ids": [
+   "s158",
+   "s159"
+  ]
+ },
+ {
+  "id": "s160",
+  "tilt": false,
+  "dur": 2.88,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "clock",
+    "anchor": "uhr",
+    "from": 270,
+    "to": 340,
+    "t0": 0.05,
+    "tl": 0.8
+   }
+  ],
+  "anim": "Countdown in der Welt",
+  "i": 134,
+  "keys": [
+   134
+  ],
+  "set": "rathaus_uhr",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ]
+ },
+ {
+  "id": "s161",
+  "video": "/home/claude/unterbau-work/motion/6e355ad09145.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 4.0,
+  "fx": [],
+  "anim": "Anzeigetafel dreht sich (`motion` flip)",
+  "i": 135,
+  "keys": [
+   135,
+   136
+  ],
+  "set": "mo:6e355ad09145.mp4"
+ },
+ {
+  "id": "s163",
+  "video": "/home/claude/unterbau-work/motion/4da3cc127f8c.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 7.92,
+  "fx": [],
+  "anim": "Warenstrom-Karte (`motion` map)",
+  "i": 138,
+  "keys": [
+   137,
+   138,
+   138
+  ],
+  "set": "mo:4da3cc127f8c.mp4",
+  "ids": [
+   "s162",
+   "s163",
+   "s164"
+  ],
+  "lead": 2.08
+ },
+ {
+  "id": "s166",
+  "video": "/home/claude/unterbau-work/motion/7f1b7c15736a.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 5.72,
+  "fx": [],
+  "anim": "Fallblatt-Zahl (`motion` counter)",
+  "i": 140,
+  "keys": [
+   139,
+   140
+  ],
+  "set": "mo:7f1b7c15736a.mp4",
+  "ids": [
+   "s165",
+   "s166"
+  ],
+  "lead": 2.16
+ },
+ {
+  "id": "s167",
+  "tilt": true,
+  "dur": 3.28,
+  "move": "push",
+  "trans": "lights",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "grey",
+    "amount": 0.5,
+    "t0": 0.2
+   },
+   {
+    "type": "label",
+    "text": "3 Todesfälle",
+    "t0": 0.2,
+    "pos": [
+     800,
+     90
+    ],
+    "sub": "mit dem Ausfall in Verbindung gebracht"
+   }
+  ],
+  "anim": "Lichter gehen aus",
+  "i": 141,
+  "keys": [
+   141
+  ],
+  "set": "stadt_total",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": 1,
+  "run_u": [
+   0.0,
+   1.0
+  ]
+ },
+ {
+  "id": "s168",
+  "video": "/home/claude/unterbau-work/motion/42e6498b2d55.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 3.84,
+  "fx": [],
+  "anim": "Warenstrom-Karte (`motion` map)",
+  "i": 142,
+  "keys": [
+   142
+  ],
+  "set": "mo:42e6498b2d55.mp4"
+ },
+ {
+  "id": "s169",
+  "video": "/home/claude/unterbau-work/motion/3f28af325601.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 3.84,
+  "fx": [],
+  "anim": "Fallblatt-Zahl (`motion` counter)",
+  "i": 142,
+  "keys": [
+   142
+  ],
+  "set": "mo:3f28af325601.mp4"
+ },
+ {
+  "id": "s170",
+  "video": "/home/claude/unterbau-work/motion/e7938693c878.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 4.36,
+  "fx": [],
+  "anim": "Fallblatt-Zahl (`motion` counter)",
+  "i": 143,
+  "keys": [
+   143
+  ],
+  "set": "mo:e7938693c878.mp4"
+ },
+ {
+  "id": "s171",
+  "tilt": true,
+  "dur": 3.92,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "scatter",
+    "n": 320,
+    "t0": 0.0
+   }
+  ],
+  "anim": "Netzwerk-Karte",
+  "i": 144,
+  "keys": [
+   144
+  ],
+  "set": "stadt_total",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": 1,
+  "run_u": [
+   0.0,
+   1.0
+  ]
+ },
+ {
+  "id": "s172",
+  "video": "/home/claude/unterbau-work/vid/px14324.mp4",
+  "ss": 0.0,
+  "kind": "clip",
+  "dur": 4.72,
+  "fx": [
+   {
+    "type": "label",
+    "text": "14. Juli 2021",
+    "t0": 0.05,
+    "pos": [
+     800,
+     90
+    ],
+    "sub": "Flutnacht im Ahrtal"
+   }
+  ],
+  "anim": "Bildschirm in der Welt",
+  "i": 145,
+  "keys": [
+   145,
+   145
+  ],
+  "set": "cl:px14324.mp4",
+  "ids": [
+   "s172",
+   "s173"
+  ]
+ },
+ {
+  "id": "s174",
+  "tilt": false,
+  "dur": 4.32,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "label",
+    "text": "Leitstelle Koblenz",
+    "t0": 0.15,
+    "anchor": "pin_koblenz"
+   }
+  ],
+  "anim": "Modell-Karte",
+  "i": 146,
+  "keys": [
+   146
+  ],
+  "set": "karte_koblenz",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ]
+ },
+ {
+  "id": "s176",
+  "video": "/home/claude/unterbau-work/motion/ec341b6a6b5f.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 6.12,
+  "fx": [],
+  "anim": "Fallblatt-Zahl (`motion` counter)",
+  "i": 148,
+  "keys": [
+   147,
+   148
+  ],
+  "set": "mo:ec341b6a6b5f.mp4",
+  "ids": [
+   "s175",
+   "s176"
+  ],
+  "lead": 1.88
+ },
+ {
+  "id": "s177",
+  "tilt": false,
+  "dur": 4.158,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "flicker"
+   },
+   {
+    "type": "screen",
+    "anchor": "screen_c",
+    "img": "/home/claude/unterbau-work/scr/schlange.png"
+   }
+  ],
+  "anim": "Steuerzentrale",
+  "i": 149,
+  "keys": [
+   149,
+   150
+  ],
+  "set": "ls_innen",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": 1,
+  "run_u": [
+   0.0,
+   1.0
+  ]
+ },
+ {
+  "id": "s178",
+  "tilt": false,
+  "dur": 2.721,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "screen",
+    "anchor": "screen_c",
+    "video": "/home/claude/unterbau-work/vid/px14324.mp4",
+    "ss": 7.0
+   },
+   {
+    "type": "screen",
+    "anchor": "screen_l",
+    "img": "/home/claude/unterbau-work/scr/schlange.png"
+   }
+  ],
+  "anim": "Bildschirm in der Welt",
+  "i": 151,
+  "keys": [
+   151
+  ],
+  "set": "ls_wand",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ]
+ },
+ {
+  "id": "s179",
+  "tilt": true,
+  "dur": 5.359,
+  "move": "push",
+  "trans": "lights",
+  "t_trans": [
+   0.2,
+   0.9
+  ],
+  "fx": [],
+  "anim": "Lichter gehen aus",
+  "i": 152,
+  "keys": [
+   152,
+   153
+  ],
+  "set": "stadt_total",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": 1,
+  "run_u": [
+   0.0,
+   1.0
+  ]
+ },
+ {
+  "id": "s181",
+  "tilt": false,
+  "dur": 7.04,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "label",
+    "text": "Leuchttürme",
+    "t0": 0.15,
+    "anchor": "pin_berlin",
+    "sub": "Berlin"
+   }
+  ],
+  "anim": "Modell-Karte",
+  "i": 154,
+  "keys": [
+   154,
+   155
+  ],
+  "set": "karte_de",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": 1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "ids": [
+   "s181",
+   "s182"
+  ]
+ },
+ {
+  "id": "s183",
+  "tilt": false,
+  "dur": 6.442,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "blink",
+    "anchors": [
+     "wache"
+    ],
+    "gain": 0.5
+   }
+  ],
+  "anim": "Menschen reagieren",
+  "i": 156,
+  "keys": [
+   156,
+   157
+  ],
+  "set": "wache",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "ids": [
+   "s183",
+   "s184"
+  ]
+ },
+ {
+  "id": "s185",
+  "video": "/home/claude/unterbau-work/vid/px63970.mp4",
+  "ss": 2.0,
+  "kind": "clip",
+  "dur": 2.2,
+  "fx": [],
+  "anim": "Bildschirm in der Welt",
+  "i": 158,
+  "keys": [
+   158
+  ],
+  "set": "cl:px63970.mp4"
+ },
+ {
+  "id": "s186",
+  "tilt": false,
+  "dur": 4.5,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "card",
+    "top": "KAPITEL 5",
+    "title": "Minute neun"
+   }
+  ],
+  "anim": "Leben in der Welt",
+  "i": -1,
+  "keys": [
+   "K5"
+  ],
+  "set": "haus_nacht",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ]
+ },
+ {
+  "id": "s188",
+  "tilt": false,
+  "dur": 5.76,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "tafel",
+    "anchor": "k_uhr",
+    "texts": [
+     "04:21"
+    ]
+   }
+  ],
+  "anim": "Countdown in der Welt",
+  "i": 160,
+  "keys": [
+   159,
+   160,
+   161
+  ],
+  "set": "k_uhr",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "ids": [
+   "s187",
+   "s188",
+   "s189"
+  ],
+  "lead": 1.36
+ },
+ {
+  "id": "s190",
+  "tilt": false,
+  "dur": 6.319,
+  "move": "push",
+  "trans": "fade",
+  "t_trans": [
+   0.2,
+   0.6
+  ],
+  "fx": [
+   {
+    "type": "wash",
+    "gain": 0.5
+   },
+   {
+    "type": "label",
+    "text": "Minute 9",
+    "t0": 0.4,
+    "pos": [
+     800,
+     90
+    ]
+   }
+  ],
+  "anim": "Menschen reagieren",
+  "i": 162,
+  "keys": [
+   162,
+   163,
+   164
+  ],
+  "set": "k_tuer",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "ids": [
+   "s190",
+   "s191"
+  ]
+ },
+ {
+  "id": "s192",
+  "tilt": false,
+  "dur": 4.24,
+  "move": "push",
+  "trans": "wipe_down",
+  "t_trans": [
+   0.1,
+   0.6
+  ],
+  "fx": [
+   {
+    "type": "dots",
+    "path": "cut",
+    "n": 14,
+    "speed": 0.05,
+    "r": 6
+   }
+  ],
+  "anim": "Querschnitt",
+  "i": 165,
+  "keys": [
+   165,
+   166
+  ],
+  "set": "querschnitt_stadt",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "ids": [
+   "s192",
+   "s193"
+  ]
+ },
+ {
+  "id": "s194",
+  "tilt": false,
+  "dur": 3.12,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [],
+  "anim": "Dein Haus",
+  "i": 167,
+  "keys": [
+   167
+  ],
+  "set": "k_total",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ]
+ },
+ {
+  "id": "s196",
+  "video": "/home/claude/unterbau-work/motion/73f1e819c056.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 7.44,
+  "fx": [],
+  "anim": "Fallblatt-Zahl (`motion` counter)",
+  "i": 169,
+  "keys": [
+   168,
+   169,
+   169
+  ],
+  "set": "mo:73f1e819c056.mp4",
+  "ids": [
+   "s195",
+   "s196",
+   "s197"
+  ],
+  "lead": 1.44
+ },
+ {
+  "id": "s198",
+  "tilt": false,
+  "dur": 2.8,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "tafel",
+    "anchor": "tafel",
+    "texts": [
+     "370 PRO TAG"
+    ]
+   }
+  ],
+  "anim": "Zahl in der Welt",
+  "i": 170,
+  "keys": [
+   170
+  ],
+  "set": "bahnhof_tafel",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ]
+ },
+ {
+  "id": "s199",
+  "video": "/home/claude/unterbau-work/motion/1caa471eb5df.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 4.24,
+  "fx": [],
+  "anim": "Lichter-aus-Raster (`motion` grid)",
+  "i": 171,
+  "keys": [
+   171
+  ],
+  "set": "mo:1caa471eb5df.mp4"
+ },
+ {
+  "id": "s200",
+  "tilt": false,
+  "dur": 6.198,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "label",
+    "text": "Szene nachgestellt",
+    "t0": 0.05,
+    "pos": [
+     800,
+     90
+    ]
+   }
+  ],
+  "anim": "Leben in der Welt",
+  "i": 172,
+  "keys": [
+   172,
+   173
+  ],
+  "set": "k_total",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "ids": [
+   "s200",
+   "s201"
+  ]
+ },
+ {
+  "id": "s203",
+  "video": "/home/claude/unterbau-work/motion/cd92c463e975.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 6.24,
+  "fx": [],
+  "anim": "Bildschirm in der Welt",
+  "i": 175,
+  "keys": [
+   174,
+   175
+  ],
+  "set": "mo:cd92c463e975.mp4",
+  "ids": [
+   "s202",
+   "s203"
+  ],
+  "lead": 2.56
+ },
+ {
+  "id": "s204",
+  "tilt": false,
+  "dur": 3.04,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "screen",
+    "anchor": "k_phone",
+    "img": "/home/claude/unterbau-work/scr/call.png"
+   },
+   {
+    "type": "label",
+    "text": "nicht auflegen",
+    "t0": 0.1,
+    "pos": [
+     800,
+     90
+    ]
+   }
+  ],
+  "anim": "Leben in der Welt",
+  "i": 176,
+  "keys": [
+   176
+  ],
+  "set": "k_handy",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ]
+ },
+ {
+  "id": "s205",
+  "video": "/home/claude/unterbau-work/motion/05592f176938.mp4",
+  "ss": 0.0,
+  "kind": "mo",
+  "dur": 6.522,
+  "fx": [],
+  "anim": "Ablauf-Kette 2D (`motion` flow)",
+  "i": 177,
+  "keys": [
+   177,
+   177
+  ],
+  "set": "mo:05592f176938.mp4",
+  "ids": [
+   "s205",
+   "s206"
+  ]
+ },
+ {
+  "id": "s207",
+  "tilt": false,
+  "dur": 4.32,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [],
+  "anim": "Menschen reagieren",
+  "i": 178,
+  "keys": [
+   178
+  ],
+  "set": "wache",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": 1,
+  "run_u": [
+   0.0,
+   1.0
+  ]
+ },
+ {
+  "id": "s208",
+  "video": "/home/claude/unterbau-work/vid/px86507.mp4",
+  "ss": 8.0,
+  "kind": "clip",
+  "dur": 5.2,
+  "fx": [
+   {
+    "type": "label",
+    "text": "Drittens: drücken",
+    "t0": 0.1,
+    "pos": [
+     800,
+     90
+    ]
+   }
+  ],
+  "anim": "Bildschirm in der Welt",
+  "i": 179,
+  "keys": [
+   179,
+   179
+  ],
+  "set": "cl:px86507.mp4",
+  "ids": [
+   "s208",
+   "s209"
+  ]
+ },
+ {
+  "id": "s210",
+  "tilt": false,
+  "dur": 4.64,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "label",
+    "text": "fest und schnell · Mitte der Brust",
+    "t0": 0.1,
+    "pos": [
+     800,
+     90
+    ]
+   }
+  ],
+  "anim": "Menschen reagieren",
+  "i": 180,
+  "keys": [
+   180,
+   181
+  ],
+  "set": "k_total",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "ids": [
+   "s210",
+   "s211"
+  ]
+ },
+ {
+  "id": "s212",
+  "tilt": false,
+  "dur": 3.36,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "screen",
+    "anchor": "k_phone",
+    "img": "/home/claude/unterbau-work/scr/call.png"
+   }
+  ],
+  "anim": "Bildschirm in der Welt",
+  "i": 182,
+  "keys": [
+   182,
+   183
+  ],
+  "set": "k_handy",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "ids": [
+   "s212",
+   "s213"
+  ]
+ },
+ {
+  "id": "s214",
+  "tilt": false,
+  "dur": 4.0,
+  "move": "push",
+  "trans": "fade",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "label",
+    "text": "du",
+    "t0": 0.3,
+    "anchor": "haus"
+   }
+  ],
+  "anim": "Dein Haus",
+  "i": 184,
+  "keys": [
+   184
+  ],
+  "set": "haus_aussen",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "lead": 1.6
+ },
+ {
+  "id": "s215",
+  "tilt": false,
+  "dur": 5.241,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "tafel",
+    "anchor": "tafel",
+    "texts": [
+     "112?"
+    ]
+   }
+  ],
+  "anim": "Zahl in der Welt",
+  "i": 185,
+  "keys": [
+   185,
+   186
+  ],
+  "set": "bahnhof_tafel",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": 1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "ids": [
+   "s215",
+   "s216"
+  ]
+ },
+ {
+  "id": "s217",
+  "tilt": true,
+  "dur": 4.04,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "label",
+    "text": "Schreib's in die Kommentare",
+    "t0": 0.15,
+    "anchor": "leitstelle"
+   }
+  ],
+  "anim": "Leben in der Welt",
+  "i": 187,
+  "keys": [
+   187,
+   188
+  ],
+  "set": "leitstelle_aussen",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": 1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "ids": [
+   "s217",
+   "s218"
+  ]
+ },
+ {
+  "id": "s220",
+  "tilt": false,
+  "dur": 6.0,
+  "move": "push",
+  "trans": "diff",
+  "t_trans": [
+   0.2,
+   0.8
+  ],
+  "fx": [
+   {
+    "type": "card",
+    "title": "UNTERBAU",
+    "sub": "Verstehen, wie die Welt funktioniert",
+    "fade": true
+   }
+  ],
+  "anim": "Rückflug zum Anfang",
+  "i": 189,
+  "keys": [
+   188,
+   189
+  ],
+  "set": "k_handy",
+  "run_k": 0,
+  "run_len": 1,
+  "run_move": "push",
+  "run_dir": -1,
+  "run_u": [
+   0.0,
+   1.0
+  ],
+  "ids": [
+   "s219",
+   "s220"
+  ],
+  "lead": 2.36
+ }
 ]
