@@ -28,9 +28,11 @@ for k in range(1, len(out)):
         take = min(a.text - e["dur"], pv["dur"] - a.bild)
         if take > 0.3:
             pv["dur"] = round(pv["dur"] - take, 3); e["dur"] = round(e["dur"] + take, 3); e["lead"] = round(take, 3)
+PRUEFEN = []
 def carry(dst, src, at, total=None):
     """Text der weichenden Einstellung als Einblendung auf die bleibende übernehmen (nichts geht verloren)."""
     total = total or (dst["dur"] + src["dur"])
+    if dst.get("kind") == "mo": PRUEFEN.append(dst["id"])   # Grafik hat oft eigene Überschrift oben -> Standbild ansehen, ggf. Einblendung weglassen
     for f in src.get("fx", []):
         if f.get("type") == "label": t = dict(f, t0=round((at + 0.1 * src["dur"]) / total, 3)); t.pop("anchor", None); t["pos"] = [800, 90]; dst.setdefault("fx", []).append(t)
         if f.get("type") == "tafel": dst.setdefault("fx", []).append({"type": "label", "text": " · ".join(f["texts"]), "pos": [800, 90], "t0": round((at + 0.1 * src["dur"]) / total, 3)})
@@ -79,3 +81,4 @@ json.dump(out, open(a.out, "w"), ensure_ascii=False, indent=0)
 d = sorted(x["dur"] for x in out)
 print(len(P), "->", len(out), "Einstellungen; Median", d[len(d) // 2], "s; Text unter", a.text, "s:", sum(1 for x in out if has_text(x) and x["dur"] < a.text))
 for x in dropped: print("weggefallen:", x)
+if PRUEFEN: print("PRÜFEN (Einblendung auf 2D-Grafik übernommen – Standbild ansehen, bei Überlappung weglassen):", ", ".join(PRUEFEN))
