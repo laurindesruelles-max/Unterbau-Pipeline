@@ -1,0 +1,211 @@
+# Bild-Prüfung Unterbau_003_v3.mp4
+147 Schnitte erkannt, Schärfe-Median 7
+
+- FEHLER   29.4s Sprung-Schnitt: Bild davor und danach sehr ähnlich (Histogramm 0.95, Struktur 0.69) – gleiche Szene? Durchgehende Fahrt oder Überblendung statt Schnitt
+- FEHLER     47s unscharf (Schärfe 2 vs. Median 7)
+- FEHLER    198s unscharf (Schärfe 3 vs. Median 7)
+- FEHLER    249s unscharf (Schärfe 3 vs. Median 7)
+- FEHLER    498s unscharf (Schärfe 2 vs. Median 7)
+- FEHLER    499s unscharf (Schärfe 3 vs. Median 7)
+- FEHLER    500s unscharf (Schärfe 3 vs. Median 7)
+- FEHLER    545s unscharf (Schärfe 3 vs. Median 7)
+- FEHLER    546s unscharf (Schärfe 3 vs. Median 7)
+- Warnung      9s sehr dunkel (Helligkeit 16)
+- Warnung      9s über die Hälfte des Bildes fast schwarz/leer
+- Warnung     10s sehr dunkel (Helligkeit 18)
+- Warnung     10s über die Hälfte des Bildes fast schwarz/leer
+- Warnung     11s über die Hälfte des Bildes fast schwarz/leer
+- Warnung     12s über die Hälfte des Bildes fast schwarz/leer
+- Warnung     13s über die Hälfte des Bildes fast schwarz/leer
+- Warnung     19s sehr dunkel (Helligkeit 18)
+- Warnung     19s über die Hälfte des Bildes fast schwarz/leer
+- Warnung     30s sehr dunkel (Helligkeit 12)
+- Warnung     30s über die Hälfte des Bildes fast schwarz/leer
+- Warnung     31s sehr dunkel (Helligkeit 12)
+- Warnung     31s über die Hälfte des Bildes fast schwarz/leer
+- Warnung     32s sehr dunkel (Helligkeit 12)
+- Warnung     32s über die Hälfte des Bildes fast schwarz/leer
+- Warnung     33s sehr dunkel (Helligkeit 12)
+- Warnung     33s über die Hälfte des Bildes fast schwarz/leer
+- Warnung     48s sehr dunkel (Helligkeit 17)
+- Warnung     48s über die Hälfte des Bildes fast schwarz/leer
+- Warnung     49s sehr dunkel (Helligkeit 18)
+- Warnung     49s über die Hälfte des Bildes fast schwarz/leer
+- Warnung     62s sehr dunkel (Helligkeit 13)
+- Warnung     62s über die Hälfte des Bildes fast schwarz/leer
+- Warnung     63s sehr dunkel (Helligkeit 13)
+- Warnung     63s über die Hälfte des Bildes fast schwarz/leer
+- Warnung     64s über die Hälfte des Bildes fast schwarz/leer
+- Warnung     65s über die Hälfte des Bildes fast schwarz/leer
+- Warnung     66s über die Hälfte des Bildes fast schwarz/leer
+- Warnung     67s sehr dunkel (Helligkeit 13)
+- Warnung     68s sehr dunkel (Helligkeit 16)
+- Warnung     70s sehr dunkel (Helligkeit 17)
+- Warnung     86s sehr dunkel (Helligkeit 17)
+- Warnung     86s über die Hälfte des Bildes fast schwarz/leer
+- Warnung     87s sehr dunkel (Helligkeit 18)
+- Warnung     87s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    100s sehr dunkel (Helligkeit 17)
+- Warnung    100s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    101s sehr dunkel (Helligkeit 17)
+- Warnung    101s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    102s sehr dunkel (Helligkeit 15)
+- Warnung    102s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    103s sehr dunkel (Helligkeit 14)
+- Warnung    103s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    143s sehr dunkel (Helligkeit 15)
+- Warnung    143s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    144s sehr dunkel (Helligkeit 14)
+- Warnung    144s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    145s sehr dunkel (Helligkeit 14)
+- Warnung    145s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    146s sehr dunkel (Helligkeit 14)
+- Warnung    146s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    147s sehr dunkel (Helligkeit 13)
+- Warnung    147s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    148s sehr dunkel (Helligkeit 13)
+- Warnung    148s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    157s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    158s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    159s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    160s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    196s sehr dunkel (Helligkeit 16)
+- Warnung    196s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    225s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    226s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    227s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    228s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    229s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    230s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    231s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    232s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    234s sehr dunkel (Helligkeit 15)
+- Warnung    234s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    235s sehr dunkel (Helligkeit 15)
+- Warnung    235s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    236s sehr dunkel (Helligkeit 15)
+- Warnung    236s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    237s sehr dunkel (Helligkeit 15)
+- Warnung    237s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    238s sehr dunkel (Helligkeit 15)
+- Warnung    238s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    239s sehr dunkel (Helligkeit 15)
+- Warnung    239s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    240s sehr dunkel (Helligkeit 15)
+- Warnung    240s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    241s sehr dunkel (Helligkeit 13)
+- Warnung    241s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    242s sehr dunkel (Helligkeit 13)
+- Warnung    242s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    246s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    288s sehr dunkel (Helligkeit 13)
+- Warnung    288s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    289s sehr dunkel (Helligkeit 15)
+- Warnung    289s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    290s sehr dunkel (Helligkeit 15)
+- Warnung    290s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    291s sehr dunkel (Helligkeit 13)
+- Warnung    291s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    292s sehr dunkel (Helligkeit 13)
+- Warnung    292s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    293s sehr dunkel (Helligkeit 14)
+- Warnung    293s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    294s sehr dunkel (Helligkeit 14)
+- Warnung    294s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    295s sehr dunkel (Helligkeit 13)
+- Warnung    295s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    296s sehr dunkel (Helligkeit 13)
+- Warnung    296s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    297s sehr dunkel (Helligkeit 13)
+- Warnung    297s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    298s sehr dunkel (Helligkeit 13)
+- Warnung    298s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    299s sehr dunkel (Helligkeit 14)
+- Warnung    299s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    300s sehr dunkel (Helligkeit 14)
+- Warnung    300s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    301s sehr dunkel (Helligkeit 14)
+- Warnung    301s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    302s sehr dunkel (Helligkeit 14)
+- Warnung    302s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    303s sehr dunkel (Helligkeit 15)
+- Warnung    303s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    304s sehr dunkel (Helligkeit 15)
+- Warnung    304s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    305s sehr dunkel (Helligkeit 14)
+- Warnung    305s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    306s sehr dunkel (Helligkeit 15)
+- Warnung    306s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    332s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    333s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    357s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    360s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    361s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    362s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    363s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    364s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    371s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    372s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    373s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    374s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    378s sehr dunkel (Helligkeit 14)
+- Warnung    378s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    379s sehr dunkel (Helligkeit 14)
+- Warnung    379s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    380s sehr dunkel (Helligkeit 6)
+- Warnung    380s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    402s sehr dunkel (Helligkeit 13)
+- Warnung    402s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    403s sehr dunkel (Helligkeit 13)
+- Warnung    403s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    404s sehr dunkel (Helligkeit 16)
+- Warnung    404s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    405s sehr dunkel (Helligkeit 17)
+- Warnung    405s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    406s sehr dunkel (Helligkeit 16)
+- Warnung    406s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    409s sehr dunkel (Helligkeit 13)
+- Warnung    409s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    410s sehr dunkel (Helligkeit 15)
+- Warnung    410s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    411s sehr dunkel (Helligkeit 15)
+- Warnung    411s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    412s sehr dunkel (Helligkeit 16)
+- Warnung    413s sehr dunkel (Helligkeit 16)
+- Warnung    414s sehr dunkel (Helligkeit 16)
+- Warnung    415s sehr dunkel (Helligkeit 17)
+- Warnung    416s sehr dunkel (Helligkeit 17)
+- Warnung    417s sehr dunkel (Helligkeit 17)
+- Warnung    418s sehr dunkel (Helligkeit 17)
+- Warnung    419s sehr dunkel (Helligkeit 17)
+- Warnung    426s sehr dunkel (Helligkeit 16)
+- Warnung    427s sehr dunkel (Helligkeit 15)
+- Warnung    427s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    428s sehr dunkel (Helligkeit 12)
+- Warnung    428s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    429s sehr dunkel (Helligkeit 13)
+- Warnung    429s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    455s sehr dunkel (Helligkeit 16)
+- Warnung    455s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    456s sehr dunkel (Helligkeit 16)
+- Warnung    456s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    457s sehr dunkel (Helligkeit 16)
+- Warnung    457s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    463s sehr dunkel (Helligkeit 18)
+- Warnung    463s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    464s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    471s sehr dunkel (Helligkeit 16)
+- Warnung    471s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    472s sehr dunkel (Helligkeit 18)
+- Warnung    472s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    496s sehr dunkel (Helligkeit 16)
+- Warnung    496s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    497s sehr dunkel (Helligkeit 17)
+- Warnung    497s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    523s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    524s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    525s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    540s sehr dunkel (Helligkeit 14)
+- Warnung    541s sehr dunkel (Helligkeit 14)
+- Warnung    542s sehr dunkel (Helligkeit 16)
+9 Fehler ❌

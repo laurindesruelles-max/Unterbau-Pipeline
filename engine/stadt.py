@@ -430,7 +430,8 @@ def build_cab(X=1100):
     boxes("cab_raum", [((X, 0, 0), (3, 3, 0.05)), ((X, 0.9, 0.6), (2.4, 0.6, 0.25)), ((X - 1.3, 0, 1.0), (0.05, 3, 2.0)), ((X, -1.0, 1.9), (3, 1.2, 0.05))], M["cab_in"])
     boxes("cab_dash_l", [((X + dx, 0.62, 0.74), (0.12, 0.01, 0.05)) for dx in (-0.6, -0.4, 0.3)], M["dash_l"])
     whl = cyls("cab_lenkrad", [((X - 0.5, 0.55, 0.95), 0.22, 0.04)], M["dark"], 32)
-    bpy.ops.object.light_add(type="POINT", location=(X - 0.2, 0.3, 1.2)); Lc = bpy.context.object; Lc.data.energy = 25; Lc.data.color = (1.0, 0.7, 0.4)
+    bpy.ops.object.light_add(type="POINT", location=(X - 0.2, 0.3, 1.2)); Lc = bpy.context.object; Lc.data.energy = 90; Lc.data.color = (1.0, 0.7, 0.4)
+    bpy.ops.object.light_add(type="AREA", location=(X, -1.2, 1.8)); La = bpy.context.object; La.data.energy = 60; La.data.size = 1.5; La.data.color = (0.6, 0.7, 1.0)
     boxes("cab_sitz", [((X - 0.5, -0.2, 0.45), (0.5, 0.5, 0.12)), ((X - 0.5, -0.45, 0.85), (0.5, 0.1, 0.8))], M["dark"])
     STATE_OBJ["fahrer"] = [boxes("fahrer_k", [((X - 0.5, -0.25, 0.9), (0.42, 0.26, 0.55))], M["shirt"], 0.08), cyls("fahrer_kopf", [((X - 0.5, -0.25, 1.32), 0.12, 0.22)], M["skin"])]
     # Blick durch die Frontscheibe: Straße bei Nacht

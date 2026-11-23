@@ -17,7 +17,7 @@ SETS = {   # loc, tgt, lens, A-Zustand, Anker
  "markt_gang_leer":  ((200.0, -6.0, 1.2), (200.0, 3.0, 1.1), 24, {"fill": 0.03, "gap": 1}, []),
  "markt_kuehl_leer": ((200.5, -3.0, 1.0), (201.1, 0.5, 0.7), 32, {"fill": 0.0, "gap": 1}, []),
  "markt_brot":       ((199.6, -2.0, 1.25), (199.0, 1.5, 1.0), 34, {"fill": 0.7}, []),
- "markt_obst":       ((200.6, 2.0, 0.9), (201.1, 5.0, 0.4), 34, {"fill": 0.4}, []),
+ "markt_obst":       ((199.9, -1.5, 1.45), (201.0, 2.0, 0.6), 32, {"fill": 0.4}, []),
  "markt_milch":      ((200.3, -1.4, 1.05), (201.0, 1.6, 0.75), 35, {"fill": 0.8, "gap": 1}, ["milchfach"]),
  "markt_mehl":       ((199.7, 0.5, 1.0), (199.0, 3.5, 0.6), 34, {"fill": 0.15}, []),
  "es_regal":         ((200.4, 1.0, 1.1), (201.1, 4.0, 0.7), 34, {"fill": 0.9}, []),
@@ -268,7 +268,8 @@ def main():
                       "B": sp.get("B"), "anchors": anc})
         if st == "steuerzentrale" and not any(f.get("type") == "screen" for f in sp.get("fx", [])):
             sp["fx"] = list(sp.get("fx", [])) + [dict(SCR("02"), anchor="screen_l"), dict(SCR(14), anchor="screen_c"), dict(SCR(26), anchor="screen_r")]
-        plan.append({"id": sid, "dur": e["sek"], "move": sp.get("move", "push"), "trans": sp.get("trans", "diff"),
+        tilt = abs(loc[0]) < 150 and abs(loc[1]) < 150 and loc[2] > 2.5     # Miniatur-Unschärfe nur bei Blicken von oben auf die Stadt
+        plan.append({"id": sid, "tilt": tilt, "dur": e["sek"], "move": sp.get("move", "push"), "trans": sp.get("trans", "diff"),
                      "t_trans": sp.get("t_trans", [0.2, 0.8]), "fx": sp.get("fx", []), "anim": e["animation"], "i": e["i"]})
     # Folgen am selben Schauplatz = eine Kamera, eine durchgehende Fahrt (Laurin 22.11.2026: keine Sprung-Schnitte)
     i = 0
@@ -282,6 +283,19 @@ def main():
             plan[k].update(run_k=k - i, run_len=j - i + 1, run_move=mv, run_dir=1 if (i % 2) else -1,
                            run_u=[acc / tot, (acc + plan[k]["dur"]) / tot]); acc += plan[k]["dur"]
         i = j + 1
+    # Gleicher Ort, aber anderer Schauplatz-Name (z. B. zwei Regal-Ansichten) oder Flug zwischen Stadtansichten: weich überblenden
+    def ort(sh):
+        x, y, z = sh["cam"]["loc"]
+        if 150 < x < 260: return "gang"
+        if 1380 < x < 1420: return "modellgelaende"
+        if y > 150: return "karte"
+        if 1190 < x < 1210: return "leitstand"
+        if 1090 < x < 1110: return "kabine"
+        if sh["set"] in ("bahnhof_tafel", "kalender"): return "tafel"
+        if abs(x) < 50 and abs(y) < 40: return "stadt"
+        return sh["set"]
+    for k in range(1, len(shots)):
+        if plan[k]["run_k"] == 0 and ort(shots[k]) == ort(shots[k - 1]): plan[k]["xfade"] = True
     json.dump(shots, open(os.path.join(a.out, "shots.json"), "w"), indent=0)
     json.dump(plan, open(os.path.join(a.out, "plan.json"), "w"), indent=0, ensure_ascii=False)
     print(len(shots), "Einstellungen,", round(sum(p["dur"] for p in plan), 1), "s")

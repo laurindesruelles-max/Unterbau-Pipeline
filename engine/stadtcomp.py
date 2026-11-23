@@ -118,7 +118,7 @@ class Shot:
             else: s.order = 0.5 * (s.XX / s.W) + 0.2 * (1 - s.YY / s.H) + 0.3 * blocks
         h = abs(hash(spec["id"])) % 1000 / 1000.0
         s.dir = (1 if h > 0.5 else -1)
-        s.TS = np.clip((np.abs(s.YY - s.H * 0.5) - s.H * 0.2) / (s.H * 0.25), 0, 1) if spec.get("tilt", True) else None
+        s.TS = np.clip((np.abs(s.YY - s.H * 0.5) - s.H * 0.28) / (s.H * 0.3), 0, 1) * 0.7 if spec.get("tilt", True) else None
 
     def warp(s, img, u):
         """Keine 2,5D-Verzerrung mehr (Laurin 22.11.2026: bei Blender-Objekten verschwommen). Ruhige, gleichmäßige Kamerafahrt
@@ -153,7 +153,7 @@ class Shot:
             img = s.effect(img, fx, t, u)
         fr = s.warp(img.astype(np.float32), u)
         if s.TS is not None:
-            bl = cv2.GaussianBlur(fr, (0, 0), 6); fr = fr * (1 - s.TS[..., None]) + bl * s.TS[..., None]
+            bl = cv2.GaussianBlur(fr, (0, 0), 4); fr = fr * (1 - s.TS[..., None]) + bl * s.TS[..., None]
         return fr
 
     def effect(s, img, fx, t, u):
@@ -266,13 +266,16 @@ def main():
                           "-c:v", "libx264", "-preset", "veryfast", "-crf", "21", "-pix_fmt", "yuv420p", a.out], stdin=subprocess.PIPE)
     rng = np.random.default_rng(1); n = 0; tacc = 0.0
     prev = None
+    full = json.load(open(a.plan))
+    if a.i0 > 0 and plan and (plan[0].get("run_k", 0) > 0 or plan[0].get("xfade")):      # Teil beginnt mitten in einer Folge: letztes Bild davor vorbereiten
+        ps = full[a.i0 - 1]; prev = Shot(ps, a.rdir, OW, OH).frame(ps["dur"] - 1 / FPS)
     for spec in plan:
         sh = Shot(spec, a.rdir, OW, OH)
         tacc += spec["dur"]; frames = int(round(tacc * FPS)) - n
         last = None
         for k in range(frames):
             fr = sh.frame(k / FPS)
-            if prev is not None and spec.get("run_k", 0) > 0 and k / FPS < 0.4:   # gleicher Ort: weich überblenden statt schneiden
+            if prev is not None and (spec.get("run_k", 0) > 0 or spec.get("xfade")) and k / FPS < 0.4:   # gleicher Ort: weich überblenden statt schneiden
                 w = ease(k / FPS / 0.4); fr = prev * (1 - w) + fr * w
             last = fr; p.stdin.write(grade(fr, rng).tobytes())
         prev = last

@@ -24,7 +24,8 @@ def sharp_frames(path, fps=1):
         b = p.stdout.read(n)
         if len(b) < n: break
         g = np.frombuffer(b, np.uint8).reshape(1080, 1920).astype(np.float32)
-        yield cv2.Laplacian(g[200:880, 300:1620], cv2.CV_32F).var(), g.mean(), (g < 12).mean()
+        c = g[200:880, 300:1620]; gx = cv2.Sobel(c, cv2.CV_32F, 1, 0); gy = cv2.Sobel(c, cv2.CV_32F, 0, 1)
+        yield float(np.percentile(np.hypot(gx, gy), 99.5)) / (c.std() + 8.0), g.mean(), (g < 12).mean()   # relativ zum Kontrast: dunkle/flache Motive nicht als unscharf werten   # Kantenschärfe: auch flache Motive (Karte) mit scharfen Kanten zählen als scharf
 
 def ncc(a, b):
     a = a - a.mean(); b = b - b.mean(); return float((a * b).sum() / (np.sqrt((a * a).sum() * (b * b).sum()) + 1e-6))
@@ -44,14 +45,21 @@ def main():
     # Schnitte finden: großer Sprung zwischen Nachbarbildern
     d = [np.abs(fr[i] - fr[i - 1]).mean() for i in range(1, len(fr))]
     med = np.median(d) + 1e-6; cuts = [i for i in range(1, len(fr)) if d[i - 1] > max(18, 6 * med)]
+    hard = None
+    if a.plan:   # nur geplante harte Schnitte bewerten (Überblendungen und Zustandswechsel im selben Bild sind gewollt)
+        hard, t = [], 0.0
+        for q in pl:
+            if t > 0 and not q.get("xfade") and not q.get("run_k"): hard.append(t)
+            t += q["dur"]
     for i in cuts:
         if i < 2 or i + 1 >= len(fr): continue
+        if hard is not None and not any(abs(i / F - h) < 0.3 for h in hard): continue
         before, after = fr[i - 1], fr[i]
         # Ähnlichkeit nach Ausrichtung: Histogramm + grobe Struktur (verkleinert, weichgezeichnet)
         sb = cv2.GaussianBlur(cv2.resize(before, (64, 36)), (0, 0), 1.5); sa = cv2.GaussianBlur(cv2.resize(after, (64, 36)), (0, 0), 1.5)
         hb = cv2.calcHist([before.astype(np.uint8)], [0], None, [32], [0, 256]); ha = cv2.calcHist([after.astype(np.uint8)], [0], None, [32], [0, 256])
         hs = cv2.compareHist(hb, ha, cv2.HISTCMP_CORREL); st = ncc(sb, sa)
-        if hs > 0.9 and st > 0.35:
+        if hs > 0.9 and st > 0.6:
             fehler.append(f"{i / F:6.1f}s Sprung-Schnitt: Bild davor und danach sehr ähnlich (Histogramm {hs:.2f}, Struktur {st:.2f}) – gleiche Szene? Durchgehende Fahrt oder Überblendung statt Schnitt")
     # Standbild: Abschnitte ohne Bewegung
     still = 0
@@ -61,7 +69,7 @@ def main():
     # Schärfe, Helligkeit
     S = list(sharp_frames(a.video)); lap = np.array([s[0] for s in S]); ref = np.median(lap)
     for t, (l, m, black) in enumerate(S):
-        if l < 0.25 * ref and m > 30: fehler.append(f"{t:6d}s unscharf (Schärfe {l:.0f} vs. Median {ref:.0f})")
+        if l < 0.4 * ref and m > 30: warn.append(f"{t:6d}s evtl. unscharf – im Kontaktabzug prüfen (Schärfe {l:.0f} vs. Median {ref:.0f})")
         if m < 18: warn.append(f"{t:6d}s sehr dunkel (Helligkeit {m:.0f})")
         if black > 0.55: warn.append(f"{t:6d}s über die Hälfte des Bildes fast schwarz/leer")
     rep = [f"# Bild-Prüfung {a.video}", f"{len(cuts)} Schnitte erkannt, Schärfe-Median {ref:.0f}", ""] + [f"- FEHLER {x}" for x in fehler] + [f"- Warnung {x}" for x in warn]

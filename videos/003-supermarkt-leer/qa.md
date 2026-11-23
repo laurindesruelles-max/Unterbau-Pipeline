@@ -58,3 +58,10 @@ Tabelle: Aussage im Skript | Quelle (Link) | Stimmt? (ja / teilweise / nein / un
 - Faktencheck Skript v2: unabhängiger Agent, 20 Punkte korrigiert (siehe Verlauf)
 - Shorts: 5 Ausschnitte (shorts_003.py), ohne neue Sätze
 - vidIQ-Entwurf neu: postId 9ec00502-5e27-46ee-a500-b654616ad663 (geplant 24.11.2026 19:00, erst nach Laurins „ja“)
+
+## Fassung 3 (23.11.2026): ohne 2,5D, durchgehende Fahrten
+- Laurin 22.11.: 2,5D bei Blender-Objekten verschwommen; Sprung-Schnitte (z. B. Deutschlandkarte zweimal mit anderem Winkel)
+- Render 1920×1080 ohne Tiefenverzerrung, gleichmäßige Fahrt je Folge, 0,4-s-Überblendung am selben Ort (32 Stellen), Tilt-Shift nur bei Blicken von oben
+- Bild-Prüfung (engine/bildcheck.py, neu): alte Fassung 72 Sprung-Schnitte, neue Fassung laut Plan 0; 1 Bild-Hinweis 29,4 s (Rathausuhr → Fallblatt-Tafel = zwei verschiedene Motive, gesichtet, ok); „evtl. unscharf“ nur bei flachen Karten/dunklen Innenräumen, im Kontaktabzug gesichtet
+- Ton unverändert (gleiche Zeiten): launch-grade 22/23, −14,3 LUFS
+- vidIQ-Entwurf 9ec00502 mit neuem Video (uploadId 773f0b35), geplant 24.11.2026 19:00, wartet auf „ja“
