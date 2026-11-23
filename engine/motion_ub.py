@@ -14,7 +14,7 @@ Im Video-Skript:
     import motion_ub as MO
     K = MO.clip("flow", {...}, len=5.0); MO.build(WORK)
     frame = MO.frame(K, t - t0); events += MO.sounds(K, t0)
-Einmalig: `cd engine/motion2d && npm install`. Tempo ~3,4 s bleibt. Fakten wie immer mit Quelle.
+Einmalig: `cd engine/motion2d && npm install`. Tempo: Text/Zahl/Grafik mindestens 4 s, sonst mindestens 2,5 s (Laurin 23.11.2026, HANDWERK.md „Lesbarkeit vor Tempo“). Fakten wie immer mit Quelle.
 """
 import os, json, hashlib, subprocess
 import numpy as np, cv2

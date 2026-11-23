@@ -99,12 +99,12 @@ def path_point(P, u):
     return (a[0] * (1 - f) + b[0] * f, a[1] * (1 - f) + b[1] * f)
 
 _CAPS = {}
-def video_frame(path, t, W=1600, H=900):
+def video_frame(path, t, W=1600, H=900, hold=False):
     """Bild eines Clips (echter Pixabay-Clip oder 2D-Motion) zur Zeit t; Schleife, wenn der Clip kürzer ist."""
     c = _CAPS.get(path)
     if c is None:
         cap = cv2.VideoCapture(path); c = _CAPS[path] = [cap, -1, None, max(1, int(cap.get(cv2.CAP_PROP_FRAME_COUNT))), cap.get(cv2.CAP_PROP_FPS) or 25]
-    i = int(t * c[4]) % c[3]
+    i = min(int(t * c[4]), c[3] - 1) if hold else int(t * c[4]) % c[3]   # 2D-Grafiken bleiben am Ende stehen statt zu springen
     if i != c[1]:
         if i != c[1] + 1: c[0].set(cv2.CAP_PROP_POS_FRAMES, i)
         ok, fr = c[0].read()
@@ -116,7 +116,7 @@ class VShot:
     def __init__(s, spec):
         s.sp = spec; s.W, s.H = 1600, 900; s.anc = {}
     def frame(s, t):
-        sp = s.sp; img = video_frame(sp["video"], sp.get("ss", 0.0) + t, s.W, s.H)
+        sp = s.sp; img = video_frame(sp["video"], sp.get("ss", 0.0) + t, s.W, s.H, hold=sp.get("kind") == "mo")
         if sp.get("kind") == "clip":
             z = 1.0 + 0.018 * (sp.get("ss", 0.0) + t); cx, cy = s.W / 2, s.H / 2   # Zoom an der Clip-Zeit: Fortsetzungen schließen nahtlos an
             M = np.float32([[z, 0, cx - z * cx], [0, z, cy - z * cy]]); img = cv2.warpAffine(img, M, (s.W, s.H), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)

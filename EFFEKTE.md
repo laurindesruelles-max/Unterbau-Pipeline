@@ -11,7 +11,7 @@ Weitere freigegebene Animationsarten für die Nische und die Bild-Drehbuch-Regel
 | Technik | Blender-Miniaturwelt plus Querschnitt. Mischform: Einzelbilder mit Tiefeninfo plus 2,5D-Kamera und animierten Ebenen, echtes 3D für Schlüsselmomente |
 | Farben | Nachtblau, orange Lichter (echtes Licht, kein Leuchteffekt) |
 | Kamera | Tilt-Shift-Flug über die Stadt (gehört nur Unterbau) |
-| Tempo | ~3,4 s, Countdown-Druck |
+| Tempo | ~4–5 s je Einstellung, Text/Zahl/Grafik mindestens 4 s (Laurin 23.11.2026); Spannung kommt aus dem Countdown, nicht aus Schnitt-Hektik |
 | Schrift | Inter, sachlich |
 | Übergang | Flug durch die Stadt zum nächsten Ort |
 | Zahlen und Karten | in der Welt: Regale, Lichter, Anzeigetafel, Countdown-Uhr, Modellgelände |

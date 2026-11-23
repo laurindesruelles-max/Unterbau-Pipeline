@@ -23,13 +23,16 @@ bilddrehbuch.json = Liste von Einstellungen in Videoreihenfolge:
 """
 import json, re, sys, pathlib, argparse
 
-WPS = 2.4  # deutsche/englische Sprechgeschwindigkeit der Kanalstimmen, Wörter pro Sekunde
+WPS = 2.4
+# Lesbarkeit (Laurin 23.11.2026, alle Kanäle: „zu viele Animationen hintereinander bzw. zu kurz – man kam nicht hinterher“)
+MIN_TEXT = 4.0   # Einstellung mit Text, Zahl, Datum oder Grafik bleibt mindestens so lange stehen
+MIN_BILD = 2.5   # jede andere Einstellung  # deutsche/englische Sprechgeschwindigkeit der Kanalstimmen, Wörter pro Sekunde
 
 # Kanal-Regeln: welche Animationen Zeit/Zahl EXAKT tragen können (zusätzlich zur Pflicht „exakt“)
 KANAL = {
-    "goldsmith":   {"min_events": 12, "max_sek": 5.5},
+    "goldsmith":   {"min_events": 11, "max_sek": 5.5},
     "meisterwerk": {"min_events": 12, "max_sek": 6.0},
-    "unterbau":    {"min_events": 15, "max_sek": 4.5},
+    "unterbau":    {"min_events": 10, "max_sek": 6.0},
     "denkmuster":  {"min_events": 12, "max_sek": 6.0},
     "nachtausgabe": {"min_events": 13, "max_sek": 5.0},
 }
@@ -89,7 +92,12 @@ def main():
             fehler.append(f"{ort} Animation „{anim}“ steht nicht in EFFEKTE.md/ANIMATION.md")
         if len(zeigt.split()) < 4:
             fehler.append(f"{ort} „zeigt“ zu vage – konkret beschreiben, was im Bild passiert")
-        if sek > regel["max_sek"] + 1.0:
+        textlast = bool(inhalt & {"zahl", "zeit"}) or "motion" in anim or "Zahl" in anim or "Tafel" in anim or bool(s.get("text"))
+        if sek < MIN_BILD - 0.05:
+            fehler.append(f"{ort} nur {sek:.1f}s – zu kurz, der Zuschauer kommt nicht hinterher (min {MIN_BILD}s; Sätze zusammenfassen)")
+        elif textlast and sek < MIN_TEXT - 0.05:
+            fehler.append(f"{ort} Text/Zahl/Grafik nur {sek:.1f}s sichtbar (min {MIN_TEXT}s) – mit Nachbarsatz zusammenfassen oder früher einblenden")
+        if sek > regel["max_sek"] + (3.0 if textlast else 1.0):
             fehler.append(f"{ort} {sek:.1f}s ohne neues Bild-Ereignis (max {regel['max_sek']}s) – Satz teilen oder zweites Ereignis")
         elif sek > regel["max_sek"]:
             warn.append(f"{ort} {sek:.1f}s lang – Eigenbewegung im Bild sicherstellen")
