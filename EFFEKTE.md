@@ -35,6 +35,15 @@ Weitere freigegebene Animationsarten für die Nische und die Bild-Drehbuch-Regel
 | Bildschirm in der Welt | Echte Clips (Pixabay) laufen auf einem Fernseher oder Plakat im Modell | echte Bilder | neu |
 | Ablauf-Kette | Ein Teil des Systems fällt nach dem anderen wie Dominosteine | „Wenn A ausfällt, dann …“ | neu |
 
+| Fallblatt-Zahl (`motion` counter) | Zahl klappt auf einer Bahnhofs-Anzeigetafel hoch, Modellstadt im Hintergrund | harte Zahl (Vollbild-Variante von „Zahl in der Welt“) | neu, ANOM-Wissen 23.11. |
+| Ablauf-Kette 2D (`motion` flow) | Modellhäuser als Stationen, Ausfall = Licht aus + rote Lampe, Abzweig mit Schlag | „Wenn A ausfällt …“ | neu, ANOM-Wissen 23.11. |
+| Lichter-aus-Raster (`motion` grid) | Raster aus Modellhäusern, betroffene werden dunkel | Haushalte, Betriebe | neu, ANOM-Wissen 23.11. |
+| Häuserzeilen-Balken (`motion` bars) | Balken als Häuserzeilen mit Fenstern | Vergleich | neu, ANOM-Wissen 23.11. |
+| Warenstrom-Karte (`motion` map) | Laternen an Orten, fahrende LKW-Lichter auf der Route, Land orange | Lieferwege | neu, ANOM-Wissen 23.11. |
+| Anzeigetafel dreht sich (`motion` flip) | Tafel dreht sich → Auflösung | Wendung | neu, ANOM-Wissen 23.11. |
+
+**Erweiterung 23.11.2026 (ANOM-Stilprobe):** `motion`-Bausteine **zusätzlich** zur Miniaturwelt und zu den Overlays aus `engine/motion.py` (nichts ersetzt). Eigene Formen: Fallblatt-Tafel, Modellhäuser, Fensterlichter, LKW-Lichter, Laternen, Infrastruktur-Symbole. Doku: `engine/motion_ub.py`. Demo `Unterbau_Motion_Bausteine.mp4` (23.11.2026).
+
 **Raus:** KI-Standbilder mit Kamerafahrt als eigene Einstellung. Sie kommen nur noch als Bildschirm in der Welt vor.
 
 Stilprobe: `stilprobe_unterbau.mp4` (20.11.2026, Test der Mischform). Sounds folgen nach dem Casting (`doku-ohren`).

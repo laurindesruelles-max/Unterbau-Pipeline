@@ -24,3 +24,6 @@ fi
 # Laurins Sound-Bibliothek (19.11.2026): eigene Effekte dieses Kanals + gemeinsame Geräusche -> /home/claude/sfx-bibliothek/bibliothek
 python3 -c "import sys; sys.path.insert(0, '$AK'); import bibliothek; print('Sound-Bibliothek bereit:', bibliothek.ensure('unterbau'))" || echo "WARNUNG: Sound-Bibliothek nicht geladen"
 echo "Arbeitsordner bereit: $WORK  (Stimme -> audio/, Bilder -> img/NN.png, dann words/ mit engine/wordtimes.py)"
+
+# 2D-Motion-Graphics (Remotion): Node-Pakete einmal installieren
+[ -d "$(dirname "$0")/engine/motion2d/node_modules" ] || (cd "$(dirname "$0")/engine/motion2d" && npm install --silent >/dev/null 2>&1 && echo "motion2d bereit")

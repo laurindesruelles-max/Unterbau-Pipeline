@@ -43,3 +43,6 @@ Ein neues Video geht aus **jedem** Claude-Chat mit dem Skill `unterbau-video` (R
 | `engine/shorts.py` | 5–7 Shorts aus dem fertigen Video (neuer Einstieg/Schluss von Julian, Untertitel mit Wortzeiten, Schlusskarte) | nur die neuen Sätze |
 
 Credits pro Video: **Ziel 35–45, Obergrenze 45** wie Goldsmith/Meisterwerk (Stimme ~25, max. 60 Bilder = 15, Thumbnails ~1, Shorts-Sätze ~2). Keine KI-Videoclips, keine Musik pro Video (feste Bibliothek in assets/music), Geräusche kostenlos. Automatischer Lauf alle 2 Tage (Scheduled Task „Unterbau-Video alle 2 Tage“).
+
+## 2D-Motion-Graphics (seit 23.11.2026, Erweiterung aus der ANOM-Stilprobe)
+`engine/motion_ub.py` + `engine/motion2d/` (Remotion) im Modellstadt-Look (Fallblatt, Modellhäuser, LKW-Lichter). Ergänzt Miniaturwelt und Overlays, ersetzt nichts. Einmalig `cd engine/motion2d && npm install`. API im Dateikopf.

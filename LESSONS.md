@@ -99,3 +99,5 @@ Referenz: Wissenswert „Wie eine Spionin den größten CEO der Welt ruinierte�
 - **Kaltstart als Szene mit Datum + Ort** („Es ist der 3. März 2021, 6:40 Uhr, Hafen von …“), dann Eskalationstreppe (3–4 Stufen, jede größer) und ein 3-teiliges Versprechen.
 - **Rahmen:** Das erste Bild des Videos kommt am Ende verändert zurück.
 - **Schluss mit 3 Szenarien** (was passiert, wenn …) + Kommentar-Frage.
+
+- **2D-Motion-Graphics (23.11.2026):** Laurin will das Handwerk der ANOM-Stilprobe (viel 2D-Animation, Bildwechsel alle 2–4 s) in jedem Kanal – als Erweiterung im eigenen Stil, nichts überschreiben; Unterschied nicht nur in Farben, sondern auch in Symbolen und Formen. Bisheriges (echte Fakten mit Quelle, Effekt-Katalog, Sounds) bleibt.
