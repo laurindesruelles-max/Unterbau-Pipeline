@@ -1,0 +1,23 @@
+UPLOAD-PAKET Unterbau 004 – Stand 23.11.2026
+
+TITEL (zum Kopieren):
+Was wirklich passiert, wenn du 112 wählst
+
+ALTERNATIVTITEL (Test & Compare):
+1) 112 gewählt – und dann? Die ersten 9 Minuten
+2) Warum Deutschland 16 Notruf-Uhren hat
+
+FORMAT: Unterbau (Erklärstück) mit nachgestellter Szene
+KATEGORIE: Bildung (categoryId 27)
+PLAYLIST (neu, Vorschlag): „Notfall & Sicherheit – wer hilft, wenn es ernst wird“ – Beschreibung: „Wie Notruf, Rettungsdienst und Katastrophenschutz funktionieren, wer entscheidet und was passiert, wenn sie ausfallen.“
+
+TAGS (vidIQ: „notruf 112“ Suchvolumen 57/100, Konkurrenz 32, Nachfrage +75 %):
+notruf 112, 112 notruf, notruf, rettungsdienst, leitstelle, rettungswagen, hilfsfrist, notrufnummer, björn steiger, wiederbelebung, herzstillstand, telefonreanimation, aml standort, notruf ausfall, 11.11.2021 notruf, 116117, notfallreform, erste hilfe, unterbau, wie funktioniert der notruf, was passiert wenn ich 112 wähle
+
+THUMBNAILS: thumb_A.jpg (empfohlen: Leitstelle, „112 – und dann?“), thumb_B.jpg (Handy am Boden, „Wählst du 112 …“), thumb_C.jpg (Modellstadt, „9 Minuten bis Hilfe“)
+
+BESCHREIBUNG: siehe beschreibung.txt (Kapitel, Quellen, KI-Hinweis, unter 5.000 Zeichen)
+
+YOUTUBE-EINSTELLUNGEN: „Veränderte oder synthetische Inhalte“ = Ja (KI-Stimme, nachgestellte Szene) · keine bezahlte Werbung · nicht für Kinder · öffentlich, geplant 25.11.2026 19:00 (Europe/Berlin)
+
+SHORTS: siehe Shorts_Texte.txt (6 Shorts, Laurin postet selbst)

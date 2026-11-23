@@ -38,7 +38,7 @@ def path(k): return os.path.join(_WK["dir"], "motion", f"{k}.mp4")
 
 def build(wk="."):
     _WK["dir"] = wk; os.makedirs(os.path.join(wk, "motion"), exist_ok=True)
-    todo = [dict(v, out=os.path.abspath(path(k))) for k, v in _JOBS.items() if not os.path.exists(path(k))]
+    todo = [dict(v, out=os.path.abspath(path(k)), scale=float(os.environ.get("MO_SCALE", "1"))) for k, v in _JOBS.items() if not os.path.exists(path(k))]
     if not todo: return
     jf = os.path.abspath(os.path.join(wk, "motion", "jobs.json")); json.dump(todo, open(jf, "w"), ensure_ascii=False, indent=1)
     print(f"motion: {len(todo)} Clips rendern ...")

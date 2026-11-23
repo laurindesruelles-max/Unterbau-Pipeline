@@ -12,7 +12,7 @@ for (const j of jobs) {
   if (j.still !== undefined) {
     await renderStill({serveUrl, composition: comp, inputProps, frame: Math.round(j.still * 30), output: j.out, browserExecutable: chrome, scale: j.scale || 1});
   } else {
-    await renderMedia({serveUrl, composition: comp, inputProps, codec: "h264", crf: 16, muted: true, outputLocation: j.out, browserExecutable: chrome, concurrency: 2});
+    await renderMedia({serveUrl, composition: comp, inputProps, codec: "h264", crf: 18, muted: true, outputLocation: j.out, browserExecutable: chrome, concurrency: 2, scale: j.scale || 1});
   }
   console.log("ok", j.out);
 }

@@ -1,0 +1,2887 @@
+[
+ {
+  "satz": "Eine Frau wählt 112.",
+  "sek": 2.94,
+  "zeigt": "Handy-Bildschirm am Küchenboden: Anruf an 112 läuft, Zeit tickt",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 0,
+  "t0": 0.0
+ },
+ {
+  "satz": "04:12 Uhr, eine Novembernacht in Kassel.",
+  "sek": 1.49,
+  "zeigt": "Dein Haus in der Modellstadt bei Nacht, Ortsmarke Kassel · 04:12",
+  "animation": "Dein Haus",
+  "inhalt": [
+   "zeit",
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 1,
+  "t0": 2.94
+ },
+ {
+  "satz": "04:12 Uhr, eine Novembernacht in Kassel.",
+  "sek": 1.49,
+  "zeigt": "Ofenuhr in der Küche klappt auf 04:12",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 1,
+  "t0": 4.43
+ },
+ {
+  "satz": "Ihr Mann liegt vor dem Kühlschrank.",
+  "sek": 1.84,
+  "zeigt": "Küche von oben: Mann liegt vor dem Kühlschrank, Frau kniet daneben, Handy leuchtet am Boden",
+  "animation": "Menschen reagieren",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 2,
+  "t0": 5.92
+ },
+ {
+  "satz": "Er atmet nicht mehr normal.",
+  "sek": 1.8,
+  "zeigt": "Nah am liegenden Mann, Licht flackert leicht",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 3,
+  "t0": 7.76
+ },
+ {
+  "satz": "Ab jetzt läuft eine Uhr.",
+  "sek": 1.52,
+  "zeigt": "Rathausuhr der Modellstadt springt von 04:12 weiter",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 4,
+  "t0": 9.56
+ },
+ {
+  "satz": "Kommt die Hilfe rechtzeitig?",
+  "sek": 1.76,
+  "zeigt": "Fallblatt-Tafel am Bahnhof klappt auf MINUTE 0",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "frage:rechtzeitig",
+  "i": 5,
+  "t0": 11.08
+ },
+ {
+  "satz": "Ohne Wiederbelebung sinkt seine Chance mit jeder Minute um etwa 10 Prozent.",
+  "sek": 2.44,
+  "zeigt": "Raster aus 100 Herzen, pro Minute werden 10 dunkel, Zahl 10 % klappt hoch",
+  "animation": "Lichter-aus-Raster (`motion` grid)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 6,
+  "t0": 12.84
+ },
+ {
+  "satz": "(Fortsetzung) Ohne Wiederbelebung sinkt seine Chance m",
+  "sek": 2.44,
+  "zeigt": "Raster aus 100 Herzen, pro Minute werden 10 dunkel, Zahl 10 % klappt hoch",
+  "animation": "Lichter-aus-Raster (`motion` grid)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 6,
+  "t0": 15.28
+ },
+ {
+  "satz": "Es klingelt. Einmal. Zweimal.",
+  "sek": 3.2,
+  "zeigt": "Leitstelle bei Nacht: an einem Platz blinkt das orange Telefonlicht – einmal, zweimal",
+  "animation": "Steuerzentrale",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 7,
+  "t0": 17.72
+ },
+ {
+  "satz": "Irgendwo in der Stadt nimmt ein Mensch ab, den sie nie sehen wird.",
+  "sek": 3.84,
+  "zeigt": "Tilt-Shift-Flug über die Stadt zur Leitstelle, Ortsmarke erscheint",
+  "animation": "Tilt-Shift-Flug",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 10,
+  "t0": 20.92
+ },
+ {
+  "satz": "In den nächsten Sekunden entscheidet er, wer losfährt und wohin.",
+  "sek": 3.92,
+  "zeigt": "Über die Schulter des Disponenten: Einsatzmonitor füllt sich – Ort, Meldebild, Fahrzeug",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 11,
+  "t0": 24.76
+ },
+ {
+  "satz": "Dahinter stehen 240 Leitstellen, 16 Gesetze und ein Netz.",
+  "sek": 3.32,
+  "zeigt": "Deutschlandkarte, 240 Lichtpunkte für die Leitstellen schwärmen aus",
+  "animation": "Warenstrom-Karte (`motion` map)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 12,
+  "t0": 28.68
+ },
+ {
+  "satz": "Dahinter stehen 240 Leitstellen, 16 Gesetze und ein Netz.",
+  "sek": 3.32,
+  "zeigt": "Die Stadt bei Nacht: ganze Straßenzüge werden dunkel – Hinweis auf den Ausfall",
+  "animation": "Lichter gehen aus",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "frage:ausfall",
+  "i": 12,
+  "t0": 32.0
+ },
+ {
+  "satz": "Am Ende kennst du die drei Dinge, die in solchen Minuten zählen.",
+  "sek": 3.92,
+  "zeigt": "Querschnitt: die Straße reißt auf, darunter laufen orange Impulse durch die Leitungen",
+  "animation": "Querschnitt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "frage:dreidinge",
+  "i": 13,
+  "t0": 35.32
+ },
+ {
+  "satz": "Diese Szene ist nachgestellt.",
+  "sek": 1.84,
+  "zeigt": "Küche, Einblendung Szene nachgestellt",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 14,
+  "t0": 39.24
+ },
+ {
+  "satz": "Alles andere ist belegt.",
+  "sek": 2.12,
+  "zeigt": "Kamera fährt vom Haus zurück in die nächtliche Stadt",
+  "animation": "Rückflug zum Anfang",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 15,
+  "t0": 41.08
+ },
+ {
+  "satz": "Titelkarte",
+  "sek": 4.6,
+  "zeigt": "Titelkarte UNTERBAU über der Modellstadt",
+  "animation": "Tilt-Shift-Flug",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": -1,
+  "t0": 43.2
+ },
+ {
+  "satz": "Kapitel 1",
+  "sek": 4.5,
+  "zeigt": "Kapitelkarte 1 vor der Leitstelle",
+  "animation": "Tilt-Shift-Flug",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": -1,
+  "t0": 47.8
+ },
+ {
+  "satz": "Minute null.",
+  "sek": 1.2,
+  "zeigt": "Tafel klappt auf MINUTE 0 · 04:12",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 16,
+  "t0": 52.3
+ },
+ {
+  "satz": "Das Handy der Frau verbindet sich mit dem nächsten Funkmast.",
+  "sek": 3.36,
+  "zeigt": "Vom Haus springt ein oranger Impuls zum Funkmast, die Mastlampe blinkt",
+  "animation": "Netz-Puls",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 17,
+  "t0": 53.5
+ },
+ {
+  "satz": "Der Anruf landet nicht in einer Zentrale für ganz Deutschland.",
+  "sek": 3.44,
+  "zeigt": "Modellkarte Deutschland: keine einzelne Zentrale, viele Lichter",
+  "animation": "Modell-Karte",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 18,
+  "t0": 56.86
+ },
+ {
+  "satz": "Er landet dort, wo der Funkmast steht.",
+  "sek": 2.56,
+  "zeigt": "Echter Funkmast vor Wolkenhimmel (Match-Cut zum Modellmast)",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 19,
+  "t0": 60.3
+ },
+ {
+  "satz": "So schreibt es eine Verordnung vor: bei der Leitstelle, die für diesen Ort zuständig ist.",
+  "sek": 2.55,
+  "zeigt": "Ablauf-Kette: Handy → Funkmast → zuständige Leitstelle, ein Paket wandert mit",
+  "animation": "Ablauf-Kette 2D (`motion` flow)",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 20,
+  "t0": 62.86
+ },
+ {
+  "satz": "(Fortsetzung) So schreibt es eine Verordnung vor: bei ",
+  "sek": 2.55,
+  "zeigt": "Ablauf-Kette: Handy → Funkmast → zuständige Leitstelle, ein Paket wandert mit",
+  "animation": "Ablauf-Kette 2D (`motion` flow)",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 20,
+  "t0": 65.41
+ },
+ {
+  "satz": "Davon gibt es in Deutschland rund 240.",
+  "sek": 3.12,
+  "zeigt": "Fallblatt-Zahl klappt auf 240",
+  "animation": "Fallblatt-Zahl (`motion` counter)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 21,
+  "t0": 67.95
+ },
+ {
+  "satz": "Meist betreibt sie der Landkreis oder die Stadt.",
+  "sek": 2.8,
+  "zeigt": "Die Leitstelle der Modellstadt, Schild: Träger Kreis oder Stadt",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 22,
+  "t0": 71.08
+ },
+ {
+  "satz": "Über 30 Millionen Notrufe pro Jahr.",
+  "sek": 2.84,
+  "zeigt": "Über der Stadt leuchten hunderte orange Punkte auf – Notrufe",
+  "animation": "Netzwerk-Karte",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 23,
+  "t0": 73.88
+ },
+ {
+  "satz": "(Fortsetzung) Über dreißig Millionen Notrufe gehen in ",
+  "sek": 2.84,
+  "zeigt": "Über der Stadt leuchten hunderte orange Punkte auf – Notrufe",
+  "animation": "Netzwerk-Karte",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 23,
+  "t0": 76.72
+ },
+ {
+  "satz": "Das ist ungefähr einer pro Sekunde.",
+  "sek": 2.33,
+  "zeigt": "Fallblatt-Zahl über 30.000.000, Unterzeile 1 pro Sekunde",
+  "animation": "Fallblatt-Zahl (`motion` counter)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 24,
+  "t0": 79.56
+ },
+ {
+  "satz": "In Berlin alle 28 Sekunden.",
+  "sek": 3.52,
+  "zeigt": "Modellkarte: Berlin markiert, alle 28 Sekunden ein Notruf",
+  "animation": "Modell-Karte",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 25,
+  "t0": 81.89
+ },
+ {
+  "satz": "Ohne SIM-Karte seit 2009 nicht mehr.",
+  "sek": 4.32,
+  "zeigt": "Echte Hände tippen auf einem Smartphone, Einblendung: ohne SIM kein Notruf seit 2009",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 26,
+  "t0": 85.41
+ },
+ {
+  "satz": "Über das Netz eines fremden Anbieters aber schon, sogar ohne Guthaben.",
+  "sek": 4.32,
+  "zeigt": "Funknetz-Waben leuchten auf: fremdes Netz trägt den Notruf",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 27,
+  "t0": 89.73
+ },
+ {
+  "satz": "In Kassel nimmt der Disponent ab.",
+  "sek": 2.05,
+  "zeigt": "Disponent nimmt ab, auf dem Monitor das Anrufbild",
+  "animation": "Steuerzentrale",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 28,
+  "t0": 94.05
+ },
+ {
+  "satz": "Meist fragt er zuerst nicht: Was ist passiert? Sondern: Wo ist der Notfallort?",
+  "sek": 2.68,
+  "zeigt": "Tafel dreht sich: aus WAS? wird WO?",
+  "animation": "Anzeigetafel dreht sich (`motion` flip)",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 29,
+  "t0": 96.1
+ },
+ {
+  "satz": "(Fortsetzung) Meist fragt er zuerst nicht: Was ist pas",
+  "sek": 2.68,
+  "zeigt": "Tafel dreht sich: aus WAS? wird WO?",
+  "animation": "Anzeigetafel dreht sich (`motion` flip)",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 29,
+  "t0": 98.78
+ },
+ {
+  "satz": "Denn ohne Ort weiß kein Wagen, wohin.",
+  "sek": 2.72,
+  "zeigt": "Rettungswache im Dunkeln, die Wagen stehen – niemand weiß wohin",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 31,
+  "t0": 101.46
+ },
+ {
+  "satz": "Die Frau ist in Panik.",
+  "sek": 1.44,
+  "zeigt": "Die Frau kniet am Boden, das Handy leuchtet, Licht zittert",
+  "animation": "Menschen reagieren",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 32,
+  "t0": 104.18
+ },
+ {
+  "satz": "Die Hausnummer fällt ihr nicht ein.",
+  "sek": 1.84,
+  "zeigt": "Dein Haus von außen, Fragezeichen an der Hausnummer",
+  "animation": "Dein Haus",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 33,
+  "t0": 105.62
+ },
+ {
+  "satz": "Doch ihr Handy hat schon geholfen.",
+  "sek": 1.76,
+  "zeigt": "Das Handy am Boden leuchtet stärker auf",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 34,
+  "t0": 107.46
+ },
+ {
+  "satz": "Als sie die Nummer gewählt hat, hat es seinen Standort an die Leitstelle geschickt.",
+  "sek": 4.16,
+  "zeigt": "Ein oranger Punkt springt vom Haus über den Funkmast zur Leitstelle",
+  "animation": "Netz-Puls",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 35,
+  "t0": 109.22
+ },
+ {
+  "satz": "Automatisch, ohne dass sie es merkt.",
+  "sek": 2.32,
+  "zeigt": "Großbildschirm der Leitstelle: Karte mit pulsierendem Standortpunkt",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 36,
+  "t0": 113.38
+ },
+ {
+  "satz": "Das System heißt A-M-L.",
+  "sek": 2.4,
+  "zeigt": "Tafel dreht sich: AML wird zu Standort",
+  "animation": "Anzeigetafel dreht sich (`motion` flip)",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 37,
+  "t0": 115.7
+ },
+ {
+  "satz": "Fast alle Leitstellen nutzen es inzwischen.",
+  "sek": 2.35,
+  "zeigt": "Häuserzeilen-Balken: 223 von 234 Leitstellen",
+  "animation": "Häuserzeilen-Balken (`motion` bars)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 38,
+  "t0": 118.1
+ },
+ {
+  "satz": "In 8 von 10 Fällen auf 30 Meter genau.",
+  "sek": 4.16,
+  "zeigt": "Monitor zeigt den Punkt mit 30-Meter-Kreis",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 39,
+  "t0": 120.45
+ },
+ {
+  "satz": "Minute eins.",
+  "sek": 1.28,
+  "zeigt": "Tafel klappt auf MINUTE 1",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 40,
+  "t0": 124.61
+ },
+ {
+  "satz": "Auf dem Bildschirm des Disponenten blinkt ein Punkt, mitten in ihrer Straße.",
+  "sek": 2.24,
+  "zeigt": "Nah am Monitor: der orange Punkt blinkt mitten in ihrer Straße",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 41,
+  "t0": 125.89
+ },
+ {
+  "satz": "(Fortsetzung) Auf dem Bildschirm des Disponenten blink",
+  "sek": 2.24,
+  "zeigt": "Nah am Monitor: der orange Punkt blinkt mitten in ihrer Straße",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 41,
+  "t0": 128.13
+ },
+ {
+  "satz": "Er alarmiert den nächsten Rettungswagen, während er noch mit ihr spricht.",
+  "sek": 3.57,
+  "zeigt": "Alarmlampen in der Leitstelle gehen an, Einsatz auf dem Großbildschirm",
+  "animation": "Steuerzentrale",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 42,
+  "t0": 130.37
+ },
+ {
+  "satz": "In der Rettungswache springt das Licht an.",
+  "sek": 2.24,
+  "zeigt": "In der Rettungswache springt das Licht an",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 43,
+  "t0": 133.94
+ },
+ {
+  "satz": "Das Tor fährt hoch.",
+  "sek": 1.44,
+  "zeigt": "Das Rolltor fährt hoch, der Rettungswagen steht im Licht",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 44,
+  "t0": 136.18
+ },
+ {
+  "satz": "Dann sagt er etwas, womit sie nicht rechnet: Legen Sie das Handy neben ihn. Ich bleibe dran. Wir drücken jetzt zusammen.",
+  "sek": 3.4,
+  "zeigt": "Handy-Bildschirm: die Sätze des Disponenten erscheinen nacheinander",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 45,
+  "t0": 137.62
+ },
+ {
+  "satz": "(Fortsetzung) Dann sagt er etwas, womit sie nicht rech",
+  "sek": 3.4,
+  "zeigt": "Handy-Bildschirm: die Sätze des Disponenten erscheinen nacheinander",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 45,
+  "t0": 141.02
+ },
+ {
+  "satz": "Er zählt mit ihr.",
+  "sek": 1.28,
+  "zeigt": "Die Frau legt die Hände auf die Brust des Mannes und drückt",
+  "animation": "Menschen reagieren",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 48,
+  "t0": 144.42
+ },
+ {
+  "satz": "Eins, zwei, drei, vier.",
+  "sek": 3.12,
+  "zeigt": "Echter Clip: Hände drücken im Takt auf eine Übungspuppe",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 49,
+  "t0": 145.7
+ },
+ {
+  "satz": "Das nennt sich Telefonreanimation.",
+  "sek": 2.48,
+  "zeigt": "Die Frau drückt, Einblendung Telefonreanimation",
+  "animation": "Menschen reagieren",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 50,
+  "t0": 148.82
+ },
+ {
+  "satz": "Fachleute fordern sie bei jedem erkannten Herzstillstand. Tatsächlich passiert sie bisher nur in gut einem Drittel der Fälle.",
+  "sek": 3.68,
+  "zeigt": "Häuserzeilen-Balken: Ziel 100 %, tatsächlich 37 %",
+  "animation": "Häuserzeilen-Balken (`motion` bars)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 51,
+  "t0": 151.3
+ },
+ {
+  "satz": "(Fortsetzung) Fachleute fordern sie bei jedem erkannte",
+  "sek": 3.68,
+  "zeigt": "Häuserzeilen-Balken: Ziel 100 %, tatsächlich 37 %",
+  "animation": "Häuserzeilen-Balken (`motion` bars)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 51,
+  "t0": 154.98
+ },
+ {
+  "satz": "Der Wagen ist unterwegs.",
+  "sek": 1.68,
+  "zeigt": "Der Rettungswagen fährt mit Blaulicht durch die Straße",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 53,
+  "t0": 158.66
+ },
+ {
+  "satz": "Dass dafür heute drei Ziffern reichen, beginnt mit dem Tod eines achtjährigen Jungen.",
+  "sek": 2.62,
+  "zeigt": "Rückblende: eine graue Straße von früher mit Telefonzelle",
+  "animation": "Tag-Nacht-Zeitraffer",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "frage:junge",
+  "i": 54,
+  "t0": 160.34
+ },
+ {
+  "satz": "(Fortsetzung) Dass dafür heute drei Ziffern reichen, b",
+  "sek": 2.62,
+  "zeigt": "Rückblende: eine graue Straße von früher mit Telefonzelle",
+  "animation": "Tag-Nacht-Zeitraffer",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 54,
+  "t0": 162.96
+ },
+ {
+  "satz": "Kapitel 2",
+  "sek": 4.5,
+  "zeigt": "Kapitelkarte 2 über der grauen Straße",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": -1,
+  "t0": 165.58
+ },
+ {
+  "satz": "3. Mai 1969.",
+  "sek": 2.72,
+  "zeigt": "Graue Straße, Datum 3. Mai 1969 erscheint",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 55,
+  "t0": 170.08
+ },
+ {
+  "satz": "Winnenden bei Stuttgart.",
+  "sek": 1.76,
+  "zeigt": "Modellkarte: Winnenden bei Stuttgart markiert",
+  "animation": "Modell-Karte",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 56,
+  "t0": 172.8
+ },
+ {
+  "satz": "Ein achtjähriger Junge ist auf dem Heimweg vom Schwimmbad.",
+  "sek": 3.28,
+  "zeigt": "Die Straße am Nachmittag, leer, grau – der Heimweg",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 57,
+  "t0": 174.56
+ },
+ {
+  "satz": "Ein Auto erfasst ihn.",
+  "sek": 1.52,
+  "zeigt": "Das Bild zuckt, die Lichter der Straße flackern – der Unfall wird nicht gezeigt",
+  "animation": "Lichter gehen aus",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 58,
+  "t0": 177.84
+ },
+ {
+  "satz": "Menschen wollen Hilfe holen.",
+  "sek": 1.88,
+  "zeigt": "Die gelbe Telefonzelle leuchtet: Welche Nummer?",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 59,
+  "t0": 179.36
+ },
+ {
+  "satz": "Aber es gibt keine Nummer, die überall gilt.",
+  "sek": 2.72,
+  "zeigt": "Tafel dreht sich: Notruf? – keine Nummer",
+  "animation": "Anzeigetafel dreht sich (`motion` flip)",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 60,
+  "t0": 181.24
+ },
+ {
+  "satz": "Fast eine Stunde vergeht.",
+  "sek": 3.2,
+  "zeigt": "Die Kirchturmuhr dreht fast eine ganze Stunde weiter",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 61,
+  "t0": 183.96
+ },
+ {
+  "satz": "Der Junge heißt Björn Steiger.",
+  "sek": 2.16,
+  "zeigt": "Graue Straße, Einblendung Björn Steiger, 8 Jahre",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "person"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "antwort:junge",
+  "i": 62,
+  "t0": 187.16
+ },
+ {
+  "satz": "Er stirbt noch am selben Tag.",
+  "sek": 1.92,
+  "zeigt": "Die Lichter der Straße erlöschen",
+  "animation": "Lichter gehen aus",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 63,
+  "t0": 189.32
+ },
+ {
+  "satz": "Laut der Stiftung, die seinen Namen trägt, nicht an seinen Verletzungen, sondern am Schock.",
+  "sek": 2.66,
+  "zeigt": "Tafel dreht sich: Verletzungen? – Schock",
+  "animation": "Anzeigetafel dreht sich (`motion` flip)",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 64,
+  "t0": 191.24
+ },
+ {
+  "satz": "(Fortsetzung) Laut der Stiftung, die seinen Namen träg",
+  "sek": 2.66,
+  "zeigt": "Tafel dreht sich: Verletzungen? – Schock",
+  "animation": "Anzeigetafel dreht sich (`motion` flip)",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 64,
+  "t0": 193.9
+ },
+ {
+  "satz": "Seine Eltern, Ute und Siegfried Steiger, gründen zwei Monate später eine Stiftung.",
+  "sek": 2.72,
+  "zeigt": "Telefonzelle, Datum 7. Juli 1969 – Gründung der Stiftung",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 65,
+  "t0": 196.56
+ },
+ {
+  "satz": "(Fortsetzung) Seine Eltern, Ute und Siegfried Steiger,",
+  "sek": 2.72,
+  "zeigt": "Telefonzelle, Datum 7. Juli 1969 – Gründung der Stiftung",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 65,
+  "t0": 199.28
+ },
+ {
+  "satz": "Sie wollen, dass Hilfe schneller kommt.",
+  "sek": 2.32,
+  "zeigt": "Ablauf-Kette: Unfall → Notruf → Hilfe",
+  "animation": "Ablauf-Kette 2D (`motion` flow)",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 66,
+  "t0": 202.0
+ },
+ {
+  "satz": "1973 vor Gericht.",
+  "sek": 2.92,
+  "zeigt": "Tafel dreht sich: Klage 1973 gegen Land und Bund",
+  "animation": "Anzeigetafel dreht sich (`motion` flip)",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 67,
+  "t0": 204.32
+ },
+ {
+  "satz": "(Fortsetzung) Ihre Stiftung zieht neunzehnhundertdreiu",
+  "sek": 2.92,
+  "zeigt": "Tafel dreht sich: Klage 1973 gegen Land und Bund",
+  "animation": "Anzeigetafel dreht sich (`motion` flip)",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 67,
+  "t0": 207.24
+ },
+ {
+  "satz": "Die Klage scheitert.",
+  "sek": 1.44,
+  "zeigt": "Fallblatt-Tafel am Bahnhof klappt: KLAGE – ABGEWIESEN",
+  "animation": "Zahl in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 68,
+  "t0": 210.16
+ },
+ {
+  "satz": "Aber der Druck wird zu groß.",
+  "sek": 2.08,
+  "zeigt": "Zeitraffer: Tag bricht an, die Straße wird hell – Druck wächst",
+  "animation": "Tag-Nacht-Zeitraffer",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 69,
+  "t0": 211.6
+ },
+ {
+  "satz": "Am 20. September 1973.",
+  "sek": 3.08,
+  "zeigt": "Tafel klappt auf 20.09.1973",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 70,
+  "t0": 213.68
+ },
+ {
+  "satz": "Am 20. September 1973.",
+  "sek": 3.08,
+  "zeigt": "Rathaus mit Uhr: Ministerpräsidenten treffen den Kanzler, Datum 1973",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 70,
+  "t0": 216.76
+ },
+ {
+  "satz": "Der Beschluss: In ganz Westdeutschland gelten dieselben zwei Nummern.",
+  "sek": 4.24,
+  "zeigt": "Tafel dreht sich: Beschluss – 110 · 112",
+  "animation": "Anzeigetafel dreht sich (`motion` flip)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 71,
+  "t0": 219.84
+ },
+ {
+  "satz": "Eins, eins, null und eins, eins, zwei.",
+  "sek": 2.8,
+  "zeigt": "Fallblatt-Tafel klappt 110 und 112",
+  "animation": "Zahl in der Welt",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 72,
+  "t0": 224.08
+ },
+ {
+  "satz": "Ende 1979.",
+  "sek": 3.04,
+  "zeigt": "Modellkarte: Leitungen wachsen von Stadt zu Stadt, Ende 1979",
+  "animation": "Netzwerk-Karte",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 73,
+  "t0": 226.88
+ },
+ {
+  "satz": "(Fortsetzung) Ganz fertig ist das erst Ende neunzehnhu",
+  "sek": 3.04,
+  "zeigt": "Modellkarte: Leitungen wachsen von Stadt zu Stadt, Ende 1979",
+  "animation": "Netzwerk-Karte",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 73,
+  "t0": 229.92
+ },
+ {
+  "satz": "1991 zieht Europa nach.",
+  "sek": 2.84,
+  "zeigt": "Modellkarte Europa, Jahreszahl 1991",
+  "animation": "Modell-Karte",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 74,
+  "t0": 232.96
+ },
+ {
+  "satz": "1991: 112 in jedem Mitgliedsland.",
+  "sek": 3.76,
+  "zeigt": "Europakarte: die 12 EG-Länder von 1991 leuchten nacheinander auf",
+  "animation": "Warenstrom-Karte (`motion` map)",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 75,
+  "t0": 235.8
+ },
+ {
+  "satz": "(Fortsetzung) Die Europäische Gemeinschaft, die Vorgän",
+  "sek": 3.76,
+  "zeigt": "Europakarte: die 12 EG-Länder von 1991 leuchten nacheinander auf",
+  "animation": "Warenstrom-Karte (`motion` map)",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 75,
+  "t0": 239.56
+ },
+ {
+  "satz": "Deshalb funktioniert dein Handy heute in Lissabon und in Warschau mit derselben Nummer.",
+  "sek": 2.44,
+  "zeigt": "Modellkarte: 112 in Lissabon und Warschau markiert",
+  "animation": "Modell-Karte",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 76,
+  "t0": 243.32
+ },
+ {
+  "satz": "(Fortsetzung) Deshalb funktioniert dein Handy heute in",
+  "sek": 2.44,
+  "zeigt": "Modellkarte: 112 in Lissabon und Warschau markiert",
+  "animation": "Modell-Karte",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 76,
+  "t0": 245.76
+ },
+ {
+  "satz": "Seitdem gibt es eine Nummer für alle.",
+  "sek": 2.76,
+  "zeigt": "Fallblatt-Tafel zeigt groß 112",
+  "animation": "Zahl in der Welt",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 77,
+  "t0": 248.2
+ },
+ {
+  "satz": "Aber bis heute keine gemeinsame Regel, wie schnell die Hilfe da sein muss.",
+  "sek": 2.42,
+  "zeigt": "Sechzehn Uhren auf dem Modellgelände laufen unterschiedlich",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "frage:frist",
+  "i": 78,
+  "t0": 250.96
+ },
+ {
+  "satz": "(Fortsetzung) Aber bis heute keine gemeinsame Regel, w",
+  "sek": 2.42,
+  "zeigt": "Sechzehn Uhren auf dem Modellgelände laufen unterschiedlich",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 78,
+  "t0": 253.38
+ },
+ {
+  "satz": "Kapitel 3",
+  "sek": 4.5,
+  "zeigt": "Kapitelkarte 3 vor den sechzehn Uhren",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": -1,
+  "t0": 255.8
+ },
+ {
+  "satz": "Zurück in Kassel.",
+  "sek": 1.6,
+  "zeigt": "Rückflug zum Haus in Kassel",
+  "animation": "Rückflug zum Anfang",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 79,
+  "t0": 260.3
+ },
+ {
+  "satz": "Minute vier.",
+  "sek": 1.36,
+  "zeigt": "Tafel klappt auf MINUTE 4",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 80,
+  "t0": 261.9
+ },
+ {
+  "satz": "Die Frau drückt, der Disponent zählt.",
+  "sek": 2.96,
+  "zeigt": "Die Frau drückt im Takt, das Handy leuchtet neben dem Mann",
+  "animation": "Menschen reagieren",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 81,
+  "t0": 263.26
+ },
+ {
+  "satz": "Der Rettungswagen fährt mit Blaulicht durch die leere Stadt.",
+  "sek": 3.44,
+  "zeigt": "Blaues Licht zieht auf der Route von der Wache zum Haus durch die dunkle Stadt",
+  "animation": "Tilt-Shift-Flug",
+  "inhalt": [
+   "ort",
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 82,
+  "t0": 266.22
+ },
+ {
+  "satz": "Wie schnell er da sein muss, ist festgelegt.",
+  "sek": 2.8,
+  "zeigt": "Echter Clip: Blaulicht in der Nacht",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 83,
+  "t0": 269.66
+ },
+ {
+  "satz": "Aber nicht für ganz Deutschland.",
+  "sek": 1.84,
+  "zeigt": "Modellkarte Deutschland, Ländergrenzen treten hervor",
+  "animation": "Modell-Karte",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 84,
+  "t0": 272.46
+ },
+ {
+  "satz": "Rettungsdienst ist Sache der Länder.",
+  "sek": 2.39,
+  "zeigt": "Deutschlandkarte, Titel Sache der 16 Länder",
+  "animation": "Warenstrom-Karte (`motion` map)",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 85,
+  "t0": 274.3
+ },
+ {
+  "satz": "Es gibt sechzehn Rettungsdienstgesetze.",
+  "sek": 2.64,
+  "zeigt": "Sechzehn Uhren, jede zeigt eine andere Zeit",
+  "animation": "Zahl in der Welt",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 86,
+  "t0": 276.69
+ },
+ {
+  "satz": "Kassel liegt in Hessen.",
+  "sek": 1.68,
+  "zeigt": "Modellkarte: Kassel in Hessen markiert",
+  "animation": "Modell-Karte",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 87,
+  "t0": 279.33
+ },
+ {
+  "satz": "In 9 von 10 Fällen nach 10 Minuten.",
+  "sek": 4.16,
+  "zeigt": "Fallblatt-Zahl 10 MIN, darunter in 9 von 10 Fällen",
+  "animation": "Fallblatt-Zahl (`motion` counter)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "antwort:frist",
+  "i": 88,
+  "t0": 281.01
+ },
+ {
+  "satz": "Gezählt ab dem Moment, in dem der Notruf in der Leitstelle eingeht.",
+  "sek": 4.0,
+  "zeigt": "Uhr startet in dem Moment, in dem der Notruf eingeht",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 89,
+  "t0": 285.17
+ },
+ {
+  "satz": "8 Minuten in der Stadt und 12 auf dem Land.",
+  "sek": 2.4,
+  "zeigt": "Häuserzeilen-Balken: NRW Stadt 8 min, Land 12 min",
+  "animation": "Häuserzeilen-Balken (`motion` bars)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 90,
+  "t0": 289.17
+ },
+ {
+  "satz": "(Fortsetzung) In Nordrhein-Westfalen sind es acht Minu",
+  "sek": 2.4,
+  "zeigt": "Häuserzeilen-Balken: NRW Stadt 8 min, Land 12 min",
+  "animation": "Häuserzeilen-Balken (`motion` bars)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 90,
+  "t0": 291.57
+ },
+ {
+  "satz": "In Bayern 12 Minuten.",
+  "sek": 2.24,
+  "zeigt": "Eine der sechzehn Uhren leuchtet: Bayern 12 Minuten",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 91,
+  "t0": 293.97
+ },
+ {
+  "satz": "Aber die Uhr startet dort erst, wenn der Wagen losfährt.",
+  "sek": 3.36,
+  "zeigt": "Das Tor fährt hoch – erst hier startet in Bayern die Uhr",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 92,
+  "t0": 296.21
+ },
+ {
+  "satz": "2023 kippte ein Gericht eine Frist.",
+  "sek": 3.46,
+  "zeigt": "Tafel dreht sich: Gericht 2023 – Frist gekippt",
+  "animation": "Anzeigetafel dreht sich (`motion` flip)",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 93,
+  "t0": 299.57
+ },
+ {
+  "satz": "(Fortsetzung) In Baden-Württemberg kippte ein Gericht ",
+  "sek": 3.46,
+  "zeigt": "Tafel dreht sich: Gericht 2023 – Frist gekippt",
+  "animation": "Anzeigetafel dreht sich (`motion` flip)",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 93,
+  "t0": 303.03
+ },
+ {
+  "satz": "12 Minuten, in 95 von 100 Fällen.",
+  "sek": 2.72,
+  "zeigt": "Fallblatt-Zahl 12 MIN, in 95 von 100 Fällen",
+  "animation": "Fallblatt-Zahl (`motion` counter)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 94,
+  "t0": 306.49
+ },
+ {
+  "satz": "(Fortsetzung) Seit dem neuen Gesetz gelten zwölf Minut",
+  "sek": 2.72,
+  "zeigt": "Fallblatt-Zahl 12 MIN, in 95 von 100 Fällen",
+  "animation": "Fallblatt-Zahl (`motion` counter)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 94,
+  "t0": 309.21
+ },
+ {
+  "satz": "Dieselbe Not. Sechzehn verschiedene Uhren.",
+  "sek": 3.32,
+  "zeigt": "Alle sechzehn Uhren ticken gegeneinander",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 95,
+  "t0": 311.93
+ },
+ {
+  "satz": "Wer fährt eigentlich?",
+  "sek": 1.68,
+  "zeigt": "Die Rettungswache von außen, Rettungswagen im Hof",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "frage:wer",
+  "i": 97,
+  "t0": 315.25
+ },
+ {
+  "satz": "Bestellt wird der Rettungsdienst vom Landkreis oder von der Stadt.",
+  "sek": 3.76,
+  "zeigt": "Ablauf-Kette: Kreis oder Stadt vergibt den Auftrag an den Rettungsdienst",
+  "animation": "Ablauf-Kette 2D (`motion` flow)",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 98,
+  "t0": 316.93
+ },
+ {
+  "satz": "Fahren tun ihn meist andere.",
+  "sek": 2.16,
+  "zeigt": "Rettungswagen vor dem offenen Tor",
+  "animation": "Menschen reagieren",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 99,
+  "t0": 320.69
+ },
+ {
+  "satz": "Rund vier Fünftel des Rettungsdienstes liegen bei Hilfsorganisationen. Beim Roten Kreuz, den Johannitern oder den Maltesern.",
+  "sek": 4.0,
+  "zeigt": "Häuserzeilen-Balken: 80 % Hilfsorganisationen",
+  "animation": "Häuserzeilen-Balken (`motion` bars)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "antwort:wer",
+  "i": 100,
+  "t0": 322.85
+ },
+ {
+  "satz": "(Fortsetzung) Rund vier Fünftel des Rettungsdienstes l",
+  "sek": 4.0,
+  "zeigt": "Häuserzeilen-Balken: 80 % Hilfsorganisationen",
+  "animation": "Häuserzeilen-Balken (`motion` bars)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 100,
+  "t0": 326.85
+ },
+ {
+  "satz": "Bezahlt wird das über die Krankenkassen, also auch mit deinem Beitrag.",
+  "sek": 2.2,
+  "zeigt": "Ablauf-Kette: dein Beitrag → Krankenkasse → Rettungsdienst",
+  "animation": "Ablauf-Kette 2D (`motion` flow)",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 102,
+  "t0": 330.85
+ },
+ {
+  "satz": "(Fortsetzung) Bezahlt wird das über die Krankenkassen,",
+  "sek": 2.2,
+  "zeigt": "Ablauf-Kette: dein Beitrag → Krankenkasse → Rettungsdienst",
+  "animation": "Ablauf-Kette 2D (`motion` flow)",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 102,
+  "t0": 333.05
+ },
+ {
+  "satz": "mehrere 100 Euro.",
+  "sek": 4.16,
+  "zeigt": "Fallblatt-Tafel: MEHRERE 100 €",
+  "animation": "Zahl in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 103,
+  "t0": 335.25
+ },
+ {
+  "satz": "1020 Euro.",
+  "sek": 4.05,
+  "zeigt": "Fallblatt-Tafel klappt auf 1.020 € pro Einsatz",
+  "animation": "Fallblatt-Zahl (`motion` counter)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 104,
+  "t0": 339.41
+ },
+ {
+  "satz": "Und das System ist ausgelastet.",
+  "sek": 2.32,
+  "zeigt": "Leitstelle: alle Telefonlichter blinken gleichzeitig",
+  "animation": "Steuerzentrale",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 105,
+  "t0": 343.46
+ },
+ {
+  "satz": "Auch, weil manche die eins, eins, zwei wählen, wenn es nicht eilt.",
+  "sek": 3.6,
+  "zeigt": "Über der Stadt blinken viele orange Anrufpunkte",
+  "animation": "Netzwerk-Karte",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 106,
+  "t0": 345.78
+ },
+ {
+  "satz": "Für Fieber in der Nacht gibt es eigentlich die eins, eins, sechs, eins, eins, sieben, den ärztlichen Bereitschaftsdienst.",
+  "sek": 3.35,
+  "zeigt": "Tafel dreht sich: 112 – 116 117",
+  "animation": "Anzeigetafel dreht sich (`motion` flip)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 107,
+  "t0": 349.38
+ },
+ {
+  "satz": "(Fortsetzung) Für Fieber in der Nacht gibt es eigentli",
+  "sek": 3.35,
+  "zeigt": "Tafel dreht sich: 112 – 116 117",
+  "animation": "Anzeigetafel dreht sich (`motion` flip)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 107,
+  "t0": 352.73
+ },
+ {
+  "satz": "Selbst Autos rufen an.",
+  "sek": 1.92,
+  "zeigt": "Echter Clip: nächtliche Autobahn mit Lichtern",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 108,
+  "t0": 356.09
+ },
+ {
+  "satz": "Seit 2018 automatisch.",
+  "sek": 3.0,
+  "zeigt": "Ablauf-Kette: Unfall → automatisch → 112, seit 2018",
+  "animation": "Ablauf-Kette 2D (`motion` flow)",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 109,
+  "t0": 358.0
+ },
+ {
+  "satz": "(Fortsetzung) Seit zweitausendachtzehn müssen neue Mod",
+  "sek": 3.0,
+  "zeigt": "Ablauf-Kette: Unfall → automatisch → 112, seit 2018",
+  "animation": "Ablauf-Kette 2D (`motion` flow)",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 109,
+  "t0": 361.0
+ },
+ {
+  "satz": "In Bayern sind über neun von zehn dieser Anrufe Fehlalarme.",
+  "sek": 4.32,
+  "zeigt": "Raster aus 10 Autos, 9 werden markiert: über 90 % Fehlalarme",
+  "animation": "Lichter-aus-Raster (`motion` grid)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 110,
+  "t0": 364.0
+ },
+ {
+  "satz": "Im Oktober 2026 Notfallreform.",
+  "sek": 2.48,
+  "zeigt": "Tafel klappt: OKT. 2026 – NOTFALLREFORM",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 111,
+  "t0": 368.32
+ },
+ {
+  "satz": "(Fortsetzung) Im Oktober zweitausendsechsundzwanzig ha",
+  "sek": 2.48,
+  "zeigt": "Tafel klappt: OKT. 2026 – NOTFALLREFORM",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 111,
+  "t0": 370.81
+ },
+ {
+  "satz": "Im November 2026.",
+  "sek": 2.64,
+  "zeigt": "Tafel dreht sich: Bundesrat – gebilligt",
+  "animation": "Anzeigetafel dreht sich (`motion` flip)",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 112,
+  "t0": 373.29
+ },
+ {
+  "satz": "Die Leitstellen der eins, eins, zwei und der eins, eins, sechs, eins, eins, sieben sollen sich digital vernetzen.",
+  "sek": 3.28,
+  "zeigt": "Ablauf-Kette: 112 und 116 117 werden digital verbunden",
+  "animation": "Ablauf-Kette 2D (`motion` flow)",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 113,
+  "t0": 375.93
+ },
+ {
+  "satz": "(Fortsetzung) Die Leitstellen der eins, eins, zwei und",
+  "sek": 3.28,
+  "zeigt": "Ablauf-Kette: 112 und 116 117 werden digital verbunden",
+  "animation": "Ablauf-Kette 2D (`motion` flow)",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 113,
+  "t0": 379.21
+ },
+ {
+  "satz": "Und die Frau in Kassel?",
+  "sek": 1.52,
+  "zeigt": "Zurück zum Haus, Licht im Fenster",
+  "animation": "Dein Haus",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 114,
+  "t0": 382.49
+ },
+ {
+  "satz": "Seit 5 Minuten.",
+  "sek": 2.24,
+  "zeigt": "Tafel klappt auf MINUTE 5",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 115,
+  "t0": 384.0
+ },
+ {
+  "satz": "Ihre Arme brennen.",
+  "sek": 1.84,
+  "zeigt": "Die Frau drückt weiter, das Bild zittert vor Anstrengung",
+  "animation": "Menschen reagieren",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 116,
+  "t0": 386.24
+ },
+ {
+  "satz": "Der Disponent zählt weiter.",
+  "sek": 2.0,
+  "zeigt": "Disponent spricht weiter, Monitor mit laufendem Anruf",
+  "animation": "Steuerzentrale",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 117,
+  "t0": 388.08
+ },
+ {
+  "satz": "2010: 14 Prozent, heute gut die Hälfte.",
+  "sek": 3.92,
+  "zeigt": "Häuserzeilen-Balken: 14 % 2010, 55 % 2024",
+  "animation": "Häuserzeilen-Balken (`motion` bars)",
+  "inhalt": [
+   "zahl",
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 118,
+  "t0": 390.08
+ },
+ {
+  "satz": "(Fortsetzung) In Deutschland fangen inzwischen in gut ",
+  "sek": 3.92,
+  "zeigt": "Häuserzeilen-Balken: 14 % 2010, 55 % 2024",
+  "animation": "Häuserzeilen-Balken (`motion` bars)",
+  "inhalt": [
+   "zahl",
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 118,
+  "t0": 394.0
+ },
+ {
+  "satz": "In Norwegen, Schweden oder den Niederlanden sind es sieben bis acht von zehn.",
+  "sek": 2.4,
+  "zeigt": "Karte: Norwegen, Schweden, Niederlande leuchten, 7 bis 8 von 10",
+  "animation": "Warenstrom-Karte (`motion` map)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 120,
+  "t0": 397.92
+ },
+ {
+  "satz": "(Fortsetzung) In Norwegen, Schweden oder den Niederlan",
+  "sek": 2.4,
+  "zeigt": "Karte: Norwegen, Schweden, Niederlande leuchten, 7 bis 8 von 10",
+  "animation": "Warenstrom-Karte (`motion` map)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 120,
+  "t0": 400.32
+ },
+ {
+  "satz": "Jede Minute, die sie drückt, kauft ihm Zeit.",
+  "sek": 3.12,
+  "zeigt": "Echter Clip: EKG-Linie schlägt auf dem Monitor",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 121,
+  "t0": 402.72
+ },
+ {
+  "satz": "Und ihr Anruf ist durchgekommen.",
+  "sek": 2.32,
+  "zeigt": "Leitstelle, der Anruf steht, die Lampe am Platz leuchtet ruhig",
+  "animation": "Steuerzentrale",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 122,
+  "t0": 405.84
+ },
+ {
+  "satz": "Das ist nicht selbstverständlich.",
+  "sek": 2.2,
+  "zeigt": "Die Stadt: einzelne Viertel werden dunkel – Vorbote",
+  "animation": "Lichter gehen aus",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 123,
+  "t0": 408.16
+ },
+ {
+  "satz": "Kapitel 4",
+  "sek": 4.5,
+  "zeigt": "Kapitelkarte 4 über der dunklen Stadt",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": -1,
+  "t0": 410.36
+ },
+ {
+  "satz": "Denn manchmal kommt der Anruf gar nicht an.",
+  "sek": 2.64,
+  "zeigt": "Die Lampe am Funkmast erlischt",
+  "animation": "Lichter gehen aus",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 124,
+  "t0": 414.86
+ },
+ {
+  "satz": "11. November 2021.",
+  "sek": 2.64,
+  "zeigt": "Tafel klappt auf 11.11.2021",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 125,
+  "t0": 417.5
+ },
+ {
+  "satz": "4:30 Uhr.",
+  "sek": 1.84,
+  "zeigt": "Die Rathausuhr der Modellstadt springt auf 04:30",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 126,
+  "t0": 420.14
+ },
+ {
+  "satz": "04:12 Uhr – fast dieselbe Stunde.",
+  "sek": 3.75,
+  "zeigt": "Küchenuhr der Szene: 04:12 – fast dieselbe Stunde",
+  "animation": "Rückflug zum Anfang",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 127,
+  "t0": 421.98
+ },
+ {
+  "satz": "In vielen Bundesländern wählen Menschen eins, eins, null oder eins, eins, zwei.",
+  "sek": 2.44,
+  "zeigt": "Überall in der Stadt blinken Anrufe auf – und werden rot",
+  "animation": "Netzwerk-Karte",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "antwort:ausfall",
+  "i": 128,
+  "t0": 425.73
+ },
+ {
+  "satz": "(Fortsetzung) In vielen Bundesländern wählen Menschen ",
+  "sek": 2.44,
+  "zeigt": "Überall in der Stadt blinken Anrufe auf – und werden rot",
+  "animation": "Netzwerk-Karte",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 128,
+  "t0": 428.17
+ },
+ {
+  "satz": "Und kommen nicht durch.",
+  "sek": 1.6,
+  "zeigt": "Leitstelle: Bildschirme schwarz, KEINE VERBINDUNG",
+  "animation": "Steuerzentrale",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 129,
+  "t0": 430.61
+ },
+ {
+  "satz": "Bei der Telekom wird bei einer Wartung neue Software eingespielt.",
+  "sek": 3.76,
+  "zeigt": "Echter Clip: Netzwerk-Technik mit Lichtern, Einblendung Wartung",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 130,
+  "t0": 432.21
+ },
+ {
+  "satz": "Sie war vorher getestet. Trotzdem läuft etwas schief.",
+  "sek": 3.45,
+  "zeigt": "Tafel dreht sich: getestet – Fehler",
+  "animation": "Anzeigetafel dreht sich (`motion` flip)",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 131,
+  "t0": 435.97
+ },
+ {
+  "satz": "Mehr als 1 Stunde gestört.",
+  "sek": 2.56,
+  "zeigt": "Raster aus Telefonen, alle werden dunkel: 70 Minuten gestört",
+  "animation": "Lichter-aus-Raster (`motion` grid)",
+  "inhalt": [
+   "zahl",
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 133,
+  "t0": 439.42
+ },
+ {
+  "satz": "(Fortsetzung) Mehr als eine Stunde lang sind die Notru",
+  "sek": 2.56,
+  "zeigt": "Raster aus Telefonen, alle werden dunkel: 70 Minuten gestört",
+  "animation": "Lichter-aus-Raster (`motion` grid)",
+  "inhalt": [
+   "zahl",
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 133,
+  "t0": 441.98
+ },
+ {
+  "satz": "5:40 Uhr.",
+  "sek": 2.88,
+  "zeigt": "Rathausuhr springt auf 05:40",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 134,
+  "t0": 444.54
+ },
+ {
+  "satz": "Ein Hackerangriff war es nicht. Nur ein Fehler bei einem Update.",
+  "sek": 4.0,
+  "zeigt": "Tafel dreht sich: Hacker? – Nein",
+  "animation": "Anzeigetafel dreht sich (`motion` flip)",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 135,
+  "t0": 447.42
+ },
+ {
+  "satz": "Andere Länder trifft es härter.",
+  "sek": 2.08,
+  "zeigt": "Modellkarte Europa, Blick nach Westen",
+  "animation": "Modell-Karte",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "frage:haerter",
+  "i": 137,
+  "t0": 451.42
+ },
+ {
+  "satz": "Am 2. Juni 2021.",
+  "sek": 2.92,
+  "zeigt": "Karte Frankreich, Pin 2. Juni 2021",
+  "animation": "Warenstrom-Karte (`motion` map)",
+  "inhalt": [
+   "zeit",
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 138,
+  "t0": 453.5
+ },
+ {
+  "satz": "(Fortsetzung) In Frankreich fällt am zweiten Juni zwei",
+  "sek": 2.92,
+  "zeigt": "Karte Frankreich, Pin 2. Juni 2021",
+  "animation": "Warenstrom-Karte (`motion` map)",
+  "inhalt": [
+   "zeit",
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 138,
+  "t0": 456.42
+ },
+ {
+  "satz": "Vom Nachmittag bis Mitternacht.",
+  "sek": 2.16,
+  "zeigt": "Uhr dreht vom Nachmittag bis Mitternacht",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 139,
+  "t0": 459.34
+ },
+ {
+  "satz": "Rund elftausendachthundert Anrufe kommen nicht durch.",
+  "sek": 3.56,
+  "zeigt": "Fallblatt-Tafel klappt auf 11.800 nicht durchgekommene Anrufe",
+  "animation": "Fallblatt-Zahl (`motion` counter)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "antwort:haerter",
+  "i": 140,
+  "t0": 461.5
+ },
+ {
+  "satz": "Drei Todesfälle werden mit dem Ausfall in Verbindung gebracht.",
+  "sek": 3.28,
+  "zeigt": "Die Stadt wird grau und still, Einblendung 3 Todesfälle",
+  "animation": "Lichter gehen aus",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 141,
+  "t0": 465.06
+ },
+ {
+  "satz": "Am 25. Juni 2023 rund 14.000 Anrufversuche.",
+  "sek": 3.84,
+  "zeigt": "Karte Großbritannien, Pin 25. Juni 2023",
+  "animation": "Warenstrom-Karte (`motion` map)",
+  "inhalt": [
+   "zeit",
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 142,
+  "t0": 468.34
+ },
+ {
+  "satz": "Am 25. Juni 2023 rund 14.000 Anrufversuche.",
+  "sek": 3.84,
+  "zeigt": "Fallblatt-Tafel klappt auf 14.000 gescheiterte Anrufversuche",
+  "animation": "Fallblatt-Zahl (`motion` counter)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 142,
+  "t0": 472.18
+ },
+ {
+  "satz": "17,5 Millionen Pfund.",
+  "sek": 4.36,
+  "zeigt": "Fallblatt-Zahl 17,5 Mio. Pfund",
+  "animation": "Fallblatt-Zahl (`motion` counter)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 143,
+  "t0": 476.02
+ },
+ {
+  "satz": "Und manchmal ist nicht ein Fehler das Problem, sondern die Menge.",
+  "sek": 3.92,
+  "zeigt": "Hunderte Anrufpunkte über der Stadt, sie stapeln sich",
+  "animation": "Netzwerk-Karte",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 144,
+  "t0": 480.38
+ },
+ {
+  "satz": "14. Juli 2021.",
+  "sek": 2.36,
+  "zeigt": "Echter Clip: Hochwasser reißt an Brückenpfeilern, Einblendung 14. Juli 2021 · Ahrtal",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "zeit",
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 145,
+  "t0": 484.3
+ },
+ {
+  "satz": "(Fortsetzung) Vierzehnter Juli zweitausendeinundzwanzi",
+  "sek": 2.36,
+  "zeigt": "Echter Clip: Hochwasser reißt an Brückenpfeilern, Einblendung 14. Juli 2021 · Ahrtal",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "zeit",
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 145,
+  "t0": 486.66
+ },
+ {
+  "satz": "Die Notrufe laufen vor allem in einer Leitstelle auf, in Koblenz.",
+  "sek": 4.32,
+  "zeigt": "Modellkarte: Koblenz markiert, Leitstelle",
+  "animation": "Modell-Karte",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 146,
+  "t0": 489.02
+ },
+ {
+  "satz": "Die Netze sind überlastet.",
+  "sek": 1.88,
+  "zeigt": "Funkmast, Impulse stauen sich und bleiben stehen",
+  "animation": "Netz-Puls",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 147,
+  "t0": 493.34
+ },
+ {
+  "satz": "Elftausend Notrufe hat das Landeskriminalamt später ausgewertet.",
+  "sek": 4.24,
+  "zeigt": "Fallblatt-Tafel klappt auf 11.000 ausgewertete Notrufe",
+  "animation": "Fallblatt-Zahl (`motion` counter)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 148,
+  "t0": 495.22
+ },
+ {
+  "satz": "Aus einer einzigen Katastrophe. Die Leitstelle ist voll besetzt.",
+  "sek": 4.16,
+  "zeigt": "Leitstelle voll besetzt, alle Telefone blinken, Warteschlange auf dem Bildschirm",
+  "animation": "Steuerzentrale",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 149,
+  "t0": 499.46
+ },
+ {
+  "satz": "Trotzdem kommt sie gegen diese Flut nicht an.",
+  "sek": 2.72,
+  "zeigt": "Großbildschirm zeigt die Flut",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 151,
+  "t0": 503.62
+ },
+ {
+  "satz": "Und wenn gar nichts mehr geht, gibt es eine letzte Rückfallebene.",
+  "sek": 3.76,
+  "zeigt": "Stromausfall: die ganze Stadt wird dunkel",
+  "animation": "Lichter gehen aus",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "frage:analog",
+  "i": 152,
+  "t0": 506.34
+ },
+ {
+  "satz": "Sie ist ganz analog.",
+  "sek": 1.6,
+  "zeigt": "Echter Clip: eine Kerze brennt im Dunkeln",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 153,
+  "t0": 510.1
+ },
+ {
+  "satz": "In Berlin zum Beispiel gibt es sogenannte Leuchttürme.",
+  "sek": 3.52,
+  "zeigt": "Modellkarte: Berlin markiert, Leuchttürme",
+  "animation": "Modell-Karte",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "antwort:analog",
+  "i": 154,
+  "t0": 511.7
+ },
+ {
+  "satz": "Bei einem großen Stromausfall öffnen sie als Anlaufstellen.",
+  "sek": 3.52,
+  "zeigt": "Die Stadt ist dunkel, nur die Wache leuchtet als Anlaufstelle",
+  "animation": "Lichter gehen aus",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 155,
+  "t0": 515.22
+ },
+ {
+  "satz": "Von dort wird der Notruf weitergegeben.",
+  "sek": 2.2,
+  "zeigt": "Menschen kommen zur hellen Wache, von dort geht der Notruf weiter",
+  "animation": "Menschen reagieren",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 156,
+  "t0": 518.74
+ },
+ {
+  "satz": "Und wer keinen findet, geht zur nächsten Feuer- oder Polizeiwache.",
+  "sek": 4.24,
+  "zeigt": "Von oben: Lichter bewegen sich durch die dunkle Stadt zur Wache",
+  "animation": "Tilt-Shift-Flug",
+  "inhalt": [
+   "ort",
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 157,
+  "t0": 520.94
+ },
+ {
+  "satz": "Zu Fuß, wenn es sein muss.",
+  "sek": 2.2,
+  "zeigt": "Echter Clip: leere Straße bei Nacht",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 158,
+  "t0": 525.18
+ },
+ {
+  "satz": "Kapitel 5",
+  "sek": 4.5,
+  "zeigt": "Kapitelkarte 5 vor dem Haus",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": -1,
+  "t0": 527.38
+ },
+ {
+  "satz": "Zurück in Kassel.",
+  "sek": 1.36,
+  "zeigt": "Rückflug zum Haus: der Rettungswagen steht davor, Blaulicht",
+  "animation": "Rückflug zum Anfang",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 159,
+  "t0": 531.88
+ },
+ {
+  "satz": "4:21 Uhr.",
+  "sek": 1.76,
+  "zeigt": "Küchenuhr klappt auf 04:21",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 160,
+  "t0": 533.24
+ },
+ {
+  "satz": "Blaues Licht wandert über die Küchenwand.",
+  "sek": 2.64,
+  "zeigt": "Blaues Licht wandert über die Küchenwand",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 161,
+  "t0": 535.0
+ },
+ {
+  "satz": "9 Minuten nach dem Anruf.",
+  "sek": 3.44,
+  "zeigt": "Zwei Retter treten in die Tür",
+  "animation": "Menschen reagieren",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 162,
+  "t0": 537.64
+ },
+ {
+  "satz": "Sie übernehmen. Der Defibrillator lädt.",
+  "sek": 2.88,
+  "zeigt": "Die Retter übernehmen, der Defibrillator steht bereit",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 163,
+  "t0": 541.08
+ },
+ {
+  "satz": "Kommt die Hilfe rechtzeitig?",
+  "sek": 1.84,
+  "zeigt": "Querschnitt: die Straße reißt auf, Impulse laufen durch das System",
+  "animation": "Querschnitt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 165,
+  "t0": 543.96
+ },
+ {
+  "satz": "Das entscheidet sich nicht nur auf der Straße.",
+  "sek": 2.4,
+  "zeigt": "Blaulicht auf der Straße von oben",
+  "animation": "Tilt-Shift-Flug",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 166,
+  "t0": 545.8
+ },
+ {
+  "satz": "Es entscheidet sich in den ersten Minuten in der Küche.",
+  "sek": 3.12,
+  "zeigt": "Die Küche: die ersten Minuten",
+  "animation": "Dein Haus",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "antwort:rechtzeitig",
+  "i": 167,
+  "t0": 548.2
+ },
+ {
+  "satz": "Und am Telefon.",
+  "sek": 1.44,
+  "zeigt": "Der Disponent am Telefon",
+  "animation": "Steuerzentrale",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 168,
+  "t0": 551.32
+ },
+ {
+  "satz": "136.000 Mal im Jahr.",
+  "sek": 3.0,
+  "zeigt": "Fallblatt-Tafel klappt auf 136.000 Herzstillstände pro Jahr",
+  "animation": "Fallblatt-Zahl (`motion` counter)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 169,
+  "t0": 552.76
+ },
+ {
+  "satz": "(Fortsetzung) Rund hundertsechsunddreißigtausend Mal i",
+  "sek": 3.0,
+  "zeigt": "Fallblatt-Tafel klappt auf 136.000 Herzstillstände pro Jahr",
+  "animation": "Fallblatt-Zahl (`motion` counter)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 169,
+  "t0": 555.76
+ },
+ {
+  "satz": "370 Menschen am Tag.",
+  "sek": 2.8,
+  "zeigt": "Fallblatt-Tafel: 370 PRO TAG",
+  "animation": "Zahl in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 170,
+  "t0": 558.76
+ },
+ {
+  "satz": "jeder Zehnte, 10 Prozent.",
+  "sek": 4.24,
+  "zeigt": "Raster aus 50 Figuren, 5 leuchten: jeder Zehnte überlebt",
+  "animation": "Lichter-aus-Raster (`motion` grid)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 171,
+  "t0": 561.56
+ },
+ {
+  "satz": "Unsere Szene ist erfunden.",
+  "sek": 1.96,
+  "zeigt": "Die Küche mit den Rettern, Einblendung Szene nachgestellt",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 172,
+  "t0": 565.8
+ },
+ {
+  "satz": "Aber so etwas passiert in Deutschland jeden Tag, hunderte Male.",
+  "sek": 4.24,
+  "zeigt": "Über ganz Deutschland verteilt: hunderte Punkte am Tag",
+  "animation": "Netzwerk-Karte",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 173,
+  "t0": 567.76
+ },
+ {
+  "satz": "Drei Dinge entscheiden, wie es ausgeht.",
+  "sek": 2.56,
+  "zeigt": "Tafel klappt 1 – 2 – 3",
+  "animation": "Zahl in der Welt",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "antwort:dreidinge",
+  "i": 174,
+  "t0": 572.0
+ },
+ {
+  "satz": "Erstens: Wenn du anrufst, sag zuerst, wo du bist.",
+  "sek": 3.68,
+  "zeigt": "Handy-Bildschirm: Wo ist der Notfallort? – Antwort mit Adresse",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 175,
+  "t0": 574.56
+ },
+ {
+  "satz": "Und leg nicht auf, bis die Leitstelle es sagt.",
+  "sek": 3.04,
+  "zeigt": "Handy am Boden: der Anruf läuft weiter, Einblendung nicht auflegen",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 176,
+  "t0": 578.24
+ },
+ {
+  "satz": "Zweitens: Wenn du nicht durchkommst, versuch es sofort noch einmal, notfalls von einem anderen Telefon.",
+  "sek": 3.26,
+  "zeigt": "Ablauf-Kette: 112 → noch einmal → anderes Telefon",
+  "animation": "Ablauf-Kette 2D (`motion` flow)",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 177,
+  "t0": 581.28
+ },
+ {
+  "satz": "(Fortsetzung) Zweitens: Wenn du nicht durchkommst, ver",
+  "sek": 3.26,
+  "zeigt": "Ablauf-Kette: 112 → noch einmal → anderes Telefon",
+  "animation": "Ablauf-Kette 2D (`motion` flow)",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 177,
+  "t0": 584.54
+ },
+ {
+  "satz": "Und wenn gar nichts geht, geh zur nächsten Feuer- oder Polizeiwache.",
+  "sek": 4.32,
+  "zeigt": "Die helle Wache als Anlaufstelle, Menschen davor",
+  "animation": "Menschen reagieren",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 178,
+  "t0": 587.8
+ },
+ {
+  "satz": "Drittens: Wenn jemand vor dir zusammenbricht und nicht normal atmet, drück.",
+  "sek": 2.6,
+  "zeigt": "Echter Clip: Hände drücken fest auf die Brustmitte einer Übungspuppe",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 179,
+  "t0": 592.12
+ },
+ {
+  "satz": "(Fortsetzung) Drittens: Wenn jemand vor dir zusammenbr",
+  "sek": 2.6,
+  "zeigt": "Echter Clip: Hände drücken fest auf die Brustmitte einer Übungspuppe",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 179,
+  "t0": 594.72
+ },
+ {
+  "satz": "Fest und schnell, in der Mitte der Brust.",
+  "sek": 2.64,
+  "zeigt": "Die Frau drückt in der Mitte der Brust, Einblendung fest und schnell",
+  "animation": "Menschen reagieren",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 180,
+  "t0": 597.32
+ },
+ {
+  "satz": "Der Mensch am Telefon zählt mit.",
+  "sek": 2.0,
+  "zeigt": "Leitstelle, der Disponent zählt mit",
+  "animation": "Steuerzentrale",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 181,
+  "t0": 599.96
+ },
+ {
+  "satz": "Die drei Ziffern sind schnell gewählt.",
+  "sek": 2.16,
+  "zeigt": "Das Handy vom Anfang, 112 auf dem Bildschirm",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 182,
+  "t0": 601.96
+ },
+ {
+  "satz": "Was danach kommt, ist ein ganzes System.",
+  "sek": 2.8,
+  "zeigt": "Kamera steigt auf: Wache, Leitstelle, Funkmast – das ganze System",
+  "animation": "Tilt-Shift-Flug",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 183,
+  "t0": 604.12
+ },
+ {
+  "satz": "Und das erste Glied darin bist du.",
+  "sek": 2.4,
+  "zeigt": "Dein Haus leuchtet auf: das erste Glied bist du",
+  "animation": "Dein Haus",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 184,
+  "t0": 606.92
+ },
+ {
+  "satz": "Hast du schon mal eins, eins, zwei gewählt?",
+  "sek": 2.68,
+  "zeigt": "Die Fallblatt-Tafel am Bahnhof klappt auf 112?",
+  "animation": "Zahl in der Welt",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 185,
+  "t0": 609.32
+ },
+ {
+  "satz": "Und wie lange hat es gedauert, bis Hilfe kam?",
+  "sek": 2.56,
+  "zeigt": "Uhr dreht sich: wie lange?",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 186,
+  "t0": 612.0
+ },
+ {
+  "satz": "Schreib es in die Kommentare.",
+  "sek": 1.68,
+  "zeigt": "Leitstelle bei Nacht, Einblendung Schreib's in die Kommentare",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 187,
+  "t0": 614.56
+ },
+ {
+  "satz": "Und wenn du sehen willst, welches System wir als Nächstes aufschrauben: Glocke an.",
+  "sek": 2.36,
+  "zeigt": "Kamera zieht weit zurück über die nächtliche Modellstadt",
+  "animation": "Tilt-Shift-Flug",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 188,
+  "t0": 616.24
+ },
+ {
+  "satz": "(Fortsetzung) Und wenn du sehen willst, welches System",
+  "sek": 2.36,
+  "zeigt": "Kamera zieht weit zurück über die nächtliche Modellstadt",
+  "animation": "Tilt-Shift-Flug",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 188,
+  "t0": 618.6
+ },
+ {
+  "satz": "Das war Unterbau.",
+  "sek": 3.64,
+  "zeigt": "Das Handy vom Anfang liegt dunkel am Boden – Abspann UNTERBAU",
+  "animation": "Rückflug zum Anfang",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 189,
+  "t0": 620.96
+ }
+]

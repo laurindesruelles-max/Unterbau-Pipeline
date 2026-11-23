@@ -1,0 +1,54 @@
+Vier Uhr zwölf, eine Küche in Kassel: Eine Frau wählt 112, ihr Mann atmet nicht mehr normal. Was passiert in den nächsten Minuten? Wir folgen dem Notruf vom Handy bis zum Rettungswagen. Dazu: warum es die 112 überhaupt gibt, warum jedes Bundesland eine andere Uhr hat und was passiert, wenn der Notruf ausfällt. Am Ende kennst du die drei Dinge, die in solchen Minuten zählen.
+
+Die Küchenszene ist nachgestellt, alles andere ist belegt.
+
+KAPITEL
+0:00 Eine Frau wählt 112
+0:47 Die erste Minute
+2:45 Winnenden, 1969
+4:15 Sechzehn Uhren
+6:50 Wenn niemand durchkommt
+8:47 Minute neun
+
+QUELLEN
+Die erste Minute
+Notrufverordnung (Routing, SIM, Standort): https://www.gesetze-im-internet.de/notrufv/BJNR048100009.html
+Notrufe in Deutschland (dpa/Telekom): https://www.berliner-zeitung.de/news/notruf-in-deutschland-so-oft-wird-die-112-taeglich-angerufen-li.2185368
+Berliner Feuerwehr, Jahresbericht 2024: https://www.berliner-feuerwehr.de/fileadmin/bfw/dokumente/Publikationen/Jahresberichte_infografik/Infografik_Jahresbericht_2024.pdf
+AML in den Leitstellen (teltarif): https://www.teltarif.de/arch/2022/kw06/s87203.html
+GRC Telefonreanimation: https://www.grc-org.de/files/ArticleFiles/document/2025_09_21_GRC_AG_TCPR_Arbeitspapier.pdf
+Deutsches Reanimationsregister, Jahresbericht 2025: https://www.ai-online.info/images/ai-ausgabe/2026/04-2026/AI_04-2026_Verbaende_DGAI_ReaRegister_Fischer.pdf
+
+Winnenden, 1969
+Björn Steiger Stiftung, Geschichte: https://www.steiger-stiftung.de/download/documents/Geschichte_der_Bjoern_Steiger_Stiftung.pdf
+Bundesregierung, 50 Jahre 110 und 112: https://www.bundesregierung.de/breg-de/aktuelles/notrufnummer-50-jahre-2224394
+EU (CORDIS), Ratsentscheidung 91/396/EWG: https://cordis.europa.eu/article/id/495-introduction-of-a-single-european-emergency-call-number/de
+
+Sechzehn Uhren
+Rettungsdienstplan Hessen: https://familie.hessen.de/sites/familie.hessen.de/files/2024-09/rettungsdienstplan_01.01.2025.pdf
+NRW Planungsfristen: https://recht.nrw.de/lrmb/verwaltungsvorschrift/25072025-verwaltungsvorschrift-zur-anwendung-von-planungsfristen-fuer/
+Baden-Württemberg, Gericht 2023: https://www.aerztezeitung.de/Wirtschaft/Regeln-zu-Hilfsfrist-fuer-Rettungsdienste-unwirksam-439110.html
+Baden-Württemberg, neues Gesetz 2024: https://www.aerzteblatt.de/news/baden-wuerttemberg-beschliesst-strengere-frist-fuer-rettungseinsaetze-d45d926d-5251-476a-88e4-640220a8dddf
+Wer den Rettungsdienst fährt (BMG, Regierungskommission): https://Bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/K/Krankenhausreform/BMG_Stellungnahme_9_Rettungsdienst_bf.pdf
+Kosten Rettungsdienst (BARMER/bifg): https://www.bifg.de/media/dl/ePaper/240930_ePaper%20Rettungsdienst_2_v04_2_BF.pdf
+Gebühr Essen: https://www.auto-motor-und-sport.de/verkehr/gebuehren-fuer-rettungswageneinsatz-ab-2026-erste-stadt-laesst-patienten-blechen/
+eCall-Fehlalarme Bayern: https://www.auto-motor-und-sport.de/verkehr/90-fehl-alarme-in-bayern-ecall-belastet-rettungssystem/
+Notfallreform, Bundestag: https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen/bundestag-beschliesst-notfallreform.html
+Notfallreform, Bundesrat: https://www.vdek.com/presse/pressemitteilungen/2026/notfallversorgung-im-bundesrat-kein-vermittlungsauschuss.html
+Laienreanimation (BMG/BIÖG): https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/5_Publikationen/Gesundheit/Flyer_Poster_etc/Faktenblatt_Laienreanimation_BMG-BIOEG.pdf
+
+Wenn niemand durchkommt
+Ausfall 11.11.2021 (Ärzteblatt): https://www.aerzteblatt.de/news/notrufnummern-in-zahlreichen-bundeslaendern-ausgefallen-stoerung-behoben-e40fc25e-0300-438e-94f6-f3c950cc7af5
+Frankreich, Orange 2021: https://www.lequotidiendumedecin.fr/hopital/urgences/panne-des-numeros-durgence-11-des-appels-nont-pas-pu-aboutir-lorigine-du-bug-devoilee
+Großbritannien, Ofcom-Strafe: https://ofcom.org.uk/phones-and-broadband/telecoms-infrastructure/bt-fined-17.5m-for-999-call-handling-failures
+Ahrtal, Landtag Rheinland-Pfalz: https://dokumente.landtag.rlp.de/landtag/vorlagen/5776-V-18.pdf
+Katastrophenschutz-Leuchttürme Berlin: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/service-und-organisationseinheiten/katastrophenschutz/artikel.1663279.php
+
+Minute neun
+Herz-Kreislauf-Stillstand, 370 pro Tag (Ärzteblatt): https://www.aerzteblatt.de/news/plotzlicher-herz-kreislauf-stillstand-trifft-370-menschen-pro-tag-2c8773e8-176c-42c2-9ea9-29983428c598
+
+HINWEIS ZU KI UND MATERIAL
+Die Bilder der Modellstadt sind in Blender gebaut, die Stimme ist KI-generiert (ElevenLabs), die Grafiken sind eigene Animationen. Echte Clips: Pixabay (Pixabay Content License). Geräusche: Freesound (CC0, CC BY: „open close window roller shutters“ von Garuda1982, https://freesound.org/people/Garuda1982/sounds/552385). Musik: eigene Unterbau-Bibliothek. Keine Verbindung zu genannten Organisationen oder Firmen.
+
+Im Notfall immer 112. Für Fieber und Beschwerden außerhalb der Sprechzeiten: 116 117.
+

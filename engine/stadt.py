@@ -75,6 +75,7 @@ def text(name, s, loc, size, m, rot=(math.pi / 2, 0, 0)):
     o = bpy.data.objects.new(name, cu); bpy.context.scene.collection.objects.link(o); o.location = loc; o.rotation_euler = rot
     cu.materials.append(m); return o
 
+EXTRA = set()   # Zusatz-Welten (--extra notruf), damit alte Videos gleich bleiben
 ANCH = {}    # Name -> Liste 3D-Punkte (Ecken oder Pfad)
 STATE_OBJ = {}
 
@@ -128,6 +129,7 @@ def build_town():
     # Häuser in den Blöcken (nicht auf Sonderflächen)
     special = {(0, -8): "markt", (-12, -8): "haus", (0, 8): "rathaus", (-8, 8): "bahnhof", (8, -8): "apotheke",
                (12, 8): "klinik", (12, -8): "tankstelle"}
+    if "notruf" in EXTRA: special.update({(-6, 2): "leitstelle", (6, -2): "wache", (-10, -2): "mast"})
     items, win = [], []
     for bx in range(-14, 15, 4):
         for by in range(-10, 11, 4):
@@ -612,6 +614,8 @@ def apply_state(st):
     if "atm" in STATE_OBJ: emit("atm", 2.0 * (1 - g("atm_off", 0)))
     if "pools" in STATE_OBJ: emit("pool", 0.35 * g("lights", 1.0))
     if "c_deckel" in STATE_OBJ: STATE_OBJ["c_deckel"].hide_render = g("cut", 0) > 0.5
+    if "notruf" in EXTRA:
+        import stadt_notruf; stadt_notruf.state(sys.modules[__name__], st)
     w = bpy.context.scene.world.node_tree.nodes["Background"]
     day = g("day", 0.0)
     w.inputs[0].default_value = tuple(C["night"][i] * (1 - day) + (0.35, 0.45, 0.6, 1)[i] * day for i in range(4)); w.inputs[1].default_value = 0.7 + 1.5 * day
@@ -627,6 +631,8 @@ def setup_scene(W, H, samples):
     build_racks("zlager", 700, "kisten"); build_racks("kuehl", 760, "weiss", light=(0.75, 0.88, 1.0)); build_racks("reserve", 820, "saecke")
     build_racks("apo", 880, "klein", rows=2, levels=3); build_racks("klinik", 940, "weiss", rows=2, levels=3)
     build_cab(); build_leitstand(); build_markt_cut(); build_bars(); build_ladung()
+    if "notruf" in EXTRA:
+        import stadt_notruf; stadt_notruf.build(sys.modules[__name__])
     r = sc.render; r.engine = "CYCLES"; sc.cycles.device = "CPU"; sc.cycles.samples = samples; sc.cycles.use_denoising = True
     sc.cycles.max_bounces = 4; sc.cycles.light_sampling_threshold = 0.02; r.resolution_x, r.resolution_y = W, H
     sc.view_settings.view_transform = "AgX"; sc.view_settings.look = "AgX - Medium High Contrast"
@@ -657,9 +663,10 @@ def render(sc, path, kind="png", samples=None):
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("shots"); ap.add_argument("out")
     ap.add_argument("--w", type=int, default=1600); ap.add_argument("--h", type=int, default=900); ap.add_argument("--samples", type=int, default=10)
-    ap.add_argument("--only", default="")
+    ap.add_argument("--only", default=""); ap.add_argument("--extra", default=""); ap.add_argument("--nodepth", action="store_true")
     a = ap.parse_args(sys.argv[sys.argv.index("--") + 1:] if "--" in sys.argv else sys.argv[1:])
-    os.makedirs(a.out, exist_ok=True)
+    os.makedirs(a.out, exist_ok=True); EXTRA.update(x for x in a.extra.split(",") if x)
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     shots = json.load(open(a.shots)); only = set(a.only.split(",")) if a.only else None
     sc, cam = setup_scene(a.w, a.h, a.samples); DONE = {}
     for s in shots:
@@ -675,7 +682,7 @@ def main():
         DONE[key] = base
         c = s["cam"]; look_at(cam, c["loc"], c["tgt"], c.get("lens", 50))
         apply_state(s.get("A", {})); render(sc, base + "_A.png")
-        render(sc, base + "_Z.exr", "exr", samples=1)
+        if not a.nodepth: render(sc, base + "_Z.exr", "exr", samples=1)
         if s.get("B"): apply_state({**s.get("A", {}), **s["B"]}); render(sc, base + "_B.png")
         proj = {k: project(sc, cam, ANCH[k], a.w, a.h) for k in s.get("anchors", []) if k in ANCH}
         json.dump({"W": a.w, "H": a.h, "anchors": proj}, open(base + ".json", "w"))

@@ -18,6 +18,7 @@ from PIL import Image, ImageDraw, ImageFont
 OW, OH, FPS = 1920, 1080, 25
 FB = "/usr/share/fonts/opentype/inter/Inter-Bold.otf"; FM = "/usr/share/fonts/opentype/inter/Inter-Medium.otf"
 ORANGE = np.array([255, 120, 30], np.float32); WARM = np.array([255, 190, 120], np.float32)
+BLUE = np.array([70, 130, 255], np.float32); RED = np.array([255, 60, 40], np.float32)
 
 def ease(u): u = min(max(u, 0.0), 1.0); return u * u * (3 - 2 * u)
 def eo(u): u = min(max(u, 0.0), 1.0); return 1 - (1 - u) ** 3
@@ -97,6 +98,33 @@ def path_point(P, u):
     if a[2] <= 0.05 or b[2] <= 0.05: return None
     return (a[0] * (1 - f) + b[0] * f, a[1] * (1 - f) + b[1] * f)
 
+_CAPS = {}
+def video_frame(path, t, W=1600, H=900):
+    """Bild eines Clips (echter Pixabay-Clip oder 2D-Motion) zur Zeit t; Schleife, wenn der Clip kürzer ist."""
+    c = _CAPS.get(path)
+    if c is None:
+        cap = cv2.VideoCapture(path); c = _CAPS[path] = [cap, -1, None, max(1, int(cap.get(cv2.CAP_PROP_FRAME_COUNT))), cap.get(cv2.CAP_PROP_FPS) or 25]
+    i = int(t * c[4]) % c[3]
+    if i != c[1]:
+        if i != c[1] + 1: c[0].set(cv2.CAP_PROP_POS_FRAMES, i)
+        ok, fr = c[0].read()
+        if ok: c[1], c[2] = i, cv2.resize(cv2.cvtColor(fr, cv2.COLOR_BGR2RGB), (W, H), interpolation=cv2.INTER_AREA).astype(np.float32)
+    return c[2].copy() if c[2] is not None else np.zeros((H, W, 3), np.float32)
+
+class VShot:
+    """Vollbild-Clip (Match-Cut echter Clip / 2D-Motion-Grafik) mit leichter Fahrt."""
+    def __init__(s, spec):
+        s.sp = spec; s.W, s.H = 1600, 900; s.anc = {}
+    def frame(s, t):
+        sp = s.sp; img = video_frame(sp["video"], sp.get("ss", 0.0) + t, s.W, s.H)
+        if sp.get("kind") == "clip":
+            z = 1.0 + 0.06 * (t / sp["dur"]); cx, cy = s.W / 2, s.H / 2
+            M = np.float32([[z, 0, cx - z * cx], [0, z, cy - z * cy]]); img = cv2.warpAffine(img, M, (s.W, s.H), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)
+            g = img.mean(axis=2, keepdims=True); img = img * 0.8 + g * 0.2; img = img * np.array([0.92, 0.97, 1.08], np.float32)   # Kanal-Grade: kühler, etwas entsättigt
+        for fx in sp.get("fx", []):
+            if fx["type"] in ("card", "label", "fadein"): img = Shot.effect(s, img, fx, t, t / sp["dur"])
+        return img
+
 class Shot:
     def __init__(s, spec, rdir, W, H):
         s.sp = spec; b = os.path.join(rdir, spec["id"])
@@ -167,7 +195,32 @@ class Shot:
             for k in range(n):
                 q = path_point(P, k / n + tt * sp * s.sp["dur"])
                 if q is not None: pts.append((q[0], q[1], fade))
-            return glow_dots(img, pts, fx.get("r", 4))
+            col = BLUE if fx.get("col") == "blue" else (RED if fx.get("col") == "red" else WARM)
+            if fx.get("blink"): pts = [(x, y, a * (0.35 + 0.65 * (math.sin(t * 14 + k) > 0))) for k, (x, y, a) in enumerate(pts)]
+            return glow_dots(img, pts, fx.get("r", 4), col)
+        if ty == "blink":    # Blaulicht an Ankerpunkten (pulsierend)
+            out = img
+            for k in fx["anchors"]:
+                if k in A:
+                    a = 0.25 + 0.75 * max(0.0, math.sin(t * 13.0)) ** 2
+                    out = glow_dots(out, [(p[0], p[1], a) for p in A[k][:1]], fx.get("r", 7), BLUE, fx.get("gain", 1.6))
+            return out
+        if ty == "wash":     # Blaulicht wandert über die Wand: blauer Lichtschein von links nach rechts, pulsierend
+            H_, W_ = img.shape[:2]; xx = np.linspace(0, 1, W_)[None, :]; c = (t * 0.9) % 1.6 - 0.3
+            band = np.exp(-((xx - c) / 0.22) ** 2) * (0.5 + 0.5 * max(0.0, math.sin(t * 9))) * fx.get("gain", 0.8)
+            return img + band[..., None] * np.ones((H_, 1, 1)) * BLUE * 0.6
+        if ty == "card":     # Titel-/Kapitelkarte (Unterbau-Look): Bild abdunkeln, Kapitelnummer, Titel, oranger Strich
+            al = min(1.0, u / 0.08, (1 - u) / 0.08) if fx.get("fade", True) else 1.0
+            img = img * (1 - 0.62 * al)
+            im = Image.fromarray(np.clip(img, 0, 255).astype(np.uint8)).convert("RGBA"); ov = Image.new("RGBA", im.size, (0, 0, 0, 0)); d = ImageDraw.Draw(ov)
+            Wd, Hd = im.size; sc = Wd / 1920
+            top = fx.get("top"); title = fx["title"]; sub = fx.get("sub")
+            f1 = font(int(118 * sc)); w1 = d.textlength(title, font=f1); y0 = Hd * 0.42
+            if top: f0 = font(int(34 * sc), False); w0 = d.textlength(top, font=f0); d.text(((Wd - w0) / 2, y0 - 70 * sc), top, font=f0, fill=(255, 140, 50, int(255 * al)))
+            d.text(((Wd - w1) / 2, y0), title, font=f1, fill=(240, 242, 248, int(255 * al)))
+            gl = ease((u - 0.1) / 0.3) * 260 * sc; d.rectangle([Wd / 2 - gl / 2, y0 + 150 * sc, Wd / 2 + gl / 2, y0 + 156 * sc], fill=(255, 110, 20, int(255 * al)))
+            if sub: f2 = font(int(40 * sc), False); w2 = d.textlength(sub, font=f2); d.text(((Wd - w2) / 2, y0 + 180 * sc), sub, font=f2, fill=(190, 198, 215, int(255 * al)))
+            im.alpha_composite(ov); return np.array(im.convert("RGB")).astype(np.float32)
         if ty == "lines":
             fa = fx.get("fade"); al = 1.0
             if fa: al = 1 - ease((u - fa[0]) / (fa[1] - fa[0]))
@@ -219,6 +272,12 @@ class Shot:
             return img * (1 - a) + g * a * np.array([0.9, 0.95, 1.05])
         if ty == "screen" and fx["anchor"] in A:
             if not hasattr(s, "_scrs"): s._scrs = {}
+            if "video" in fx:
+                im = video_frame(fx["video"], fx.get("ss", 0.0) + t, 960, 540)
+                g = im * 0.85 + 12; g[..., 2] += 8; sl = (np.arange(540) % 4 < 1)[:, None, None] * 10
+                tex = np.dstack([np.clip(g - sl, 0, 255).astype(np.uint8), np.full((540, 960), 255, np.uint8)])
+                al = ease(u / 0.12); out = quad_overlay(img, A[fx["anchor"]], tex)
+                return img * (1 - al) + out * al
             if fx["img"] not in s._scrs:
                 im = cv2.cvtColor(cv2.imread(fx["img"]), cv2.COLOR_BGR2RGB); im = cv2.resize(im, (960, 540))
                 g = im.astype(np.float32); g = g * 0.85 + 12                                   # Bildschirm: etwas flacher, leicht bläulich
@@ -240,7 +299,7 @@ class Shot:
                 s._sc = lo + rng.random((fx.get("n", 100), 2)) * (hi - lo); s._sct = rng.random(fx.get("n", 100))
             al = np.clip((u - fx.get("t0", 0.0) - s._sct * 0.5) / 0.1, 0, 1)
             if fx.get("fade") is not None: al = al * (1 - ease((u - fx["fade"]) / 0.4))
-            return glow_dots(img, [(x, y, a) for (x, y), a in zip(s._sc, al)], 4, ORANGE)
+            return glow_dots(img, [(x, y, a) for (x, y), a in zip(s._sc, al)], 4, RED if fx.get("col") == "red" else ORANGE)
         if ty == "fadein":
             return img * ease(u / 0.3)
         if ty == "flicker":
@@ -257,6 +316,8 @@ def grade(fr, grain_rng):
     fr = fr + grain_rng.normal(0, 3.2, (OH // 2, OW // 2, 1)).repeat(2, 0).repeat(2, 1).astype(np.float32)
     return np.clip(fr, 0, 255).astype(np.uint8)
 
+def mk(spec, rdir): return VShot(spec) if "video" in spec else Shot(spec, rdir, OW, OH)
+
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("plan"); ap.add_argument("rdir"); ap.add_argument("out")
     ap.add_argument("--from", dest="i0", type=int, default=0); ap.add_argument("--to", dest="i1", type=int, default=10**6)
@@ -268,9 +329,9 @@ def main():
     prev = None
     full = json.load(open(a.plan))
     if a.i0 > 0 and plan and (plan[0].get("run_k", 0) > 0 or plan[0].get("xfade")):      # Teil beginnt mitten in einer Folge: letztes Bild davor vorbereiten
-        ps = full[a.i0 - 1]; prev = Shot(ps, a.rdir, OW, OH).frame(ps["dur"] - 1 / FPS)
+        ps = full[a.i0 - 1]; prev = mk(ps, a.rdir).frame(ps["dur"] - 1 / FPS)
     for spec in plan:
-        sh = Shot(spec, a.rdir, OW, OH)
+        sh = mk(spec, a.rdir)
         tacc += spec["dur"]; frames = int(round(tacc * FPS)) - n
         last = None
         for k in range(frames):
