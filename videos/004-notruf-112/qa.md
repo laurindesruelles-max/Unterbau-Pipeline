@@ -39,3 +39,6 @@ Tabelle: Aussage im Skript | Quelle (Link) | Stimmt? (ja / teilweise / nein / un
 - [ ] Werbefreundlich: keine Gewaltbilder, keine Schimpfwörter, keine reißerischen Schock-Thumbnails mit Verletzungen
 
 ## Ergebnis: TECHNIK OK · Fakten/Recht/Lizenzen: oben abhaken, erst dann Laurin zur Freigabe schicken
+
+## Hochgeladen (23.11.2026, 3. Fassung)
+Original-Schnitt, 14 Grafiken/Tafeln verlängert: https://www.youtube.com/watch?v=7jNaiufXt6w – geplant 25.11.2026 19:00. Privat ohne Termin: bHlYhxJx4qM (1. Fassung), 8adkQ9326Xg (ruhiger Schnitt).
