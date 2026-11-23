@@ -118,7 +118,7 @@ class VShot:
     def frame(s, t):
         sp = s.sp; img = video_frame(sp["video"], sp.get("ss", 0.0) + t, s.W, s.H)
         if sp.get("kind") == "clip":
-            z = 1.0 + 0.06 * (t / sp["dur"]); cx, cy = s.W / 2, s.H / 2
+            z = 1.0 + 0.018 * (sp.get("ss", 0.0) + t); cx, cy = s.W / 2, s.H / 2   # Zoom an der Clip-Zeit: Fortsetzungen schließen nahtlos an
             M = np.float32([[z, 0, cx - z * cx], [0, z, cy - z * cy]]); img = cv2.warpAffine(img, M, (s.W, s.H), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)
             g = img.mean(axis=2, keepdims=True); img = img * 0.8 + g * 0.2; img = img * np.array([0.92, 0.97, 1.08], np.float32)   # Kanal-Grade: kühler, etwas entsättigt
         for fx in sp.get("fx", []):

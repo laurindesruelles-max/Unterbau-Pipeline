@@ -2060,8 +2060,8 @@
  {
   "satz": "Mehr als 1 Stunde gestört.",
   "sek": 2.56,
-  "zeigt": "Raster aus Telefonen, alle werden dunkel: 70 Minuten gestört",
-  "animation": "Lichter-aus-Raster (`motion` grid)",
+  "zeigt": "Fallblatt-Zahl 70 MIN: so lange waren 110 und 112 gestört",
+  "animation": "Fallblatt-Zahl (`motion` counter)",
   "inhalt": [
    "zahl",
    "zeit"
@@ -2074,8 +2074,8 @@
  {
   "satz": "(Fortsetzung) Mehr als eine Stunde lang sind die Notru",
   "sek": 2.56,
-  "zeigt": "Raster aus Telefonen, alle werden dunkel: 70 Minuten gestört",
-  "animation": "Lichter-aus-Raster (`motion` grid)",
+  "zeigt": "Fallblatt-Zahl 70 MIN: so lange waren 110 und 112 gestört",
+  "animation": "Fallblatt-Zahl (`motion` counter)",
   "inhalt": [
    "zahl",
    "zeit"

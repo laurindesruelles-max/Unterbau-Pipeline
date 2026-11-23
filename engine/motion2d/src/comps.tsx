@@ -1,7 +1,7 @@
 // Motion-Bausteine (kanal-neutral). Aussehen kommt aus ./theme.tsx. Zeitpunkte = Sounds im Python-Adapter (motion_fx.py)!
 import React, {useMemo} from "react";
 import {AbsoluteFill, interpolate, useCurrentFrame, random, Easing} from "remotion";
-import {geoNaturalEarth1, geoMercator, geoPath, geoCentroid} from "d3-geo";
+import {geoNaturalEarth1, geoMercator, geoPath, geoCentroid, geoContains, geoBounds} from "d3-geo";
 import {feature} from "topojson-client";
 // @ts-ignore
 import world from "world-atlas/countries-50m.json";
@@ -27,7 +27,7 @@ const N = (v: number, at: number, dur: number, p: any = {}) => <Counter to={v} a
 
 /* ======================= MAP ======================= */
 export const MAP_T = {pin: (i: number) => 0.45 + i * 0.55, swarm: [0.2, 1.6], hl: (i: number, n: number) => 0.3 + (i / Math.max(1, n)) * 1.1, counter: 0.4};
-export const MapC: React.FC<any> = ({label, title, view = "world", pins = [], threads = "chain", swarm = 0, highlight = [], counter, pulse}) => {
+export const MapC: React.FC<any> = ({label, title, view = "world", pins = [], threads = "chain", swarm = 0, highlight = [], counter, pulse, swarmIn}) => {
   const f = useCurrentFrame();
   const proj = useMemo(() => {
     if (view === "world") return geoNaturalEarth1().fitExtent([[90, 120], [W - 90, H - 60]], {type: "FeatureCollection", features: feats} as any);
@@ -39,15 +39,24 @@ export const MapC: React.FC<any> = ({label, title, view = "world", pins = [], th
   const pts = pins.map((p: any) => proj(p.lonlat || (geoCentroid(byId(p.id)) as any)) as [number, number]);
   const sw = useMemo(() => {
     if (!swarm) return [];
-    const big = feats.map((d) => ({c: proj(geoCentroid(d)) as [number, number], a: path.area(d)})).filter((x) => x.c && x.a > 60 && x.c[0] > 0 && x.c[0] < W);
+    const zone = swarmIn || highlight; const big = feats.filter((d) => !zone.length || zone.includes(d.id)).map((d) => ({c: proj(geoCentroid(d)) as [number, number], a: path.area(d)})).filter((x) => x.c && x.a > 60 && x.c[0] > 0 && x.c[0] < W);
     const tot = big.reduce((a, b) => a + Math.sqrt(b.a), 0);
+    if (swarmIn && swarmIn.length) {
+      const fs = feats.filter((d) => swarmIn.includes(d.id)); const out: any[] = [];
+      for (let k = 0, tries = 0; out.length < swarm && tries < swarm * 60; tries++) {
+        const fe = fs[k % fs.length]; const [[x0, y0], [x1, y1]] = geoBounds(fe);
+        const lon = x0 + random(`lx${tries}`) * (x1 - x0), lat = y0 + random(`ly${tries}`) * (y1 - y0);
+        if (geoContains(fe, [lon, lat])) { const c = proj([lon, lat]) as [number, number]; out.push({x: c[0], y: c[1], t: random(`t${out.length}`)}); k++; }
+      }
+      return out;
+    }
     return Array.from({length: swarm}).map((_, k) => {
       let r = random(`p${k}`) * tot, pick = big[0];
       for (const b of big) { r -= Math.sqrt(b.a); if (r <= 0) { pick = b; break; } }
       const rad = Math.sqrt(pick.a) * 0.35;
       return {x: pick.c[0] + (random(`x${k}`) - 0.5) * rad, y: pick.c[1] + (random(`y${k}`) - 0.5) * rad, t: random(`t${k}`)};
     });
-  }, [swarm, proj, path]);
+  }, [swarm, proj, path, JSON.stringify(swarmIn || highlight)]);
   const pairs: [number, number][] = threads === "none" ? [] : threads === "chain" ? pins.slice(1).map((_: any, i: number) => [i, i + 1]) : threads;
   return (
     <T.Bg>
@@ -187,7 +196,7 @@ export const CounterC: React.FC<any> = ({label, value, prefix, suffix, dec, capt
 };
 
 /* ======================= GRID ======================= */
-export const GridC: React.FC<any> = ({label, n = 60, icon = "person", value, suffix = "", caption, hot = 9}) => {
+export const GridC: React.FC<any> = ({label, n = 60, icon = "person", value, prefix = "", suffix = "", caption, hot = 9, count}) => {
   const f = useCurrentFrame();
   return (
     <T.Bg>
@@ -196,13 +205,13 @@ export const GridC: React.FC<any> = ({label, n = 60, icon = "person", value, suf
         <div style={{display: "grid", gridTemplateColumns: "repeat(10, 66px)", gap: 14}}>
           {Array.from({length: n}).map((_, i) => {
             const at = s(T.gridRows ? 0.15 + Math.floor(i / 10) * 0.22 + (i % 10) * 0.025 : 0.15 + random(`o${i}`) * 1.3);
-            const p = interpolate(f, [at, at + 7], [0, 1], {...clamp, easing: ease}); const h = hot > 0 && i % hot === Math.min(3, hot - 1);
+            const p = interpolate(f, [at, at + 7], [0, 1], {...clamp, easing: ease}); const h = count != null ? i < count : (hot > 0 && i % hot === Math.min(3, hot - 1));
             return <div key={i} style={{width: 66, height: 66, transform: `scale(${p}) rotate(${(random(`q${i}`) - 0.5) * T.tileJitter}deg)`, opacity: p,
               display: "flex", alignItems: "center", justifyContent: "center", ...((T as any).Tile ? {} : (h ? T.tileHot : T.tile))}}>{(T as any).Tile ? React.createElement((T as any).Tile, {hot: h, icon, i}) : <Icon name={icon} size={50} color={h ? T.c.hot : T.c.tileInk} />}</div>;
           })}
         </div>
         <div>
-          <div style={{fontFamily: T.font.num, fontWeight: T.headWeight, fontSize: (fmt(value) + suffix).length > 4 ? 170 : 220, color: T.c.ink, lineHeight: 1.05}}>{N(value, 0.9, 1.0, {suffix})}</div>
+          <div style={{fontFamily: T.font.num, fontWeight: T.headWeight, fontSize: (prefix + fmt(value) + suffix).length > 4 ? 170 : 220, color: T.c.ink, lineHeight: 1.05}}>{N(value, 0.9, 1.0, {prefix, suffix})}</div>
           <Pop at={1.6}><div style={{fontFamily: T.font.body, fontWeight: 700, fontSize: 44, color: T.c.accent, maxWidth: 560, marginTop: 18}}>{caption}</div></Pop>
         </div>
       </AbsoluteFill>

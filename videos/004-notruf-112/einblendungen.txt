@@ -1,0 +1,110 @@
+   2.9s Einblendung: Kassel · 04:12 Uhr / eine Novembernacht
+   4.4s Tafel: 04:12
+  11.1s Tafel: MINUTE 0
+  12.8s Grafik (grid): {"label": "OHNE WIEDERBELEBUNG", "n": 100, "icon": "heart", "value": 10, "suffix": " %", "caption": "weniger Chance – pro Minute", "hot": 10}
+  20.9s Einblendung: Leitstelle / 
+  28.7s Grafik (map): {"label": "LEITSTELLEN", "view": [10.4, 51.2, 2600], "highlight": ["276"], "swarm": 240}
+  39.2s Einblendung: Szene nachgestellt / 
+  43.2s Karte: WAS WIRKLICH PASSIERT, WENN DU 112 WÄHLST UNTERBAU
+  47.8s Karte: KAPITEL 1 Die erste Minute
+  52.3s Tafel: MINUTE 0 → 04:12
+  53.5s Einblendung: Funkmast / 
+  56.9s Einblendung: keine Zentrale für ganz Deutschland / 
+  62.9s Grafik (flow): {"label": "WOHIN DER NOTRUF GEHT", "nodes": [{"icon": "phone", "label": "Handy"}, {"icon": "tower", "label": "Funkmast"}, {"icon": "house", "label": "zuständige Leitstelle"}], "packet": "phone"}
+  68.0s Grafik (counter): {"label": "LEITSTELLEN", "value": 240, "prefix": "≈ ", "caption": "in Deutschland"}
+  71.1s Einblendung: betrieben von Kreis oder Stadt / 
+  79.6s Grafik (counter): {"label": "NOTRUFE PRO JAHR", "value": 30000000, "prefix": "> ", "caption": "110 + 112 · ≈ 1 pro Sekunde"}
+  81.9s Einblendung: Berlin: alle 28 s ein Notruf / 2024
+  85.4s Einblendung: ohne SIM-Karte: kein Notruf / seit 2009
+  89.7s Einblendung: fremdes Netz: geht / auch ohne Guthaben
+  96.1s Grafik (flip): {"front": {"icon": "doc", "title": "Was?"}, "back": {"title": "Wo?", "sub": "Wo ist der Notfallort?"}, "at": 2.6}
+ 105.6s Einblendung: Hausnummer? / 
+ 115.7s Grafik (flip): {"front": {"icon": "phone", "title": "AML"}, "back": {"title": "Standort", "sub": "automatisch vom Handy"}, "at": 1.2}
+ 118.1s Grafik (bars): {"label": "LEITSTELLEN MIT AML", "title": "2022", "bars": [["nutzen AML", 223, true], ["alle Leitstellen", 234, false]]}
+ 120.4s Einblendung: 8 von 10 Fällen: ± 30 m / 
+ 124.6s Tafel: MINUTE 1
+ 137.6s Grafik (phone): {"label": "DER DISPONENT SAGT", "app": "NOTRUF 112", "messages": [["Legen Sie das Handy neben ihn.", false], ["Ich bleibe dran.", false], ["Wir drücken jetzt zusammen.", false]]}
+ 148.8s Einblendung: Telefonreanimation / 
+ 151.3s Grafik (bars): {"label": "TELEFONREANIMATION", "unit": " %", "bars": [["Ziel der Fachleute", 100, false], ["tatsächlich (2025)", 37, true]]}
+ 165.6s Karte: KAPITEL 2 Winnenden, 1969
+ 170.1s Einblendung: 3. Mai 1969 / 
+ 172.8s Einblendung: Winnenden / bei Stuttgart
+ 179.4s Einblendung: Welche Nummer? / 
+ 181.2s Grafik (flip): {"front": {"icon": "phone", "title": "Notruf?"}, "back": {"title": "keine Nummer", "sub": "die überall gilt"}, "at": 1.6}
+ 187.2s Einblendung: Björn Steiger / 8 Jahre
+ 191.2s Grafik (flip): {"front": {"icon": "heart", "title": "Verletzungen?"}, "back": {"title": "Schock", "sub": "laut Björn Steiger Stiftung"}, "at": 2.2}
+ 196.6s Einblendung: 7. Juli 1969 / Björn Steiger Stiftung
+ 202.0s Grafik (flow): {"label": "DAS ZIEL", "nodes": [{"icon": "car", "label": "Unfall"}, {"icon": "phone", "label": "Notruf"}, {"icon": "truck", "label": "Hilfe kommt"}], "packet": "phone"}
+ 204.3s Grafik (flip): {"front": {"icon": "gavel", "title": "Klage"}, "back": {"title": "1973", "sub": "gegen Land und Bund"}, "at": 2.0}
+ 210.2s Tafel: KLAGE → ABGEWIESEN
+ 213.7s Tafel: 20.09.1973
+ 216.8s Einblendung: Ministerpräsidenten + Bundeskanzler / Bonn, 1973
+ 219.8s Grafik (flip): {"front": {"icon": "doc", "title": "Beschluss"}, "back": {"title": "110 · 112", "sub": "Westdeutschland, 1973"}, "at": 1.8}
+ 224.1s Tafel: 110 → 112
+ 226.9s Einblendung: Ende 1979 / letztes Ortsnetz angeschlossen
+ 233.0s Einblendung: 1991 / Europa zieht nach
+ 235.8s Grafik (map): {"label": "EG 1991", "view": "europe", "highlight": ["056", "208", "276", "300", "724", "250", "372", "380", "442", "528", "620", "826"], "title": "112 in allen 12 Mitgliedsländern"}
+ 243.3s Einblendung: 112 / Lissabon
+ 243.3s Einblendung: 112 / Warschau
+ 248.2s Tafel: 112
+ 255.8s Karte: KAPITEL 3 Sechzehn Uhren
+ 261.9s Tafel: MINUTE 4
+ 274.3s Grafik (map): {"label": "RETTUNGSDIENST", "view": [10.4, 51.2, 2600], "highlight": ["276"], "title": "Sache der 16 Länder"}
+ 276.7s Einblendung: 16 Rettungsdienstgesetze / 
+ 279.3s Einblendung: Kassel / Hessen
+ 281.0s Grafik (counter): {"label": "HESSEN", "value": 10, "suffix": " MIN", "caption": "in 9 von 10 Fällen"}
+ 289.2s Grafik (bars): {"label": "NORDRHEIN-WESTFALEN", "unit": " min", "bars": [["Stadt", 8, true], ["Land", 12, false]]}
+ 294.0s Einblendung: Bayern: 12 Minuten / 
+ 296.2s Einblendung: Uhr startet beim Ausrücken / Bayern
+ 299.6s Grafik (flip): {"front": {"icon": "gavel", "title": "Gericht 2023"}, "back": {"title": "Frist gekippt", "sub": "der Landtag hatte nicht entschieden"}, "at": 2.4}
+ 306.5s Grafik (counter): {"label": "BADEN-WÜRTTEMBERG", "value": 12, "suffix": " MIN", "caption": "in 95 von 100 Fällen · neues Gesetz"}
+ 311.9s Einblendung: dieselbe Not · 16 Uhren / 
+ 316.9s Grafik (flow): {"label": "WER BESTELLT?", "nodes": [{"icon": "bank", "label": "Kreis / Stadt"}, {"icon": "doc", "label": "Auftrag"}, {"icon": "truck", "label": "Rettungsdienst"}], "packet": "doc"}
+ 322.8s Grafik (bars): {"label": "WER DEN RETTUNGSDIENST FÄHRT", "unit": " %", "bars": [["Hilfsorganisationen", 80, true], ["Kommunen / Feuerwehr", 15, false], ["Private", 5, false]]}
+ 330.8s Grafik (flow): {"label": "WER ZAHLT?", "nodes": [{"icon": "person", "label": "dein Beitrag"}, {"icon": "bank", "label": "Krankenkasse"}, {"icon": "truck", "label": "Rettungsdienst"}], "packet": "money"}
+ 335.2s Tafel: EINSATZ → MEHRERE 100 €
+ 339.4s Grafik (counter): {"label": "ESSEN · GEBÜHRENSATZUNG", "value": 1020, "suffix": " €", "caption": "pro Einsatz mit dem Rettungswagen"}
+ 349.4s Grafik (flip): {"front": {"icon": "phone", "title": "112"}, "back": {"title": "116 117", "sub": "ärztlicher Bereitschaftsdienst"}, "at": 2.5}
+ 358.0s Grafik (flow): {"label": "eCALL", "nodes": [{"icon": "car", "label": "Unfall"}, {"icon": "tower", "label": "automatisch"}, {"icon": "phone", "label": "112"}], "packet": "phone"}
+ 364.0s Grafik (grid): {"label": "eCALL IN BAYERN", "n": 10, "icon": "car", "value": 90, "prefix": "> ", "suffix": " %", "caption": "Fehlalarme", "hot": 9}
+ 368.3s Tafel: OKT. 2026 → NOTFALLREFORM
+ 370.8s Tafel: OKT. 2026 → NOTFALLREFORM
+ 373.3s Grafik (flip): {"front": {"icon": "doc", "title": "Bundesrat"}, "back": {"title": "gebilligt", "sub": "November 2026"}, "at": 1.4}
+ 375.9s Grafik (flow): {"label": "NEU VERNETZT", "nodes": [{"icon": "phone", "label": "112"}, {"icon": "server", "label": "vernetzt"}, {"icon": "phone", "label": "116 117"}], "packet": "doc"}
+ 384.0s Tafel: MINUTE 5
+ 390.1s Grafik (bars): {"label": "LAIEN BEGINNEN MIT WIEDERBELEBUNG", "unit": " %", "bars": [["2010", 14, false], ["2024", 55, true]]}
+ 397.9s Grafik (map): {"label": "LAIENHILFE", "view": [12, 58, 1500], "highlight": ["578", "752", "528"], "title": "7 bis 8 von 10"}
+ 410.4s Karte: KAPITEL 4 Wenn niemand durchkommt
+ 417.5s Tafel: 11.11.2021
+ 422.0s Tafel: 04:12 → 04:30
+ 432.2s Einblendung: Wartung · neue Software / 
+ 436.0s Grafik (flip): {"front": {"icon": "gear", "title": "getestet"}, "back": {"title": "Fehler", "sub": "trotzdem"}, "at": 1.4}
+ 439.4s Grafik (grid): {"label": "11.11.2021", "n": 60, "icon": "phone", "value": 70, "suffix": " min", "caption": "110 und 112 gestört", "hot": 60}
+ 447.4s Grafik (flip): {"front": {"icon": "lock", "title": "Hacker?"}, "back": {"title": "Nein", "sub": "ein Fehler bei einem Update"}, "at": 1.6}
+ 453.5s Grafik (map): {"label": "FRANKREICH", "view": [2.5, 46.5, 2600], "highlight": ["250"], "pins": [{"lonlat": [2.35, 48.86], "label": "2. Juni 2021"}], "title": "Notruf-Ausfall"}
+ 461.5s Grafik (counter): {"label": "FRANKREICH", "value": 11800, "prefix": "≈ ", "caption": "Anrufe kamen nicht durch"}
+ 465.1s Einblendung: 3 Todesfälle / mit dem Ausfall in Verbindung gebracht
+ 468.3s Grafik (map): {"label": "GROSSBRITANNIEN", "view": [-2.5, 54.5, 2400], "highlight": ["826"], "pins": [{"lonlat": [-0.13, 51.5], "label": "25. Juni 2023"}], "title": "Notruf gestört"}
+ 472.2s Grafik (counter): {"label": "GROSSBRITANNIEN", "value": 14000, "prefix": "≈ ", "caption": "Anrufversuche gescheitert"}
+ 476.0s Grafik (counter): {"label": "STRAFE DER AUFSICHT", "value": 17.5, "dec": 1, "prefix": "£ ", "suffix": " MIO.", "caption": "Ofcom"}
+ 484.3s Einblendung: 14. Juli 2021 / Flutnacht im Ahrtal
+ 489.0s Einblendung: Leitstelle Koblenz / 
+ 495.2s Grafik (counter): {"label": "AHRTAL", "value": 11000, "prefix": "≈ ", "caption": "Notrufe – vom LKA ausgewertet"}
+ 511.7s Einblendung: Leuchttürme / Berlin
+ 527.4s Karte: KAPITEL 5 Minute neun
+ 533.2s Tafel: 04:21
+ 537.6s Einblendung: Minute 9 / 
+ 552.8s Grafik (counter): {"label": "HERZSTILLSTAND PRO JAHR", "value": 136000, "prefix": "≈ ", "caption": "außerhalb einer Klinik in Deutschland"}
+ 558.8s Tafel: 370 PRO TAG
+ 561.6s Grafik (grid): {"label": "NACH WIEDERBELEBUNG", "n": 50, "icon": "person", "value": 10, "prefix": "≈ ", "suffix": " %", "caption": "überleben", "hot": 5}
+ 565.8s Einblendung: Szene nachgestellt / 
+ 572.0s Tafel: 1 → 2 → 3
+ 574.6s Grafik (phone): {"label": "ERSTENS", "app": "NOTRUF 112", "messages": [["Wo ist der Notfallort?", false], ["Straße, Hausnummer, Ort", true]]}
+ 578.2s Einblendung: nicht auflegen / 
+ 581.3s Grafik (flow): {"label": "ZWEITENS", "nodes": [{"icon": "phone", "label": "112"}, {"icon": "phone", "label": "noch einmal"}, {"icon": "phone", "label": "anderes Telefon"}], "packet": "phone"}
+ 592.1s Einblendung: Drittens: drücken / 
+ 597.3s Einblendung: fest und schnell · Mitte der Brust / 
+ 606.9s Einblendung: du / 
+ 609.3s Tafel: 112?
+ 614.6s Einblendung: Schreib's in die Kommentare / 
+ 621.0s Karte:  UNTERBAU

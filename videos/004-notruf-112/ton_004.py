@@ -39,7 +39,7 @@ for k in range(1, 7):
     env[:f] *= np.linspace(0, 1, min(f, len(env))); env[-f:] *= np.linspace(1, 0, min(f, len(env)))
     j = int(a * SR); music[j:j + len(seg)] += seg * env[:, None]
 ev = np.abs(voice[:, 0]); k_ = int(0.25 * SR); ev = np.convolve(ev, np.ones(k_) / k_, "same")
-act = np.convolve(np.clip(ev / 0.02, 0, 1), np.ones(int(0.3 * SR)) / int(0.3 * SR), "same")
+act = np.convolve(np.clip(ev / 0.02, 0, 1), np.ones(int(0.7 * SR)) / int(0.7 * SR), "same")   # langsameres Ducking (Gemini 23.11.: pumpte)
 gain = 10 ** (-9 * act / 20) * 0.5
 for i in (12, 54, 63, 125, 165):          # Musik weg vor großen Sätzen, mit dem Satz zurück
     ts = T[i]; gain *= np.clip(1 - np.clip((t - (ts - 0.9)) / 0.15, 0, 1) + np.clip((t - (ts + 0.1)) / 0.5, 0, 1), 0, 1)
@@ -64,7 +64,7 @@ for q, p in enumerate(plan):
         key = os.path.basename(p["video"])[:-4]
         if key in MO._JOBS:
             for (te, nm, g, _) in MO.sounds(key, t0):
-                if te < t0 + d and nm in F: add(te, F[nm], g * 0.8)
+                if te < t0 + d and nm in F: add(te, F[nm], g * (0.45 if nm == "tick" else 0.8))
     for fx in p.get("fx", []):
         ty = fx["type"]
         if ty == "tafel":
@@ -77,7 +77,7 @@ for q, p in enumerate(plan):
             tl = t0 + fx.get("t0", 0.15) * d
             if tl - last_label > 2.0: add(tl - 0.05, X + "whoosh_slow_soft.wav", 0.18); last_label = tl
         elif ty == "card":
-            add(t0 + 0.05, X + "ub_hit.wav", 0.5)
+            add(t0 + 0.05, X + "ub_hit.wav", 0.38)
     if p.get("trans") == "lights" and p.get("anim") == "Lichter gehen aus": add(t0 + d * p["t_trans"][0], "HUM", 0.3)
     if p.get("anim") == "Tilt-Shift-Flug" and p.get("run_k", 0) == 0: add(t0 + 0.05, X + "whoosh_slow_soft.wav", 0.14)
 # Einzelne Geräusche zu Bild-Ereignissen

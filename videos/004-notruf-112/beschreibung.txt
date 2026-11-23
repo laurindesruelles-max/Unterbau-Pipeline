@@ -26,23 +26,26 @@ EU (CORDIS), Ratsentscheidung 91/396/EWG: https://cordis.europa.eu/article/id/49
 
 Sechzehn Uhren
 Rettungsdienstplan Hessen: https://familie.hessen.de/sites/familie.hessen.de/files/2024-09/rettungsdienstplan_01.01.2025.pdf
+Bayern AVBayRDG: https://www.gesetze-bayern.de/Content/Document/BayAVRDG-2
+eCall: https://www.bundesregierung.de/breg-de/aktuelles/ecall-rettet-leben-842134
 NRW Planungsfristen: https://recht.nrw.de/lrmb/verwaltungsvorschrift/25072025-verwaltungsvorschrift-zur-anwendung-von-planungsfristen-fuer/
 Baden-Württemberg, Gericht 2023: https://www.aerztezeitung.de/Wirtschaft/Regeln-zu-Hilfsfrist-fuer-Rettungsdienste-unwirksam-439110.html
 Baden-Württemberg, neues Gesetz 2024: https://www.aerzteblatt.de/news/baden-wuerttemberg-beschliesst-strengere-frist-fuer-rettungseinsaetze-d45d926d-5251-476a-88e4-640220a8dddf
-Wer den Rettungsdienst fährt (BMG, Regierungskommission): https://Bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/K/Krankenhausreform/BMG_Stellungnahme_9_Rettungsdienst_bf.pdf
-Kosten Rettungsdienst (BARMER/bifg): https://www.bifg.de/media/dl/ePaper/240930_ePaper%20Rettungsdienst_2_v04_2_BF.pdf
+Wer fährt (Regierungskommission): https://Bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/K/Krankenhausreform/BMG_Stellungnahme_9_Rettungsdienst_bf.pdf
+Kosten (BARMER): https://www.bifg.de/media/dl/ePaper/240930_ePaper%20Rettungsdienst_2_v04_2_BF.pdf
 Gebühr Essen: https://www.auto-motor-und-sport.de/verkehr/gebuehren-fuer-rettungswageneinsatz-ab-2026-erste-stadt-laesst-patienten-blechen/
 eCall-Fehlalarme Bayern: https://www.auto-motor-und-sport.de/verkehr/90-fehl-alarme-in-bayern-ecall-belastet-rettungssystem/
 Notfallreform, Bundestag: https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen/bundestag-beschliesst-notfallreform.html
-Notfallreform, Bundesrat: https://www.vdek.com/presse/pressemitteilungen/2026/notfallversorgung-im-bundesrat-kein-vermittlungsauschuss.html
+Notfallreform, Bundesrat: https://www.bundesrat.de/DE/plenum/bundesrat-kompakt/26/1070/1070-pk.html
+Herzstiftung, 10 % pro Minute: https://idw-online.de/de/news823694
 Laienreanimation (BMG/BIÖG): https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/5_Publikationen/Gesundheit/Flyer_Poster_etc/Faktenblatt_Laienreanimation_BMG-BIOEG.pdf
 
 Wenn niemand durchkommt
-Ausfall 11.11.2021 (Ärzteblatt): https://www.aerzteblatt.de/news/notrufnummern-in-zahlreichen-bundeslaendern-ausgefallen-stoerung-behoben-e40fc25e-0300-438e-94f6-f3c950cc7af5
-Frankreich, Orange 2021: https://www.lequotidiendumedecin.fr/hopital/urgences/panne-des-numeros-durgence-11-des-appels-nont-pas-pu-aboutir-lorigine-du-bug-devoilee
+Ausfall 11.11.2021 (PC-Welt): https://www.pcwelt.de/news/Notrufnummern-110-112-ausgefallen-Der-Grund-11131821.html
+Frankreich, Orange 2021: https://www.lemondeinformatique.fr/actualites/lire-panne-nationale-des-appels-d-urgence-des-victimes-et-un-audit-chez-orange-maj-83148.html
 Großbritannien, Ofcom-Strafe: https://ofcom.org.uk/phones-and-broadband/telecoms-infrastructure/bt-fined-17.5m-for-999-call-handling-failures
 Ahrtal, Landtag Rheinland-Pfalz: https://dokumente.landtag.rlp.de/landtag/vorlagen/5776-V-18.pdf
-Katastrophenschutz-Leuchttürme Berlin: https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/service-und-organisationseinheiten/katastrophenschutz/artikel.1663279.php
+Leuchttürme Berlin: https://www.berlin.de/ba-spandau/service/katastrophenschutz/katastrophenschutz-leuchttuerme-in-spandau-1631231.php
 
 Minute neun
 Herz-Kreislauf-Stillstand, 370 pro Tag (Ärzteblatt): https://www.aerzteblatt.de/news/plotzlicher-herz-kreislauf-stillstand-trifft-370-menschen-pro-tag-2c8773e8-176c-42c2-9ea9-29983428c598
