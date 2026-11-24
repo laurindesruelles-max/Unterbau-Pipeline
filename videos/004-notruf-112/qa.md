@@ -42,3 +42,6 @@ Tabelle: Aussage im Skript | Quelle (Link) | Stimmt? (ja / teilweise / nein / un
 
 ## Hochgeladen (23.11.2026, 3. Fassung)
 Original-Schnitt, 14 Grafiken/Tafeln verlängert: https://www.youtube.com/watch?v=7jNaiufXt6w – geplant 25.11.2026 19:00. Privat ohne Termin: bHlYhxJx4qM (1. Fassung), 8adkQ9326Xg (ruhiger Schnitt).
+
+## Hochgeladen (24.11.2026, 4. Fassung – Ton korrigiert)
+https://www.youtube.com/watch?v=XFm04TkThNE – geplant 25.11.2026 19:00. Musik ≥16 dB unter Stimme, 55 statt 116 Whooshes. 7jNaiufXt6w (3. Fassung) privat ohne Termin.
