@@ -1,0 +1,2628 @@
+[
+ {
+  "satz": "25 Cent.",
+  "sek": 2.8,
+  "zeigt": "Makro: die Pfandflasche liegt unter der Bank, Einblendung 25 Cent",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 0,
+  "t0": 0.0
+ },
+ {
+  "satz": "Aber niemand wird sie je zurückbringen. Wer behält dann ihr Pfand?",
+  "sek": 4.4,
+  "zeigt": "Die Flasche liegt allein unter der Bank, niemand kommt – Frage: Wer behält das Pfand?",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "frage:pfand",
+  "i": 1,
+  "t0": 2.8
+ },
+ {
+  "satz": "18:40 Uhr, Bahnhof Dortmund.",
+  "sek": 4.2,
+  "zeigt": "Bahnhofsuhr zeigt 18:40, Ortsmarke Dortmund, Samstag",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit",
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 3,
+  "t0": 7.2
+ },
+ {
+  "satz": "Die Flasche liegt unter einer Bank.",
+  "sek": 2.0,
+  "zeigt": "Bahnsteig bei Nacht: Bank, Mülleimer, die Flasche liegt unter der Bank",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 4,
+  "t0": 11.4
+ },
+ {
+  "satz": "Zwei Straßen weiter schiebt ein Mann die gleiche Sorte in einen Pfandautomaten.",
+  "sek": 2.32,
+  "zeigt": "Tilt-Shift-Flug vom Bahnhof zwei Straßen weiter zum Supermarkt",
+  "animation": "Tilt-Shift-Flug",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 5,
+  "t0": 13.4
+ },
+ {
+  "satz": "Zwei Straßen weiter schiebt ein Mann die gleiche Sorte in einen Pfandautomaten.",
+  "sek": 2.32,
+  "zeigt": "Ein Mann steht am Pfandautomaten und schiebt die gleiche Flasche hinein",
+  "animation": "Menschen reagieren",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 5,
+  "t0": 15.72
+ },
+ {
+  "satz": "Sie dreht sich. Piep.",
+  "sek": 2.0,
+  "zeigt": "Die Flasche dreht sich in der Öffnung, das Scanlicht tastet sie ab – Piep",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 6,
+  "t0": 18.04
+ },
+ {
+  "satz": "25 Cent.",
+  "sek": 1.52,
+  "zeigt": "Display des Automaten springt auf 0,25 €",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 8,
+  "t0": 20.04
+ },
+ {
+  "satz": "Hunderte Millionen pro Jahr.",
+  "sek": 2.56,
+  "zeigt": "Echter Clip: weggeworfene Flasche am Ufer, Einblendung hunderte Millionen pro Jahr (Schätzung)",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 9,
+  "t0": 21.56
+ },
+ {
+  "satz": "(Fortsetzung) Nach Schätzungen kommen jedes Jahr hunde",
+  "sek": 2.56,
+  "zeigt": "Echter Clip: weggeworfene Flasche am Ufer, Einblendung hunderte Millionen pro Jahr (Schätzung)",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 9,
+  "t0": 24.12
+ },
+ {
+  "satz": "Ihr Pfand hat jemand an der Kasse bezahlt.",
+  "sek": 2.32,
+  "zeigt": "An der Kasse liegt ein Sechserpack auf dem Band",
+  "animation": "Menschen reagieren",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 10,
+  "t0": 26.68
+ },
+ {
+  "satz": "6 x 0,25 Euro.",
+  "sek": 1.04,
+  "zeigt": "Kundendisplay: 6 × Pfand 0,25 € = 1,50 €",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 11,
+  "t0": 29.0
+ },
+ {
+  "satz": "Über 40.000 Automaten, 7 Firmen.",
+  "sek": 3.08,
+  "zeigt": "Querschnitt: die Front des Automaten wird durchsichtig – Röhre, Kamera-Ring, Presse; Einblendung 40.000 Automaten",
+  "animation": "Querschnitt",
+  "inhalt": [
+   "erklaerung",
+   "zahl"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 12,
+  "t0": 30.04
+ },
+ {
+  "satz": "(Fortsetzung) Dahinter stehen über vierzigtausend Auto",
+  "sek": 3.08,
+  "zeigt": "Querschnitt: die Front des Automaten wird durchsichtig – Röhre, Kamera-Ring, Presse; Einblendung 40.000 Automaten",
+  "animation": "Querschnitt",
+  "inhalt": [
+   "erklaerung",
+   "zahl"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 12,
+  "t0": 33.12
+ },
+ {
+  "satz": "Am Ende weißt du, wer daran verdient, wer das System betrügt und was die EU jetzt verlangt.",
+  "sek": 6.0,
+  "zeigt": "Ablauf-Kette: wer verdient → wer betrügt → was die EU verlangt, eine Flasche wandert mit",
+  "animation": "Ablauf-Kette 2D (`motion` flow)",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "teaser:versprechen",
+  "i": 13,
+  "t0": 36.2
+ },
+ {
+  "satz": "Diese Szene ist nachgestellt. Alles andere ist belegt.",
+  "sek": 4.2,
+  "zeigt": "Regionalzug fährt ein, Bank mit Flasche, Einblendung Szene nachgestellt",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 14,
+  "t0": 42.2
+ },
+ {
+  "satz": "Titelkarte",
+  "sek": 4.6,
+  "zeigt": "Titelkarte UNTERBAU über der Modellstadt",
+  "animation": "Tilt-Shift-Flug",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": -1,
+  "t0": 46.4
+ },
+ {
+  "satz": "Kapitel 1",
+  "sek": 4.5,
+  "zeigt": "Kapitelkarte 1 vor dem Automaten",
+  "animation": "Tilt-Shift-Flug",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": -1,
+  "t0": 51.0
+ },
+ {
+  "satz": "Zurück am Automaten. Die Flasche des Mannes dreht sich noch. Das Drehen hat einen Grund.",
+  "sek": 2.84,
+  "zeigt": "Zurück am Automaten: die Flasche dreht sich noch, Scanlicht kreist",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 16,
+  "t0": 55.5
+ },
+ {
+  "satz": "(Fortsetzung) Zurück am Automaten. Die Flasche des Man",
+  "sek": 2.84,
+  "zeigt": "Zurück am Automaten: die Flasche dreht sich noch, Scanlicht kreist",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 16,
+  "t0": 58.34
+ },
+ {
+  "satz": "Der Automat sucht zwei Dinge: den Strichcode und das Pfandzeichen.",
+  "sek": 4.25,
+  "zeigt": "Strichcode-Linien laufen über den Bildschirm: Strichcode und Pfandzeichen werden gesucht",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 19,
+  "t0": 61.18
+ },
+ {
+  "satz": "Ältere Automaten brauchen dafür ein paar Sekunden.",
+  "sek": 3.2,
+  "zeigt": "Der Mann wartet vor dem Automaten, ein paar Sekunden vergehen",
+  "animation": "Menschen reagieren",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 20,
+  "t0": 65.43
+ },
+ {
+  "satz": "Bis zu 6 Kameras.",
+  "sek": 3.52,
+  "zeigt": "Querschnitt innen: sechs Kameras im Ring blitzen gleichzeitig auf die Flasche",
+  "animation": "Querschnitt",
+  "inhalt": [
+   "erklaerung",
+   "zahl"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 21,
+  "t0": 68.63
+ },
+ {
+  "satz": "Das Pfandzeichen ist mit einer Spezialfarbe gedruckt. Was genau sie ausmacht, bleibt geheim.",
+  "sek": 2.88,
+  "zeigt": "Echte Druckmaschine läuft – Einblendung Spezialfarbe, Eigenschaften geheim",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 22,
+  "t0": 72.15
+ },
+ {
+  "satz": "(Fortsetzung) Das Pfandzeichen ist mit einer Spezialfa",
+  "sek": 2.88,
+  "zeigt": "Echte Druckmaschine läuft – Einblendung Spezialfarbe, Eigenschaften geheim",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 22,
+  "t0": 75.03
+ },
+ {
+  "satz": "Nur zertifizierte Druckereien dürfen sie verwenden. Denn wer das Zeichen fälschen kann, druckt Geld.",
+  "sek": 5.92,
+  "zeigt": "Tafel dreht sich: Pfandzeichen wird zu Geld – nur zertifizierte Druckereien",
+  "animation": "Anzeigetafel dreht sich (`motion` flip)",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 24,
+  "t0": 77.91
+ },
+ {
+  "satz": "Frühe Automaten sollen laut Medienberichten sogar gefälschte Pfandzeichen auf leeren Klopapierrollen geschluckt haben.",
+  "sek": 3.44,
+  "zeigt": "Automaten-Display zeigt eine Klopapierrolle mit gefälschtem Zeichen: angenommen – Fun-Fact",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 26,
+  "t0": 83.83
+ },
+ {
+  "satz": "(Fortsetzung) Frühe Automaten sollen laut Medienberich",
+  "sek": 3.44,
+  "zeigt": "Automaten-Display zeigt eine Klopapierrolle mit gefälschtem Zeichen: angenommen – Fun-Fact",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 26,
+  "t0": 87.27
+ },
+ {
+  "satz": "Diese Flasche ist echt. Der Automat legt einen Datensatz an, digital unterschrieben.",
+  "sek": 2.64,
+  "zeigt": "Display: Pfandzeichen echt, Datensatz digital signiert",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 27,
+  "t0": 90.7
+ },
+ {
+  "satz": "(Fortsetzung) Diese Flasche ist echt. Der Automat legt",
+  "sek": 2.64,
+  "zeigt": "Display: Pfandzeichen echt, Datensatz digital signiert",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 27,
+  "t0": 93.34
+ },
+ {
+  "satz": "Dann wird sie zerdrückt. So kann niemand sie ein zweites Mal einwerfen.",
+  "sek": 4.32,
+  "zeigt": "Querschnitt: Walzen zerdrücken die Flasche, sie fällt platt in den Behälter",
+  "animation": "Querschnitt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 29,
+  "t0": 95.98
+ },
+ {
+  "satz": "Jetzt beginnt der eigentliche Weg. Nicht der Weg der Flasche, sondern der Weg des Geldes.",
+  "sek": 2.73,
+  "zeigt": "Echter Clip: eine Münze dreht sich – der Weg des Geldes beginnt",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "frage:geldweg",
+  "i": 31,
+  "t0": 100.3
+ },
+ {
+  "satz": "(Fortsetzung) Jetzt beginnt der eigentliche Weg. Nicht",
+  "sek": 2.73,
+  "zeigt": "Echter Clip: eine Münze dreht sich – der Weg des Geldes beginnt",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 31,
+  "t0": 103.03
+ },
+ {
+  "satz": "Als die Flasche ins Regal kam, hat der Supermarkt sie beim Abfüller gekauft.",
+  "sek": 4.08,
+  "zeigt": "Abfüllerei: Flaschen laufen über das Band Richtung Supermarkt",
+  "animation": "Modellbahn-Warenstrom",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 33,
+  "t0": 105.77
+ },
+ {
+  "satz": "25 Cent Pfand.",
+  "sek": 3.2,
+  "zeigt": "Paletten mit Flaschen, Einblendung + 25 Cent Pfand an den Abfüller",
+  "animation": "Warenstrom",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 34,
+  "t0": 109.85
+ },
+ {
+  "satz": "25 Cent von dir.",
+  "sek": 4.0,
+  "zeigt": "Kasse: Kundin zahlt, Display zeigt Pfand 0,25 €",
+  "animation": "Menschen reagieren",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 35,
+  "t0": 113.05
+ },
+ {
+  "satz": "Gibst du die Flasche ab, zahlt der Laden dir das Pfand aus. Und holt es sich vom Abfüller wieder.",
+  "sek": 4.3,
+  "zeigt": "Ablauf-Kette: Abfüller → Supermarkt → du → Rücknahme, eine Münze wandert, zurück zum Abfüller",
+  "animation": "Ablauf-Kette 2D (`motion` flow)",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "antwort:geldweg",
+  "i": 36,
+  "t0": 117.05
+ },
+ {
+  "satz": "Gibst du die Flasche ab, zahlt der Laden dir das Pfand aus. Und holt es sich vom Abfüller wieder.",
+  "sek": 1.0,
+  "zeigt": "Flug über die Abfüllerei: das Pfand geht zurück an den Abfüller",
+  "animation": "Tilt-Shift-Flug",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 36,
+  "t0": 121.35
+ },
+ {
+  "satz": "7 Firmen.",
+  "sek": 6.8,
+  "zeigt": "Fallblatt-Zahl klappt auf 7: Clearing-Dienstleister",
+  "animation": "Fallblatt-Zahl (`motion` counter)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 38,
+  "t0": 122.35
+ },
+ {
+  "satz": "Das Pfandsystem selbst, die D-P-G, fasst kein Geld an.",
+  "sek": 4.32,
+  "zeigt": "Anzeigetafel klappt: D-P-G – KEIN GELD – NUR DATEN",
+  "animation": "Zahl in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 40,
+  "t0": 129.15
+ },
+ {
+  "satz": "Sie führt die Datenbank, in der jede Pfandverpackung mit ihrem Strichcode hinterlegt ist.",
+  "sek": 2.32,
+  "zeigt": "Auf dem Tisch eine Datenbank-Liste: Strichcodes aller Pfandverpackungen",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 41,
+  "t0": 133.47
+ },
+ {
+  "satz": "(Fortsetzung) Sie führt die Datenbank, in der jede Pfa",
+  "sek": 2.32,
+  "zeigt": "Auf dem Tisch eine Datenbank-Liste: Strichcodes aller Pfandverpackungen",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 41,
+  "t0": 135.79
+ },
+ {
+  "satz": "18 Milliarden, über 200 pro Kopf.",
+  "sek": 4.3,
+  "zeigt": "Fallblatt-Zahl klappt auf 18 Milliarden, Unterzeile über 200 pro Kopf",
+  "animation": "Fallblatt-Zahl (`motion` counter)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 42,
+  "t0": 138.11
+ },
+ {
+  "satz": "18 Milliarden, über 200 pro Kopf.",
+  "sek": 3.62,
+  "zeigt": "Flug über die Stadt voller Lichter: über 200 Verpackungen pro Kopf",
+  "animation": "Tilt-Shift-Flug",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 42,
+  "t0": 142.41
+ },
+ {
+  "satz": "Kleine Läden ohne Automat schicken ihr Leergut in Zählzentren.",
+  "sek": 3.84,
+  "zeigt": "Zählzentrum: Säcke mit Leergut, große Sortiermaschine",
+  "animation": "Warenstrom",
+  "inhalt": [
+   "ort",
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 44,
+  "t0": 146.03
+ },
+ {
+  "satz": "Dort lesen meist Sortiermaschinen jede einzelne Flasche.",
+  "sek": 3.31,
+  "zeigt": "Flaschen laufen einzeln über das Band in die Sortiermaschine",
+  "animation": "Modellbahn-Warenstrom",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 45,
+  "t0": 149.87
+ },
+ {
+  "satz": "Das Plastik wird zu Ballen gepresst, verkauft und zu neuem Kunststoff verarbeitet.",
+  "sek": 2.6,
+  "zeigt": "Gepresste Plastikballen stapeln sich",
+  "animation": "Lagerbestand-Turm",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 46,
+  "t0": 153.18
+ },
+ {
+  "satz": "Das Plastik wird zu Ballen gepresst, verkauft und zu neuem Kunststoff verarbeitet.",
+  "sek": 2.6,
+  "zeigt": "Echter Clip: Recyclinghof, Material wird verladen",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 46,
+  "t0": 155.78
+ },
+ {
+  "satz": "Ganz anders bei Glas.",
+  "sek": 1.6,
+  "zeigt": "Mehrweg: Kästen mit Glasflaschen gestapelt",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 47,
+  "t0": 158.38
+ },
+ {
+  "satz": "Eine Mehrwegflasche fährt zurück zum Abfüller, wird gespült und neu befüllt.",
+  "sek": 2.4,
+  "zeigt": "Glasflaschen laufen in den Waschtunnel und werden neu befüllt",
+  "animation": "Modellbahn-Warenstrom",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 48,
+  "t0": 159.98
+ },
+ {
+  "satz": "(Fortsetzung) Eine Mehrwegflasche fährt zurück zum Abf",
+  "sek": 2.4,
+  "zeigt": "Glasflaschen laufen in den Waschtunnel und werden neu befüllt",
+  "animation": "Modellbahn-Warenstrom",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 48,
+  "t0": 162.38
+ },
+ {
+  "satz": "Bis zu 50 Mal.",
+  "sek": 1.66,
+  "zeigt": "Echter Clip: Förderband einer Abfüllanlage, Einblendung bis zu 50 Mal",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 49,
+  "t0": 164.78
+ },
+ {
+  "satz": "Heute läuft das alles fast lautlos.",
+  "sek": 2.64,
+  "zeigt": "Die Stadt bei Nacht, alles läuft ruhig",
+  "animation": "Tilt-Shift-Flug",
+  "inhalt": [
+   "gefuehl"
+  ],
+  "genauigkeit": "stimmung",
+  "neugier": "",
+  "i": 50,
+  "t0": 166.43
+ },
+ {
+  "satz": "Vor 20 Jahren.",
+  "sek": 3.96,
+  "zeigt": "Der Supermarkt-Gang wird grau – Rückblende: vor gut 20 Jahren",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "frage:chaos",
+  "i": 51,
+  "t0": 169.07
+ },
+ {
+  "satz": "Kapitel 2",
+  "sek": 4.5,
+  "zeigt": "Kapitelkarte 2 über dem grauen Regal",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": -1,
+  "t0": 173.03
+ },
+ {
+  "satz": "1. Januar 2003.",
+  "sek": 2.24,
+  "zeigt": "Tafel klappt auf 01.01.2003",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 52,
+  "t0": 177.53
+ },
+ {
+  "satz": "In Deutschland gilt plötzlich Pfand auf Dosen und Einwegflaschen. Erst mal für Bier, Wasser und Limonade.",
+  "sek": 3.38,
+  "zeigt": "Graues Regal mit Dosen und Flaschen, Einblendung Pfand auf Bier, Wasser, Limo",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 53,
+  "t0": 179.77
+ },
+ {
+  "satz": "(Fortsetzung) In Deutschland gilt plötzlich Pfand auf ",
+  "sek": 3.38,
+  "zeigt": "Graues Regal mit Dosen und Flaschen, Einblendung Pfand auf Bier, Wasser, Limo",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 53,
+  "t0": 183.15
+ },
+ {
+  "satz": "1991 Klaus Töpfer.",
+  "sek": 3.4,
+  "zeigt": "Schreibtisch, Dokument Verpackungsverordnung 1991, Klaus Töpfer (CDU)",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "zeit",
+   "person"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 55,
+  "t0": 186.53
+ },
+ {
+  "satz": "(Fortsetzung) Den Mechanismus dafür hatte schon neunze",
+  "sek": 3.4,
+  "zeigt": "Schreibtisch, Dokument Verpackungsverordnung 1991, Klaus Töpfer (CDU)",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "zeit",
+   "person"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 55,
+  "t0": 189.93
+ },
+ {
+  "satz": "72 Prozent.",
+  "sek": 6.4,
+  "zeigt": "Raster aus 100 Flaschen, 72 leuchten: Mehrweg-Anteil, darunter wird Pfand fällig",
+  "animation": "Lichter-aus-Raster (`motion` grid)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 56,
+  "t0": 193.33
+ },
+ {
+  "satz": "Ende der 1990er.",
+  "sek": 3.04,
+  "zeigt": "Stadt: Lichter gehen Straße für Straße aus – Ende der 1990er unter 72 %",
+  "animation": "Lichter gehen aus",
+  "inhalt": [
+   "zeit",
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 57,
+  "t0": 199.73
+ },
+ {
+  "satz": "2002 Trittin.",
+  "sek": 3.0,
+  "zeigt": "Dokument: Pfandpflicht ab 1. Januar 2003, umgesetzt 2002 von Rot-Grün (Jürgen Trittin)",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "zeit",
+   "person"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 58,
+  "t0": 202.77
+ },
+ {
+  "satz": "(Fortsetzung) Zweitausendzwei setzte die rot-grüne Reg",
+  "sek": 3.0,
+  "zeigt": "Dokument: Pfandpflicht ab 1. Januar 2003, umgesetzt 2002 von Rot-Grün (Jürgen Trittin)",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "zeit",
+   "person"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 58,
+  "t0": 205.77
+ },
+ {
+  "satz": "Nur: Ein gemeinsames System gab es nicht.",
+  "sek": 2.96,
+  "zeigt": "Der Supermarkt von außen, grau – kein gemeinsames System",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 59,
+  "t0": 208.77
+ },
+ {
+  "satz": "Jeder Laden nahm nur zurück, was er selbst verkauft hatte.",
+  "sek": 3.36,
+  "zeigt": "Grauer Automat, Einblendung: nur eigene Flaschen",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 60,
+  "t0": 211.73
+ },
+ {
+  "satz": "Manche gaben Pfandbons aus, andere Pfandmarken, wieder andere klebten eigene Etiketten.",
+  "sek": 5.68,
+  "zeigt": "Drei Zettel stapeln sich: Pfandbon, Pfandmarke, eigenes Etikett – Fragezeichen",
+  "animation": "Anzeigetafel dreht sich (`motion` flip)",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 61,
+  "t0": 215.09
+ },
+ {
+  "satz": "Eine Plastikflasche ging beim einen Discounter zurück, beim anderen nicht.",
+  "sek": 4.0,
+  "zeigt": "Ablauf-Kette: Flasche geht bei Discounter A zurück, Abzweig zu Discounter B: NEIN",
+  "animation": "Ablauf-Kette 2D (`motion` flow)",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 62,
+  "t0": 220.77
+ },
+ {
+  "satz": "Auf einer Cola-Dose war Pfand. Auf einer Dose Cola mit Rum nicht.",
+  "sek": 4.32,
+  "zeigt": "Tafel dreht sich: Cola-Dose mit Pfand, Cola mit Rum ohne – Fun-Fact",
+  "animation": "Anzeigetafel dreht sich (`motion` flip)",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 63,
+  "t0": 224.77
+ },
+ {
+  "satz": "Viele Händler nahmen die Dose einfach aus dem Regal.",
+  "sek": 3.2,
+  "zeigt": "Graues Regal: die Dosen verschwinden Reihe für Reihe",
+  "animation": "Regale leeren sich",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 65,
+  "t0": 229.09
+ },
+ {
+  "satz": "2002 7,5 Milliarden Dosen.",
+  "sek": 4.8,
+  "zeigt": "Häuserzeilen-Balken: 2002 rund 7,5 Mrd., 2004 nur noch ein Bruchteil",
+  "animation": "Häuserzeilen-Balken (`motion` bars)",
+  "inhalt": [
+   "zahl",
+   "vergleich"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 66,
+  "t0": 232.29
+ },
+ {
+  "satz": "Über 90 Prozent.",
+  "sek": 3.49,
+  "zeigt": "Leerer grauer Gang, Einblendung über 90 Prozent weniger",
+  "animation": "Regale leeren sich",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 67,
+  "t0": 237.09
+ },
+ {
+  "satz": "(Fortsetzung) Zwei Jahre später brach die Menge laut B",
+  "sek": 3.49,
+  "zeigt": "Leerer grauer Gang, Einblendung über 90 Prozent weniger",
+  "animation": "Regale leeren sich",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 67,
+  "t0": 240.58
+ },
+ {
+  "satz": "Jeder vierte, 25 Prozent.",
+  "sek": 4.3,
+  "zeigt": "Raster aus 100 Flaschen, jede vierte bleibt dunkel: kam nie zurück",
+  "animation": "Lichter-aus-Raster (`motion` grid)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "frage:rest",
+  "i": 69,
+  "t0": 244.08
+ },
+ {
+  "satz": "Jeder vierte, 25 Prozent.",
+  "sek": 3.54,
+  "zeigt": "Grauer Bahnsteig 2003: jede vierte Flasche bleibt liegen",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 69,
+  "t0": 248.38
+ },
+ {
+  "satz": "Das Pfand war bezahlt.",
+  "sek": 1.57,
+  "zeigt": "Graue Kasse: Pfand bezahlt",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 71,
+  "t0": 251.92
+ },
+ {
+  "satz": "Abgeholt hat es niemand.",
+  "sek": 1.84,
+  "zeigt": "Echter Clip: Plastikflaschen am Flussufer – abgeholt hat es niemand",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 72,
+  "t0": 253.49
+ },
+ {
+  "satz": "1. Mai 2006.",
+  "sek": 3.52,
+  "zeigt": "Tafel klappt auf 01.05.2006, die Farbe kehrt zurück",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 73,
+  "t0": 255.33
+ },
+ {
+  "satz": "Seitdem nimmt jeder Laden alle Einweg-Pfandverpackungen aus dem Material zurück, das er selbst verkauft.",
+  "sek": 2.94,
+  "zeigt": "Automat in Farbe: nimmt alle Einweg-Pfandflaschen derselben Materialart an",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 74,
+  "t0": 258.85
+ },
+ {
+  "satz": "Seitdem nimmt jeder Laden alle Einweg-Pfandverpackungen aus dem Material zurück, das er selbst verkauft.",
+  "sek": 2.94,
+  "zeigt": "Kamera fliegt über die Märkte der Stadt – egal wo gekauft",
+  "animation": "Tilt-Shift-Flug",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 74,
+  "t0": 261.79
+ },
+ {
+  "satz": "Egal, wo du sie gekauft hast. Seitdem gibt es ein einheitliches Zeichen und das System dahinter.",
+  "sek": 5.76,
+  "zeigt": "Tafel dreht sich: aus Insellösung wird ein Zeichen, seit Mai 2006",
+  "animation": "Anzeigetafel dreht sich (`motion` flip)",
+  "inhalt": [
+   "erklaerung",
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 75,
+  "t0": 264.73
+ },
+ {
+  "satz": "2024 Milch.",
+  "sek": 6.36,
+  "zeigt": "Ablauf-Kette: 2003 Bier/Wasser/Limo → 2022 Saft/Wein → 2024 Milch",
+  "animation": "Ablauf-Kette 2D (`motion` flow)",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 77,
+  "t0": 270.49
+ },
+ {
+  "satz": "6 Milliarden im Jahr.",
+  "sek": 3.68,
+  "zeigt": "Regal füllt sich wieder mit Dosen, Einblendung rund 6 Mrd. pro Jahr",
+  "animation": "Regale leeren sich",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 78,
+  "t0": 276.85
+ },
+ {
+  "satz": "Heute kommen fast alle Flaschen zurück. Fast.",
+  "sek": 3.12,
+  "zeigt": "Zählzentrum: fast alles kommt zurück",
+  "animation": "Warenstrom",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 80,
+  "t0": 280.53
+ },
+ {
+  "satz": "Und genau in diesem kleinen Rest steckt das Geld.",
+  "sek": 3.56,
+  "zeigt": "Zurück zur Flasche unter der Bank – im kleinen Rest steckt das Geld",
+  "animation": "Rückflug zum Anfang",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "frage:rest2",
+  "i": 82,
+  "t0": 283.65
+ },
+ {
+  "satz": "Kapitel 3",
+  "sek": 4.5,
+  "zeigt": "Kapitelkarte 3 am Bahnsteig",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": -1,
+  "t0": 287.21
+ },
+ {
+  "satz": "18:50 Uhr.",
+  "sek": 3.12,
+  "zeigt": "Bahnhofsuhr springt auf 18:50",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 83,
+  "t0": 291.71
+ },
+ {
+  "satz": "Die zweite Flasche liegt noch immer unter der Bank.",
+  "sek": 2.88,
+  "zeigt": "Die zweite Flasche liegt noch unter der Bank",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 85,
+  "t0": 294.83
+ },
+ {
+  "satz": "Wie selten ist sie?",
+  "sek": 1.52,
+  "zeigt": "Ein Zug fährt ein, niemand bückt sich nach der Flasche",
+  "animation": "Menschen reagieren",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "frage:selten",
+  "i": 86,
+  "t0": 297.71
+ },
+ {
+  "satz": "2023 98,7 Prozent.",
+  "sek": 4.3,
+  "zeigt": "Fallblatt-Zahl klappt auf 98,7 Prozent",
+  "animation": "Fallblatt-Zahl (`motion` counter)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "antwort:selten",
+  "i": 87,
+  "t0": 299.23
+ },
+ {
+  "satz": "2023 98,7 Prozent.",
+  "sek": 4.02,
+  "zeigt": "Sortiermaschine: fast alle Flaschen laufen durch",
+  "animation": "Modellbahn-Warenstrom",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 87,
+  "t0": 303.53
+ },
+ {
+  "satz": "2022 60 Prozent.",
+  "sek": 4.3,
+  "zeigt": "Häuserzeilen-Balken: Deutschland 98,7 % gegen Europa 60 %",
+  "animation": "Häuserzeilen-Balken (`motion` bars)",
+  "inhalt": [
+   "zahl",
+   "vergleich"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 88,
+  "t0": 307.55
+ },
+ {
+  "satz": "2022 60 Prozent.",
+  "sek": 4.07,
+  "zeigt": "Echter Clip: weggeworfene Flasche am Strand – ohne Pfand oft Alltag",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "vergleich"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 88,
+  "t0": 311.85
+ },
+ {
+  "satz": "1 bis 4 von 100.",
+  "sek": 5.68,
+  "zeigt": "Raster aus 100 Flaschen, 1 bis 4 bleiben dunkel",
+  "animation": "Lichter-aus-Raster (`motion` grid)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 89,
+  "t0": 315.92
+ },
+ {
+  "satz": "Das klingt nach wenig.",
+  "sek": 1.63,
+  "zeigt": "Der Zug steht am Bahnsteig: das klingt nach wenig",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 90,
+  "t0": 321.6
+ },
+ {
+  "satz": "18 Milliarden, hunderte Millionen.",
+  "sek": 2.6,
+  "zeigt": "Echter Clip: Deponie von oben, Einblendung geschätzt hunderte Millionen Stück",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 91,
+  "t0": 323.23
+ },
+ {
+  "satz": "(Fortsetzung) Aber bei achtzehn Milliarden Verpackunge",
+  "sek": 2.6,
+  "zeigt": "Echter Clip: Deponie von oben, Einblendung geschätzt hunderte Millionen Stück",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 91,
+  "t0": 325.83
+ },
+ {
+  "satz": "Und manche der Flaschen, die zurückkommen, hat vorher jemand vom Boden aufgehoben.",
+  "sek": 4.36,
+  "zeigt": "Am Mülleimer bückt sich eine Sammlerin nach einer Flasche",
+  "animation": "Menschen reagieren",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 92,
+  "t0": 328.43
+ },
+ {
+  "satz": "1 Million Menschen.",
+  "sek": 4.3,
+  "zeigt": "Fallblatt-Zahl klappt auf rund 1 Million Pfandsammler",
+  "animation": "Fallblatt-Zahl (`motion` counter)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 93,
+  "t0": 332.79
+ },
+ {
+  "satz": "1 Million Menschen.",
+  "sek": 3.62,
+  "zeigt": "Echter Clip: Bahnsteig eines echten Bahnhofs, Menschen warten",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 93,
+  "t0": 337.09
+ },
+ {
+  "satz": "200 Euro im Monat.",
+  "sek": 4.16,
+  "zeigt": "Die Sammlerin geht mit ihrer Tasche über den Bahnsteig, Einblendung unter 200 € im Monat",
+  "animation": "Menschen reagieren",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 95,
+  "t0": 340.71
+ },
+ {
+  "satz": "Unsere Flasche findet heute niemand.",
+  "sek": 2.4,
+  "zeigt": "Die Flasche bleibt liegen, niemand findet sie",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 96,
+  "t0": 344.87
+ },
+ {
+  "satz": "25 Cent.",
+  "sek": 2.92,
+  "zeigt": "Unter der Bank: Wer behält ihre 25 Cent?",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "frage:pfand_b",
+  "i": 97,
+  "t0": 347.27
+ },
+ {
+  "satz": "Das Gesetz sagt: Ohne Flasche kein Pfand. Also bleibt das Geld bei dem, der es als Erster kassiert hat.",
+  "sek": 3.06,
+  "zeigt": "Gesetzestext auf dem Tisch: ohne Rücknahme kein Pfand",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 98,
+  "t0": 350.2
+ },
+ {
+  "satz": "Das Gesetz sagt: Ohne Flasche kein Pfand. Also bleibt das Geld bei dem, der es als Erster kassiert hat.",
+  "sek": 4.3,
+  "zeigt": "Ablauf-Kette: das Geld wandert vom Kunden über den Händler zum Abfüller und bleibt dort",
+  "animation": "Ablauf-Kette 2D (`motion` flow)",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 98,
+  "t0": 353.26
+ },
+ {
+  "satz": "Das ist der Abfüller, der die Flasche in Umlauf gebracht hat.",
+  "sek": 3.44,
+  "zeigt": "Flug über die Abfüllerei: der Erstinverkehrbringer",
+  "animation": "Tilt-Shift-Flug",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 100,
+  "t0": 357.56
+ },
+ {
+  "satz": "Fachleute nennen dieses Geld Pfandschlupf.",
+  "sek": 3.04,
+  "zeigt": "Tafel klappt auf PFANDSCHLUPF",
+  "animation": "Zahl in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 101,
+  "t0": 361.0
+ },
+ {
+  "satz": "Klingt, als würde die Getränkeindustrie kassieren.",
+  "sek": 2.83,
+  "zeigt": "Paletten der Getränkeindustrie – kassiert sie?",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 102,
+  "t0": 364.04
+ },
+ {
+  "satz": "Ganz so einfach ist es nicht.",
+  "sek": 1.92,
+  "zeigt": "Der Supermarkt im Dunkeln – ganz so einfach ist es nicht",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "frage:wer2",
+  "i": 103,
+  "t0": 366.87
+ },
+ {
+  "satz": "Denn wo Geld liegen bleibt, kommen auch die, die es sich holen wollen.",
+  "sek": 2.22,
+  "zeigt": "Am Automaten blinkt eine rote Lampe: jemand hat ihn umgebaut",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "frage:betrug",
+  "i": 104,
+  "t0": 368.79
+ },
+ {
+  "satz": "(Fortsetzung) Denn wo Geld liegen bleibt, kommen auch ",
+  "sek": 2.22,
+  "zeigt": "Am Automaten blinkt eine rote Lampe: jemand hat ihn umgebaut",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 104,
+  "t0": 371.01
+ },
+ {
+  "satz": "Kapitel 4",
+  "sek": 4.5,
+  "zeigt": "Kapitelkarte 4 vor dem Automaten im Dunkeln",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": -1,
+  "t0": 373.23
+ },
+ {
+  "satz": "2016.",
+  "sek": 1.6,
+  "zeigt": "Tafel klappt auf 2016",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 105,
+  "t0": 377.73
+ },
+ {
+  "satz": "Ein Händler wirft eine Flasche ein.",
+  "sek": 2.16,
+  "zeigt": "Eine Flasche geht in den Automaten",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 106,
+  "t0": 379.33
+ },
+ {
+  "satz": "Dann dieselbe Flasche noch einmal. Und noch einmal.",
+  "sek": 3.84,
+  "zeigt": "Display zählt: 0,25 – 0,50 – 0,75 €, immer dieselbe Flasche",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 107,
+  "t0": 381.49
+ },
+ {
+  "satz": "Sein Automat ist umgebaut. Er zerdrückt die Flasche nicht.",
+  "sek": 3.36,
+  "zeigt": "Querschnitt: die Walzen fehlen, Kabel und rote Lampe – der Automat zerdrückt nichts",
+  "animation": "Querschnitt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 109,
+  "t0": 385.33
+ },
+ {
+  "satz": "177.000 Mal.",
+  "sek": 5.43,
+  "zeigt": "Fallblatt-Zahl klappt auf über 177.000",
+  "animation": "Fallblatt-Zahl (`motion` counter)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "antwort:betrug",
+  "i": 111,
+  "t0": 388.69
+ },
+ {
+  "satz": "44.000 Euro.",
+  "sek": 2.6,
+  "zeigt": "Echter Clip: Geldzählmaschine, Einblendung über 44.000 €, Ausgang unbekannt",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 112,
+  "t0": 394.12
+ },
+ {
+  "satz": "(Fortsetzung) Das macht über vierundvierzigtausend Eur",
+  "sek": 2.6,
+  "zeigt": "Echter Clip: Geldzählmaschine, Einblendung über 44.000 €, Ausgang unbekannt",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 112,
+  "t0": 396.72
+ },
+ {
+  "satz": "1,8 Millionen Euro.",
+  "sek": 4.3,
+  "zeigt": "Modellkarte: Neuss leuchtet auf, rund 1,8 Mio. €",
+  "animation": "Modell-Karte",
+  "inhalt": [
+   "ort",
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 114,
+  "t0": 399.32
+ },
+ {
+  "satz": "1,8 Millionen Euro.",
+  "sek": 2.79,
+  "zeigt": "Querschnitt des manipulierten Automaten: die Flasche bleibt ganz",
+  "animation": "Querschnitt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 114,
+  "t0": 403.62
+ },
+ {
+  "satz": "Der angeklagte Geschäftsführer eines Getränkemarkts wurde rechtskräftig freigesprochen.",
+  "sek": 2.32,
+  "zeigt": "Gerichtsgebäude bei Nacht, Einblendung rechtskräftig freigesprochen",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 116,
+  "t0": 406.41
+ },
+ {
+  "satz": "(Fortsetzung) Der angeklagte Geschäftsführer eines Get",
+  "sek": 2.32,
+  "zeigt": "Gerichtsgebäude bei Nacht, Einblendung rechtskräftig freigesprochen",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 116,
+  "t0": 408.73
+ },
+ {
+  "satz": "In Berlin sollen Verdächtige Pfandetiketten auf Flaschen ohne Pfand geklebt haben.",
+  "sek": 2.45,
+  "zeigt": "Echter Clip: Plastikflaschen, Einblendung Berlin – Verdacht auf falsche Pfandetiketten",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 117,
+  "t0": 411.05
+ },
+ {
+  "satz": "(Fortsetzung) In Berlin sollen Verdächtige Pfandetiket",
+  "sek": 2.45,
+  "zeigt": "Echter Clip: Plastikflaschen, Einblendung Berlin – Verdacht auf falsche Pfandetiketten",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 117,
+  "t0": 413.5
+ },
+ {
+  "satz": "Juni 2024.",
+  "sek": 2.8,
+  "zeigt": "Tafel klappt auf JUNI 2024 – RAZZIA – KEIN URTEIL BEKANNT",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 118,
+  "t0": 415.96
+ },
+ {
+  "satz": "(Fortsetzung) Im Juni zweitausendvierundzwanzig gab es",
+  "sek": 2.8,
+  "zeigt": "Tafel klappt auf JUNI 2024 – RAZZIA – KEIN URTEIL BEKANNT",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 118,
+  "t0": 418.76
+ },
+ {
+  "satz": "Doch eine viel größere Lücke hat jahrelang niemand geschlossen. An der Grenze zu Dänemark verkaufen Grenzläden Dosen an Skandinavier.",
+  "sek": 4.3,
+  "zeigt": "Modellkarte zoomt nach Norden an die Grenze zu Dänemark",
+  "animation": "Modell-Karte",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "frage:grenze",
+  "i": 120,
+  "t0": 421.56
+ },
+ {
+  "satz": "Doch eine viel größere Lücke hat jahrelang niemand geschlossen. An der Grenze zu Dänemark verkaufen Grenzläden Dosen an Skandinavier.",
+  "sek": 3.86,
+  "zeigt": "Grenzladen bei Nacht, Parkplatz voller Autos, Paletten mit Dosen",
+  "animation": "Warenstrom",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 120,
+  "t0": 425.86
+ },
+ {
+  "satz": "Ohne Pfand.",
+  "sek": 1.2,
+  "zeigt": "Dänische und deutsche Fahne an der Grenze – ohne Pfand",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 122,
+  "t0": 429.72
+ },
+ {
+  "satz": "Eine Unterschrift genügt, dass die Dosen ausgeführt werden.",
+  "sek": 3.02,
+  "zeigt": "Kofferraum voller Dosen-Trays, Einblendung Unterschrift: Ausfuhr",
+  "animation": "Menschen reagieren",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 123,
+  "t0": 430.92
+ },
+ {
+  "satz": "650 Millionen Dosen im Jahr.",
+  "sek": 5.52,
+  "zeigt": "Karte: Route von den Grenzläden nach Dänemark, Zähler über 650 Mio. Dosen pro Jahr",
+  "animation": "Warenstrom-Karte (`motion` map)",
+  "inhalt": [
+   "zahl",
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 124,
+  "t0": 433.93
+ },
+ {
+  "satz": "2020: 9 von 10.",
+  "sek": 2.84,
+  "zeigt": "Echter Clip: dänischer Strand, Einblendung bis zu 9 von 10 Dosen aus Deutschland (2020)",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "zahl",
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 125,
+  "t0": 439.45
+ },
+ {
+  "satz": "(Fortsetzung) In Dänemark stammten zweitausendzwanzig ",
+  "sek": 2.84,
+  "zeigt": "Echter Clip: dänischer Strand, Einblendung bis zu 9 von 10 Dosen aus Deutschland (2020)",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "zahl",
+   "ort"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 125,
+  "t0": 442.29
+ },
+ {
+  "satz": "2023.",
+  "sek": 4.3,
+  "zeigt": "Modellkarte Europa: Luxemburg – Europäischer Gerichtshof 2023",
+  "animation": "Modell-Karte",
+  "inhalt": [
+   "ort",
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 126,
+  "t0": 445.13
+ },
+ {
+  "satz": "2023.",
+  "sek": 3.06,
+  "zeigt": "Säulen des Gerichts von unten: keine Pflicht zur Durchsetzung",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 126,
+  "t0": 449.43
+ },
+ {
+  "satz": "Mai 2026.",
+  "sek": 7.28,
+  "zeigt": "Modellkarte: Schleswig leuchtet auf – Verwaltungsgericht Mai 2026: Pfand gilt auch für Skandinavier",
+  "animation": "Modell-Karte",
+  "inhalt": [
+   "ort",
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 127,
+  "t0": 452.49
+ },
+ {
+  "satz": "Rechtskräftig war das Urteil damals noch nicht. Und ganz ohne Pfand?",
+  "sek": 2.28,
+  "zeigt": "Urteil auf dem Tisch, Stempel: nicht rechtskräftig",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 128,
+  "t0": 459.77
+ },
+ {
+  "satz": "(Fortsetzung) Rechtskräftig war das Urteil damals noch",
+  "sek": 2.28,
+  "zeigt": "Urteil auf dem Tisch, Stempel: nicht rechtskräftig",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 128,
+  "t0": 462.05
+ },
+ {
+  "satz": "3 Milliarden im Jahr.",
+  "sek": 4.3,
+  "zeigt": "Fallblatt-Zahl klappt auf bis zu 3 Milliarden",
+  "animation": "Fallblatt-Zahl (`motion` counter)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 130,
+  "t0": 464.33
+ },
+ {
+  "satz": "3 Milliarden im Jahr.",
+  "sek": 2.58,
+  "zeigt": "Echter Clip: weggeworfene Plastikflasche im Gestrüpp",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 130,
+  "t0": 468.63
+ },
+ {
+  "satz": "Bleibt die Frage vom Bahnhof.",
+  "sek": 1.92,
+  "zeigt": "Bahnhofsuhr springt weiter auf 18:55",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 131,
+  "t0": 471.21
+ },
+ {
+  "satz": "Wer bekommt das Pfand, das niemand abholt?",
+  "sek": 3.24,
+  "zeigt": "Die Flasche unter der Bank – wer bekommt ihr Pfand?",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "frage:final",
+  "i": 132,
+  "t0": 473.13
+ },
+ {
+  "satz": "Kapitel 5",
+  "sek": 4.5,
+  "zeigt": "Kapitelkarte 5 am Bahnsteig",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": -1,
+  "t0": 476.37
+ },
+ {
+  "satz": "Zurück unter die Bank.",
+  "sek": 1.52,
+  "zeigt": "Kamera kriecht unter die Bank zur Flasche",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 133,
+  "t0": 480.87
+ },
+ {
+  "satz": "Auf dem Etikett steht kein Brunnen, sondern die Eigenmarke eines Supermarkts.",
+  "sek": 2.28,
+  "zeigt": "Makro aufs Etikett: kein Brunnen, sondern Eigenmarke",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 134,
+  "t0": 482.39
+ },
+ {
+  "satz": "(Fortsetzung) Auf dem Etikett steht kein Brunnen, sond",
+  "sek": 2.28,
+  "zeigt": "Makro aufs Etikett: kein Brunnen, sondern Eigenmarke",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 134,
+  "t0": 484.67
+ },
+ {
+  "satz": "Und hier wird es spannend. Wer ist eigentlich der Abfüller?",
+  "sek": 3.95,
+  "zeigt": "Flug über die Abfüllerei: Wer ist eigentlich der Abfüller?",
+  "animation": "Tilt-Shift-Flug",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 135,
+  "t0": 486.95
+ },
+ {
+  "satz": "Manche Händler füllen ihre Eigenmarken in eigenen Betrieben selbst ab.",
+  "sek": 4.0,
+  "zeigt": "Band mit Eigenmarken-Flaschen, orange Etiketten",
+  "animation": "Modellbahn-Warenstrom",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 137,
+  "t0": 490.9
+ },
+ {
+  "satz": "Ein großer Discounter hat dafür eine eigene Getränkefirma in seiner Unternehmensgruppe.",
+  "sek": 4.72,
+  "zeigt": "Ablauf-Kette: Discounter → eigene Getränkefirma → Eigenmarke, alles in einer Unternehmensgruppe",
+  "animation": "Ablauf-Kette 2D (`motion` flow)",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "antwort:final",
+  "i": 138,
+  "t0": 494.9
+ },
+ {
+  "satz": "Dann hat der Konzern das Pfand an der Kasse als Erster kassiert.",
+  "sek": 3.68,
+  "zeigt": "Kasse: das Pfand landet als Erstes beim Konzern",
+  "animation": "Menschen reagieren",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 139,
+  "t0": 499.62
+ },
+ {
+  "satz": "Und muss es nie wieder hergeben.",
+  "sek": 2.24,
+  "zeigt": "Rückflug zum Bahnsteig: das Pfand der Flasche wird nie zurückgegeben",
+  "animation": "Rückflug zum Anfang",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 140,
+  "t0": 503.3
+ },
+ {
+  "satz": "Ende 2025.",
+  "sek": 3.8,
+  "zeigt": "Schreibtisch mit Bundestagsdrucksache, Ende 2025",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 141,
+  "t0": 505.54
+ },
+ {
+  "satz": "Ende 2025.",
+  "sek": 3.8,
+  "zeigt": "Nah: Zitat weit überwiegend beim Einzelhandel wird orange markiert",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 141,
+  "t0": 509.34
+ },
+ {
+  "satz": "Nicht bei den Getränkefirmen. Beim Handel.",
+  "sek": 2.72,
+  "zeigt": "Der Supermarkt leuchtet auf: beim Handel",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 142,
+  "t0": 513.14
+ },
+ {
+  "satz": "Wie viel ist das? Die Regierung sagt, sie hat keine eigenen Zahlen.",
+  "sek": 4.24,
+  "zeigt": "Tafel klappt: WIE VIEL? – KEINE AMTLICHE ZAHL",
+  "animation": "Zahl in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 144,
+  "t0": 515.86
+ },
+ {
+  "satz": "2015 180 Millionen Euro.",
+  "sek": 5.44,
+  "zeigt": "Fallblatt-Zahl klappt auf rund 180 Mio. Euro pro Jahr",
+  "animation": "Fallblatt-Zahl (`motion` counter)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 146,
+  "t0": 520.1
+ },
+ {
+  "satz": "500.000 Euro am Tag.",
+  "sek": 3.44,
+  "zeigt": "Rathausuhr dreht einen ganzen Tag, Einblendung fast eine halbe Million pro Tag",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zahl",
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 147,
+  "t0": 525.54
+ },
+ {
+  "satz": "4 von 100.",
+  "sek": 2.28,
+  "zeigt": "Zählzentrum, Einblendung Annahme: 4 von 100 kommen nicht zurück",
+  "animation": "Warenstrom",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 148,
+  "t0": 528.98
+ },
+ {
+  "satz": "(Fortsetzung) Gerechnet hat er damals mit vier von hun",
+  "sek": 2.28,
+  "zeigt": "Zählzentrum, Einblendung Annahme: 4 von 100 kommen nicht zurück",
+  "animation": "Warenstrom",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 148,
+  "t0": 531.26
+ },
+ {
+  "satz": "Dazu kommt das Material. Die gepressten Flaschen gehören in der Regel dem Handel.",
+  "sek": 2.32,
+  "zeigt": "Die Ballen stapeln sich höher: das Material gehört meist dem Handel",
+  "animation": "Lagerbestand-Turm",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 149,
+  "t0": 533.54
+ },
+ {
+  "satz": "(Fortsetzung) Dazu kommt das Material. Die gepressten ",
+  "sek": 2.32,
+  "zeigt": "Die Ballen stapeln sich höher: das Material gehört meist dem Handel",
+  "animation": "Lagerbestand-Turm",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 149,
+  "t0": 535.86
+ },
+ {
+  "satz": "70 Millionen Euro im Jahr.",
+  "sek": 5.2,
+  "zeigt": "Fallblatt-Zahl klappt auf rund 68 Mio. Euro",
+  "animation": "Fallblatt-Zahl (`motion` counter)",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 151,
+  "t0": 538.18
+ },
+ {
+  "satz": "Ist das ein Skandal? Nicht unbedingt.",
+  "sek": 2.8,
+  "zeigt": "Flug über die Stadt, Einblendung Skandal?",
+  "animation": "Tilt-Shift-Flug",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 152,
+  "t0": 543.37
+ },
+ {
+  "satz": "Der Handel bezahlt die Automaten.",
+  "sek": 2.16,
+  "zeigt": "Der Automat im Supermarkt, gekauft vom Handel",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 154,
+  "t0": 546.17
+ },
+ {
+  "satz": "10.000 Euro.",
+  "sek": 7.32,
+  "zeigt": "Häuserzeilen-Balken: einfaches Gerät ab 10.000 €, Großanlage ein Vielfaches",
+  "animation": "Häuserzeilen-Balken (`motion` bars)",
+  "inhalt": [
+   "zahl",
+   "vergleich"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 155,
+  "t0": 548.33
+ },
+ {
+  "satz": "1972.",
+  "sek": 4.4,
+  "zeigt": "Modellkarte: Norwegen leuchtet auf, 1972 erster Pfandautomat",
+  "animation": "Modell-Karte",
+  "inhalt": [
+   "ort",
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 156,
+  "t0": 555.66
+ },
+ {
+  "satz": "1972.",
+  "sek": 4.4,
+  "zeigt": "Die Öffnung des Automaten, Fun-Fact zwei Brüder",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 156,
+  "t0": 560.06
+ },
+ {
+  "satz": "Dazu kommen Platz, Strom und Personal.",
+  "sek": 3.12,
+  "zeigt": "Automat von außen: Platz, Strom, Personal",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 158,
+  "t0": 564.46
+ },
+ {
+  "satz": "Laut Bundesregierung trägt der Handel den Großteil dieser Kosten.",
+  "sek": 3.72,
+  "zeigt": "Dokument der Bundesregierung: Handel trägt den Großteil der Kosten",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 159,
+  "t0": 567.58
+ },
+ {
+  "satz": "Eine gesetzliche oder zentrale Gebühr für die Rücknahme gibt es in Deutschland nicht.",
+  "sek": 2.24,
+  "zeigt": "Kasse mit Display: Rücknahmegebühr – keine",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 160,
+  "t0": 571.3
+ },
+ {
+  "satz": "(Fortsetzung) Eine gesetzliche oder zentrale Gebühr fü",
+  "sek": 2.24,
+  "zeigt": "Kasse mit Display: Rücknahmegebühr – keine",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 160,
+  "t0": 573.54
+ },
+ {
+  "satz": "In Österreich ist das anders. Dort bleibt das liegengebliebene Pfand im System und finanziert es mit.",
+  "sek": 5.84,
+  "zeigt": "Ablauf-Kette: das liegengebliebene Pfand fließt ins System und finanziert die Rücknahme",
+  "animation": "Ablauf-Kette 2D (`motion` flow)",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 161,
+  "t0": 575.78
+ },
+ {
+  "satz": "Und jetzt verlangt Europa von fast allen Ländern, was Deutschland längst hat.",
+  "sek": 4.84,
+  "zeigt": "Modellkarte Europa: Flug über den ganzen Kontinent",
+  "animation": "Modell-Karte",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 163,
+  "t0": 581.62
+ },
+ {
+  "satz": "12. August 2026.",
+  "sek": 2.68,
+  "zeigt": "Dokument: EU-Verpackungsverordnung, gilt seit 12.08.2026",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 164,
+  "t0": 586.46
+ },
+ {
+  "satz": "(Fortsetzung) Seit dem zwölften August zweitausendsech",
+  "sek": 2.68,
+  "zeigt": "Dokument: EU-Verpackungsverordnung, gilt seit 12.08.2026",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 164,
+  "t0": 589.14
+ },
+ {
+  "satz": "Bis 2029 90 Prozent.",
+  "sek": 4.3,
+  "zeigt": "Europakarte: alle EU-Länder leuchten nacheinander, Zähler 90 % bis 2029",
+  "animation": "Warenstrom-Karte (`motion` map)",
+  "inhalt": [
+   "zahl",
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 165,
+  "t0": 591.82
+ },
+ {
+  "satz": "Bis 2029 90 Prozent.",
+  "sek": 3.27,
+  "zeigt": "Pfandautomat: Pfandsysteme werden in fast ganz Europa Pflicht, bis 2029",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 165,
+  "t0": 596.12
+ },
+ {
+  "satz": "2026 80 Prozent.",
+  "sek": 2.32,
+  "zeigt": "Tafel klappt: 2026 80 % – AUSNAHME MÖGLICH",
+  "animation": "Zahl in der Welt",
+  "inhalt": [
+   "zahl",
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 167,
+  "t0": 599.39
+ },
+ {
+  "satz": "(Fortsetzung) Wer zweitausendsechsundzwanzig schon ach",
+  "sek": 2.32,
+  "zeigt": "Tafel klappt: 2026 80 % – AUSNAHME MÖGLICH",
+  "animation": "Zahl in der Welt",
+  "inhalt": [
+   "zahl",
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 167,
+  "t0": 601.71
+ },
+ {
+  "satz": "2025: 81,5 Prozent.",
+  "sek": 6.48,
+  "zeigt": "Häuserzeilen-Balken: Ziel 80 %, erreicht 81,5 %",
+  "animation": "Häuserzeilen-Balken (`motion` bars)",
+  "inhalt": [
+   "zahl",
+   "vergleich"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 168,
+  "t0": 604.03
+ },
+ {
+  "satz": "25 Cent seit 2006.",
+  "sek": 3.66,
+  "zeigt": "Gesetz auf dem Tisch: § 46 VerpackDG, mindestens 25 Cent",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 169,
+  "t0": 610.51
+ },
+ {
+  "satz": "(Fortsetzung) In Deutschland steht das Pfand seit Augu",
+  "sek": 3.66,
+  "zeigt": "Gesetz auf dem Tisch: § 46 VerpackDG, mindestens 25 Cent",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 169,
+  "t0": 614.16
+ },
+ {
+  "satz": "Unsere Szene ist nachgestellt.",
+  "sek": 2.08,
+  "zeigt": "Bahnsteig, Einblendung Szene nachgestellt",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 171,
+  "t0": 617.82
+ },
+ {
+  "satz": "Aber auch heute Abend liegen solche Flaschen unter Bänken.",
+  "sek": 3.36,
+  "zeigt": "Flug über die nächtliche Stadt: überall solche Bänke",
+  "animation": "Tilt-Shift-Flug",
+  "inhalt": [
+   "ort"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 172,
+  "t0": 619.9
+ },
+ {
+  "satz": "Also: Wer bekommt dein Pfand? Es gibt drei Möglichkeiten.",
+  "sek": 4.28,
+  "zeigt": "Bahnhofsuhr springt auf 19:00, Einblendung 3 Möglichkeiten",
+  "animation": "Countdown in der Welt",
+  "inhalt": [
+   "zeit"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 173,
+  "t0": 623.26
+ },
+ {
+  "satz": "Erstens: Du bringst die Flasche zurück.",
+  "sek": 2.56,
+  "zeigt": "1 · Die Flasche geht in den Automaten",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 175,
+  "t0": 627.54
+ },
+ {
+  "satz": "25 Cent.",
+  "sek": 2.44,
+  "zeigt": "Display: 0,25 € ausgezahlt, aus dem Plastik wird neuer Kunststoff",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 176,
+  "t0": 630.1
+ },
+ {
+  "satz": "(Fortsetzung) Dann bekommst du deine fünfundzwanzig Ce",
+  "sek": 2.44,
+  "zeigt": "Display: 0,25 € ausgezahlt, aus dem Plastik wird neuer Kunststoff",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 176,
+  "t0": 632.54
+ },
+ {
+  "satz": "Zweitens: Du stellst sie neben den Mülleimer. Dann holt sie vielleicht einer der Menschen, die Pfand sammeln.",
+  "sek": 2.96,
+  "zeigt": "2 · Die Flasche steht neben dem Mülleimer, eine Sammlerin nimmt sie mit",
+  "animation": "Menschen reagieren",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 177,
+  "t0": 634.98
+ },
+ {
+  "satz": "(Fortsetzung) Zweitens: Du stellst sie neben den Mülle",
+  "sek": 2.96,
+  "zeigt": "2 · Die Flasche steht neben dem Mülleimer, eine Sammlerin nimmt sie mit",
+  "animation": "Menschen reagieren",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 177,
+  "t0": 637.94
+ },
+ {
+  "satz": "Drittens: Du wirfst sie weg.",
+  "sek": 2.08,
+  "zeigt": "3 · Echter Clip: Plastikflaschen fallen weg",
+  "animation": "Bildschirm in der Welt",
+  "inhalt": [
+   "geschehen"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 179,
+  "t0": 640.9
+ },
+ {
+  "satz": "Dann bleibt das Geld bei dem, der sie abgefüllt hat.",
+  "sek": 2.88,
+  "zeigt": "Das Pfand bleibt beim Abfüller",
+  "animation": "Tilt-Shift-Flug",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 180,
+  "t0": 642.98
+ },
+ {
+  "satz": "25 Cent.",
+  "sek": 2.72,
+  "zeigt": "Rahmen: wieder die Flasche unter der Bank, 25 Cent",
+  "animation": "Rückflug zum Anfang",
+  "inhalt": [
+   "zahl"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 181,
+  "t0": 645.86
+ },
+ {
+  "satz": "Die Frage ist nur, für wen.",
+  "sek": 2.0,
+  "zeigt": "Querschnitt am Schluss: der Automat wird durchsichtig – für wen?",
+  "animation": "Querschnitt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "schema",
+  "neugier": "",
+  "i": 182,
+  "t0": 648.58
+ },
+ {
+  "satz": "Bringst du jede Flasche zurück? Oder stellst du sie daneben? Schreib es in die Kommentare.",
+  "sek": 2.48,
+  "zeigt": "Bahnsteig mit Zug, Einblendung: Bringst du jede Flasche zurück?",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 183,
+  "t0": 650.58
+ },
+ {
+  "satz": "(Fortsetzung) Bringst du jede Flasche zurück? Oder ste",
+  "sek": 2.48,
+  "zeigt": "Bahnsteig mit Zug, Einblendung: Bringst du jede Flasche zurück?",
+  "animation": "Leben in der Welt",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 183,
+  "t0": 653.06
+ },
+ {
+  "satz": "Und wenn du sehen willst, welches System wir als Nächstes aufschrauben: Glocke an.",
+  "sek": 2.4,
+  "zeigt": "Flug über die Stadt bei Nacht",
+  "animation": "Tilt-Shift-Flug",
+  "inhalt": [
+   "gefuehl"
+  ],
+  "genauigkeit": "stimmung",
+  "neugier": "",
+  "i": 186,
+  "t0": 655.54
+ },
+ {
+  "satz": "(Fortsetzung) Und wenn du sehen willst, welches System",
+  "sek": 2.4,
+  "zeigt": "Flug über die Stadt bei Nacht",
+  "animation": "Tilt-Shift-Flug",
+  "inhalt": [
+   "gefuehl"
+  ],
+  "genauigkeit": "stimmung",
+  "neugier": "",
+  "i": 186,
+  "t0": 657.94
+ },
+ {
+  "satz": "Das war Unterbau.",
+  "sek": 4.04,
+  "zeigt": "Schlusskarte: die Stadt bei Nacht dunkelt ab, Schriftzug UNTERBAU und Claim erscheinen",
+  "animation": "Tilt-Shift-Flug",
+  "inhalt": [
+   "erklaerung"
+  ],
+  "genauigkeit": "exakt",
+  "neugier": "",
+  "i": 187,
+  "t0": 660.34
+ }
+]

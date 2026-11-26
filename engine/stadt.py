@@ -614,8 +614,8 @@ def apply_state(st):
     if "atm" in STATE_OBJ: emit("atm", 2.0 * (1 - g("atm_off", 0)))
     if "pools" in STATE_OBJ: emit("pool", 0.35 * g("lights", 1.0))
     if "c_deckel" in STATE_OBJ: STATE_OBJ["c_deckel"].hide_render = g("cut", 0) > 0.5
-    if "notruf" in EXTRA:
-        import stadt_notruf; stadt_notruf.state(sys.modules[__name__], st)
+    for ex in sorted(EXTRA):   # Zusatz-Welten: engine/stadt_<name>.py mit build(stadt) und state(stadt, st)
+        __import__("stadt_" + ex).state(sys.modules[__name__], st)
     w = bpy.context.scene.world.node_tree.nodes["Background"]
     day = g("day", 0.0)
     w.inputs[0].default_value = tuple(C["night"][i] * (1 - day) + (0.35, 0.45, 0.6, 1)[i] * day for i in range(4)); w.inputs[1].default_value = 0.7 + 1.5 * day
@@ -631,8 +631,8 @@ def setup_scene(W, H, samples):
     build_racks("zlager", 700, "kisten"); build_racks("kuehl", 760, "weiss", light=(0.75, 0.88, 1.0)); build_racks("reserve", 820, "saecke")
     build_racks("apo", 880, "klein", rows=2, levels=3); build_racks("klinik", 940, "weiss", rows=2, levels=3)
     build_cab(); build_leitstand(); build_markt_cut(); build_bars(); build_ladung()
-    if "notruf" in EXTRA:
-        import stadt_notruf; stadt_notruf.build(sys.modules[__name__])
+    for ex in sorted(EXTRA):
+        __import__("stadt_" + ex).build(sys.modules[__name__])
     r = sc.render; r.engine = "CYCLES"; sc.cycles.device = "CPU"; sc.cycles.samples = samples; sc.cycles.use_denoising = True
     sc.cycles.max_bounces = 4; sc.cycles.light_sampling_threshold = 0.02; r.resolution_x, r.resolution_y = W, H
     sc.view_settings.view_transform = "AgX"; sc.view_settings.look = "AgX - Medium High Contrast"

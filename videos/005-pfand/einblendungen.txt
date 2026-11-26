@@ -1,0 +1,146 @@
+0:00 Einblendung: 25 Cent / Pfand
+0:02 Einblendung: Wer behält das Pfand?
+0:07 Einblendung: Dortmund · Samstag, 18:40 Uhr
+0:13 Einblendung: Supermarkt
+0:20 Bildschirm/Dokument: display_025.png
+0:21 Einblendung: Hunderte Millionen pro Jahr / Schätzung
+0:28 Bildschirm/Dokument: kasse_pfand.png
+0:30 Einblendung: über 40.000 Automaten / 7 Abrechnungsfirmen · 1 neues Gesetz
+0:36 2D-Grafik flow: {"label": "AM ENDE WEISST DU", "nodes": [{"icon": "money", "label": "wer verdient"}, {"icon": "lock", "label": "wer betrügt"}, {"icon": "doc", "label": "was die EU verlangt"}], "packet": "bottle"}
+0:42 Einblendung: Szene nachgestellt
+0:46 Karte: WER AN DEINER PFANDFLASCHE VERDIENT UNTERBAU
+0:51 Karte: KAPITEL 1 Die Reise der Flasche
+1:01 Einblendung: Strichcode + Pfandzeichen
+1:05 Einblendung: ältere Geräte: ein paar Sekunden
+1:08 Einblendung: bis zu 6 Kameras
+1:12 Einblendung: Spezialfarbe / Eigenschaften geheim
+1:17 2D-Grafik flip: {"front": {"icon": "doc", "title": "Pfandzeichen"}, "back": {"title": "= Geld", "sub": "nur zertifizierte Druckereien"}, "at": 2.2}
+1:23 Bildschirm/Dokument: display_klopapier.png
+1:23 Einblendung: laut Medienberichten
+1:27 Bildschirm/Dokument: display_klopapier.png
+1:30 Bildschirm/Dokument: display_datensatz.png
+1:33 Bildschirm/Dokument: display_datensatz.png
+1:40 Einblendung: der Weg des Geldes
+1:45 Einblendung: Abfüller
+1:49 Einblendung: + 25 Cent Pfand / Supermarkt → Abfüller
+1:53 Bildschirm/Dokument: kasse_pfand.png
+1:53 Einblendung: 25 Cent von dir
+1:57 2D-Grafik flow: {"label": "DER WEG DER 25 CENT", "nodes": [{"icon": "factory", "label": "Abfüller"}, {"icon": "store", "label": "Supermarkt"}, {"icon": "person", "label": "du"}, {"icon": "store", "label": "Rücknahme"}], "packet": "money"}
+2:01 Einblendung: zurück vom Abfüller
+2:02 2D-Grafik counter: {"label": "CLEARING", "value": 7, "caption": "zugelassene Firmen verrechnen das Pfand"}
+2:09 Anzeigetafel: D-P-G → KEIN GELD → NUR DATEN
+2:13 Bildschirm/Dokument: datenbank.png
+2:15 Bildschirm/Dokument: datenbank.png
+2:18 2D-Grafik counter: {"label": "PFANDVERPACKUNGEN", "value": 18, "prefix": "≈ ", "suffix": " Mrd.", "caption": "pro Jahr · über 200 pro Kopf"}
+2:22 Einblendung: über 200 pro Kopf
+2:26 Einblendung: Zählzentrum
+2:44 Einblendung: bis zu 50 Mal / Glas-Mehrweg
+2:49 Einblendung: vor gut 20 Jahren
+2:53 Karte: KAPITEL 2 Das Chaos von 2003
+2:57 Anzeigetafel: 01.01.2003
+2:59 Einblendung: Pfand ab 2003 / Bier · Wasser · Limonade
+3:06 Bildschirm/Dokument: doc_1991.png
+3:06 Einblendung: 1991 · Klaus Töpfer (CDU) / Verpackungsverordnung
+3:09 Bildschirm/Dokument: doc_1991.png
+3:13 2D-Grafik grid: {"label": "DIE REGEL VON 1991", "n": 100, "icon": "bottle", "value": 72, "suffix": " %", "caption": "Mehrweg-Anteil – darunter wird Pfand fällig", "count": 72}
+3:19 Einblendung: Ende der 1990er: unter 72 %
+3:22 Bildschirm/Dokument: doc_2003.png
+3:22 Einblendung: 2002 · Jürgen Trittin (Grüne)
+3:25 Bildschirm/Dokument: doc_2003.png
+3:28 Einblendung: kein gemeinsames System
+3:31 Einblendung: nur eigene Flaschen
+3:35 2D-Grafik stack: {"label": "2003 BIS 2006", "cards": [["Pfandbon", "Laden A"], ["Pfandmarke", "Laden B"], ["eigenes Etikett", "Laden C"]], "symbol": "?", "question": "Wo gebe ich das zurück?"}
+3:40 2D-Grafik flow: {"label": "INSELLÖSUNG", "nodes": [{"icon": "bottle", "label": "Flasche"}, {"icon": "store", "label": "Discounter A: ja"}], "packet": "bottle", "branch": {"after": 0, "icon": "store", "label": "Discounter B", "text": "NEIN"}}
+3:44 2D-Grafik flip: {"front": {"icon": "can", "title": "Cola: Pfand"}, "back": {"title": "Cola + Rum", "sub": "kein Pfand"}, "at": 2.0}
+3:52 2D-Grafik bars: {"label": "DOSEN IN DEUTSCHLAND", "title": "Absatz", "unit": " Mrd.", "bars": [["2002", 7.5, false], ["2004", 0.3, true]]}
+3:57 Einblendung: − über 90 % / laut Branchenangaben
+4:04 2D-Grafik grid: {"label": "2003 BIS 2005", "n": 100, "icon": "bottle", "value": 25, "suffix": " %", "caption": "kamen nicht zurück (Schätzung Umweltbundesamt)", "count": 25}
+4:08 Einblendung: jede vierte / kam nicht zurück
+4:11 Einblendung: Pfand bezahlt
+4:15 Anzeigetafel: 01.05.2006
+4:18 Einblendung: alle Einweg-Pfandflaschen / aus dem eigenen Material
+4:24 2D-Grafik flip: {"front": {"icon": "store", "title": "Insellösung"}, "back": {"title": "1 Zeichen", "sub": "seit Mai 2006"}, "at": 2.0}
+4:30 2D-Grafik flow: {"label": "PFAND GILT FÜR", "nodes": [{"icon": "bottle", "label": "2003: Bier, Wasser, Limo"}, {"icon": "bottle", "label": "2022: Saft, Wein"}, {"icon": "bottle", "label": "2024: Milch"}], "packet": "can"}
+4:36 Einblendung: rund 6 Mrd. Dosen pro Jahr
+4:47 Karte: KAPITEL 3 Der kleine Rest
+4:59 2D-Grafik counter: {"label": "RÜCKLAUF 2023", "value": 98.7, "dec": 1, "suffix": " %", "caption": "Pfand-Plastikflaschen · Studie für das UBA"}
+5:07 2D-Grafik bars: {"label": "SAMMELQUOTE PLASTIKFLASCHEN", "unit": " %", "bars": [["Deutschland 2023", 98.7, true], ["Europa 2022", 60, false]]}
+5:15 2D-Grafik grid: {"label": "ALLE PFANDVERPACKUNGEN", "n": 100, "icon": "bottle", "value": 4, "prefix": "1–", "suffix": " von 100", "caption": "kommen nicht zurück", "count": 4}
+5:23 Einblendung: geschätzt: hunderte Millionen Stück / pro Jahr
+5:32 2D-Grafik counter: {"label": "PFANDSAMMLER", "value": 1, "prefix": "≈ ", "suffix": " Mio.", "caption": "Umfragen einer Initiative eines Getränkeherstellers"}
+5:40 Einblendung: meist unter 200 € im Monat
+5:47 Einblendung: Wer behält die 25 Cent?
+5:50 Bildschirm/Dokument: doc_gesetz.png
+5:53 2D-Grafik flow: {"label": "WER ALS ERSTER KASSIERT", "nodes": [{"icon": "person", "label": "Kunde"}, {"icon": "store", "label": "Händler"}, {"icon": "factory", "label": "Abfüller"}], "packet": "money"}
+5:57 Einblendung: Abfüller = Erstinverkehrbringer
+6:00 Anzeigetafel: PFAND → PFANDSCHLUPF
+6:04 Einblendung: Getränkeindustrie?
+6:13 Karte: KAPITEL 4 Die Lücken im System
+6:17 Anzeigetafel: 2016
+6:28 2D-Grafik counter: {"label": "DIESELBE FLASCHE", "value": 177000, "prefix": "> ", "caption": "Mal gezählt (laut Medienberichten)"}
+6:34 Einblendung: über 44.000 € / Ausgang des Verfahrens unbekannt
+6:39 Einblendung: Neuss · rund 1,8 Mio. €
+6:46 Einblendung: Angeklagter rechtskräftig freigesprochen
+6:51 Einblendung: Berlin: Verdacht / Pfandetiketten auf pfandfreie Flaschen
+6:55 Anzeigetafel: JUNI 2024 → RAZZIA → URTEIL?
+6:58 Anzeigetafel: JUNI 2024 → RAZZIA → URTEIL?
+7:01 Einblendung: Grenze zu Dänemark
+7:09 Einblendung: ohne Pfand
+7:10 Einblendung: eine Unterschrift: „Ausfuhr“
+7:13 2D-Grafik map: {"label": "GRENZHANDEL", "view": [10.5, 55.6, 5200], "pins": [{"lonlat": [9.43, 54.79], "label": "Grenzläden"}, {"lonlat": [12.57, 55.68], "label": "Dänemark"}], "highlight": ["208"], "counter": {"value": 650, "prefix": "> ", "suffix": " Mio.", "label": "Dosen pro Jahr (Schätzung DUH)"}}
+7:19 Einblendung: bis zu 9 von 10 Dosen aus Deutschland / Dänemark, 2020
+7:25 Einblendung: EuGH, 2023
+7:29 Einblendung: keine Pflicht zur Durchsetzung
+7:32 Einblendung: VG Schleswig · Mai 2026 / Pfand gilt auch für Skandinavier
+7:39 Bildschirm/Dokument: doc_urteil.png
+7:42 Bildschirm/Dokument: doc_urteil.png
+7:44 2D-Grafik counter: {"label": "VOR DEM PFAND", "value": 3, "prefix": "bis ", "suffix": " Mrd.", "caption": "Dosen und Flaschen pro Jahr an Straßen und in Parks (DUH)"}
+7:53 Einblendung: Wer bekommt das Pfand?
+7:56 Karte: KAPITEL 5 Wer das Pfand behält
+8:02 Einblendung: Eigenmarke / eines Supermarkts
+8:06 Einblendung: Wer ist der Abfüller?
+8:10 Einblendung: Eigenmarke, selbst abgefüllt
+8:14 2D-Grafik flow: {"label": "EINE UNTERNEHMENSGRUPPE", "nodes": [{"icon": "store", "label": "Discounter"}, {"icon": "factory", "label": "eigene Getränkefirma"}, {"icon": "bottle", "label": "Eigenmarke"}], "packet": "money"}
+8:19 Bildschirm/Dokument: kasse_pfand.png
+8:19 Einblendung: als Erster kassiert
+8:25 Bildschirm/Dokument: doc_btdrs.png
+8:25 Einblendung: Bundesregierung, Dezember 2025
+8:29 Bildschirm/Dokument: doc_btdrs_hl.png
+8:33 Einblendung: beim Handel
+8:35 Anzeigetafel: WIE VIEL? → KEINE AMTL. ZAHL
+8:40 2D-Grafik counter: {"label": "PFANDSCHLUPF", "value": 180, "prefix": "≈ ", "suffix": " Mio. €", "caption": "pro Jahr · Schätzung NABU für 2015"}
+8:45 Einblendung: ≈ 490.000 € pro Tag
+8:48 Einblendung: Annahme: 4 von 100 / kommen nicht zurück
+8:53 Einblendung: gehört meist dem Handel
+8:58 2D-Grafik counter: {"label": "MATERIAL", "value": 68, "prefix": "≈ ", "suffix": " Mio. €", "caption": "Erlös pro Jahr · ältere Schätzung (NABU)"}
+9:03 Einblendung: Skandal?
+9:08 2D-Grafik bars: {"label": "WAS EIN AUTOMAT KOSTET", "unit": " Tsd. €", "bars": [["einfaches Gerät", 10, false], ["leistungsstark", 30, false], ["Großanlage", 300, true]]}
+9:15 Einblendung: Norwegen, 1972 / erster Pfandautomat
+9:20 Einblendung: 2 Brüder, 1 genervter Händler
+9:24 Einblendung: Platz · Strom · Personal
+9:27 Bildschirm/Dokument: doc_kosten.png
+9:31 Bildschirm/Dokument: kasse_gebuehr.png
+9:33 Bildschirm/Dokument: kasse_gebuehr.png
+9:35 2D-Grafik flow: {"label": "ÖSTERREICH", "nodes": [{"icon": "bottle", "label": "liegengebliebenes Pfand"}, {"icon": "gear", "label": "Pfandsystem"}, {"icon": "store", "label": "Rücknahme"}], "packet": "money"}
+9:41 Einblendung: Europa
+9:46 Bildschirm/Dokument: doc_ppwr.png
+9:49 Bildschirm/Dokument: doc_ppwr.png
+9:51 2D-Grafik map: {"label": "EU-VERPACKUNGSVERORDNUNG", "view": "europe", "highlight": ["040", "056", "100", "191", "196", "203", "208", "233", "246", "250", "276", "300", "348", "372", "380", "428", "440", "442", "470", "528", "616", "620", "642", "703", "705", "724", "752"], "counter": {"value": 90, "suffix": " %", "label": "getrennt sammeln bis 2029"}}
+9:56 Einblendung: Pfandsystem bis 2029 / in fast ganz Europa
+9:59 Anzeigetafel: 2026: 80 % → AUSNAHME
+10:01 Anzeigetafel: 2026: 80 % → AUSNAHME
+10:04 2D-Grafik bars: {"label": "ÖSTERREICH, ERSTES PFANDJAHR", "unit": " %", "bars": [["Ziel", 80, false], ["2025 erreicht", 81.5, true]]}
+10:10 Bildschirm/Dokument: doc_verpackdg.png
+10:10 Einblendung: mindestens 25 Cent / wie seit 2006
+10:14 Bildschirm/Dokument: doc_verpackdg.png
+10:17 Einblendung: Szene nachgestellt
+10:23 Einblendung: 3 Möglichkeiten
+10:27 Einblendung: 1 · zurückbringen
+10:30 Bildschirm/Dokument: display_025.png
+10:32 Bildschirm/Dokument: display_025.png
+10:34 Einblendung: 2 · daneben stellen
+10:40 Einblendung: 3 · wegwerfen
+10:42 Einblendung: Pfand bleibt beim Abfüller
+10:45 Einblendung: 25 Cent
+10:50 Einblendung: Bringst du jede Flasche zurück?
+11:00 Karte:  UNTERBAU

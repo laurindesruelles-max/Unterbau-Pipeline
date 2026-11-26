@@ -44,6 +44,8 @@ export const Glitch: React.FC<{at: number; dur?: number; children: React.ReactNo
 };
 /** Linien-Icons; Farbe/Strich kommen vom Theme */
 export const ICONS: Record<string, (st: any, c: string) => React.ReactNode> = {
+  bottle: (st) => <path d="M42 8 H58 V20 C58 26 70 30 70 42 V88 C70 91 68 93 65 93 H35 C32 93 30 91 30 88 V42 C30 30 42 26 42 20 Z M30 52 H70 M30 72 H70" {...st} />,
+  can: (st) => <><path d="M28 16 H72 V86 H28 Z" {...st} /><path d="M32 10 H68 M28 30 H72 M28 74 H72" {...st} /></>,
   phone: (st) => <><rect x={28} y={8} width={44} height={84} rx={9} {...st} /><circle cx={50} cy={80} r={3} fill={st.stroke} /></>,
   server: (st) => <>{[12, 40, 68].map((y) => <g key={y}><rect x={12} y={y} width={76} height={22} rx={4} {...st} /><circle cx={74} cy={y + 11} r={4} fill={st.stroke} /></g>)}</>,
   bank: (st) => <><path d="M10 38 L50 12 L90 38 Z" {...st} /><path d="M18 84 H82 M22 44 V76 M40 44 V76 M60 44 V76 M78 44 V76" {...st} /></>,

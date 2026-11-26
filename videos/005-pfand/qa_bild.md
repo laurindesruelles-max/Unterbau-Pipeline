@@ -1,0 +1,248 @@
+# Bild-Prüfung FINAL_005_Pfand.mp4
+171 Schnitte erkannt, Schärfe-Median 8
+
+- FEHLER  323.6s Sprung-Schnitt: Bild davor und danach sehr ähnlich (Histogramm 0.99, Struktur 0.98) – gleiche Szene? Durchgehende Fahrt oder Überblendung statt Schnitt
+- FEHLER  325.6s Sprung-Schnitt: Bild davor und danach sehr ähnlich (Histogramm 0.98, Struktur 0.98) – gleiche Szene? Durchgehende Fahrt oder Überblendung statt Schnitt
+- FEHLER  525.6s Sprung-Schnitt: Bild davor und danach sehr ähnlich (Histogramm 0.95, Struktur 0.64) – gleiche Szene? Durchgehende Fahrt oder Überblendung statt Schnitt
+- Warnung      7s über die Hälfte des Bildes fast schwarz/leer
+- Warnung      8s über die Hälfte des Bildes fast schwarz/leer
+- Warnung      9s über die Hälfte des Bildes fast schwarz/leer
+- Warnung     10s über die Hälfte des Bildes fast schwarz/leer
+- Warnung     18s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 3 vs. Median 8)
+- Warnung     19s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 3 vs. Median 8)
+- Warnung     22s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 3 vs. Median 8)
+- Warnung     23s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 3 vs. Median 8)
+- Warnung     24s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 3 vs. Median 8)
+- Warnung     25s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 3 vs. Median 8)
+- Warnung     26s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 3 vs. Median 8)
+- Warnung     30s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 3 vs. Median 8)
+- Warnung     36s sehr dunkel (Helligkeit 13)
+- Warnung     37s sehr dunkel (Helligkeit 14)
+- Warnung     38s sehr dunkel (Helligkeit 14)
+- Warnung     39s sehr dunkel (Helligkeit 14)
+- Warnung     40s sehr dunkel (Helligkeit 14)
+- Warnung     41s sehr dunkel (Helligkeit 14)
+- Warnung     42s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 3 vs. Median 8)
+- Warnung     46s sehr dunkel (Helligkeit 18)
+- Warnung     46s über die Hälfte des Bildes fast schwarz/leer
+- Warnung     47s sehr dunkel (Helligkeit 11)
+- Warnung     47s über die Hälfte des Bildes fast schwarz/leer
+- Warnung     48s sehr dunkel (Helligkeit 11)
+- Warnung     48s über die Hälfte des Bildes fast schwarz/leer
+- Warnung     49s sehr dunkel (Helligkeit 11)
+- Warnung     49s über die Hälfte des Bildes fast schwarz/leer
+- Warnung     50s sehr dunkel (Helligkeit 11)
+- Warnung     50s über die Hälfte des Bildes fast schwarz/leer
+- Warnung     56s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 3 vs. Median 8)
+- Warnung     57s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 3 vs. Median 8)
+- Warnung     58s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 3 vs. Median 8)
+- Warnung     59s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 3 vs. Median 8)
+- Warnung     60s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 3 vs. Median 8)
+- Warnung     63s sehr dunkel (Helligkeit 13)
+- Warnung     63s über die Hälfte des Bildes fast schwarz/leer
+- Warnung     64s sehr dunkel (Helligkeit 11)
+- Warnung     64s über die Hälfte des Bildes fast schwarz/leer
+- Warnung     75s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 3 vs. Median 8)
+- Warnung     76s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 3 vs. Median 8)
+- Warnung     77s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 3 vs. Median 8)
+- Warnung     80s sehr dunkel (Helligkeit 16)
+- Warnung     81s sehr dunkel (Helligkeit 17)
+- Warnung     82s sehr dunkel (Helligkeit 17)
+- Warnung     83s sehr dunkel (Helligkeit 17)
+- Warnung     96s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 2 vs. Median 8)
+- Warnung     97s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 3 vs. Median 8)
+- Warnung     98s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 2 vs. Median 8)
+- Warnung     99s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 2 vs. Median 8)
+- Warnung    117s sehr dunkel (Helligkeit 13)
+- Warnung    118s sehr dunkel (Helligkeit 14)
+- Warnung    119s sehr dunkel (Helligkeit 14)
+- Warnung    120s sehr dunkel (Helligkeit 14)
+- Warnung    122s sehr dunkel (Helligkeit 13)
+- Warnung    123s sehr dunkel (Helligkeit 13)
+- Warnung    124s sehr dunkel (Helligkeit 13)
+- Warnung    125s sehr dunkel (Helligkeit 14)
+- Warnung    126s sehr dunkel (Helligkeit 13)
+- Warnung    127s sehr dunkel (Helligkeit 14)
+- Warnung    128s sehr dunkel (Helligkeit 14)
+- Warnung    129s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    130s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    131s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    132s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    133s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 1 vs. Median 8)
+- Warnung    138s sehr dunkel (Helligkeit 15)
+- Warnung    139s sehr dunkel (Helligkeit 16)
+- Warnung    140s sehr dunkel (Helligkeit 16)
+- Warnung    141s sehr dunkel (Helligkeit 16)
+- Warnung    166s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    173s sehr dunkel (Helligkeit 17)
+- Warnung    174s sehr dunkel (Helligkeit 17)
+- Warnung    175s sehr dunkel (Helligkeit 17)
+- Warnung    176s sehr dunkel (Helligkeit 17)
+- Warnung    193s sehr dunkel (Helligkeit 15)
+- Warnung    215s sehr dunkel (Helligkeit 14)
+- Warnung    216s sehr dunkel (Helligkeit 15)
+- Warnung    217s sehr dunkel (Helligkeit 15)
+- Warnung    218s sehr dunkel (Helligkeit 15)
+- Warnung    219s sehr dunkel (Helligkeit 15)
+- Warnung    220s sehr dunkel (Helligkeit 15)
+- Warnung    221s sehr dunkel (Helligkeit 13)
+- Warnung    222s sehr dunkel (Helligkeit 14)
+- Warnung    223s sehr dunkel (Helligkeit 14)
+- Warnung    224s sehr dunkel (Helligkeit 14)
+- Warnung    226s sehr dunkel (Helligkeit 18)
+- Warnung    227s sehr dunkel (Helligkeit 16)
+- Warnung    228s sehr dunkel (Helligkeit 16)
+- Warnung    232s sehr dunkel (Helligkeit 16)
+- Warnung    233s sehr dunkel (Helligkeit 18)
+- Warnung    234s sehr dunkel (Helligkeit 18)
+- Warnung    235s sehr dunkel (Helligkeit 18)
+- Warnung    236s sehr dunkel (Helligkeit 18)
+- Warnung    244s sehr dunkel (Helligkeit 16)
+- Warnung    255s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    256s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    257s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    258s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    267s sehr dunkel (Helligkeit 17)
+- Warnung    268s sehr dunkel (Helligkeit 17)
+- Warnung    269s sehr dunkel (Helligkeit 17)
+- Warnung    270s sehr dunkel (Helligkeit 12)
+- Warnung    271s sehr dunkel (Helligkeit 14)
+- Warnung    272s sehr dunkel (Helligkeit 14)
+- Warnung    273s sehr dunkel (Helligkeit 14)
+- Warnung    274s sehr dunkel (Helligkeit 14)
+- Warnung    275s sehr dunkel (Helligkeit 14)
+- Warnung    276s sehr dunkel (Helligkeit 14)
+- Warnung    288s sehr dunkel (Helligkeit 16)
+- Warnung    289s sehr dunkel (Helligkeit 16)
+- Warnung    290s sehr dunkel (Helligkeit 16)
+- Warnung    292s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    293s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    294s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    298s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 3 vs. Median 8)
+- Warnung    299s sehr dunkel (Helligkeit 14)
+- Warnung    300s sehr dunkel (Helligkeit 15)
+- Warnung    301s sehr dunkel (Helligkeit 15)
+- Warnung    302s sehr dunkel (Helligkeit 15)
+- Warnung    303s sehr dunkel (Helligkeit 15)
+- Warnung    308s sehr dunkel (Helligkeit 16)
+- Warnung    309s sehr dunkel (Helligkeit 16)
+- Warnung    310s sehr dunkel (Helligkeit 16)
+- Warnung    311s sehr dunkel (Helligkeit 16)
+- Warnung    312s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 2 vs. Median 8)
+- Warnung    313s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 2 vs. Median 8)
+- Warnung    314s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 2 vs. Median 8)
+- Warnung    315s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 2 vs. Median 8)
+- Warnung    333s sehr dunkel (Helligkeit 15)
+- Warnung    334s sehr dunkel (Helligkeit 16)
+- Warnung    335s sehr dunkel (Helligkeit 16)
+- Warnung    336s sehr dunkel (Helligkeit 16)
+- Warnung    353s sehr dunkel (Helligkeit 13)
+- Warnung    354s sehr dunkel (Helligkeit 14)
+- Warnung    355s sehr dunkel (Helligkeit 14)
+- Warnung    356s sehr dunkel (Helligkeit 14)
+- Warnung    357s sehr dunkel (Helligkeit 14)
+- Warnung    361s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    362s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    363s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    369s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 3 vs. Median 8)
+- Warnung    370s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 3 vs. Median 8)
+- Warnung    371s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 3 vs. Median 8)
+- Warnung    372s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 3 vs. Median 8)
+- Warnung    378s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    379s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 3 vs. Median 8)
+- Warnung    380s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 3 vs. Median 8)
+- Warnung    381s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 1 vs. Median 8)
+- Warnung    389s sehr dunkel (Helligkeit 15)
+- Warnung    390s sehr dunkel (Helligkeit 16)
+- Warnung    391s sehr dunkel (Helligkeit 16)
+- Warnung    392s sehr dunkel (Helligkeit 16)
+- Warnung    393s sehr dunkel (Helligkeit 16)
+- Warnung    411s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 1 vs. Median 8)
+- Warnung    412s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 2 vs. Median 8)
+- Warnung    416s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    417s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    418s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    419s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    420s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    421s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    430s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    464s sehr dunkel (Helligkeit 16)
+- Warnung    465s sehr dunkel (Helligkeit 17)
+- Warnung    466s sehr dunkel (Helligkeit 17)
+- Warnung    467s sehr dunkel (Helligkeit 17)
+- Warnung    468s sehr dunkel (Helligkeit 17)
+- Warnung    471s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    472s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    477s sehr dunkel (Helligkeit 18)
+- Warnung    478s sehr dunkel (Helligkeit 18)
+- Warnung    479s sehr dunkel (Helligkeit 18)
+- Warnung    495s sehr dunkel (Helligkeit 14)
+- Warnung    496s sehr dunkel (Helligkeit 14)
+- Warnung    497s sehr dunkel (Helligkeit 14)
+- Warnung    498s sehr dunkel (Helligkeit 14)
+- Warnung    499s sehr dunkel (Helligkeit 14)
+- Warnung    509s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 3 vs. Median 8)
+- Warnung    516s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    517s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    518s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    519s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    520s sehr dunkel (Helligkeit 16)
+- Warnung    521s sehr dunkel (Helligkeit 17)
+- Warnung    522s sehr dunkel (Helligkeit 17)
+- Warnung    523s sehr dunkel (Helligkeit 17)
+- Warnung    524s sehr dunkel (Helligkeit 17)
+- Warnung    525s sehr dunkel (Helligkeit 17)
+- Warnung    538s sehr dunkel (Helligkeit 16)
+- Warnung    539s sehr dunkel (Helligkeit 16)
+- Warnung    540s sehr dunkel (Helligkeit 17)
+- Warnung    541s sehr dunkel (Helligkeit 17)
+- Warnung    542s sehr dunkel (Helligkeit 17)
+- Warnung    543s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    548s sehr dunkel (Helligkeit 14)
+- Warnung    549s sehr dunkel (Helligkeit 15)
+- Warnung    550s sehr dunkel (Helligkeit 16)
+- Warnung    551s sehr dunkel (Helligkeit 16)
+- Warnung    552s sehr dunkel (Helligkeit 17)
+- Warnung    553s sehr dunkel (Helligkeit 17)
+- Warnung    554s sehr dunkel (Helligkeit 17)
+- Warnung    555s sehr dunkel (Helligkeit 17)
+- Warnung    560s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 3 vs. Median 8)
+- Warnung    564s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 3 vs. Median 8)
+- Warnung    567s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 3 vs. Median 8)
+- Warnung    576s sehr dunkel (Helligkeit 14)
+- Warnung    577s sehr dunkel (Helligkeit 14)
+- Warnung    578s sehr dunkel (Helligkeit 14)
+- Warnung    579s sehr dunkel (Helligkeit 14)
+- Warnung    580s sehr dunkel (Helligkeit 14)
+- Warnung    581s sehr dunkel (Helligkeit 14)
+- Warnung    586s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 1 vs. Median 8)
+- Warnung    599s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    600s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    601s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    602s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    603s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    604s sehr dunkel (Helligkeit 13)
+- Warnung    605s sehr dunkel (Helligkeit 16)
+- Warnung    606s sehr dunkel (Helligkeit 16)
+- Warnung    607s sehr dunkel (Helligkeit 16)
+- Warnung    608s sehr dunkel (Helligkeit 16)
+- Warnung    609s sehr dunkel (Helligkeit 16)
+- Warnung    610s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 3 vs. Median 8)
+- Warnung    623s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    624s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    625s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    626s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    627s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    653s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 3 vs. Median 8)
+- Warnung    654s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 3 vs. Median 8)
+- Warnung    655s evtl. unscharf – im Kontaktabzug prüfen (Schärfe 3 vs. Median 8)
+- Warnung    656s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    660s sehr dunkel (Helligkeit 17)
+- Warnung    660s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    661s sehr dunkel (Helligkeit 11)
+- Warnung    661s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    662s sehr dunkel (Helligkeit 11)
+- Warnung    662s über die Hälfte des Bildes fast schwarz/leer
+- Warnung    663s sehr dunkel (Helligkeit 11)
+- Warnung    663s über die Hälfte des Bildes fast schwarz/leer
+3 Fehler ❌
