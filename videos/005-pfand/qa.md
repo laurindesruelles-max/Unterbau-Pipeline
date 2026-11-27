@@ -42,3 +42,6 @@
 
 ## Kosten
 Stimme ≈ 32,3 Credits (10.598 Zeichen) + 1 Thumbnail-Bild 0,25 = **32,55 Credits** (Guthaben 2.401,16 → 2.368,61) (Bilder Blender, Clips Pixabay, Musik/Geräusche 0).
+
+## Hochgeladen (27.11.2026)
+Von Laurin freigegeben („Ja“), geplant für Sa 28.11.2026 19:00: https://www.youtube.com/watch?v=h4qaagII1kY
