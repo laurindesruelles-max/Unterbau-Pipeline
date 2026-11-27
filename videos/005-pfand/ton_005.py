@@ -44,25 +44,38 @@ for k in range(1, 7):
     a = max(0, starts[k] - 1.0); b = min(dur, (starts[k + 1] if k < 6 else dur) + 1.0); n = int((b - a) * SR)
     seg = np.concatenate([m[int(off * SR):], m, m])[:n]; env = np.ones(len(seg), np.float32); f = int(2.0 * SR)
     seg = seg * (10 ** (-20 / 20) / (np.sqrt(np.mean(seg ** 2)) + 1e-9))   # jedes Kapitel gleich laut (Laurin 24.11.: Musik stellenweise viel zu laut, z. B. 2:20)
+    # Pegel-Glätter (Laurin 27.11.2026: Musik am Anfang „laut leise laut leise“): Wellen und Anstiege im Stück selbst ausgleichen,
+    # ±10 dB, 2-s-Fenster, Regelung 2,5 s – Spannung kommt weiter aus Swells/Pausen, nicht aus Zufallswellen im Track
+    _k = int(2.0 * SR); _c = np.cumsum(np.concatenate([np.zeros(1), seg[:, 0].astype(np.float64) ** 2]))
+    _r = np.sqrt(np.maximum((_c[_k:] - _c[:-_k]) / _k, 1e-10)); _r = np.concatenate([np.full(_k // 2, _r[0]), _r, np.full(len(seg) - len(_r) - _k // 2, _r[-1])])
+    _g = np.clip(10 ** (-20 / 20) / _r, 10 ** (-10 / 20), 10 ** (10 / 20)); _k2 = int(2.5 * SR); _c2 = np.cumsum(np.concatenate([np.zeros(1), _g]))
+    _g = np.concatenate([np.full(_k2 // 2, _g[0]), (_c2[_k2:] - _c2[:-_k2]) / _k2, np.full(len(seg) - (len(_c2) - _k2) - _k2 // 2, _g[-1])])[:len(seg)]
+    seg = seg * _g[:, None].astype(np.float32)
     env[:f] *= np.linspace(0, 1, min(f, len(env))); env[-f:] *= np.linspace(1, 0, min(f, len(env)))
     j = int(a * SR); music[j:j + len(seg)] += seg * env[:, None]
-ev = np.abs(voice[:, 0]); k_ = int(0.25 * SR); ev = np.convolve(ev, np.ones(k_) / k_, "same")
-act = np.convolve(np.clip(ev / 0.02, 0, 1), np.ones(int(0.7 * SR)) / int(0.7 * SR), "same")   # langsameres Ducking (Gemini 23.11.: pumpte)
-gain = 10 ** (-9 * act / 20) * 0.5
-for i in (9, 69, 141, 181):          # Musik weg vor großen Sätzen, mit dem Satz zurück
-    ts = T[i]; gain *= np.clip(1 - np.clip((t - (ts - 0.9)) / 0.15, 0, 1) + np.clip((t - (ts + 0.1)) / 0.5, 0, 1), 0, 1)
-for key in ("T", "K1", "K2", "K3", "K4", "K5"):   # Musik trägt unter Kapitelkarten
-    ts = T[key]; gain *= 10 ** ((12 if key == "T" else 7) * np.clip(1 - np.abs(t - (ts + 2.2)) / 2.6, 0, 1) / 20)   # Titel = lautester Moment (ohne Stimme)
-for i in (12, 97, 132, 165):         # Swell vor Enthüllungen
-    gain *= 10 ** (5 * np.clip(1 - np.abs(t - (T[i] - 0.5)) / 2.5, 0, 1) / 20)
-gain *= 10 ** (16 * np.clip(1.6 - np.abs(t - (T["K5"] + 2.0)) / 1.8, 0, 1) / 20)   # Höhepunkt: Kapitelkarte vor der Auflösung
-music *= gain[:, None]; music[-int(2 * SR):] *= np.linspace(1, 0, int(2 * SR))[:, None]
 def _ma(x, k):                      # schneller gleitender Mittelwert (cumsum), gleiche Länge
     c = np.cumsum(np.concatenate([np.zeros(k // 2 + 1), x, np.zeros(k - k // 2)])); return ((c[k:] - c[:-k]) / k)[:len(x)]
 def _env(x, sek): return np.sqrt(_ma(x.astype(np.float64) ** 2, int(sek * SR)) + 1e-12)
-ve, me = _env(voice[:, 0], 0.4), _env(music[:, 0], 0.4); sprach = _ma((act > 0.3).astype(np.float64), int(0.5 * SR))
-decke = np.minimum(1.0, ve * 10 ** (-16 / 20) / me); g2 = 1 - sprach * (1 - decke)          # nur wo gesprochen wird; Swells wirken in Sprechpausen
-g2 = _ma(g2, int(0.3 * SR)); music *= np.clip(g2, 0, 1)[:, None]
+# Ducking ohne Pumpen (Laurin 27.11.2026: „am Anfang so komisch laut leise laut leise“): Pausen unter 2,5 s zählen als Sprache,
+# die Musik bleibt dort auf EINEM Pegel; Bezug ist der mittlere Stimmpegel (nicht die Hüllkurve jedes Wortes), Rampen 1,5 s.
+_va = (_env(voice[:, 0], 0.05) > 0.008).astype(np.float64)
+_d = (_ma(_va, int(2.5 * SR)) > 0).astype(np.float64)
+sp = (_ma(_d, int(2.5 * SR)) > 0.999).astype(np.float64)
+sp = _ma(sp, int(1.5 * SR)); sp[:int(2.5 * SR)] = sp[int(2.5 * SR)]; act = sp
+gain = np.full(N, 0.5)
+for i in (69, 141, 181):            # Musik weg vor großen Sätzen, mit dem Satz zurück (nicht mehr im Kaltstart)
+    ts = T[i]; gain *= np.clip(1 - np.clip((t - (ts - 0.9)) / 0.3, 0, 1) + np.clip((t - (ts + 0.1)) / 1.0, 0, 1), 0, 1)
+for key in ("T", "K1", "K2", "K3", "K4", "K5"):   # Musik trägt unter Kapitelkarten
+    ts = T[key]; gain *= 10 ** ((12 if key == "T" else 7) * np.clip(1 - np.abs(t - (ts + 2.2)) / 2.6, 0, 1) / 20)
+for i in (97, 132, 165):            # Swell vor Enthüllungen (nur in Sprechpausen hörbar, unter Sprache greift die Decke)
+    gain *= 10 ** (5 * np.clip(1 - np.abs(t - (T[i] - 0.5)) / 2.5, 0, 1) / 20)
+gain *= 10 ** (16 * np.clip(1.6 - np.abs(t - (T["K5"] + 2.0)) / 1.8, 0, 1) / 20)   # Höhepunkt: Kapitelkarte vor der Auflösung
+music *= gain[:, None]; music[-int(2 * SR):] *= np.linspace(1, 0, int(2 * SR))[:, None]
+vref = np.median(_env(voice[:, 0], 0.4)[_va > 0.5])            # mittlerer Stimmpegel
+me = _env(music[:, 0], 4.0)                                     # Musikpegel, 4 s geglättet (kein Wort-für-Wort-Folgen)
+decke = np.minimum(1.0, vref * 10 ** (-18 / 20) / me)
+g2 = 1 - sp * (1 - decke); g2 = _ma(g2, int(1.5 * SR)); music *= np.clip(g2, 0, 1)[:, None]
+if os.environ.get("DUMP"): wav(V + "music_stem.wav", music); wav(V + "voice_stem.wav", voice)
 # Brummen, das tiefer wird und erstirbt (Lichter gehen aus)
 hum = load(X + "fire_electric_hum_39.wav")[:, 0]; n = int(3.2 * SR); pos = np.cumsum(np.linspace(1.0, 0.45, n)); pos = pos[pos < len(hum) - 1]
 hum_fall = np.interp(pos, np.arange(len(hum)), hum) * np.linspace(1, 0, len(pos)) ** 1.5; hum_fall = np.stack([hum_fall, hum_fall], 1).astype(np.float32)

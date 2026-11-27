@@ -137,3 +137,8 @@ Laurin zu Unterbau 004: „Manchmal kommt dieses Whoosh-Geräusch zu oft“ und 
 - **Sound-Casting 26.11. (Gemini):** Piep `retail_scanner_1` PREMIUM, `digital_denied` als Text-Sound CHEAP, `whoosh_slow_soft` PREMIUM, `crushing_plastic_bottles` PREMIUM, `banknote_counter` PREMIUM, `amb_factory` PREMIUM; Münze/Glas/Zug nur OK.
 - **bildcheck-Fehlalarme:** Eine Einblendung, die über einem ruhigen Clip erscheint, meldet „Sprung-Schnitt“ (Frames prüfen, in qa.md als Fehlalarm begründen).
 - **Länge:** 1.506 Wörter → 10:32 Sprechzeit + Karten = 11:04. Für 9:30–10:30 eher 1.350–1.450 Wörter.
+
+## Musik pumpte am Anfang (Laurin 27.11.2026 zu 005: „ganz schlimm, dass die Musik am Anfang so komisch laut leise laut leise wird“)
+- Ursache 1: Die Decke „Musik ≥ 16 dB unter der Stimme“ folgte der Stimm-Hüllkurve (0,4 s) → in jeder Sprechpause sprang die Musik hoch. Ursache 2: `ub_kaltstart_meer` hat eigene 4-s-Wellen und steigt in 50 s um ~15 dB.
+- Fix (ton_005.py, gilt ab jetzt): Pausen < 2,5 s zählen als Sprache (Musik bleibt auf EINEM Pegel), Bezug = mittlerer Stimmpegel, Musikpegel 4 s geglättet, Rampen 1,5 s; jedes Kapitel-Stück vorher mit einem Pegel-Glätter (±10 dB, 2-s-Fenster) eingeebnet. Keine Musikpause im Kaltstart.
+- Prüfen: Gemini-Frage „Schwankt die Musik laut-leise (Pumpen)?“ – alte Fassung: PUMPT (6 Stellen), neue: RUHIG; Musik je 1-s-Fenster nur noch ±1,5 dB. earshot weiter launch-grade 23/23.
