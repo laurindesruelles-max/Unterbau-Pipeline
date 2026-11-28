@@ -45,3 +45,7 @@ Stimme ≈ 32,3 Credits (10.598 Zeichen) + 1 Thumbnail-Bild 0,25 = **32,55 Credi
 
 ## Hochgeladen (27.11.2026)
 Von Laurin freigegeben („Ja“), geplant für Sa 28.11.2026 19:00: https://www.youtube.com/watch?v=h4qaagII1kY
+
+**Ersetzt am 28.11.2026** (Musik pumpte am Anfang, neue Tonfassung v2, Laurin: „Ja“): alte Fassung h4qaagII1kY auf privat ohne Termin; neue Fassung geplant für Sa 28.11.2026 19:00: https://www.youtube.com/watch?v=MdV4uWybQWM (vidIQ postId 6ec38efe-4402-4afa-9ab6-7ae614968165)
+
+Hinweis: replaceScheduled bei vidIQ scheitert, wenn YouTube den Termin behält → alte Fassung per vidiq_update_video auf privat, dann neuen Entwurf anlegen.
